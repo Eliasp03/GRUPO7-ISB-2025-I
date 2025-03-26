@@ -1,7 +1,7 @@
 # GRUPO7-ISB-2025-I
 *Repositorio del grupo 7 del curso Introducción a Señales Biomédicas*
 
-<img src="https://i.stack.imgur.com/YlsJf.gif" alt="gif1" width="600" height="200"/>
+<img src="https://i.stack.imgur.com/YlsJf.gif" alt="gif1" width="500" height="200"/>
 
 ## Integrantes
 ### Hans Ortiz Valverde
