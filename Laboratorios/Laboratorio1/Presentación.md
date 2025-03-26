@@ -3,8 +3,8 @@
 
 <img src="https://i.stack.imgur.com/YlsJf.gif" alt="gif1" width="500" height="200"/>
 
-| Nombre        | Presentación          | Expectativas acerca del curso                                                                 | Foto |
-|---------------|-----------------------|-----------------------------------------------------------------------------------------------|------|
+| Nombre                  | Presentación          | Expectativas acerca del curso                                                                 | Foto |
+|-------------------------|-----------------------|-----------------------------------------------------------------------------------------------|------|
 | **Hans Ortiz Valverde** | Estudiante de Ingeniería Biomédica, 8vo semestre         | Espero aprender a interpretar y procesar señales fisiológicas para futuros proyectos médicos. | ![Juan](https://link-a-su-foto.jpg) |
 
 
