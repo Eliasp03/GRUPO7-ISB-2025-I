@@ -3,9 +3,9 @@
 
 <img src="https://i.stack.imgur.com/YlsJf.gif" alt="gif1" width="500" height="200"/>
 
-| Nombre        | Presentación                                       | Expectativas acerca del curso                                                                 | Foto |
-|---------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------|------|
-| **Juan Pérez** | Estudiante de Bioingeniería, 5to semestre         | Espero aprender a interpretar y procesar señales fisiológicas para futuros proyectos médicos. | ![Juan](https://link-a-su-foto.jpg) |
+| Nombre        | Presentación          | Expectativas acerca del curso                                                                 | Foto |
+|---------------|-----------------------|-----------------------------------------------------------------------------------------------|------|
+| **Juan Pérez** | Estudiante de Ingeniería biomédica, 8vo semestre         | Espero aprender a interpretar y procesar señales fisiológicas para futuros proyectos médicos. | ![Juan](https://link-a-su-foto.jpg) |
 
 
 ## Integrantes
