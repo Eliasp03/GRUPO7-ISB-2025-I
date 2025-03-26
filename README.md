@@ -3,7 +3,7 @@ Repositorio del grupo 7 del curso Introducción a Señales Biomédicas
 
 ## Integrantes
 - Hans Ortiz Valverde
-- 
+- Janella Kiomi Aponte Diaz
 -
 -
 -
