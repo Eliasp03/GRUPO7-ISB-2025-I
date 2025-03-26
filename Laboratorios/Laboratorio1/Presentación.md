@@ -5,7 +5,7 @@
 
 | Nombre        | Presentación          | Expectativas acerca del curso                                                                 | Foto |
 |---------------|-----------------------|-----------------------------------------------------------------------------------------------|------|
-| **Juan Pérez** | Estudiante de Ingeniería biomédica, 8vo semestre         | Espero aprender a interpretar y procesar señales fisiológicas para futuros proyectos médicos. | ![Juan](https://link-a-su-foto.jpg) |
+| **Hans Ortiz Valverde** | Estudiante de Ingeniería Biomédica, 8vo semestre         | Espero aprender a interpretar y procesar señales fisiológicas para futuros proyectos médicos. | ![Juan](https://link-a-su-foto.jpg) |
 
 
 ## Integrantes
