@@ -3,12 +3,12 @@
 
 ## Integrantes
 ### Hans Ortiz Valverde
-*Correo: *
+*Correo:*
 ### Janella Kiomi Aponte Diaz
-*Correo: *
+*Correo:*
 ### Martin Elias Pino Aguilar
-*Correo: *
+*Correo:*
 ### Alejandro Janampa Sopla
-*Correo: *
+*Correo:*
 ### Yamil Alexis Yapuchura Mamani
-*Correo: *
+*Correo:*
