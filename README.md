@@ -6,4 +6,4 @@ Repositorio del grupo 7 del curso Introducción a Señales Biomédicas
 - Janella Kiomi Aponte Diaz
 - Martin Elias Pino Aguilar
 - Alejandro Janampa Sopla
--
+- Yamil Alexis Yapuchura Mamani
