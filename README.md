@@ -12,8 +12,8 @@ Repositorio del grupo 7 del curso Introducción a Señales Biomédicas
 
 
 ## 2. Laboratorios
-### a. Laboratorio 1 - Git y Github
-### b. ...
+a. Laboratorio 1 - Git y Github
+b. ...
 
 ## 3. Proyecto
 ### a. Hardware
