@@ -161,6 +161,5 @@ git push -u origin main
 ## 📚 Recursos
 
 - [Documentación oficial de GitHub](https://docs.github.com/)
-- [GitHub Learning Lab](https://lab.github.com/)
 - [GitHub Campus](https://education.github.com/)
 
