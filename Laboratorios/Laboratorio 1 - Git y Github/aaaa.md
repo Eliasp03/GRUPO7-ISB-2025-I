@@ -23,14 +23,17 @@ git config --global user.email "tu@email.com"
 3. Opcional: agrega README, .gitignore o licencia.
 ![opciones repositorio](github2.png)
 
+
 ## Subir archivos a un repositorio en GitHub
 
 Para subir archivos a un repositorio tenemos 2 opciones:
 ### Opción 1: Subir archivos directamente desde la web
 1. Acceder al repositorio y hacer click en 'Add file' para crear un archivo nuevo o subir alguno existente.
 ![add file](github3.png)
-2. Elegir los archivos a subir, una descripción y hacer clic en 'Commit changes'
+
+3. Elegir los archivos a subir, una descripción y hacer clic en 'Commit changes'
 ![commit](github4.png)
+
 
 ### Opción 2: Subir archivos mediante código con Git Bash
 1. Instalar [git](https://git-scm.com/download/win) para Windows.
