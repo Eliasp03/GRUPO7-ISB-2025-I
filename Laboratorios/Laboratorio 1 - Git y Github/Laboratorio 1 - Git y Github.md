@@ -17,7 +17,7 @@ git config --global user.email "tu@email.com"
 
 1. Entra a la [Página oficial de GitHub](https://github.com) y crear un nuevo repositorio.
 
-![nuevo repositorio](Laboratorios/Laboratorio 1 - Git y Github/Imágenes/github1.png)
+![nuevo repositorio](GRUPO7-ISB-2025-I/Laboratorios/Laboratorio 1 - Git y Github/Imágenes/github1.png)
 
 2. Asigna un nombre, descripción y elige si será público o privado.
 3. Opcional: agrega README, .gitignore o licencia.
