@@ -16,9 +16,9 @@ git config --global user.email "tu@email.com"
 ```
 
 1. Entra a la [Página oficial de GitHub](https://github.com) y crear un nuevo repositorio.
- ![nuevo](github1.png)
-2. Asigna un nombre, descripción y elige si será público o privado.
-3. Opcional: agrega README, .gitignore o licencia.
+![nuevo](github1.png)
+3. Asigna un nombre, descripción y elige si será público o privado.
+4. Opcional: agrega README, .gitignore o licencia.
 ![opciones repositorio](github2.png)
 
 ## Subir archivos a un repositorio en GitHub
