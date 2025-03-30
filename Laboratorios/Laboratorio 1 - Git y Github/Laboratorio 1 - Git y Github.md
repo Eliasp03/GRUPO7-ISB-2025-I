@@ -16,10 +16,13 @@ git config --global user.email "tu@email.com"
 ```
 
 1. Entra a la [Página oficial de GitHub](https://github.com) y crear un nuevo repositorio.
- ![nuevo](github1.png)
+
+![new](github1.png)
+
 2. Asigna un nombre, descripción y elige si será público o privado.
 3. Opcional: agrega README, .gitignore o licencia.
 ![opciones repositorio](github2.png)
+
 
 ## Subir archivos a un repositorio en GitHub
 
@@ -27,13 +30,19 @@ Para subir archivos a un repositorio tenemos 2 opciones:
 ### Opción 1: Subir archivos directamente desde la web
 1. Acceder al repositorio y hacer click en 'Add file' para crear un archivo nuevo o subir alguno existente.
 ![add file](github3.png)
-2. Elegir los archivos a subir, una descripción y hacer clic en 'Commit changes'
+
+3. Elegir los archivos a subir, una descripción y hacer clic en 'Commit changes'
 ![commit](github4.png)
+
 
 ### Opción 2: Subir archivos mediante código con Git Bash
 1. Instalar [git](https://git-scm.com/download/win) para Windows.
 ![git](git1.png)
-2. Estos son algunos comandos útiles para subir archivos mediante git bash:
+2. Conectar tu repositorio local con la web usando:
+`git remote add origin <URL-del-repositorio>`
+3. Para verificar si se agregó correctamente usar:
+`git remote -v`
+4. Estos son algunos comandos útiles para subir archivos mediante git bash:
 ```bash
 # Muestra el estado de tu repositorio local.
 git status 
