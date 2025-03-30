@@ -38,7 +38,11 @@ Para subir archivos a un repositorio tenemos 2 opciones:
 ### Opción 2: Subir archivos mediante código con Git Bash
 1. Instalar [git](https://git-scm.com/download/win) para Windows.
 ![git](git1.png)
-2. Estos son algunos comandos útiles para subir archivos mediante git bash:
+2. Conectar tu repositorio local con la web usando:
+`git remote add origin <URL-del-repositorio>`
+3. Para verificar si se agregó correctamente usar:
+`git remote -v`
+4. Estos son algunos comandos útiles para subir archivos mediante git bash:
 ```bash
 # Muestra el estado de tu repositorio local.
 git status 
