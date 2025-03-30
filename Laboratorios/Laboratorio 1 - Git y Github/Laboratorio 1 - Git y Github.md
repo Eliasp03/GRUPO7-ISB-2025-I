@@ -1,50 +1,63 @@
-# Laboratorio1 - Git y Github
+# Laboratorio 1 - Git y Github
+Este es un tutorial para usar Git y Github.
+Veremos como crear un repositorio, algunas opciones para subir archivos, los comandos más utilizados y algunos consejos.
 
-# 🧠 Mini Tutorial de Git
 
-Este mini tutorial explica los comandos más usados de **Git**, el sistema de control de versiones que se usa localmente.
+## Crear un repositorio en GitHub
 
----
-
-## 🛠️ Configuración Inicial
-
+### Configuración inicial
 ```bash
-git config --global user.name "Tu Nombre"
-git config --global user.email "tuemail@example.com"
-```
-
----
-
-## 📁 Crear un Repositorio
-
-```bash
+# Inicializar repositorio Git
 git init
+
+# Configurar usuario (solo primera vez)
+git config --global user.name "TuNombre"
+git config --global user.email "tu@email.com"
 ```
-Inicializa un nuevo repositorio en el directorio actual.
 
----
+1. Entra a la [Página oficial de GitHub](https://github.com) y crear un nuevo repositorio.
+ ![nuevo](github1.png)
+2. Asigna un nombre, descripción y elige si será público o privado.
+3. Opcional: agrega README, .gitignore o licencia.
+![opciones repositorio](github2.png)
 
-## 📄 Seguimiento de Archivos
+## Subir archivos a un repositorio en GitHub
 
+Para subir archivos a un repositorio tenemos 2 opciones:
+### Opción 1: Subir archivos directamente desde la web
+1. Acceder al repositorio y hacer click en 'Add file' para crear un archivo nuevo o subir alguno existente.
+![add file](github3.png)
+2. Elegir los archivos a subir, una descripción y hacer clic en 'Commit changes'
+![commit](github4.png)
+
+### Opción 2: Subir archivos mediante código con Git Bash
+1. Instalar [git](https://git-scm.com/download/win) para Windows.
+![git](git1.png)
+2. Estos son algunos comandos útiles para subir archivos mediante git bash:
 ```bash
-git status
-```
-Muestra el estado actual del repositorio.
+# Muestra el estado de tu repositorio local.
+git status 
 
-```bash
-git add nombre-archivo
+#Es importante Siempre hacer git pull antes de git push para actualizar tu repositorio local
+git pull origin main
+
+# git add agrega archivos al área de staging.
+# Puedes añadir archivos específicos
+git add nombre-archivo.txt
+
+# O añadir todo
 git add .
-```
-Agrega archivos al área de staging.
 
-```bash
+# Guardar cambios con un mensaje descriptivo
 git commit -m "Mensaje descriptivo"
+
+# Subir cambios
+git push origin main
 ```
-Guarda los cambios en el historial del repositorio.
 
----
+Otros comandos utilizados frecuentemente son:
 
-## 🌿 Ramas
+### 🌿 Ramas
 
 ```bash
 git branch nombre-rama
@@ -63,7 +76,7 @@ Fusiona una rama a la actual.
 
 ---
 
-## 🧽 Otros útiles
+## 🧽 Otros
 
 ```bash
 git log
@@ -85,81 +98,7 @@ Elimina un archivo del repo y lo marca para commit.
 ## 📚 Consejos
 
 - Usa `git status` frecuentemente para estar al tanto del estado del repo.
+- Usa `git pull` antes de `git push` para mantenerte actualizado
 - Realiza commits pequeños y con mensajes claros.
 - Usa ramas para trabajar de forma organizada.
-
----
-
-## 📌 Recursos útiles
-
-- [Documentación oficial de Git](https://git-scm.com/doc)
-- [Guía rápida (Git Cheat Sheet)](https://education.github.com/git-cheat-sheet-education.pdf)
-
-# 🌐 Mini Tutorial de GitHub (plataforma en la nube)
-
-Este tutorial resume cómo usar **GitHub**, la plataforma en línea para alojar y colaborar en repositorios Git.
-
----
-
-## 📝 Crear un Repositorio en GitHub
-
-1. Entra a [github.com](https://github.com).
-2. Haz clic en "New Repository".
-3. Asigna un nombre, descripción y elige si será público o privado.
-4. Opcional: agrega README, .gitignore o licencia.
-
----
-
-## 🔗 Clonar un Repositorio desde GitHub
-
-```bash
-git clone https://github.com/usuario/repositorio.git
-```
-
----
-
-## 🚀 Subir tu Proyecto Local a GitHub
-
-1. Crea el repo en GitHub (vacío).
-2. Desde tu terminal:
-
-```bash
-git remote add origin https://github.com/usuario/repositorio.git
-git branch -M main
-git push -u origin main
-```
-
----
-
-## 🔄 Colaboración
-
-- **Pull Requests**: Sirven para proponer cambios al código.
-- **Issues**: Para reportar errores o sugerir mejoras.
-- **Fork**: Clonar un repo para trabajar de forma independiente.
-
----
-
-## 📂 Archivos importantes en GitHub
-
-- `README.md`: Describe el proyecto (se ve al inicio).
-- `.gitignore`: Lista de archivos que Git no debe trackear.
-- `LICENSE`: Licencia del proyecto.
-
----
-
-## 👥 GitHub Flow (flujo típico)
-
-1. Clona el repo.
-2. Crea una rama: `git checkout -b nueva-funcionalidad`
-3. Haz cambios, commits.
-4. Sube la rama: `git push origin nueva-funcionalidad`
-5. Abre un Pull Request en GitHub.
-6. Revisión y merge.
-
----
-
-## 📚 Recursos
-
-- [Documentación oficial de GitHub](https://docs.github.com/)
-- [GitHub Campus](https://education.github.com/)
 
