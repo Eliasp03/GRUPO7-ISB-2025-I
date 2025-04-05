@@ -17,7 +17,7 @@ git config --global user.email "tu@email.com"
 
 1.	Abrimos Git Bash y navegamos hasta la carpeta donde deseamos crear el repositorio.
 
-![nuevo repositorio](https://github.com/Eliasp03/GRUPO7-ISB-2025-I/blob/main/Laboratorios/Laboratorio%201%20-%20Git%20y%20Github/Imágenes/github1.png)
+![abrir git bash](https://github.com/Eliasp03/GRUPO7-ISB-2025-I/blob/main/Laboratorios/Laboratorio%202%20-%20Setup%20para%20proyectos%20de%20se%C3%B1ales/Images%20L2/Imagen1.png)
 
 2. Verificamos que Python esté instalado en el sistema y, a continuación, procedemos a crear el entorno virtual.
 3. Podemos activar y desactivar el entorno según sea necesario
