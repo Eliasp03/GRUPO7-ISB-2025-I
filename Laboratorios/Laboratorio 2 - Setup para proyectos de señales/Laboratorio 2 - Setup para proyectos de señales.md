@@ -15,7 +15,7 @@ git config --global user.name "TuNombre"
 git config --global user.email "tu@email.com"
 ```
 
-### 1.	Abrimos Git Bash y navegamos hasta la carpeta donde deseamos crear el repositorio.
+#### 1.	Abrimos Git Bash y navegamos hasta la carpeta donde deseamos crear el repositorio.
 
    ![abrir git bash](https://github.com/Eliasp03/GRUPO7-ISB-2025-I/blob/main/Laboratorios/Laboratorio%202%20-%20Setup%20para%20proyectos%20de%20se%C3%B1ales/Images%20L2/Imagen1.png)
 
