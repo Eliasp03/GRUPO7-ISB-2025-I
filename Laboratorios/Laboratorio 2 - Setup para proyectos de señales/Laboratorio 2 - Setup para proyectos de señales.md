@@ -3,7 +3,7 @@ Este es un tutorial para usar Git y Github.
 Veremos como crear un entorno virtual para mantener tu proyecto organizado con todas sus dependencias y posteriormente simular señales fisiológicas.
 
 
-## Crear un entorno en GitBash
+## ⚙️ Crear un entorno en GitBash
 
 ### Configuración inicial
 ```bash
