@@ -122,8 +122,8 @@ plt.close()
 ##### Gráfica obtenida:
 **ECG 1 – Dominio del tiempo**
 ![ECG 1 Tiempo](./Images%20L2/ecg1_time.png)
-
 **ECG 1 – Dominio de la frecuencia**
+
 ![ECG 1 Frecuencia](./Images%20L2/ecg1_freq.png)
 
 #### Paso 4. Se simula la segunda señal ECG
