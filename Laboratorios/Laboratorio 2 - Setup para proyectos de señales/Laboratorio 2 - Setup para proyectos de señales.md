@@ -158,6 +158,15 @@ plt.savefig("ecg2_freq.png", bbox_inches="tight")
 plt.close()
 ```
 ##### Gráfica obtenida:
+
+**ECG 2 – Dominio del tiempo**
+
+![ECG 2 Tiempo](./Images%20L2/ecg2_time.png)
+
+**ECG 2 – Dominio de la frecuencia**
+
+![ECG 2 Frecuencia](./Images%20L2/ecg2_freq.png)
+
 #### Paso 6. Se simula la primera señal EMG
 ```python
 # -------- EMG 1 --------
@@ -188,6 +197,15 @@ plt.savefig("emg1_freq.png", bbox_inches="tight")
 plt.close()
 ```
 ##### Gráfica obtenida:
+
+**EMG 1 – Dominio del tiempo**
+
+![EMG_1 Tiempo](./Images%20L2/emg1_time.png)
+
+**EMG 1 – Dominio de la frecuencia**
+
+![EMG_1 Frecuencia](./Images%20L2/emg1_freq.png)
+
 #### Paso 8. Se simula la segunda señal EMG
 ```python
 # -------- EMG 2 --------
@@ -217,4 +235,13 @@ plt.savefig("emg2_freq.png", bbox_inches="tight")
 plt.close()
 ```
 ##### Gráfica obtenida:
+
+**EMG 2 – Dominio del tiempo**
+
+![EMG 2 Tiempo](./Images%20L2/emg2_time.png)
+
+**EMG 2 – Dominio de la frecuencia**
+
+![EMG 2 Frecuencia](./Images%20L2/emg2_freq.png)
+
 #### Dato adicional: El archivo .py lo puedes encontrar como 'signals_plot.py' ubicado dentro de la carpeta 'Laboratorio 2 -Setup para proyectos de señales'
