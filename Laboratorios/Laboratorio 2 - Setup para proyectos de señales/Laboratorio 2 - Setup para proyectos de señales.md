@@ -42,7 +42,7 @@ git config --global user.email "tu@email.com"
    
 7. ¡Listo! Ya tenemos el entorno con todas sus dependencias instaladas. Ahora podemos agregar el archivo requirements.txt a nuestro repositorio de GitHub, lo que permitirá que otros colaboradores reproduzcan el entorno fácilmente.
    
-## Simular señales fisiológicas artificiales
+## Simulación de señales fisiológicas artificiales (ECG y EMG)
 
 1. Si aún no tenemos las dependencias necesarias, podemos utilizar el archivo requirements.txt para instalarlas en nuestro entorno local. Simplemente ejecutamos el siguiente comando:
 ```bash
