@@ -44,15 +44,51 @@ git config --global user.email "tu@email.com"
    
 ## Simulación de señales fisiológicas artificiales (ECG y EMG)
 
-1. Si aún no tenemos las dependencias necesarias, podemos utilizar el archivo requirements.txt para instalarlas en nuestro entorno local. Simplemente ejecutamos el siguiente comando:
+## 🧰 Herramientas utilizadas
+- Python 3.12
+- Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
+- Git y GitHub
+- Entorno virtual (`venv`)
+
+### 1. Activar entorno virtual
+
+Desde Git Bash o CMD, ejecutar:
+
 ```bash
-# Instalar dependencias 
+C:\ISB\mi_entorno2\Scripts\activate
+```
+### 2. Instalar librerías necesarias
+```bash
+pip install neurokit2 matplotlib scipy
+```
+O bien, instalar desde el archivo requirements.txt, para ello deberas descargarlo.
+```bash
 pip install -r requirements.txt
 ```
-### Señales ECG
+### 3. Crear el archivo de simulación
+Puedes crear un archivo .py directamente desde la terminal:
+```bash
+notepad signals_plot.py
+```
+Esto abrirá el Bloc de notas. Allí puedes pegar tu código Python y guardarlo con extensión .py.
+⚠️ Asegúrate de estar en la misma carpeta donde deseas guardar el archivo
 
-A continuación se presenta el código utilizado para simular dos señales ECG diferentes (60 y 120 BPM) con distintos niveles de ruido, junto con su visualización en el dominio del tiempo y de la frecuencia (FFT):
+### 4.  Simulación de señales fisiológicas con NeuroKit2
+El archivo signals_plot.py debe contener el código para generar 4 señales:
+- 2 señales ECG usando nk.ecg_simulate() con diferentes frecuencias cardíacas.
+- 2 señales EMG usando nk.emg_simulate() con distintos patrones de bursts.
 
+A continuación se presenta el código utilizado para simular dos señales ECG diferentes con distintos niveles de ruido, junto con su visualización en el dominio del tiempo y de la frecuencia:
+#### Paso 1. Se importa las librerías previamente instaladas
+```python
+# Importar paquetes
+import neurokit2 as nk
+import matplotlib
+matplotlib.use("Agg") #para evitar errores de interfaz gráfica en Windows
+import matplotlib.pyplot as plt
+import scipy.signal as signal
+import numpy as np
+```
 ```python
 # Load NeuroKit and other useful packages
 import neurokit2 as nk
