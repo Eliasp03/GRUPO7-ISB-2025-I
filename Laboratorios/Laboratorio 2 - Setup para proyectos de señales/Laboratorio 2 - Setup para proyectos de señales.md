@@ -89,130 +89,129 @@ import matplotlib.pyplot as plt
 import scipy.signal as signal
 import numpy as np
 ```
+#### Paso 2. Se simula la primera señal ECG
 ```python
-# Load NeuroKit and other useful packages
-import neurokit2 as nk
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Simulación ECG
+# -------- ECG 1 --------
+duration_ecg = 10
 fs = 1000
-duration = 8
-ecg60 = nk.ecg_simulate(duration=duration, sampling_rate=fs, noise=0.08, heart_rate=60)
-ecg120 = nk.ecg_simulate(duration=duration, sampling_rate=fs, noise=0.01, heart_rate=120)
-t = np.linspace(0, duration, fs * duration)
-
-# Función para convertir al dominio de la frecuencia
-def fft(signal, fs):
-    freqs = np.fft.fftfreq(len(signal), 1/fs)
-    mag = np.abs(np.fft.fft(signal))
-    return freqs[:len(signal)//2], mag[:len(signal)//2]
-
-# FFT
-f60, m60 = fft(ecg60, fs)
-f120, m120 = fft(ecg120, fs)
-
-# subplots 2x2
-plt.figure(figsize=(12, 6))
-
-# ECG 60 - Tiempo
-plt.subplot(2, 2, 1)
-plt.plot(t, ecg60, color="blue", label="ECG 60 BPM")
-plt.title("ECG 60 BPM - Con ruido")
-plt.xlabel("Tiempo (s)")
-plt.ylabel("Amplitud")
-plt.legend()
-
-# ECG 60 - Frecuencia
-plt.subplot(2, 2, 2)
-plt.plot(f60, m60, color="red", label="ECG 60 BPM (Frecuencia)")
-plt.title("ECG 60 BPM - Dominio de la Frecuencia")
-plt.xlabel("Frecuencia (Hz)")
-plt.xlim(0,80)
-plt.ylabel("Magnitud")
-plt.legend()
-
-# ECG 120 - Tiempo
-plt.subplot(2, 2, 3)
-plt.plot(t, ecg120, color="green", label="ECG 120 BPM")
-plt.title("ECG 120 BPM - Ruido reducido")
-plt.xlabel("Tiempo (s)")
-plt.ylabel("Amplitud")
-plt.legend()
-
-# ECG 120 - Frecuencia
-plt.subplot(2, 2, 4)
-plt.plot(f120, m120, color="orange", label="ECG 120 BPM (Frecuencia)")
-plt.title("ECG 120 BPM - Dominio de la Frecuencia")
-plt.xlabel("Frecuencia (Hz)")
-plt.xlim(0,80)
-plt.ylabel("Magnitud")
-plt.legend()
-
-plt.tight_layout()
-plt.show()
+ecg1 = nk.ecg_simulate(duration=duration_ecg, sampling_rate=fs, heart_rate=70)
+tiempo_ecg1 = np.linspace(0, duration_ecg, len(ecg1))
 ```
-
-### Señales ECG
-
-A continuación se presenta el código utilizado para simular dos señales EMG diferentes.
-
+#### Paso 3. Se procede a guardar la gráfica de la primera señal ECG en el dominio del tiempo y frecuencia
 ```python
-# Señal EMG
-fs = 1000
-duration = 10
-t2 = np.linspace(0, duration, fs * duration)
-emg1 = nk.emg_simulate(duration=duration, sampling_rate=fs, burst_number=2, burst_duration=1.5)
-emg2 = nk.emg_simulate(duration=duration, sampling_rate=fs, burst_number=4, burst_duration=1.5)
-emg3 = nk.emg_simulate(duration=duration, sampling_rate=fs, burst_number=5, burst_duration=1.0)
-
-# FFT
-f1, m1 = fft(emg1, fs)
-f2, m2 = fft(emg2, fs)
-f3, m3 = fft(emg3, fs)
-
-plt.figure(figsize=(12, 8))
-
-plt.subplot(6, 1, 1) 
-plt.plot(t2, emg1, color="blue") 
-plt.title("EMG: 2 ráfagas, duración 1.5s") 
-plt.xlabel("Tiempo (s)") 
+plt.figure(figsize=(10, 3))
+plt.plot(tiempo_ecg1, ecg1)
+plt.title("ECG 1 - HR 70 bpm (Tiempo)")
+plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud")
+plt.grid(True)
+plt.savefig("ecg1_time.png", bbox_inches="tight") # Comando encargado de guardar en la carpeta, "tight" sirve para centrar la imagen
+plt.close()
 
-plt.subplot(6, 1, 2) 
-plt.plot(f1, m1, color="blue", label="EMG 2 ráfagas")
-plt.title("EMG: 2 ráfagas - Dominio de la Frecuencia")
+plt.figure()
+f1, Pxx1 = signal.welch(ecg1, fs=fs)
+plt.semilogy(f1, Pxx1)
+plt.title("ECG 1 - Espectro de frecuencia")
 plt.xlabel("Frecuencia (Hz)")
-plt.xlim(0,500)
-plt.ylabel("Magnitud")
+plt.ylabel("Potencia")
+plt.xlim(0, 1000)
+plt.grid(True)
+plt.savefig("ecg1_freq.png", bbox_inches="tight")
+plt.close()
+```
+##### Gráfica obtenida:
+**ECG 1 – Dominio del tiempo**
+![ECG 1 Tiempo](./Images%20L2/ecg1_time.png)
 
-plt.subplot(6, 1, 3) 
-plt.plot(t2, emg2, color="red") 
-plt.title("EMG: 4 ráfagas, duración 1.5s") 
-plt.xlabel("Tiempo (s)") 
+**ECG 1 – Dominio de la frecuencia**
+![ECG 1 Frecuencia](./Images%20L2/ecg1_freq.png)
+
+#### Paso 4. Se simula la segunda señal ECG
+```python
+# -------- ECG 2 --------
+ecg2 = nk.ecg_simulate(duration=duration_ecg, sampling_rate=fs, heart_rate=90)
+tiempo_ecg2 = np.linspace(0, duration_ecg, len(ecg2))
+```
+#### Paso 5. Se procede a guardar la gráfica de la segunda señal ECG en el dominio del tiempo y frecuencia
+```python
+plt.figure(figsize=(10, 3))
+plt.plot(tiempo_ecg2, ecg2, color='red')
+plt.title("ECG 2 - HR 90 bpm (Tiempo)")
+plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud")
+plt.grid(True)
+plt.savefig("ecg2_time.png", bbox_inches="tight")
+plt.close()
 
-plt.subplot(6, 1, 4) 
-plt.plot(f2, m2, color="red", label="EMG 4 ráfagas")
-plt.title("EMG: 4 ráfagas - Dominio de la Frecuencia")
+plt.figure()
+f2, Pxx2 = signal.welch(ecg2, fs=fs)
+plt.semilogy(f2, Pxx2)
+plt.title("ECG 2 - Espectro de frecuencia")
 plt.xlabel("Frecuencia (Hz)")
-plt.xlim(0,500)
-plt.ylabel("Magnitud")
-
-plt.subplot(6, 1, 5) 
-plt.plot(t2, emg3, color="yellow") 
-plt.title("EMG: 5 ráfagas, duración 1s") 
-plt.xlabel("Tiempo (s)") 
+plt.ylabel("Potencia")
+plt.xlim(0, 1000)
+plt.grid(True)
+plt.savefig("ecg2_freq.png", bbox_inches="tight")
+plt.close()
+```
+##### Gráfica obtenida:
+#### Paso 6. Se simula la primera señal EMG
+```python
+# -------- EMG 1 --------
+duration_emg = 5
+emg1 = nk.emg_simulate(duration=duration_emg, sampling_rate=fs, burst_number=2)
+tiempo_emg1 = np.linspace(0, duration_emg, len(emg1))
+```
+#### Paso 7. Se procede a guardar la gráfica de la primera señal EMG en el dominio del tiempo y frecuencia 
+```python
+plt.figure(figsize=(10, 3))
+plt.plot(tiempo_emg1, emg1)
+plt.title("EMG 1 - 2 bursts (Tiempo)")
+plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud")
+plt.grid(True)
+plt.savefig("emg1_time.png", bbox_inches="tight")
+plt.close()
 
-plt.subplot(6, 1, 6) 
-plt.plot(f3, m3, color="yellow", label="EMG 5 ráfagas")
-plt.title("EMG: 5 ráfagas - Dominio de la Frecuencia")
+plt.figure()
+f3, Pxx3 = signal.welch(emg1, fs=fs)
+plt.semilogy(f3, Pxx3)
+plt.title("EMG 1 - Espectro de frecuencia")
 plt.xlabel("Frecuencia (Hz)")
-plt.xlim(0,500)
-plt.ylabel("Magnitud")
+plt.ylabel("Potencia")
+plt.xlim(0, 600)
+plt.grid(True)
+plt.savefig("emg1_freq.png", bbox_inches="tight")
+plt.close()
+```
+##### Gráfica obtenida:
+#### Paso 8. Se simula la segunda señal EMG
+```python
+# -------- EMG 2 --------
+emg2 = nk.emg_simulate(duration=duration_emg, sampling_rate=fs, burst_number=4)
+tiempo_emg2 = np.linspace(0, duration_emg, len(emg2))
+```
+#### Paso 9. Se procede a guardar la gráfica de la segunda señal EMG en el dominio del tiempo y frecuencia 
+```python
+plt.figure(figsize=(10, 3))
+plt.plot(tiempo_emg2, emg2, color='purple')
+plt.title("EMG 2 - 4 bursts (Tiempo)")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud")
+plt.grid(True)
+plt.savefig("emg2_time.png", bbox_inches="tight")
+plt.close()
 
-plt.tight_layout()
-plt.show()
+plt.figure()
+f4, Pxx4 = signal.welch(emg2, fs=fs)
+plt.semilogy(f4, Pxx4)
+plt.title("EMG 2 - Espectro de frecuencia")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Potencia")
+plt.xlim(0, 600)
+plt.grid(True)
+plt.savefig("emg2_freq.png", bbox_inches="tight")
+plt.close()
+```
+##### Gráfica obtenida:
+#### Dato adicional: El archivo .py lo puedes encontrar como 'signals_plot.py' ubicado dentro de la carpeta 'Laboratorio 2 -Setup para proyectos de señales'
