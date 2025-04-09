@@ -1,15 +1,17 @@
-#Laboratorio 3
+# Laboratorio 3
 
-##Introducción
+## Introducción (fundamentos)
 
-##Propósito de la práctica
+## Propósito de la práctica
 
-##Materiales y Métodos
+breve
 
-Grabaciones y fotos
+## Materiales y Métodos
 
-##Resultados y Limitaciones
+Grabaciones y fotos. descripción
 
-##Referencias
+## Resultados y Limitaciones
+
+## Referencias
 
 
