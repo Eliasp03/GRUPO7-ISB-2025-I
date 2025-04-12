@@ -8,19 +8,20 @@ breve
 
 ## Materiales y Métodos
 
+Los materiales...
 <div align="center">
-<img src="ImagesL3/material5.jpeg" width="28%">
+<img src="ImagesL3/material5.jpeg" width="27.5%">
 <img src="ImagesL3/material1.jpeg" width="15%"> 
 <img src="ImagesL3/material4.jpeg" width="20%">
 
 </div>
 
+Bitalino...
+
 <div align="center">
 <img src="ImagesL3/material2.jpeg" width="45%">
 <img src="ImagesL3/material3.jpeg" width="41.6%">
 </div>
-
-
 
 ### EMG - Bíceps Braquial
 
