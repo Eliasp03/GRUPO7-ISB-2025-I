@@ -78,8 +78,6 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 
 <div align="center">
 
-<p align="center"><i>Figura 4. Colocación de electrodos</i><p>
-
 | **Prueba 1** | **Prueba 2** | **Prueba 3** |
 |:------------:|:------------:|:------------:|
 | <img src="ImagesL3/pierna2.jpeg" width="45%"> | <img src="ImagesL3/pierna2.1.jpeg" width="45%"> | <img src="ImagesL3/pierna3.jpg" width="95%"> |
@@ -88,9 +86,13 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 
 <p align="center"><i>Tabla 3. Pruebas realizadas en el gastrocnemio</i><p>
 
-Videos Gastrocnemio
+<p align="center"><strong>EMG - Gastrocnemio</strong></p>
 
-[<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HJbjQnfOTrr8QcOsbAQNYDM)
+<p align="center">
+  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HJbjQnfOTrr8QcOsbAQNYDM">
+    <img src="ImagesL3/Youtube_logo.png" width="15%">
+  </a>
+</p>
 
 ## Resultados y Limitaciones
 
