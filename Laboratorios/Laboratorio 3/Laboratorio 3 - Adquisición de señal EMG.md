@@ -243,9 +243,35 @@ FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpi
 
 ####  5. Espectro de frecuencia – EMG filtrada
 <div align="center">
-<img src="ImagesL3/emg_fft_filtered_biceps2.png" width="65%">
+<img src="ImagesL3/emg_fft_filtered_biceps3.png" width="65%">
 </div>
+
 #### Prueba 3 - Movimiento con esfuerzo
+#####  1. Señal EMG cruda (sin procesar)
+<div align="center">
+<img src="ImagesL3/emg_cruda_biceps3.png" width="65%">
+</div>
+
+####  2. Señal EMG filtrada (pasa banda 20–450 Hz)
+<div align="center">
+<img src="ImagesL3/emg_signal_filtered_biceps3.png" width="65%">
+</div>
+
+#####  3. Señal EMG procesada con `neurokit2.emg_process()
+<div align="center">
+<img src="ImagesL3/emg_procesada_biceps3.png" width="65%">
+</div>
+
+#####  4. Espectro de frecuencia – EMG cruda (FFT)
+<div align="center">
+<img src="ImagesL3/emg_fft1_biceps3.png" width="65%">
+</div>
+
+
+####  5. Espectro de frecuencia – EMG filtrada
+<div align="center">
+<img src="ImagesL3/emg_fft_filtered_biceps3.png" width="65%">
+</div>
 
 ### EMG - Gastrocnemio 
 #### Prueba 1 - En reposo
