@@ -20,7 +20,7 @@
 <img src="ImagesL3/material5.jpeg" width="27.5%">
 <img src="ImagesL3/material1.jpeg" width="15%"> 
 <img src="ImagesL3/material4.jpeg" width="20%">
-
+Figura 1. Kit bitalino con 2 y 3 cables
 </div>
 
 Bitalino...
