@@ -16,6 +16,8 @@
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
+El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición de bioseñales con fines educativos y de investigación. En esta actividad se utilizará su sensor de electromiografía (EMG) para medir de forma no invasiva la actividad eléctrica muscular. La señal será registrada con el software OpenSignals y luego analizada usando Python.
+
 <div align="center">
 <img src="ImagesL3/material5.jpeg" width="27.5%">
 <img src="ImagesL3/material1.jpeg" width="15%"> 
