@@ -10,6 +10,8 @@ breve
 
 [<img src="ImagesL3/brazo1.jpg" width="15%">]
 
+![imagen01](ImagesL3/brazo1.jpg)
+
 Grabaciones y fotos. descripción
 
 videos Bíceps Braquial
