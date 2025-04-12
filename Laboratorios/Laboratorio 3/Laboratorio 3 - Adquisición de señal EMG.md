@@ -14,8 +14,6 @@ Grabaciones y fotos. descripción
 
 videos Biceps
 
-[![YouTube](ImagesL3/Youtube_logo.png)](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
-
 
 [<img src="ImagesL3/Youtube_logo.png" width="20%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
 
