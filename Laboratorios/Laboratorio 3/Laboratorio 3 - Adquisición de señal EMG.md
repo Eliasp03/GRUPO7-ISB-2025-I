@@ -2,6 +2,15 @@
 
 ## Introducción (fundamentos)
 
+El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición de bioseñales con fines educativos y de investigación. En esta actividad se utilizará su sensor de electromiografía (EMG) para medir de forma no invasiva la actividad eléctrica muscular. La señal será registrada con el software OpenSignals y luego analizada usando Python.
+
+<div align="center">
+<img src="ImagesL3/material2.jpeg" width="45%">
+<img src="ImagesL3/material3.jpeg" width="41.6%">
+</div>
+
+<p align="center"><i>Figura 2. Placa BiTalino (r)evolution</i><p>
+
 ## Propósito de la práctica
 
 - Adquirir señales biomédicas de EMG y ECG.
@@ -16,7 +25,7 @@
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
-El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición de bioseñales con fines educativos y de investigación. En esta actividad se utilizará su sensor de electromiografía (EMG) para medir de forma no invasiva la actividad eléctrica muscular. La señal será registrada con el software OpenSignals y luego analizada usando Python.
+
 
 <div align="center">
 <img src="ImagesL3/material5.jpeg" width="27.5%">
@@ -24,21 +33,13 @@ El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición 
 <img src="ImagesL3/material4.jpeg" width="20%">
 </div>
 
-<p align="center"><i>Figura 1. Kit bitalino con 2 y 3 cables</i><p>
+Se empleará el sensor EMG de BITalino con un cable de tres derivaciones (3-leads), compuesto por un electrodo positivo, uno negativo y uno de referencia.
+
+<p align="center"><i>Figura 1. Kit bitalino con cables de 2 y 3 derivaciones</i><p>
 
 <div align="center"><img src="ImagesL3/Leads.jpg" width="60%"></div>
 <p align="center"><i>Tabla 1. Significado de los colores [<a href="https://support.pluxbiosignals.com/wp-content/uploads/2021/11/electromyography-emg-user-manual.pdf">EMG BiTalino User Manual</a>]</i></p>
 
-
-Bitalino...
-
-<div align="center">
-<img src="ImagesL3/material2.jpeg" width="45%">
-<img src="ImagesL3/material3.jpeg" width="41.6%">
-</div>
-
-<p align="center"><i>Figura 2. Placa BiTalino (r)evolution</i><p>
-  
 ## Métodos  
 ### EMG - Bíceps Braquial
 
