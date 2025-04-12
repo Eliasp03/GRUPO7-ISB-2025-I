@@ -36,11 +36,13 @@ Bitalino...
 |<img src="ImagesL3/brazo1.jpeg" width="15%">|<img src="ImagesL3/brazo2.jpeg" width="15%">|<img src="ImagesL3/brazo3.jpeg" width="15%">|
 </div>
 
+<div align="center">
+
 | **Prueba 1** | **Prueba 2** | **Prueba 3** |
 |:------------:|:------------:|:------------:|
 | <img src="ImagesL3/brazo1.jpeg" width="150"> | <img src="ImagesL3/brazo2.jpeg" width="150"> | <img src="ImagesL3/brazo3.jpeg" width="150"> |
 
-
+</div>
 
 
 Grabaciones y fotos. descripción
