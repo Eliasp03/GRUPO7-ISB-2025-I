@@ -362,6 +362,10 @@ FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpi
 <img src="ImagesL3/emg_fft_filtered_gastro3.png" width="65%">
 </div>
 
+## Discusión
+
+### Bíceps braquial
+A
 
 
 ## Referencias
