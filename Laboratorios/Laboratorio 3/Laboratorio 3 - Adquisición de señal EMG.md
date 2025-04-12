@@ -2,7 +2,9 @@
 
 ## Introducción
 
-El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición de bioseñales con fines educativos y de investigación. En esta actividad se utilizará su sensor de electromiografía (EMG) para medir de forma no invasiva la actividad eléctrica muscular. La señal será registrada con el software OpenSignals y luego analizada usando Python.
+El **BITalino (r)evolution** es un sistema modular desarrollado por *PLUX Wireless Biosignals* que permite la adquisición y análisis de bioseñales en tiempo real. Está diseñado para aplicaciones educativas, de investigación y prototipado en el campo de la Ingeniería Biomédica. Este dispositivo cuenta con sensores integrados para medir señales como electrocardiografía (ECG), electromiografía (EMG), actividad galvánica de la piel (EDA), entre otros, y se comunica de forma inalámbrica a través de Bluetooth [1].
+
+En esta práctica se utilizará el sensor de **electromiografía (EMG)** incluido en el BITalino para medir la actividad eléctrica producida por los músculos esqueléticos. La señal será adquirida usando el software **OpenSignals (r)evolution**, procesada posteriormente con herramientas de análisis digital en Python, y analizada en los dominios del tiempo y la frecuencia para evaluar su comportamiento fisiológico y posibles artefactos. Este tipo de análisis es ampliamente utilizado en áreas como rehabilitación, biomecánica y control de prótesis. [2] [3]
 
 
 ## Propósito de la práctica
@@ -102,5 +104,7 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 
 
 ## Referencias
-
+[1] PLUX Wireless Biosignals, "BITalino (r)evolution Board Kit," [Online]. Available: https://www.pluxbiosignals.com.
+[2] De Luca, C.J. Electromyography.  Encyclopedia of Medical Devices and Instrumentation, (John G. Webster, Ed.), [Online]. Available: [https://www.delsys.com/knowledge-center/what-is-emg/.](https://delsys.com/downloads/TUTORIAL/emg-encyclopedia-of-medical-devices-and-instrumentation.pdf)
+[3] J. Merletti and D. Farina, *Surface Electromyography: Physiology, Engineering, and Applications*. Wiley-IEEE Press, 2016.
 
