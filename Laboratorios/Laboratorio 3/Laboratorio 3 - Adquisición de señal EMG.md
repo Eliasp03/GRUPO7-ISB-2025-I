@@ -186,7 +186,37 @@ Se obtienen las siguientes gráficas:
 Esta es la señal directamente adquirida desde el sensor BITalino utilizando OpenSignals. Se observa ruido de alta frecuencia.
 
 <div align="center">
-<img src="ImagesL3/emg_cruda_biceps1.png" width="45%">
+<img src="ImagesL3/emg_cruda_biceps1.png" width="65%">
+</div>
+
+####  2. Señal EMG filtrada (pasa banda 20–450 Hz)
+
+Aplicamos un filtro digital Butterworth para limpiar la señal y quedarnos con el rango fisiológico relevante de la EMG.
+
+<div align="center">
+<img src="ImagesL3/emg_signal_filtered_biceps1.png" width="65%">
+</div>
+
+#####  3. Señal EMG procesada con `neurokit2.emg_process()
+La función `emg_process()` aplica filtrado, rectificación y normalización. También detecta activaciones musculares (si las hay).
+
+<div align="center">
+<img src="ImagesL3/emg_procesada_biceps1.png" width="65%">
+</div>
+
+#####  4. Espectro de frecuencia – EMG cruda (FFT)
+FFT de la señal cruda. Se visualiza la magnitud espectral en decibelios (dB), donde el pico más alto indica la frecuencia dominante.
+
+<div align="center">
+<img src="ImagesL3/emg_fft1_biceps1.png" width="65%">
+</div>
+
+
+####  5. Espectro de frecuencia – EMG filtrada
+FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpio, con menor contenido fuera de banda.
+
+<div align="center">
+<img src="ImagesL3/emg_fft_filtered_biceps1.png" width="65%">
 </div>
 
 #### Prueba 2 - Movimiento ligero
