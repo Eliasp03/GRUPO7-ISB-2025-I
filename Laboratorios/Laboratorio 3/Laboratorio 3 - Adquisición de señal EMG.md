@@ -8,6 +8,8 @@ breve
 
 ## Materiales y Métodos
 
+![1](Laboratorios/Laboratorio 3/ImagesL3/brazo1.jpeg)
+
 Grabaciones y fotos. descripción
 
 videos Bíceps Braquial
