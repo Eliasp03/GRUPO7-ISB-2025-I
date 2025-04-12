@@ -70,10 +70,10 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 
 ### EMG - Gastrocnemio 
 
-...
+a
 
 <div align="center"><img src="ImagesL3/pierna1.jpeg" width="25%">
-<img src="ImagesL3/pierna1.1.jpeg" width="15%"></div>
+<img src="ImagesL3/pierna1.1.jpeg" width="14%"></div>
 <p align="center"><i>Figura 4. Colocación de electrodos</i><p>
 
 <div align="center">
