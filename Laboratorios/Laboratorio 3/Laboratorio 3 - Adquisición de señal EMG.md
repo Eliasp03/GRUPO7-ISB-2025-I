@@ -9,7 +9,7 @@ El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición 
 <img src="ImagesL3/material3.jpeg" width="41.6%">
 </div>
 
-<p align="center"><i>Figura 2. Placa BiTalino (r)evolution</i><p>
+<p align="center"><i>Figura 1. Placa BiTalino (r)evolution</i><p>
 
 ## Propósito de la práctica
 
@@ -34,7 +34,7 @@ Para la adquisición de la sñal EMG se empleará el cable de tres derivaciones 
 </div>
 
 
-<p align="center"><i>Figura 1. Kit bitalino con cables de 2 y 3 derivaciones</i><p>
+<p align="center"><i>Figura 2. Kit bitalino con cables de 2 y 3 derivaciones</i><p>
 
 <div align="center"><img src="ImagesL3/Leads.jpg" width="60%"></div>
 <p align="center"><i>Tabla 1. Significado de los colores [<a href="https://support.pluxbiosignals.com/wp-content/uploads/2021/11/electromyography-emg-user-manual.pdf">EMG BiTalino User Manual</a>]</i></p>
@@ -42,13 +42,14 @@ Para la adquisición de la sñal EMG se empleará el cable de tres derivaciones 
 ## Métodos  
 ### EMG - Bíceps Braquial
 
-...
+El primer músculo analizado será el bíceps braquial. Previamente a la colocación de los electrodos, se realizará una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocarán los electrodos según lo indicado en la Figura 3: el electrodo positivo se ubicará en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, como el codo.
 
 <div align="center"><img src="ImagesL3/electrodos1.jpeg" width="15%">
 <img src="ImagesL3/electrodos2.jpeg" width="15%">
 <img src="ImagesL3/electrodos4.jpeg" width="15%"></div>
 <p align="center"><i>Figura 3. Colocación de electrodos</i><p>
 
+Inicialmente, se realizó una prueba preliminar para verificar que el dispositivo Bitalino y el software OpenSignals registraran adecuadamente la señal del usuario. Una vez confirmado, se procedió a realizar tres pruebas, cada una con tres grabaciones. En la primera prueba, se evaluó la señal EMG del bíceps en reposo; en la segunda prueba, se midió la contracción del bíceps; y, en la tercera prueba, se sometió al usuario a una carga externa para inducir un esfuerzo muscular adicional.
 
 <div align="center">
 
@@ -57,8 +58,9 @@ Para la adquisición de la sñal EMG se empleará el cable de tres derivaciones 
 | <img src="ImagesL3/brazo1.jpeg" width="150"> | <img src="ImagesL3/brazo2.jpeg" width="200"> | <img src="ImagesL3/brazo3.jpeg" width="200"> |
 
 </div>
+<p align="center"><i>Tabla 2. Pruebas realizadas en el bíceps braquial</i><p>
 
-videos Bíceps Braquial
+<p align="center"> <a> **videos Bíceps Braquial** </a> <p>
 
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
 
