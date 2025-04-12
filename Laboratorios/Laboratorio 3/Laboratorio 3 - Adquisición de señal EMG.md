@@ -43,14 +43,27 @@ En la adquisición de la sñal EMG se empleará el cable de tres derivaciones (3
 <p align="center"><i>Tabla 1. Significado de los colores [<a href="https://support.pluxbiosignals.com/wp-content/uploads/2021/11/electromyography-emg-user-manual.pdf">EMG BiTalino User Manual</a>]</i></p>
 
 ## Metodologías
+### Configuración de detección EMG
+Para la adquisición de señales EMG con el BITalino se emplea una configuración de detección **bipolar**, que consiste en ubicar dos electrodos de detección sobre el músculo objetivo, y un tercer electrodo de referencia sobre una región eléctricamente neutra (como el hueso o una zona alejada del músculo activo).
+
+Esta disposición permite registrar la diferencia de potencial entre los dos puntos activos del músculo (m₁ y m₂), mientras que el ruido eléctrico común a ambos electrodos (n) es cancelado mediante un **amplificador diferencial**. Esta técnica mejora significativamente la relación señal-ruido, haciendo que la señal obtenida sea más representativa de la actividad muscular real. [2]
+
+La Figura 3 muestra un esquema del sistema de adquisición bipolar. A diferencia del modo monopolar, donde el electrodo de referencia se encuentra en el mismo músculo, el arreglo bipolar permite una mejor discriminación de la señal muscular frente al ruido externo.
+
+![Configuración bipolar](./Images%20L3/figura10.png)
+
+*Figura 3: Configuración bipolar de detección EMG. La señal EMG registrada representa la diferencia entre dos electrodos activos ubicados sobre el músculo, mientras que el ruido común se elimina por el amplificador diferencial.[2]*
+
+---
+
 ### EMG - Bíceps Braquial
 
-El primer músculo analizado fue el bíceps braquial. Previo a la colocación de los electrodos, se realizó una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocaron los electrodos según lo indicado en la Figura 3: el electrodo positivo se ubicó en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, en este caso el codo.
+El primer músculo analizado fue el bíceps braquial. Previo a la colocación de los electrodos, se realizó una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocaron los electrodos según lo indicado en la Figura 4: el electrodo positivo se ubicó en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, en este caso el codo.
 
 <div align="center"><img src="ImagesL3/electrodos1.jpeg" width="20%">
 <img src="ImagesL3/electrodos2.jpeg" width="20%">
 <img src="ImagesL3/electrodos4.jpeg" width="20%"></div>
-<p align="center"><i>Figura 3. Colocación de electrodos</i><p>
+<p align="center"><i>Figura 4. Colocación de electrodos</i><p>
 
 Inicialmente, se realizó una prueba preliminar para verificar que el dispositivo Bitalino y el software OpenSignals registraran adecuadamente la señal del usuario. Una vez confirmado, se procedió a realizar tres pruebas, cada una con tres grabaciones. En la primera prueba, se evaluó la señal EMG del bíceps en reposo; en la segunda prueba, se midió la contracción del bíceps; y, en la tercera prueba, se sometió al usuario a una carga externa para inducir un esfuerzo muscular adicional.
 
@@ -77,7 +90,7 @@ El segundo músculo analizado fue el gastrocnemio. Se repitieron los mismos proc
 
 <div align="center"><img src="ImagesL3/pierna1.jpeg" width="25%">
 <img src="ImagesL3/pierna1.1.jpeg" width="14%"></div>
-<p align="center"><i>Figura 4. Colocación de electrodos</i><p>
+<p align="center"><i>Figura 5. Colocación de electrodos</i><p>
 
 Después de colocar los electrodos, se realizaron tres pruebas. En la primera, se registró la actividad del gastrocnemio en reposo. En la segunda, se captó la actividad muscular durante una ligera contracción del músculo. Finalmente, en la tercera prueba, el usuario se puso de pie e intentó levantarse de puntillas para generar más esfuerzo en el músculo.
 
