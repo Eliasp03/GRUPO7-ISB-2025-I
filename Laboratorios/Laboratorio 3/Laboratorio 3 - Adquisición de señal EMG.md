@@ -18,7 +18,7 @@ breve
 <div align="center">
   
 <img src="ImagesL3/material1.jpeg" width="15%"> 
- <img src="ImagesL3/material4.jpeg" width="19%">
+ <img src="ImagesL3/material4.jpeg" width="19.5%">
 
 </div>
 
