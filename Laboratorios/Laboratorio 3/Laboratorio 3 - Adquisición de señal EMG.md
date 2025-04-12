@@ -61,7 +61,7 @@ videos Bíceps Braquial
 ...
 
 <div align="center"><img src="ImagesL3/pierna1.jpeg" width="25%">
-<img src="ImagesL3/pierna1.1.jpeg" width="10%"></div>
+<img src="ImagesL3/pierna1.1.jpeg" width="15%"></div>
 <p align="center"><i>Figura 4. Colocación de electrodos</i><p>
 
 <div align="center">
