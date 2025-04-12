@@ -51,11 +51,14 @@ videos Bíceps Braquial
 
 <img src="ImagesL3/pierna1.1.jpeg" width="15%">
 
-<img src="ImagesL3/pierna2.jpeg" width="15%">
 
-<img src="ImagesL3/pierna2.1.jpeg" width="15%">
+<div align="center">
 
-<img src="ImagesL3/pierna3.jpg" width="15%">
+| **Prueba 1** | **Prueba 2** | **Prueba 3** |
+|:------------:|:------------:|:------------:|
+| <img src="ImagesL3/pierna2.jpeg" width="15%"> | <img src="ImagesL3/pierna2.1.jpeg" width="15%"> | <img src="ImagesL3/pierna3.jpg" width="15%"> |
+
+</div>
 
 
 Videos Gastrocnemio
