@@ -10,8 +10,6 @@ breve
 
 Grabaciones y fotos. descripción
 
-## Resultados y Limitaciones
-
 videos Bíceps Braquial
 
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
@@ -19,6 +17,10 @@ videos Bíceps Braquial
 Videos Gastrocnemio
 
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HJbjQnfOTrr8QcOsbAQNYDM)
+
+## Resultados y Limitaciones
+
+
 
 ## Referencias
 
