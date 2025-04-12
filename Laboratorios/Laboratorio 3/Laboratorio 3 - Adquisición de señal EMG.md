@@ -8,7 +8,7 @@
 - Hacer una correcta configuración de BiTalino.
 - Extraer la información de las señales EMG del software OpenSignals (r)evolution
 
-## Materiales y Métodos
+## Materiales
 
 - BiTalino (r)evolution kit
 - 3 electrodos de superficie
@@ -33,6 +33,7 @@ Bitalino...
 
 <p align="center"><i>Figura 2. Placa BiTalino (r)evolution</i><p>
   
+## Métodos  
 ### EMG - Bíceps Braquial
 
 <img src="ImagesL3/electrodos1.jpeg" width="15%">
