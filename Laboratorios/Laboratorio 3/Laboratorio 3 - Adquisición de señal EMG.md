@@ -10,7 +10,7 @@ breve
 
 [<img src="ImagesL3/brazo1.jpg" width="15%">]
 
-![imagen01](ImagesL3/brazo1.jpg)
+![imagen01](ImagesL3/brazo1.jpeg)
 
 Grabaciones y fotos. descripción
 
