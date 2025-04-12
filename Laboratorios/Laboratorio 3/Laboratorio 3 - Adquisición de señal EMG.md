@@ -112,7 +112,14 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 
 ## Resultados y Limitaciones
 ### EMG - Bíceps Braquial
+#### Prueba 1 - En reposo
+#### Prueba 2 - Movimiento ligero
+#### Prueba 3 - Movimiento con esfuerzo
 
+### EMG - Gastrocnemio 
+#### Prueba 1 - En reposo
+#### Prueba 2 - Movimiento ligero
+#### Prueba 3 - Movimiento con esfuerzo
 
 ## Referencias
 [1] PLUX Wireless Biosignals, "BITalino (r)evolution Board Kit," [Online]. Available: https://www.pluxbiosignals.com.
