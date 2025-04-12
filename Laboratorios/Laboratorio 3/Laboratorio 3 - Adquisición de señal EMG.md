@@ -15,6 +15,9 @@ breve
 ### EMG - Bíceps Braquial
 
 <img src="ImagesL3/electrodos1.jpeg" width="15%">
+<img src="ImagesL3/electrodos2.jpeg" width="15%">
+<img src="ImagesL3/electrodos3.jpeg" width="15%">
+<img src="ImagesL3/electrodos4.jpeg" width="15%">
 <img src="ImagesL3/brazo1.jpeg" width="15%">
 
 <img src="ImagesL3/brazo2.jpeg" width="15%">
@@ -26,6 +29,19 @@ Grabaciones y fotos. descripción
 videos Bíceps Braquial
 
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
+
+### EMG - Gastrocnemio 
+
+<img src="ImagesL3/pierna1.jpeg" width="15%">
+
+<img src="ImagesL3/pierna1.1.jpeg" width="15%">
+
+<img src="ImagesL3/pierna2.jpeg" width="15%">
+
+<img src="ImagesL3/pierna2.1.jpeg" width="15%">
+
+<img src="ImagesL3/pierna3.jpeg" width="15%">
+
 
 Videos Gastrocnemio
 
