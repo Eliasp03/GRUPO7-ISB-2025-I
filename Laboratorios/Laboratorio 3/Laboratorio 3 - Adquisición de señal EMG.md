@@ -44,9 +44,9 @@ Para la adquisición de la sñal EMG se empleará el cable de tres derivaciones 
 
 El primer músculo analizado fue el bíceps braquial. Previo a la colocación de los electrodos, se realizó una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocaron los electrodos según lo indicado en la Figura 3: el electrodo positivo se ubicó en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, en este caso el codo.
 
-<div align="center"><img src="ImagesL3/electrodos1.jpeg" width="15%">
-<img src="ImagesL3/electrodos2.jpeg" width="15%">
-<img src="ImagesL3/electrodos4.jpeg" width="15%"></div>
+<div align="center"><img src="ImagesL3/electrodos1.jpeg" width="20%">
+<img src="ImagesL3/electrodos2.jpeg" width="20%">
+<img src="ImagesL3/electrodos4.jpeg" width="20%"></div>
 <p align="center"><i>Figura 3. Colocación de electrodos</i><p>
 
 Inicialmente, se realizó una prueba preliminar para verificar que el dispositivo Bitalino y el software OpenSignals registraran adecuadamente la señal del usuario. Una vez confirmado, se procedió a realizar tres pruebas, cada una con tres grabaciones. En la primera prueba, se evaluó la señal EMG del bíceps en reposo; en la segunda prueba, se midió la contracción del bíceps; y, en la tercera prueba, se sometió al usuario a una carga externa para inducir un esfuerzo muscular adicional.
@@ -78,12 +78,15 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 
 <div align="center">
 
+<p align="center"><i>Figura 4. Colocación de electrodos</i><p>
+
 | **Prueba 1** | **Prueba 2** | **Prueba 3** |
 |:------------:|:------------:|:------------:|
 | <img src="ImagesL3/pierna2.jpeg" width="45%"> | <img src="ImagesL3/pierna2.1.jpeg" width="45%"> | <img src="ImagesL3/pierna3.jpg" width="95%"> |
 
 </div>
 
+<p align="center"><i>Tabla 3. Pruebas realizadas en el gastrocnemio</i><p>
 
 Videos Gastrocnemio
 
