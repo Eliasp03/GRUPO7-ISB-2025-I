@@ -111,7 +111,7 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 </p>
 
 ## Resultados y Limitaciones
-Se hace el uso del archivo 'actividad3_v2.py' donde se encuentra lo siguiente:
+Se hace el uso del archivo 'actividad3_v2.py' donde se encuentra lo siguiente: [4] [5]
 1. Importar las librerías
 ```python
 import numpy as np
@@ -275,10 +275,94 @@ FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpi
 <img src="ImagesL3/emg_fft_filtered_biceps3.png" width="65%">
 </div>
 
+
 ### EMG - Gastrocnemio 
 #### Prueba 1 - En reposo
+#####  1. Señal EMG cruda (sin procesar)
+<div align="center">
+<img src="ImagesL3/emg_cruda_gastro1.png" width="65%">
+</div>
+
+####  2. Señal EMG filtrada (pasa banda 20–450 Hz)
+<div align="center">
+<img src="ImagesL3/emg_signal_filtered_gastro1.png" width="65%">
+</div>
+
+#####  3. Señal EMG procesada con `neurokit2.emg_process()
+<div align="center">
+<img src="ImagesL3/emg_procesada_gastro1.png" width="65%">
+</div>
+
+#####  4. Espectro de frecuencia – EMG cruda (FFT)
+<div align="center">
+<img src="ImagesL3/emg_fft1_gastro1.png" width="65%">
+</div>
+
+
+#####  5. Espectro de frecuencia – EMG filtrada
+<div align="center">
+<img src="ImagesL3/emg_fft_filtered_gastro1.png" width="65%">
+</div>
+
+
 #### Prueba 2 - Movimiento ligero
+
+#####  1. Señal EMG cruda (sin procesar)
+<div align="center">
+<img src="ImagesL3/emg_cruda_gastro2.png" width="65%">
+</div>
+
+####  2. Señal EMG filtrada (pasa banda 20–450 Hz)
+<div align="center">
+<img src="ImagesL3/emg_signal_filtered_gastro2.png" width="65%">
+</div>
+
+#####  3. Señal EMG procesada con `neurokit2.emg_process()
+<div align="center">
+<img src="ImagesL3/emg_procesada_gastro2.png" width="65%">
+</div>
+
+#####  4. Espectro de frecuencia – EMG cruda (FFT)
+<div align="center">
+<img src="ImagesL3/emg_fft1_gastro2.png" width="65%">
+</div>
+
+
+#####  5. Espectro de frecuencia – EMG filtrada
+<div align="center">
+<img src="ImagesL3/emg_fft_filtered_gastro2.png" width="65%">
+</div>
+
+
 #### Prueba 3 - Movimiento con esfuerzo
+
+#####  1. Señal EMG cruda (sin procesar)
+<div align="center">
+<img src="ImagesL3/emg_cruda_gastro3.png" width="65%">
+</div>
+
+####  2. Señal EMG filtrada (pasa banda 20–450 Hz)
+<div align="center">
+<img src="ImagesL3/emg_signal_filtered_gastro3.png" width="65%">
+</div>
+
+#####  3. Señal EMG procesada con `neurokit2.emg_process()
+<div align="center">
+<img src="ImagesL3/emg_procesada_gastro3.png" width="65%">
+</div>
+
+#####  4. Espectro de frecuencia – EMG cruda (FFT)
+<div align="center">
+<img src="ImagesL3/emg_fft1_gastro3.png" width="65%">
+</div>
+
+
+#####  5. Espectro de frecuencia – EMG filtrada
+<div align="center">
+<img src="ImagesL3/emg_fft_filtered_gastro3.png" width="65%">
+</div>
+
+
 
 ## Referencias
 [1] PLUX Wireless Biosignals, "BITalino (r)evolution Board Kit," [Online]. Available: https://www.pluxbiosignals.com.
@@ -287,3 +371,6 @@ FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpi
 
 [3] J. Merletti and D. Farina, *Surface Electromyography: Physiology, Engineering, and Applications*, Wiley-IEEE Press, 2016. [Online]. Available: [https://www.wiley.com/en-us/Surface+Electromyography%3A+Physiology%2C+Engineering%2C+and+Applications-p-9781119082934.](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119082934)
 
+[4] P. Gomes, OpenSignalsReader, GitHub repository, 2023. [Online]. Available: https://github.com/PGomes92/opensignalsreader.
+
+[5] T. Makowski and J. Kosinski, “emg_process() - NeuroKit2 EMG Processing Function,” NeuroKit Documentation, 2020. [Online]. Available: https://neuropsychology.github.io/NeuroKit/functions/emg.html.
