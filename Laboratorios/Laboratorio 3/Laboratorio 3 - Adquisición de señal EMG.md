@@ -48,13 +48,12 @@ Para la adquisición de señales EMG con el BITalino se emplea una configuració
 
 Esta disposición permite registrar la diferencia de potencial entre los dos puntos activos del músculo (m₁ y m₂), mientras que el ruido eléctrico común a ambos electrodos (n) es cancelado mediante un **amplificador diferencial**. Esta técnica mejora significativamente la relación señal-ruido, haciendo que la señal obtenida sea más representativa de la actividad muscular real. [2]
 
-La Figura 3 muestra un esquema del sistema de adquisición bipolar. A diferencia del modo monopolar, donde el electrodo de referencia se encuentra en el mismo músculo, el arreglo bipolar permite una mejor discriminación de la señal muscular frente al ruido externo.
+<div align="center">
+<img src="ImagesL3/figure3.jpg" width="45%">
+<img src="ImagesL3/figure3.jpg" width="41.6%">
+</div>
 
-![Configuración bipolar](./Images%20L3/figura10.png)
-
-*Figura 3: Configuración bipolar de detección EMG. La señal EMG registrada representa la diferencia entre dos electrodos activos ubicados sobre el músculo, mientras que el ruido común se elimina por el amplificador diferencial.[2]*
-
----
+<p align="center"><i>*Figura 3: Configuración bipolar de detección EMG. La señal EMG registrada representa la diferencia entre dos electrodos activos ubicados sobre el músculo, mientras que el ruido común se elimina por el amplificador diferencial.[2]*(r)evolution</i><p>
 
 ### EMG - Bíceps Braquial
 
