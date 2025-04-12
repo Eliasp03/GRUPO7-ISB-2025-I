@@ -8,7 +8,7 @@ breve
 
 ## Materiales y Métodos
 
-![imagen01](ImagesL3/brazo1.jpeg)
+[<img src="ImagesL3/brazo1.jpg" width="15%">]
 
 Grabaciones y fotos. descripción
 
