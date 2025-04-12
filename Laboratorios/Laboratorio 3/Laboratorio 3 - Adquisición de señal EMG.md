@@ -25,7 +25,7 @@ El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición 
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
-Se empleará el sensor EMG de BITalino con un cable de tres derivaciones (3-leads), compuesto por un electrodo positivo, uno negativo y uno de referencia.
+Para la adquisición de la sñal EMG se empleará el cable de tres derivaciones (3-leads), compuesto por un electrodo positivo, uno negativo y uno de referencia.
 
 <div align="center">
 <img src="ImagesL3/material5.jpeg" width="27.5%">
