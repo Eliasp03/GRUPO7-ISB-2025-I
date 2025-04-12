@@ -8,7 +8,7 @@ breve
 
 ## Materiales y Métodos
 
-[<img src="ImagesL3/brazo1.jpg" width="15%">]
+[<img src="ImagesL3/brazo1.jpeg" width="15%">]
 
 ![imagen01](ImagesL3/brazo1.jpeg)
 
