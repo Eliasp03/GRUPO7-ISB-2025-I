@@ -60,11 +60,17 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 </div>
 <p align="center"><i>Tabla 2. Pruebas realizadas en el bíceps braquial</i><p>
 
-<p align="center"><a href="#"> <strong>Adquisición EMG - Bíceps Braquial</strong> </a></p>
+<center>**Videos Bíceps Braquial**</center>
 
 <div align="center">
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
 </div>
+
+<p align="center">
+  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF">
+    <img src="ImagesL3/Youtube_logo.png" width="15%">
+  </a>
+</p>
 
 ### EMG - Gastrocnemio 
 
