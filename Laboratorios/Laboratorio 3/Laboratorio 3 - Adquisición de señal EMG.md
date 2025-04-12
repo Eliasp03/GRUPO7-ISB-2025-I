@@ -36,10 +36,11 @@ Bitalino...
 ## Métodos  
 ### EMG - Bíceps Braquial
 
-<img src="ImagesL3/electrodos1.jpeg" width="15%">
+<div align="center"><img src="ImagesL3/electrodos1.jpeg" width="15%">
 <img src="ImagesL3/electrodos2.jpeg" width="15%">
-<img src="ImagesL3/electrodos3.jpeg" width="15%">
-<img src="ImagesL3/electrodos4.jpeg" width="15%">
+<img src="ImagesL3/electrodos4.jpeg" width="15%"></div>
+<p align="center"><i>Figura 3. Colocación de electrodos</i><p>
+
 
 <div align="center">
 
