@@ -52,7 +52,7 @@ Esta disposición permite registrar la diferencia de potencial entre los dos pun
 <img src="ImagesL3/figure3.jpg" width="60%">
 </div>
 
-<p align="center"><i> *Figura 3: Configuración bipolar de detección EMG. La señal EMG registrada representa la diferencia entre dos electrodos activos ubicados sobre el músculo, mientras que el ruido común se elimina por el amplificador diferencial. [2]*</i><p>
+<p align="center"><i> Figura 3: Configuración bipolar de detección EMG. La señal EMG registrada representa la diferencia entre dos electrodos activos ubicados sobre el músculo, mientras que el ruido común se elimina por el amplificador diferencial. [2]</i><p>
 
 ### EMG - Bíceps Braquial
 
