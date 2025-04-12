@@ -8,7 +8,9 @@ breve
 
 ## Materiales y Métodos
 
-<img src="ImagesL3/material1.jpeg" width="15%">
+<img src="ImagesL3/material5.jpeg" width="15%">
+<img src="ImagesL3/material1.jpeg" width="15%"> <img src="ImagesL3/material2.jpeg" width="15%">
+<img src="ImagesL3/material3.jpeg" width="15%"> <img src="ImagesL3/material4.jpeg" width="15%">
 
 <img src="ImagesL3/brazo1.jpeg" width="15%">
 
