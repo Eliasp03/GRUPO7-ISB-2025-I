@@ -36,6 +36,8 @@ Bitalino...
 ## Métodos  
 ### EMG - Bíceps Braquial
 
+...
+
 <div align="center"><img src="ImagesL3/electrodos1.jpeg" width="15%">
 <img src="ImagesL3/electrodos2.jpeg" width="15%">
 <img src="ImagesL3/electrodos4.jpeg" width="15%"></div>
@@ -50,19 +52,17 @@ Bitalino...
 
 </div>
 
-
-Grabaciones y fotos. descripción
-
 videos Bíceps Braquial
 
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
 
 ### EMG - Gastrocnemio 
 
-<img src="ImagesL3/pierna1.jpeg" width="15%">
+...
 
-<img src="ImagesL3/pierna1.1.jpeg" width="15%">
-
+<div align="center"><img src="ImagesL3/pierna1.jpeg" width="15%">
+<img src="ImagesL3/pierna1.1.jpeg" width="15%"></div>
+<p align="center"><i>Figura 4. Colocación de electrodos</i><p>
 
 <div align="center">
 
