@@ -42,7 +42,7 @@ En la adquisición de la sñal EMG se empleará el cable de tres derivaciones (3
 <div align="center"><img src="ImagesL3/Leads.jpg" width="60%"></div>
 <p align="center"><i>Tabla 1. Significado de los colores [<a href="https://support.pluxbiosignals.com/wp-content/uploads/2021/11/electromyography-emg-user-manual.pdf">EMG BiTalino User Manual</a>]</i></p>
 
-## Métodos  
+## Metodologías
 ### EMG - Bíceps Braquial
 
 El primer músculo analizado fue el bíceps braquial. Previo a la colocación de los electrodos, se realizó una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocaron los electrodos según lo indicado en la Figura 3: el electrodo positivo se ubicó en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, en este caso el codo.
