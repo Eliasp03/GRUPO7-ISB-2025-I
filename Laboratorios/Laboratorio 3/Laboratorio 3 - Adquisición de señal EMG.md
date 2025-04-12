@@ -105,6 +105,8 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 
 ## Referencias
 [1] PLUX Wireless Biosignals, "BITalino (r)evolution Board Kit," [Online]. Available: https://www.pluxbiosignals.com.
+
 [2] De Luca, C.J. Electromyography.  Encyclopedia of Medical Devices and Instrumentation, (John G. Webster, Ed.), [Online]. Available: [https://www.delsys.com/knowledge-center/what-is-emg/.](https://delsys.com/downloads/TUTORIAL/emg-encyclopedia-of-medical-devices-and-instrumentation.pdf)
+
 [3] J. Merletti and D. Farina, *Surface Electromyography: Physiology, Engineering, and Applications*. Wiley-IEEE Press, 2016.
 
