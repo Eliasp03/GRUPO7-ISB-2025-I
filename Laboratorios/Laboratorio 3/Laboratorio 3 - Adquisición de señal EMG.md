@@ -4,7 +4,9 @@
 
 ## Propósito de la práctica
 
-breve
+- Adquirir señales biomédicas de EMG y ECG.
+- Hacer una correcta configuración de BiTalino.
+- Extraer la información de las señales EMG del software OpenSignals (r)evolution
 
 ## Materiales y Métodos
 
