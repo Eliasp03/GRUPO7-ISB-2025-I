@@ -17,7 +17,7 @@ El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición 
 - Hacer una correcta configuración de BiTalino.
 - Extraer la información de las señales EMG del software OpenSignals (r)evolution
 
-## Materiales
+## Materiales y equipos
 
 - BiTalino (r)evolution kit
 - 3 electrodos de superficie
