@@ -184,7 +184,10 @@ Se obtienen las siguientes gráficas:
 #### Prueba 1 - En reposo
 #####  1. Señal EMG cruda (sin procesar)
 Esta es la señal directamente adquirida desde el sensor BITalino utilizando OpenSignals. Se observa ruido de alta frecuencia.
-![EMG cruda](./Images_L3/emg_cruda_biceps1.png)
+
+<div align="center">
+<img src="ImagesL3/emg_cruda_biceps1.png" width="45%">
+</div>
 
 #### Prueba 2 - Movimiento ligero
 #### Prueba 3 - Movimiento con esfuerzo
