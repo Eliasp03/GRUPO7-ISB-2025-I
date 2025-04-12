@@ -42,7 +42,7 @@ Para la adquisición de la sñal EMG se empleará el cable de tres derivaciones 
 ## Métodos  
 ### EMG - Bíceps Braquial
 
-El primer músculo analizado será el bíceps braquial. Previamente a la colocación de los electrodos, se realizará una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocarán los electrodos según lo indicado en la Figura 3: el electrodo positivo se ubicará en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, como el codo.
+El primer músculo analizado fue el bíceps braquial. Previo a la colocación de los electrodos, se realizó una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocaron los electrodos según lo indicado en la Figura 3: el electrodo positivo se ubicó en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, en este caso el codo.
 
 <div align="center"><img src="ImagesL3/electrodos1.jpeg" width="15%">
 <img src="ImagesL3/electrodos2.jpeg" width="15%">
@@ -60,7 +60,7 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 </div>
 <p align="center"><i>Tabla 2. Pruebas realizadas en el bíceps braquial</i><p>
 
-<p align="center"> <a> **videos Bíceps Braquial** </a> <p>
+<p align="center"><a href="#"> <strong>Videos Bíceps Braquial</strong> </a></p>
 
 [<img src="ImagesL3/Youtube_logo.png" width="15%">](https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF)
 
