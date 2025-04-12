@@ -8,9 +8,13 @@ breve
 
 ## Materiales y Métodos
 
+<img src="ImagesL3/material1.jpeg" width="15%">
+
 <img src="ImagesL3/brazo1.jpeg" width="15%">
 
-![imagen01](ImagesL3/brazo1.jpeg)
+<img src="ImagesL3/brazo2.jpeg" width="15%">
+
+<img src="ImagesL3/brazo3.jpeg" width="15%">
 
 Grabaciones y fotos. descripción
 
