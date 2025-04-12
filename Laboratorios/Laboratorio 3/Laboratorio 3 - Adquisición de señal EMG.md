@@ -31,7 +31,7 @@ Bitalino...
 <img src="ImagesL3/material3.jpeg" width="41.6%">
 </div>
 
-<p align="center"><i>Placa BiTalino (r)evolution</i><p>
+<p align="center"><i>Figura 2. Placa BiTalino (r)evolution</i><p>
   
 ### EMG - Bíceps Braquial
 
