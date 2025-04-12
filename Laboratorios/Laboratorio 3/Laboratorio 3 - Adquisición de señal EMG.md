@@ -40,7 +40,7 @@ videos Bíceps Braquial
 
 <img src="ImagesL3/pierna2.1.jpeg" width="15%">
 
-<img src="ImagesL3/pierna3.jpeg" width="15%">
+<img src="ImagesL3/pierna3.jpg" width="15%">
 
 
 Videos Gastrocnemio
