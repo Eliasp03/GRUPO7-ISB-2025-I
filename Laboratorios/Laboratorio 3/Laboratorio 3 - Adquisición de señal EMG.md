@@ -111,7 +111,7 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 </p>
 
 ## Resultados y Limitaciones
-
+### EMG - Bíceps Braquial
 
 
 ## Referencias
