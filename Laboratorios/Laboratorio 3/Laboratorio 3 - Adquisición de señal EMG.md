@@ -112,17 +112,77 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 
 ## Resultados y Limitaciones
 Se hace el uso del archivo 'actividad3_v2.py' donde se encuentra lo siguiente:
-'''
-python
+1. Importar las librerías
+```python
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import neurokit2 as nk
 from opensignalsreader import OpenSignalsReader
 from scipy.signal import butter, filtfilt
-'''
+```
+2. Leer el archivo .txt de la obtención de la señal del OpenSignals
+```python
+acq = OpenSignalsReader("LeveBiceps3.txt")
+emg_signal = acq.signal([1])  # seleccionamos el canal del sensor
+fs = acq.sampling_rate # Obtener frecuencia de muestreo automáticamente del archivo
+tiempo = np.linspace(0, len(emg_signal) / fs, len(emg_signal)) # Crear eje de tiempo
+```
+3. Se grafica la señal cruda del EMG:
+```python
+plt.figure(figsize=(10, 4))
+plt.plot(tiempo, emg_signal, label="EMG cruda")
+plt.title("Señal EMG cruda – Bíceps")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (mV)")
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.savefig("emg_cruda.png")
+plt.show()
+```
+4. Se define un filtro, en este caso pasa banda (20-450 Hz) típico para EMG:
+```python
+def butter_bandpass(lowcut, highcut, fs, order=4):
+    nyq = 0.5 * fs  # Frecuencia de Nyquist
+    low = lowcut / nyq
+    high = highcut / nyq
+    b, a = butter(order, [low, high], btype="band")
+    return b, a
+def apply_bandpass_filter(data, lowcut, highcut, fs, order=4):
+    b, a = butter_bandpass(lowcut, highcut, fs, order=order)
+    y = filtfilt(b, a, data)
+    return y
+emg_filtered = apply_bandpass_filter(emg_signal, lowcut=20, highcut=450, fs=fs) # Aplicar el filtro
+```
+5. Se grafica la señal EMG filtrada:
+```python
+plt.figure(figsize=(10, 4))
+plt.plot(tiempo, emg_filtered, label="EMG filtrada", color='purple')
+plt.title("Señal EMG Filtrada – Pasa banda (20–450 Hz)")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (mV)")
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.savefig("emg_signal_filtered.png")
+plt.show()
+```
+6. Se realiza la FFT cruda (se encuentra en el archivo 'actividad3_v2.py')
+7. Se realiza la FFT de la señal filtrada (se encuentra en el archivo 'actividad3_v2.py')
+8. Opcional: Se realiza el procesamiento de la señal con Neurokit2
+```python
+signals, info = nk.emg_process(emg_signal, sampling_rate=fs, method="threshold", threshold=0.01)
+nk.emg_plot(signals,info)
+plt.tight_layout()
+plt.savefig("emg_procesada.png")
+plt.show()
+```
+Se obtienen las siguientes gráficas:
+
 ### EMG - Bíceps Braquial
 #### Prueba 1 - En reposo
+
 #### Prueba 2 - Movimiento ligero
 #### Prueba 3 - Movimiento con esfuerzo
 
