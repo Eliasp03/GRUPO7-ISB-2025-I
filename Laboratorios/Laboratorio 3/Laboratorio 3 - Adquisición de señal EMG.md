@@ -9,9 +9,9 @@ En esta práctica se utilizará el sensor de **electromiografía (EMG)** incluid
 
 ## Propósito de la práctica
 
-- Adquirir señales biomédicas de EMG y ECG.
-- Hacer una correcta configuración de BiTalino.
-- Extraer la información de las señales EMG del software OpenSignals (r)evolution
+- Adquirir señales biomédicas de EMG utilizando el dispositivo **BITalino (r)evolution**.
+- Realizar una configuración adecuada del sistema BITalino, incluyendo la conexión por Bluetooth y la colocación correcta de los electrodos.
+- Capturar, visualizar y exportar las señales EMG a través del software **OpenSignals (r)evolution** para su posterior análisis en Python.
 
 ## Materiales y equipos
 
