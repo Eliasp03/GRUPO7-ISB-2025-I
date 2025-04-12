@@ -56,7 +56,7 @@ videos Bíceps Braquial
 
 | **Prueba 1** | **Prueba 2** | **Prueba 3** |
 |:------------:|:------------:|:------------:|
-| <img src="ImagesL3/pierna2.jpeg" width="15%"> | <img src="ImagesL3/pierna2.1.jpeg" width="15%"> | <img src="ImagesL3/pierna3.jpg" width="15%"> |
+| <img src="ImagesL3/pierna2.jpeg" width="45%"> | <img src="ImagesL3/pierna2.1.jpeg" width="45%"> | <img src="ImagesL3/pierna3.jpg" width="50%"> |
 
 </div>
 
