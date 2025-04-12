@@ -182,6 +182,9 @@ Se obtienen las siguientes gráficas:
 
 ### EMG - Bíceps Braquial
 #### Prueba 1 - En reposo
+#####  1. Señal EMG cruda (sin procesar)
+Esta es la señal directamente adquirida desde el sensor BITalino utilizando OpenSignals. Se observa ruido de alta frecuencia.
+![EMG cruda](./Images_L3/emg_cruda_biceps1.png)
 
 #### Prueba 2 - Movimiento ligero
 #### Prueba 3 - Movimiento con esfuerzo
