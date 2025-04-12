@@ -25,7 +25,7 @@
 <p align="center"><i>Figura 1. Kit bitalino con 2 y 3 cables</i><p>
 
 <div align="center"><img src="ImagesL3/Leads.jpg" width="20%"></div>
-<p align="center"><i>Tabla 1. Significado de los colores <a href="https://support.pluxbiosignals.com/wp-content/uploads/2021/11/electromyography-emg-user-manual.pdf">EMG BiTalino User Manual</a></i></p>
+<p align="center"><i>Tabla 1. Significado de los colores <a href="https://support.pluxbiosignals.com/wp-content/uploads/2021/11/electromyography-emg-user-manual.pdf">[EMG BiTalino User Manual]</a></i></p>
 
 
 Bitalino...
