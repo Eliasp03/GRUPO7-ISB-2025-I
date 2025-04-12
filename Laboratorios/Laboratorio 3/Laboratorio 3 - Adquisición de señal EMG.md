@@ -8,7 +8,7 @@ breve
 
 ## Materiales y Métodos
 
-![imagen01](Laboratorios/Laboratorio 3/ImagesL3/brazo1.jpeg)
+![imagen01](ImagesL3/brazo1.jpeg)
 
 Grabaciones y fotos. descripción
 
