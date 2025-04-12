@@ -49,8 +49,7 @@ Para la adquisición de señales EMG con el BITalino se emplea una configuració
 Esta disposición permite registrar la diferencia de potencial entre los dos puntos activos del músculo (m₁ y m₂), mientras que el ruido eléctrico común a ambos electrodos (n) es cancelado mediante un **amplificador diferencial**. Esta técnica mejora significativamente la relación señal-ruido, haciendo que la señal obtenida sea más representativa de la actividad muscular real. [2]
 
 <div align="center">
-<img src="ImagesL3/figure3.jpg" width="45%">
-<img src="ImagesL3/figure3.jpg" width="41.6%">
+<img src="ImagesL3/figure3.jpg" width="60%">
 </div>
 
 <p align="center"><i>*Figura 3: Configuración bipolar de detección EMG. La señal EMG registrada representa la diferencia entre dos electrodos activos ubicados sobre el músculo, mientras que el ruido común se elimina por el amplificador diferencial.[2]*(r)evolution</i><p>
