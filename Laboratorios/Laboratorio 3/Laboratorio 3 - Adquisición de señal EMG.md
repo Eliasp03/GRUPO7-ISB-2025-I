@@ -19,7 +19,8 @@ El BITalino es un sistema desarrollado por PLUX Biosignals para la adquisición 
 
 ## Materiales y equipos
 
-- BiTalino (r)evolution kit
+- BiTalino (r)evolution kit ( 1 cable de de 2 hilos; 1 cable de 3 hilos, 1 bateria, 1 guía de
+inicio rápido, 1 BITalino).
 - 3 electrodos de superficie
 - Laptop con software Open Signals
 - Python 3.12
