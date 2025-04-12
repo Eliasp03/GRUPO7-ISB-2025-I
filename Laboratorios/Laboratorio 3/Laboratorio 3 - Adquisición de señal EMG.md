@@ -111,6 +111,16 @@ Después de colocar los electrodos, se realizaron tres pruebas. En la primera, s
 </p>
 
 ## Resultados y Limitaciones
+Se hace el uso del archivo 'actividad3_v2.py' donde se encuentra lo siguiente:
+'''
+python
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+import neurokit2 as nk
+from opensignalsreader import OpenSignalsReader
+from scipy.signal import butter, filtfilt
+'''
 ### EMG - Bíceps Braquial
 #### Prueba 1 - En reposo
 #### Prueba 2 - Movimiento ligero
