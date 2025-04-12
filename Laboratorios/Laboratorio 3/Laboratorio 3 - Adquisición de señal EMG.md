@@ -10,7 +10,12 @@
 
 ## Materiales y Métodos
 
-Los materiales...
+- BiTalino (r)evolution kit
+- 3 electrodos de superficie
+- Laptop con software Open Signals
+- Python 3.12
+- Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
+
 <div align="center">
 <img src="ImagesL3/material5.jpeg" width="27.5%">
 <img src="ImagesL3/material1.jpeg" width="15%"> 
