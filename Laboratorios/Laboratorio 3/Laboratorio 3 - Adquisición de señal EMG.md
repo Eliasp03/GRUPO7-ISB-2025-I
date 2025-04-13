@@ -365,7 +365,15 @@ FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpi
 ## Discusión
 
 ### Bíceps braquial
-En el reposo, se observa que una baja amplitud en la señal (entre -0.5 y 0.5 mV=) y constante en el tiempo. Además, se detectan escasas activaciones musculares y ninguna frecuencia sobresaliente.
+En el reposo, se observa que una baja amplitud en la señal (entre -0.5 y 0.5 mV) y constante en el tiempo. Además, se detectan escasas activaciones musculares y ninguna frecuencia sobresaliente.
+En el movimiento ligero, se observa un leve aumento tanto en amplitud como en frecuencia de los picos de la señal, esto se debe a un mayor reclutamiento de unidades motoras y un aumento en la frecuencia de disparo de las mismas.
+En el movimiento con esfuerzo, se observa un aumento significativo en la amplitud y frecuencia de la señal. Además, se detectan múltiples activaciones musculares y frecuencias más altas, lo cual confirma una activación muscular máxima.
+Estos resultados son parecidos a los de un estudio donde se muestra la actividad electromiográfica de superficie (SEMG) del músculo bíceps braquial registrada a distintos niveles de contracción voluntaria, expresados como porcentaje del esfuerzo máximo (40%, 60%, 80% y 100%). [6]
+<div align="center">
+<img src="ImagesL3/semg_biceps.png" width="65%">
+</div>
+
+El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
 
 ## Referencias
