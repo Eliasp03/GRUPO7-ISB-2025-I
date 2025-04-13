@@ -86,8 +86,8 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 
 El segundo músculo analizado fue el gastrocnemio. Se repitieron los mismos procedimientos, ubicando el electrodo positivo en la parte proximal del músculo, el negativo en la parte distal y el electrodo de referencia sobre la rodilla.
 
-<div align="center"><img src="ImagesL3/marcas2.jpg" width="28%">
-<img src="ImagesL3/marcas3.jpg" width="17%"></div>
+<div align="center"><img src="ImagesL3/marcas2.jpg" width="30%">
+<img src="ImagesL3/marcas3.jpg" width="16%"></div>
 <p align="center"><i>Figura 5. Colocación de electrodos</i><p>
 
 Después de colocar los electrodos, se realizaron tres pruebas. En la primera, se registró la actividad del gastrocnemio en reposo. En la segunda, se captó la actividad muscular durante una ligera contracción del músculo. Finalmente, en la tercera prueba, el usuario se puso de pie e intentó levantarse de puntillas para generar más esfuerzo en el músculo.
