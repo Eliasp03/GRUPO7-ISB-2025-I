@@ -22,7 +22,7 @@ inicio rápido, 1 BITalino).
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
-En la adquisición de la sñal EMG se empleará el cable de tres derivaciones (3-leads), compuesto por un electrodo positivo, uno negativo y uno de referencia.
+En la adquisición de la señal EMG se empleará el cable de tres derivaciones (3-leads), compuesto por un electrodo positivo, uno negativo y uno de referencia.
 <div align="center">
 <img src="ImagesL3/material2.jpeg" width="45%">
 <img src="ImagesL3/material3.jpeg" width="41.6%">
