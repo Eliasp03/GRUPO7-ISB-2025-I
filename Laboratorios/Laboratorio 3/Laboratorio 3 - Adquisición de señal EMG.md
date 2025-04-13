@@ -365,7 +365,7 @@ FFT de la señal EMG después del filtrado. Deberías ver un espectro más limpi
 ## Discusión
 
 ### Bíceps braquial
-A
+En el reposo, se observa que una baja amplitud en la señal (entre -0.5 y 0.5 mV=) y constante en el tiempo. Además, se detectan escasas activaciones musculares y ninguna frecuencia sobresaliente.
 
 
 ## Referencias
