@@ -373,9 +373,9 @@ En el movimiento con esfuerzo, se observa un aumento significativo en la amplitu
 
 Estos resultados son parecidos a los de un estudio donde se muestra la actividad electromiográfica de superficie (SEMG) del músculo bíceps braquial registrada a distintos niveles de contracción voluntaria, expresados como porcentaje del esfuerzo máximo (40%, 60%, 80% y 100%). [6]
 <div align="center">
-<img src="ImagesL3/semg_biceps.png" width="65%">
+<img src="ImagesL3/semg_biceps.png" width="40%">
 </div>
-<p align="center"><i>sEMG del músculo bíceps braquial a distintos niveles de contracción voluntaria</i><p>
+<p align="center"><i>sEMG del músculo bíceps braquial a distintos niveles de contracción voluntaria [6]</i><p>
   
 El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
