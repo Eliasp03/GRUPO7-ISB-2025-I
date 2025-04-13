@@ -375,7 +375,8 @@ Estos resultados son parecidos a los de un estudio donde se muestra la actividad
 <div align="center">
 <img src="ImagesL3/semg_biceps.png" width="65%">
 </div>
-
+<p align="center"><i>sEMG del músculo bíceps braquial a distintos niveles de contracción voluntaria</i><p>
+  
 El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
 
