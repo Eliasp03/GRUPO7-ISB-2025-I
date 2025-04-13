@@ -394,6 +394,12 @@ Los resultados son similares a un estudio encontrado donde se muestra la señal 
   
 El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
+## Limitaciones
+
+Durante la recolección de señales electromiográficas (EMG) del bíceps braquial, uno de los principales desafíos es la colocación del electrodo de referencia en la zona del codo, ya que, al estar asociada a una articulación móvil, esta área puede generar artefactos debido al movimiento, lo que afecta la calidad de la señal [8]. Además, cuando los electrodos activos no se colocan correctamente en el vientre muscular o no se alinean adecuadamente con las fibras del músculo, se pierde calidad en el registro y se incrementa la captación de señales de músculos adyacentes, como el braquial o el tríceps [9]. Para mejorar la señal, se recomienda posicionar los electrodos activos sobre la porción central del músculo, manteniendo una separación de aproximadamente 2 cm y alineados con las fibras musculares [8]. Asimismo, se sugiere ubicar el electrodo de referencia en una zona ósea más estable, como el acromion o el tronco, para reducir los artefactos de movimiento y mejorar la confiabilidad de los datos obtenidos [9].
+
+En cuanto al gastrocnemio medial, las limitaciones están relacionadas con el posicionamiento del electrodo de referencia cerca de la tibia, ya que esta área, aunque se trata de una superficie ósea, puede generar interferencias si no está bien fijada o si se encuentra demasiado cerca de los electrodos activos [10]. Además, colocar los electrodos activos fuera del centro del vientre muscular, cerca del tendón de Aquiles o en zonas con tejido adiposo, puede disminuir la intensidad de la señal y aumentar la captación de actividad de músculos cercanos, como el sóleo [10]. Para optimizar el registro, es recomendable situar los electrodos activos en la parte más prominente del músculo, alineados con las fibras musculares, en el tercio superior de la pierna [8]. También se debe preparar adecuadamente la piel mediante limpieza y rasurado para reducir la impedancia [9]. Además, es útil reubicar el electrodo de referencia en una zona más estable, como la espina ilíaca anterosuperior, para minimizar el ruido y mejorar la estabilidad de la señal [10].
+
 ## Referencias
 [1] PLUX Wireless Biosignals, "BITalino (r)evolution Board Kit," [Online]. Available: https://www.pluxbiosignals.com.
 
@@ -408,5 +414,12 @@ El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuenci
 [6] Gabriel DA, Kamen G. Experimental and modeling investigation of spectral compression of biceps brachii SEMG activity with increasing force levels. J Electromyogr Kinesiol [Internet]. 2009;19(3):437–48. Disponible en: http://dx.doi.org/10.1016/j.jelekin.2007.10.009
 
 [7] Pal PK. Electrophysiologic evaluation of psychogenic movement disorders. J Mov Disord [Internet]. 2011;4(1):21–32. Disponible en: http://dx.doi.org/10.14802/jmd.11004
+
+[8] Merletti R, Cerone GL. Tutorial. Surface EMG detection, conditioning and pre-processing: Best practices. J Electromyogr Kinesiol [Internet]. 2020;54(102440):102440. Disponible en: https://pubmed.ncbi.nlm.nih.gov/32763743/ 
+
+[9] Manca A, Cereatti A, Bar-On L, Botter A, Della Croce U, Knaflitz M, et al. A survey on the use and barriers of surface electromyography in neurorehabilitation. Front Neurol [Internet]. 2020;11:573616. Disponible en:[ https://pubmed.ncbi.nlm.nih.gov/33123079/](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2020.573616/full)
+
+[10] Douglas F, Pei M, Kuo C. Characterizing the effect of electrode shift & sensor reapplication on common sEMG features in lower limb muscles [Internet]. arXiv [eess.SP]. 2024. Disponible en: http://arxiv.org/abs/2410.16262 
+
 
 
