@@ -58,9 +58,9 @@ Esta disposición permite registrar la diferencia de potencial entre los dos pun
 
 El primer músculo analizado fue el bíceps braquial. Previo a la colocación de los electrodos, se realizó una limpieza adecuada de la zona con el fin de asegurar una buena conductividad. Posteriormente, se colocaron los electrodos según lo indicado en la Figura 4: el electrodo positivo se ubicó en la parte proximal del músculo, el negativo en la parte distal, y el electrodo de referencia sobre una zona ósea adyacente, en este caso el codo.
 
-<div align="center"><img src="ImagesL3/electrodos1.jpeg" width="20%">
-<img src="ImagesL3/electrodos2.jpeg" width="20%">
-<img src="ImagesL3/marcas1.jpg" width="20%"></div>
+<div align="center"><img src="ImagesL3/electrodos1.jpeg" width="24%">
+<img src="ImagesL3/electrodos2.jpeg" width="24%">
+<img src="ImagesL3/marcas1.jpg" width="24%"></div>
 <p align="center"><i>Figura 4. Colocación de electrodos</i><p>
 
 Inicialmente, se realizó una prueba preliminar para verificar que el dispositivo Bitalino y el software OpenSignals registraran adecuadamente la señal del usuario. Una vez confirmado, se procedió a realizar tres pruebas, cada una con tres grabaciones. En la primera prueba, se evaluó la señal EMG del bíceps en reposo; en la segunda prueba, se midió la contracción del bíceps; y, en la tercera prueba, se sometió al usuario a una carga externa para inducir un esfuerzo muscular adicional.
@@ -86,8 +86,8 @@ Inicialmente, se realizó una prueba preliminar para verificar que el dispositiv
 
 El segundo músculo analizado fue el gastrocnemio. Se repitieron los mismos procedimientos, ubicando el electrodo positivo en la parte proximal del músculo, el negativo en la parte distal y el electrodo de referencia sobre la rodilla.
 
-<div align="center"><img src="ImagesL3/marcas2.jpg" width="25%">
-<img src="ImagesL3/marcas3.jpg" width="14%"></div>
+<div align="center"><img src="ImagesL3/marcas2.jpg" width="28%">
+<img src="ImagesL3/marcas3.jpg" width="17%"></div>
 <p align="center"><i>Figura 5. Colocación de electrodos</i><p>
 
 Después de colocar los electrodos, se realizaron tres pruebas. En la primera, se registró la actividad del gastrocnemio en reposo. En la segunda, se captó la actividad muscular durante una ligera contracción del músculo. Finalmente, en la tercera prueba, el usuario se puso de pie e intentó levantarse de puntillas para generar más esfuerzo en el músculo.
