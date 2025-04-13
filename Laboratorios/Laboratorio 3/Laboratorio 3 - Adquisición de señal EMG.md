@@ -379,6 +379,16 @@ Estos resultados son parecidos a los de un estudio donde se muestra la actividad
   
 El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
+### Gastrocnemio
+De manera similar al músculo bíceps braquial, la señal de sEMG en reposo del músculo gastrocnemio presenta baja amplitud y es constante en el tiempo. Además, se detectan pocas activaciones musculares y ninguna frecuencia sobresaliente.
+
+En el movimiento ligero, se observa un buen aumento tanto en amplitud como en frecuencia de los picos de la señal, esto se debe a un mayor reclutamiento de unidades motoras y un aumento en la frecuencia de disparo de las mismas.
+
+En el movimiento con esfuerzo, se observa un gran significativo en la amplitud y frecuencia en los picos de la señal. Además, se detectan múltiples activaciones musculares y frecuencias más altas, lo cual indica una activación muscular máxima.
+
+
+
+El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
 ## Referencias
 [1] PLUX Wireless Biosignals, "BITalino (r)evolution Board Kit," [Online]. Available: https://www.pluxbiosignals.com.
@@ -390,3 +400,6 @@ El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuenci
 [4] P. Gomes, OpenSignalsReader, GitHub repository, 2023. [Online]. Available: https://github.com/PGomes92/opensignalsreader.
 
 [5] T. Makowski and J. Kosinski, “emg_process() - NeuroKit2 EMG Processing Function,” NeuroKit Documentation, 2020. [Online]. Available: https://neuropsychology.github.io/NeuroKit/functions/emg.html.
+
+[6] 2.	Gabriel DA, Kamen G. Experimental and modeling investigation of spectral compression of biceps brachii SEMG activity with increasing force levels. J Electromyogr Kinesiol [Internet]. 2009;19(3):437–48. Disponible en: http://dx.doi.org/10.1016/j.jelekin.2007.10.009
+
