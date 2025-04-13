@@ -386,8 +386,12 @@ En el movimiento ligero, se observa un buen aumento tanto en amplitud como en fr
 
 En el movimiento con esfuerzo, se observa un gran significativo en la amplitud y frecuencia en los picos de la señal. Además, se detectan múltiples activaciones musculares y frecuencias más altas, lo cual indica una activación muscular máxima.
 
-
-
+Los resultados son similares a un estudio encontrado donde se muestra la señal EMG para distintos músculos, entre ellos el gastrocnemio. Se observa un aumento en la amplitud y frecuencia en la flexión-extensión del pie derecho. [7]
+<div align="center">
+<img src="ImagesL3/semg_gastrocnemio.png" width="50%">
+</div>
+<p align="center"><i>EMG de distintos músculos de la pierna derecha [7]</i><p>
+  
 El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuencia de todas las señales se debe al ruido de la red eléctrica, para atenuarlo se puede aplicar un filtro Notch.
 
 ## Referencias
@@ -401,5 +405,8 @@ El valor de frecuencia alrededor de 60 Hz presente en los espectros en frecuenci
 
 [5] T. Makowski and J. Kosinski, “emg_process() - NeuroKit2 EMG Processing Function,” NeuroKit Documentation, 2020. [Online]. Available: https://neuropsychology.github.io/NeuroKit/functions/emg.html.
 
-[6] 2.	Gabriel DA, Kamen G. Experimental and modeling investigation of spectral compression of biceps brachii SEMG activity with increasing force levels. J Electromyogr Kinesiol [Internet]. 2009;19(3):437–48. Disponible en: http://dx.doi.org/10.1016/j.jelekin.2007.10.009
+[6] Gabriel DA, Kamen G. Experimental and modeling investigation of spectral compression of biceps brachii SEMG activity with increasing force levels. J Electromyogr Kinesiol [Internet]. 2009;19(3):437–48. Disponible en: http://dx.doi.org/10.1016/j.jelekin.2007.10.009
+
+[7] Pal PK. Electrophysiologic evaluation of psychogenic movement disorders. J Mov Disord [Internet]. 2011;4(1):21–32. Disponible en: http://dx.doi.org/10.14802/jmd.11004
+
 
