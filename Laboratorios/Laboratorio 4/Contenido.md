@@ -1,7 +1,7 @@
 # Laboratorio 05 - Adquisición de señal EKG
 ## Contenido
 1. [Introducción](#id1)
-2. [Objetivos](#id2)
+2. [Propósito de la práctica](#id2)
 3. [Materiales y equipos](#id3)
 4. [Metodologia](#id4)
 5. [Resultados](#id5)
@@ -18,26 +18,34 @@ El registro del ECG se realiza mediante electrodos colocados en extremidades y t
 
 <p style="text-align: justify;">  
 La despolarización cardíaca se refleja en el ECG como deflexiones: una onda que se acerca a un electrodo genera una deflexión positiva (ascendente), mientras que una que se aleja produce una deflexión negativa (descendente). La amplitud de estas ondas se mide en milímetros (mm), y su análisis permite evaluar la dirección general del impulso eléctrico, conocido como eje cardíaco [2].
+
+  <img src="https://cerebromedico.com/wp-content/uploads/2017/12/Papel-del-electrocardiograma.png" width="500" height="200"/>
+
 <p style="text-align: justify;"> 
 Las ondas básicas del ECG incluyen:
 
-Onda P: Corresponde a la despolarización atrial, con una duración ≤0.11 segundos y altura ≤2.5 mm.
+- Onda P: Corresponde a la despolarización atrial, con una duración ≤0.11 segundos y altura ≤2.5 mm.
 
-Complejo QRS: Representa la despolarización ventricular, con una duración normal de 0.06-0.10 segundos.
+- Complejo QRS: Representa la despolarización ventricular, con una duración normal de 0.06-0.10 segundos.
 
-Onda T: Indica la repolarización ventricular y su dirección suele coincidir con el QRS. Alteraciones en su morfología sugieren patologías [3].
-
+- Onda T: Indica la repolarización ventricular y su dirección suele coincidir con el QRS. Alteraciones en su morfología sugieren patologías [3].
+<img src="https://cerebromedico.com/wp-content/uploads/2017/12/electrocardiograma-conduccion-electrica-del-corazon.gif" width="500" height="300"/>
 
 </p>
 
-## Objetivos <a name="id2"></a>
+## Propósito de la práctica <a name="id2"></a>
+<p style="text-align: justify;">   
+El propósito de este proceso consiste en comprender el funcionamiento del dispositivo BITalino y definir la disposición adecuada de los electrodos para la captura de señales biomédicas. Posteriormente, se busca adquirir registros electrocardiográficos (ECG), tal que las señales recopiladas serán procesadas y visualizadas en tiempo real a través del software OpenSignals. Adicionalmente, se configura el BITalino de manera correcta para asegurar la calidad de las mediciones. Finalmente, se realiza la exportación de los datos brutos de las señales ECG con el fin de facilitar su procesamiento.
+</p>
 
 ## Materiales y equipos <a name="id3"></a>
-| Material     |Descripción      |Cantidad   |
-|-----------   |:------------:   |:---------:|
-| (R)Evolution |Kit BITalino[4]  |1          |
-| Laptop       |Laptop           |1          |
-| Electrodos   |Electrodos ECG   |3          |
+| Material     |Cantidad   |
+|-----------   |:------------:
+|Kit BITalino[4]  |1          |
+|Laptop           |1          |
+|Electrodos ECG   |3          |
+
+<img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
 ## Metodología <a name="id4"></a>
 
@@ -45,6 +53,7 @@ Onda T: Indica la repolarización ventricular y su dirección suele coincidir co
 
 
 ## Bibliografía
-[1]
-[2]
-[3]
+[1] “Papel del Electrocardiograma y sus Características - Cerebromedico”. Cerebromedico. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://cerebromedico.com/electrocardiograma/papel-ekg
+[2] “Estimating Cardiac Axis”. Discover Clinical Medicine - MedSchool. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://medschool.co/tests/ecg-basics/estimating-cardiac-axis
+[3] “The Basics of ECG”. ACLS Medical Training. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.aclsmedicaltraining.com/basics-of-ecg/
+[4] “BITalino”. PLUX Biosignals. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.pluxbiosignals.com/collections/bitalino?srsltid=AfmBOopxPuL4rizGon-RlE3KPmQOCbfBI1UOzH1FhKijinshBj1K7VCj
