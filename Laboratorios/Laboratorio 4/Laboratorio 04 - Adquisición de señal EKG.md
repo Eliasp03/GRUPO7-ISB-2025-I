@@ -3,8 +3,9 @@
 1. [Introducción](#id1)
 2. [Propósito de la práctica](#id2)
 3. [Materiales y equipos](#id3)
-4. [Metodologia](#id4)
-5. [Resultados](#id5)
+4. [Metodología y resultados](#id4)
+5. [Discusiones y limitaciones](#id5)
+6. [Conclusiones](#id6)
 
 ## Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
@@ -46,10 +47,11 @@ El propósito de este proceso consiste en comprender el funcionamiento del dispo
 
 <img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
-## Metodología <a name="id4"></a>
+## Metodología y resultados <a name="id4"></a>
 
-## Resultados <a name="id5"></a>
+## Discusiones y limitaciones <a name="id5"></a>
 
+## Conclusiones <a name="id6"></a>
 
 ## Bibliografía
 [1] “Papel del Electrocardiograma y sus Características - Cerebromedico”. Cerebromedico. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://cerebromedico.com/electrocardiograma/papel-ekg
