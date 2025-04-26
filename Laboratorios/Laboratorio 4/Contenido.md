@@ -13,6 +13,9 @@ El electrocardiograma (ECG o EKG) es un procedimiento médico no invasivo e indo
   
 <p style="text-align: justify;">  
 El registro del ECG se realiza mediante electrodos colocados en extremidades y tórax, captando la actividad eléctrica del corazón. Un ECG estándar incluye 6 derivaciones primarias (de extremidades) y 6 derivaciones precordiales, que registran diferencias de potencial entre electrodos (bipolares) o entre un punto virtual y un electrodo (monopolares) [2].
+
+  <img src="https://www.cuidandote.net/articulos/ECG/ecg03.jpg" width="500" height="300"/>
+
 <p style="text-align: justify;">  
 La despolarización cardíaca se refleja en el ECG como deflexiones: una onda que se acerca a un electrodo genera una deflexión positiva (ascendente), mientras que una que se aleja produce una deflexión negativa (descendente). La amplitud de estas ondas se mide en milímetros (mm), y su análisis permite evaluar la dirección general del impulso eléctrico, conocido como eje cardíaco [2].
 <p style="text-align: justify;"> 
