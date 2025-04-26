@@ -9,7 +9,6 @@
 ## Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
 El electrocardiograma (ECG o EKG) es un procedimiento médico no invasivo e indoloro, ampliamente utilizado para apoyar el diagnóstico de enfermedades cardíacas, como insuficiencia cardíaca, hipertrofias, infartos y cuadros benignos, entre otros. Proporciona información esencial sobre la frecuencia cardíaca, el ritmo y patrones eléctricos asociados a patologías [1].
-  <img src="https://i.gifer.com/QVGh.gif" alt="300" width="1000" height="300"/>
   
 <p style="text-align: justify;">  
 El registro del ECG se realiza mediante electrodos colocados en extremidades y tórax, captando la actividad eléctrica del corazón. Un ECG estándar incluye 6 derivaciones primarias (de extremidades) y 6 derivaciones precordiales, que registran diferencias de potencial entre electrodos (bipolares) o entre un punto virtual y un electrodo (monopolares) [2].
