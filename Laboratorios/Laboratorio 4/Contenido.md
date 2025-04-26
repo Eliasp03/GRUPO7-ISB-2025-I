@@ -54,6 +54,9 @@ El propósito de este proceso consiste en comprender el funcionamiento del dispo
 
 ## Bibliografía
 [1] “Papel del Electrocardiograma y sus Características - Cerebromedico”. Cerebromedico. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://cerebromedico.com/electrocardiograma/papel-ekg
+
 [2] “Estimating Cardiac Axis”. Discover Clinical Medicine - MedSchool. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://medschool.co/tests/ecg-basics/estimating-cardiac-axis
+
 [3] “The Basics of ECG”. ACLS Medical Training. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.aclsmedicaltraining.com/basics-of-ecg/
+
 [4] “BITalino”. PLUX Biosignals. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.pluxbiosignals.com/collections/bitalino?srsltid=AfmBOopxPuL4rizGon-RlE3KPmQOCbfBI1UOzH1FhKijinshBj1K7VCj
