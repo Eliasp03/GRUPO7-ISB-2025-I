@@ -48,6 +48,60 @@ El propósito de este proceso consiste en comprender el funcionamiento del dispo
 <img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
 ## Metodología y resultados <a name="id4"></a>
+Se adquirieron señales ECG reales usando el sistema BITalino en diferentes condiciones:
+- Ejercicio físico (movimiento)
+- Reposo (tranquilo)
+- Inhalación prolongada
+- Respiración controlada
+
+Para cada condición y cada derivada, se aplicó:
+- Lectura de la señal cruda
+- Procesamiento con NeuroKit2 (`ecg_process`)
+- Análisis en el dominio del tiempo (visualización)
+- Análisis en el dominio de la frecuencia (FFT)
+- Aplicación de filtro pasa banda (0.5–40 Hz)
+- Cálculo de FFT sobre la señal filtrada
+
+### Señales procesadas
+### Ejercicio físico
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_2der_ejercicio.png`, `ecg_procesada_2der_ejercicio.png`, `ecg_fft_cruda_2der_ejercicio.png`, `ecg_signal_filtered_2der_ejercicio.png`, `ecg_fft_filtered_2der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_3der_ejercicio.png`, `ecg_procesada_3der_ejercicio.png`, `ecg_fft_cruda_3der_ejercicio.png`, `ecg_signal_filtered_3der_ejercicio.png`, `ecg_fft_filtered_3der_ejercicio.png` |
+
+### Reposo
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+
+### Inhalación larga
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+
+### Respiración controlada
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+
+### Detalles del procesamiento
+
+- **Filtro** aplicado: pasa banda 0.5–40 Hz, orden 4.
+- **Transformada rápida de Fourier (FFT)** con 1024 puntos.
+- **Segmento de visualización (zoom):** de 5 a 10 segundos.
+- **Software usado:** Python 3.12, NeuroKit2, Matplotlib, OpenSignalsReader.
+
 
 ## Discusiones y limitaciones <a name="id5"></a>
 
