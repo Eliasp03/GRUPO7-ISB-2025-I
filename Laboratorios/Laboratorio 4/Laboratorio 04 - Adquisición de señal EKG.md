@@ -90,42 +90,42 @@ Para cada condición y cada derivada, se aplicó:
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
-| 1ra Derivada | <img src="./ImagesL4/ecg_cruda_1der_ejercicio.png" width="800" height="400"> |
-| 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_ejercicio.png" width="800" height="400"> |
-| 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_ejercicio.png" width="800" height="400"> |
+| 1ra Derivada | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_reposo.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_reposo.png" width="800" height="400"> |
 
 
 #### 4.1.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
-|:---------|:-------------------|
-| 1ra Derivada | `ecg_signal_filtered_1der_ejercicio.png` |
-| 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
-| 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
+|:---------|:-----------------|
+| 1ra Derivada | <img src="./ImagesL4/ecg_signal_filtered_1der_reposo.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_signal_filtered_2der_reposo.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_signal_filtered_3der_reposo.png" width="800" height="400"> |
 
 #### 4.1.3. FFT
 
 | Derivada | Gráfica generada |
-|:---------|:-------------------|
-| 1ra Derivada | `ecg_fft_cruda_1der_ejercicio.png` |
-| 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
-| 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
+|:---------|:-----------------|
+| 1ra Derivada | <img src="./ImagesL4/ecg_fft_cruda_1der_reposo.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_fft_cruda_2der_reposo.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_fft_cruda_3der_reposo.png" width="800" height="400"> |
 
 #### 4.1.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
-|:---------|:-------------------|
-| 1ra Derivada | `ecg_fft_filtered_1der_ejercicio.png` |
-| 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
-| 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
+|:---------|:-----------------|
+| 1ra Derivada | <img src="./ImagesL4/ecg_fft_filtered_1der_reposo.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_fft_filtered_2der_reposo.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_fft_filtered_3der_reposo.png" width="800" height="400"> |
 
 #### 4.1.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
-|:---------|:-------------------|
-| 1ra Derivada | `ecg_procesada_1der_ejercicio.png` |
-| 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
-| 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
+|:---------|:-----------------|
+| 1ra Derivada | <img src="./ImagesL4/ecg_procesada_1der_reposo.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_procesada_2der_reposo.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_procesada_3der_reposo.png" width="800" height="400"> |
 
 ### 4.2. Señales procesadas - Respiración controlada <a name="id42"></a>
 #### 4.2.1. Señal Cruda
