@@ -63,7 +63,39 @@ Para cada condición y cada derivada, se aplicó:
 - Cálculo de FFT sobre la señal filtrada
 
 ### Señales procesadas
-### Ejercicio físico
+### Ejercicio físico - Señal Cruda
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_2der_ejercicio.png`, `ecg_procesada_2der_ejercicio.png`, `ecg_fft_cruda_2der_ejercicio.png`, `ecg_signal_filtered_2der_ejercicio.png`, `ecg_fft_filtered_2der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_3der_ejercicio.png`, `ecg_procesada_3der_ejercicio.png`, `ecg_fft_cruda_3der_ejercicio.png`, `ecg_signal_filtered_3der_ejercicio.png`, `ecg_fft_filtered_3der_ejercicio.png` |
+
+### Ejercicio físico - Señal Filtrada
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_2der_ejercicio.png`, `ecg_procesada_2der_ejercicio.png`, `ecg_fft_cruda_2der_ejercicio.png`, `ecg_signal_filtered_2der_ejercicio.png`, `ecg_fft_filtered_2der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_3der_ejercicio.png`, `ecg_procesada_3der_ejercicio.png`, `ecg_fft_cruda_3der_ejercicio.png`, `ecg_signal_filtered_3der_ejercicio.png`, `ecg_fft_filtered_3der_ejercicio.png` |
+
+### Ejercicio físico - FFT
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_2der_ejercicio.png`, `ecg_procesada_2der_ejercicio.png`, `ecg_fft_cruda_2der_ejercicio.png`, `ecg_signal_filtered_2der_ejercicio.png`, `ecg_fft_filtered_2der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_3der_ejercicio.png`, `ecg_procesada_3der_ejercicio.png`, `ecg_fft_cruda_3der_ejercicio.png`, `ecg_signal_filtered_3der_ejercicio.png`, `ecg_fft_filtered_3der_ejercicio.png` |
+
+### Ejercicio físico - FFT Filtrada
+
+| Derivada | Gráfica generada |
+|:---------|:-------------------|
+| 1ra Derivada | `ecg_cruda_1der_ejercicio.png`, `ecg_procesada_1der_ejercicio.png`, `ecg_fft_cruda_1der_ejercicio.png`, `ecg_signal_filtered_1der_ejercicio.png`, `ecg_fft_filtered_1der_ejercicio.png` |
+| 2da Derivada | `ecg_cruda_2der_ejercicio.png`, `ecg_procesada_2der_ejercicio.png`, `ecg_fft_cruda_2der_ejercicio.png`, `ecg_signal_filtered_2der_ejercicio.png`, `ecg_fft_filtered_2der_ejercicio.png` |
+| 3ra Derivada | `ecg_cruda_3der_ejercicio.png`, `ecg_procesada_3der_ejercicio.png`, `ecg_fft_cruda_3der_ejercicio.png`, `ecg_signal_filtered_3der_ejercicio.png`, `ecg_fft_filtered_3der_ejercicio.png` |
+
+### Ejercicio físico - Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
