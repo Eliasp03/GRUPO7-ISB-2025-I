@@ -82,10 +82,11 @@ Para cada condición y cada derivada, se aplicó:
 #### 4.1.1. Señal Cruda
 
 | Derivada | Gráfica generada |
-|:---------|:-------------------|
-| 1ra Derivada | <img src="https://github.com/Eliasp03/GRUPO7-ISB-2025-I/Laboratorios/Laboratorio 4/ImagesL4/ecg_cruda_1der_ejercicio.png.png?raw=true" width="500" height="200"/> |
-| 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
-| 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
+|:---------|:-----------------|
+| 1ra Derivada | <img src="./Laboratorios/Laboratorio 4/ImagesL4/ecg_cruda_1der_ejercicio.png" width="500"/> |
+| 2da Derivada | <img src="./Laboratorios/Laboratorio 4/ImagesL4/ecg_cruda_2der_ejercicio.png" width="500"/> |
+| 3ra Derivada | <img src="./Laboratorios/Laboratorio 4/ImagesL4/ecg_cruda_3der_ejercicio.png" width="500"/> |
+
 
 #### 4.1.2. Señal Filtrada
 
