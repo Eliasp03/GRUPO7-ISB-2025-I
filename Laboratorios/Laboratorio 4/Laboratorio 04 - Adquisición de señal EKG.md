@@ -62,8 +62,8 @@ Para cada condición y cada derivada, se aplicó:
 - Aplicación de filtro pasa banda (0.5–40 Hz)
 - Cálculo de FFT sobre la señal filtrada
 
-### 3.1 Señales procesadas - Reposo
-#### 3.1.1 Señal Cruda
+### 3.1. Señales procesadas - Reposo
+#### 3.1.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -71,7 +71,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.1.2 Señal Filtrada
+#### 3.1.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -79,7 +79,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.1.3 FFT
+#### 3.1.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -87,7 +87,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.1.4 FFT Filtrada
+#### 3.1.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -95,7 +95,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.1.5 Función ecg_process()
+#### 3.1.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -103,8 +103,8 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.2 Señales procesadas - Respiración controlada
-#### 3.2.1 Señal Cruda
+### 3.2. Señales procesadas - Respiración controlada
+#### 3.2.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -112,7 +112,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.2.2 Señal Filtrada
+#### 3.2.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -120,7 +120,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.2.3 FFT
+#### 3.2.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -128,7 +128,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.2.4 FFT Filtrada
+#### 3.2.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -136,7 +136,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.2.5 Función ecg_process()
+#### 3.2.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -144,8 +144,8 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.3 Señales procesadas - Inhalación larga
-#### 3.3.1 Señal Cruda
+### 3.3. Señales procesadas - Inhalación larga
+#### 3.3.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -153,7 +153,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.3.2 Señal Filtrada
+#### 3.3.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -161,7 +161,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.3.3 FFT
+#### 3.3.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -169,7 +169,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.3.4 FFT Filtrada
+#### 3.3.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -177,7 +177,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.3.5 Función ecg_process()
+#### 3.3.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -185,8 +185,8 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.4 Señales procesadas - Ejercicio físico
-#### 3.4.1 Señal Cruda
+### 3.4. Señales procesadas - Ejercicio físico
+#### 3.4.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -194,7 +194,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.4.2 Señal Filtrada
+#### 3.4.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -202,7 +202,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.4.3 FFT
+#### 3.4.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -210,7 +210,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.4.4 FFT Filtrada
+#### 3.4.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -218,7 +218,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.4.5 Función ecg_process()
+#### 3.4.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
