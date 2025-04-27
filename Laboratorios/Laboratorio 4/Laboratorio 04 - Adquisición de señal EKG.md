@@ -307,13 +307,25 @@ Durante el análisis de las señales ECG obtenidas durante ejercicio físico mod
 - El procesamiento automático con [**ecg_process()**](#445-función-ecg_process-ejercicio) revela un aumento de la frecuencia cardíaca promedio y mayor variabilidad en los intervalos RR, lo que es fisiológicamente consistente con la respuesta simpática al ejercicio.
 
 
-### Limitaciones
+### Limitaciones y recomendaciones a futuro
 
-Durante la adquisición de señales electrocardiográficas (ECG) con tres derivaciones, una limitación frecuente fue la presencia de ruido eléctrico ambiental. La cercanía de dispositivos electrónicos como laptops o cargadores puede introducir interferencias en la señal, afectando la nitidez del registro [a]. Para reducir este problema, se recomienda mantener distancia de fuentes de ruido y emplear filtros digitales adecuados [b].
+Durante la adquisición de señales electrocardiográficas (ECG) de tres derivaciones, se identificaron algunas limitaciones técnicas relevantes:
 
-Aunque se realizó una limpieza previa de la piel con alcohol, la adherencia de los electrodos puede verse afectada por factores como el sudor o pequeños movimientos durante la prueba, generando artefactos en la señal [c]. Para optimizar el registro, es aconsejable revisar periódicamente la fijación de los electrodos y utilizar parches de alta adherencia [d].
+- **Ruido eléctrico ambiental:**  
+Una limitación frecuente fue la presencia de ruido inducido por la proximidad de dispositivos electrónicos como laptops, cargadores o iluminación fluorescente. Este tipo de interferencia se refleja claramente como picos o distorsiones de alta frecuencia en el espectro de la [**FFT Cruda**](#443-fft-cruda-ejercicio) y [**FFT Cruda Reposo**](#413-fft-cruda).  
+🔵 *Mejora sugerida:* Mantener distancia de fuentes de ruido y aplicar filtros digitales adecuados en la etapa de preprocesamiento.
 
-Finalmente, la tensión mecánica en los cables representa otra fuente de inestabilidad. Si los cables se tensan o mueven, pueden provocar desplazamientos de los electrodos y aumentar el ruido de la señal [1]. Se recomienda sujetar los cables de forma segura sobre una superficie fija o utilizar sujetadores específicos para minimizar este problema [e].
+- **Adherencia imperfecta de electrodos:**  
+Aunque se realizó limpieza previa de la piel con alcohol, factores como el sudor o pequeños desplazamientos afectaron la calidad del contacto, generando artefactos de movimiento visibles como oscilaciones abruptas en la [**Señal cruda de Inhalación**](#431-señal-cruda-inhalacion).  
+🔵 *Mejora sugerida:* Utilizar electrodos de alta adherencia y reforzar la fijación periódicamente durante la prueba.
+
+- **Tensión mecánica en cables:**  
+Movimientos o tensiones en los cables de conexión provocaron desplazamientos de los electrodos, incrementando el ruido. Estos artefactos se evidencian como variaciones irregulares de amplitud, especialmente durante [**Ejercicio**](#441-señal-cruda-ejercicio).  
+🔵 *Mejora sugerida:* Asegurar los cables al cuerpo o a superficies fijas mediante sujetadores específicos para evitar tracción directa sobre los electrodos.
+
+---
+
+Estas limitaciones, si bien comunes en estudios con adquisición ambulatoria, pueden ser mitigadas con estrategias de prevención y una preparación adecuada del entorno y del sujeto. La calidad de los registros mejoraría notablemente, permitiendo análisis más precisos y confiables.
 
 
 
