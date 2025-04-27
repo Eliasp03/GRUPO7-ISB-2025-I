@@ -350,7 +350,7 @@ Estas limitaciones, si bien comunes en estudios con adquisición ambulatoria, pu
 - El filtrado pasa banda aplicado (0.5–40 Hz) es efectivo para preservar la integridad del ECG a pesar de los artefactos respiratorios.
 
 - La presencia de picos en bajas frecuencias en la FFT de la señal cruda valida la influencia directa de la respiración sobre la señal eléctrica cardíaca.
-- 
+  
 - La actividad física genera un incremento considerable en la frecuencia cardíaca, así como en el nivel de ruido y artefactos en la señal ECG.
 
 - La aplicación de filtrado pasa banda (0.5–40 Hz) permite recuperar en gran medida la morfología del ECG, aunque el movimiento extremo puede seguir afectando la calidad de la señal.
