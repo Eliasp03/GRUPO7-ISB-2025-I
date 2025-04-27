@@ -8,6 +8,7 @@
    4.2. [Señales procesadas - Respiración controlada](#id42)<br>
    4.3. [Señales procesadas - Inhalación larga](#id43)<br>
    4.4. [Señales procesadas - Ejercicio físico](#id44)<br>
+   4.5. [Detalles del procesamiento](#id45)<br>
 5. [Discusiones y limitaciones](#id5)
 6. [Conclusiones](#id6)
 
@@ -230,7 +231,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 🔧 Detalles del procesamiento
+### 🔧 Detalles del procesamiento <a name="id45"></a>
 
 - **Filtro** aplicado: pasa banda 0.5–40 Hz, orden 4.
 - **Transformada rápida de Fourier (FFT)** con 1024 puntos.
