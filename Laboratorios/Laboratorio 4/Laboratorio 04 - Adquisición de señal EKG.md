@@ -230,7 +230,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### Detalles del procesamiento
+### 🔧 Detalles del procesamiento
 
 - **Filtro** aplicado: pasa banda 0.5–40 Hz, orden 4.
 - **Transformada rápida de Fourier (FFT)** con 1024 puntos.
