@@ -73,7 +73,7 @@ Para cada condición y cada derivada, se aplicó:
 <p align="center"><strong>Adquisición de la señal</strong></p>
 
 <p align="center">
-  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HJIlzI2OXYC5avDCqxtay_i">
+  <a href="https://www.youtube.com/watch?v=tEmNLL7wylE&list=PL0yjbUQfs0HJIlzI2OXYC5avDCqxtay_i&index=1">
     <img src="ImagesL4/Youtube_logo.png" width="15%">
   </a>
 </p>
