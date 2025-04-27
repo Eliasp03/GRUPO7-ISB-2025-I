@@ -8,8 +8,8 @@
    4.2. Señales procesadas - Respiración controlada
    4.3. Señales procesadas - Inhalación larga
    4.4. Señales procesadas - Ejercicio físico
-6. [Discusiones y limitaciones](#id5)
-7. [Conclusiones](#id6)
+5. [Discusiones y limitaciones](#id5)
+6. [Conclusiones](#id6)
 
 ## 1. Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
@@ -42,7 +42,7 @@ Las ondas básicas del ECG incluyen:
 El propósito de este proceso consiste en comprender el funcionamiento del dispositivo BITalino y definir la disposición adecuada de los electrodos para la captura de señales biomédicas. Posteriormente, se busca adquirir registros electrocardiográficos (ECG), tal que las señales recopiladas serán procesadas y visualizadas en tiempo real a través del software OpenSignals. Adicionalmente, se configura el BITalino de manera correcta para asegurar la calidad de las mediciones. Finalmente, se realiza la exportación de los datos brutos de las señales ECG con el fin de facilitar su procesamiento.
 </p>
 
-## Materiales y equipos <a name="id3"></a>
+## 3. Materiales y equipos <a name="id3"></a>
 | Material     |Cantidad   |
 |-----------   |:------------:
 |Kit BITalino[4]  |1          |
@@ -66,8 +66,8 @@ Para cada condición y cada derivada, se aplicó:
 - Aplicación de filtro pasa banda (0.5–40 Hz)
 - Cálculo de FFT sobre la señal filtrada
 
-### 3.1. Señales procesadas - Reposo <a name="id41"></a>
-#### 3.1.1. Señal Cruda
+### 4.1. Señales procesadas - Reposo <a name="id41"></a>
+#### 4.1.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -75,7 +75,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.1.2. Señal Filtrada
+#### 4.1.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -83,7 +83,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.1.3. FFT
+#### 4.1.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -91,7 +91,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.1.4. FFT Filtrada
+#### 4.1.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -99,7 +99,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.1.5. Función ecg_process()
+#### 4.1.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -107,8 +107,8 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.2. Señales procesadas - Respiración controlada <a name="id42"></a>
-#### 3.2.1. Señal Cruda
+### 4.2. Señales procesadas - Respiración controlada <a name="id42"></a>
+#### 4.2.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -116,7 +116,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.2.2. Señal Filtrada
+#### 4.2.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -124,7 +124,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.2.3. FFT
+#### 4.2.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -132,7 +132,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.2.4. FFT Filtrada
+#### 4.2.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -140,7 +140,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.2.5. Función ecg_process()
+#### 4.2.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -148,8 +148,8 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.3. Señales procesadas - Inhalación larga <a name="id43"></a>
-#### 3.3.1. Señal Cruda
+### 4.3. Señales procesadas - Inhalación larga <a name="id43"></a>
+#### 4.3.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -157,7 +157,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.3.2. Señal Filtrada
+#### 4.3.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -165,7 +165,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.3.3. FFT
+#### 4.3.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -173,7 +173,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.3.4. FFT Filtrada
+#### 4.3.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -181,7 +181,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.3.5. Función ecg_process()
+#### 4.3.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -189,8 +189,8 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.4. Señales procesadas - Ejercicio físico <a name="id44"></a>
-#### 3.4.1. Señal Cruda
+### 4.4. Señales procesadas - Ejercicio físico <a name="id44"></a>
+#### 4.4.1. Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -198,7 +198,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-#### 3.4.2. Señal Filtrada
+#### 4.4.2. Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -206,7 +206,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-#### 3.4.3. FFT
+#### 4.4.3. FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -214,7 +214,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-#### 3.4.4. FFT Filtrada
+#### 4.4.4. FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -222,7 +222,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-#### 3.4.5. Función ecg_process()
+#### 4.4.5. Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -238,9 +238,9 @@ Para cada condición y cada derivada, se aplicó:
 - **Software usado:** Python 3.12, NeuroKit2, Matplotlib, OpenSignalsReader.
 
 
-## Discusiones y limitaciones <a name="id5"></a>
+## 5. Discusiones y limitaciones <a name="id5"></a>
 
-## Conclusiones <a name="id6"></a>
+## 6. Conclusiones <a name="id6"></a>
 
 ## Bibliografía
 [1] “Papel del Electrocardiograma y sus Características - Cerebromedico”. Cerebromedico. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://cerebromedico.com/electrocardiograma/papel-ekg
