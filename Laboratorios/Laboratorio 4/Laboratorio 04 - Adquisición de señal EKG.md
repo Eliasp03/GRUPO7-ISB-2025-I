@@ -90,9 +90,9 @@ Para cada condición y cada derivada, se aplicó:
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
-| 1ra Derivada | <img src="./ImagesL4/ecg_cruda_1der_ejercicio.png" width="800" height="200"> |
-| 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_ejercicio.png" width="800" height="200"> |
-| 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_ejercicio.png" width="800" height="200"> |
+| 1ra Derivada | <img src="./ImagesL4/ecg_cruda_1der_ejercicio.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_ejercicio.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_ejercicio.png" width="800" height="400"> |
 
 
 #### 4.1.2. Señal Filtrada
