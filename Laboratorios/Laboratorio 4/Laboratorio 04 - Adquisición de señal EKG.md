@@ -7,7 +7,7 @@
 5. [Discusiones y limitaciones](#id5)
 6. [Conclusiones](#id6)
 
-## Introducción <a name="id1"></a>
+## 1. Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
 El electrocardiograma (ECG o EKG) es un procedimiento médico no invasivo e indoloro, ampliamente utilizado para apoyar el diagnóstico de enfermedades cardíacas, como insuficiencia cardíaca, hipertrofias, infartos y cuadros benignos, entre otros. Proporciona información esencial sobre la frecuencia cardíaca, el ritmo y patrones eléctricos asociados a patologías [1].
   
@@ -33,7 +33,7 @@ Las ondas básicas del ECG incluyen:
 
 </p>
 
-## Propósito de la práctica <a name="id2"></a>
+## 2. Propósito de la práctica <a name="id2"></a>
 <p style="text-align: justify;">   
 El propósito de este proceso consiste en comprender el funcionamiento del dispositivo BITalino y definir la disposición adecuada de los electrodos para la captura de señales biomédicas. Posteriormente, se busca adquirir registros electrocardiográficos (ECG), tal que las señales recopiladas serán procesadas y visualizadas en tiempo real a través del software OpenSignals. Adicionalmente, se configura el BITalino de manera correcta para asegurar la calidad de las mediciones. Finalmente, se realiza la exportación de los datos brutos de las señales ECG con el fin de facilitar su procesamiento.
 </p>
@@ -47,7 +47,7 @@ El propósito de este proceso consiste en comprender el funcionamiento del dispo
 
 <img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
-## Metodología y resultados <a name="id4"></a>
+## 3. Metodología y resultados <a name="id4"></a>
 Se adquirieron señales ECG reales usando el sistema BITalino en diferentes condiciones:
 - Ejercicio físico (movimiento)
 - Reposo (tranquilo)
@@ -62,8 +62,8 @@ Para cada condición y cada derivada, se aplicó:
 - Aplicación de filtro pasa banda (0.5–40 Hz)
 - Cálculo de FFT sobre la señal filtrada
 
-### Señales procesadas
-### Ejercicio físico - Señal Cruda
+### 3.1 Señales procesadas - Ejercicio físico
+### 3.1.1 Señal Cruda
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -71,7 +71,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_cruda_3der_ejercicio.png` |
 
-### Ejercicio físico - Señal Filtrada
+### 3.1.2 Señal Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -79,7 +79,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_signal_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_signal_filtered_3der_ejercicio.png` |
 
-### Ejercicio físico - FFT
+### 3.1.3 FFT
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -87,7 +87,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_cruda_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_cruda_3der_ejercicio.png` |
 
-### Ejercicio físico - FFT Filtrada
+### 3.1.4 FFT Filtrada
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -95,7 +95,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_fft_filtered_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_fft_filtered_3der_ejercicio.png` |
 
-### Ejercicio físico - Función ecg_process()
+### 3.1.5 Función ecg_process()
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
@@ -103,7 +103,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### Reposo
+### 3.2 Señales procesadas - Reposo
 
 | Derivada | Gráfica generada |
 |:---------|:-------------------|
