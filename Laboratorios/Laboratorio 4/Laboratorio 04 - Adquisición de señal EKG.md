@@ -3,8 +3,8 @@
 1. [Introducción](#id1)
 2. [Propósito de la práctica](#id2)
 3. [Materiales y equipos](#id3)
-4. [Metodología y resultados](#id4)
-   4.1. [Señales procesadas - Reposo](#id41)
+4. [Metodología y resultados](#id4)<br>
+   4.1. [Señales procesadas - Reposo](#id41)<br>
    4.2. Señales procesadas - Respiración controlada
    4.3. Señales procesadas - Inhalación larga
    4.4. Señales procesadas - Ejercicio físico
