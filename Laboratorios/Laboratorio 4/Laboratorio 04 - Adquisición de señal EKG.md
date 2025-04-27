@@ -251,6 +251,17 @@ Para cada condición y cada derivada, se aplicó:
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
+
+# Limitaciones
+
+Durante la adquisición de señales electrocardiográficas (ECG) con tres derivaciones, una limitación frecuente fue la presencia de ruido eléctrico ambiental. La cercanía de dispositivos electrónicos como laptops o cargadores puede introducir interferencias en la señal, afectando la nitidez del registro [a]. Para reducir este problema, se recomienda mantener distancia de fuentes de ruido y emplear filtros digitales adecuados [b].
+
+Aunque se realizó una limpieza previa de la piel con alcohol, la adherencia de los electrodos puede verse afectada por factores como el sudor o pequeños movimientos durante la prueba, generando artefactos en la señal [c]. Para optimizar el registro, es aconsejable revisar periódicamente la fijación de los electrodos y utilizar parches de alta adherencia [d].
+
+Finalmente, la tensión mecánica en los cables representa otra fuente de inestabilidad. Si los cables se tensan o mueven, pueden provocar desplazamientos de los electrodos y aumentar el ruido de la señal [1]. Se recomienda sujetar los cables de forma segura sobre una superficie fija o utilizar sujetadores específicos para minimizar este problema [e].
+
+
+
 ## 6. Conclusiones <a name="id6"></a>
 
 ## Bibliografía
