@@ -4,8 +4,12 @@
 2. [Propósito de la práctica](#id2)
 3. [Materiales y equipos](#id3)
 4. [Metodología y resultados](#id4)
-5. [Discusiones y limitaciones](#id5)
-6. [Conclusiones](#id6)
+   4.1. [Señales procesadas - Reposo](#id41)
+   4.2. Señales procesadas - Respiración controlada
+   4.3. Señales procesadas - Inhalación larga
+   4.4. Señales procesadas - Ejercicio físico
+6. [Discusiones y limitaciones](#id5)
+7. [Conclusiones](#id6)
 
 ## 1. Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
@@ -62,7 +66,7 @@ Para cada condición y cada derivada, se aplicó:
 - Aplicación de filtro pasa banda (0.5–40 Hz)
 - Cálculo de FFT sobre la señal filtrada
 
-### 3.1. Señales procesadas - Reposo
+### 3.1. Señales procesadas - Reposo <a name="id41"></a>
 #### 3.1.1. Señal Cruda
 
 | Derivada | Gráfica generada |
@@ -103,7 +107,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.2. Señales procesadas - Respiración controlada
+### 3.2. Señales procesadas - Respiración controlada <a name="id42"></a>
 #### 3.2.1. Señal Cruda
 
 | Derivada | Gráfica generada |
@@ -144,7 +148,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.3. Señales procesadas - Inhalación larga
+### 3.3. Señales procesadas - Inhalación larga <a name="id43"></a>
 #### 3.3.1. Señal Cruda
 
 | Derivada | Gráfica generada |
@@ -185,7 +189,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 3.4. Señales procesadas - Ejercicio físico
+### 3.4. Señales procesadas - Ejercicio físico <a name="id44"></a>
 #### 3.4.1. Señal Cruda
 
 | Derivada | Gráfica generada |
