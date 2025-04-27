@@ -78,6 +78,13 @@ Para cada condición y cada derivada, se aplicó:
   </a>
 </p>
 
+### 🔧 Detalles del procesamiento <a name="id45"></a>
+
+- **Filtro** aplicado: pasa banda 0.5–40 Hz, orden 4.
+- **Transformada rápida de Fourier (FFT)** con 1024 puntos.
+- **Segmento de visualización (zoom):** de 5 a 10 segundos.
+- **Software usado:** Python 3.12, NeuroKit2, Matplotlib, OpenSignalsReader.
+
 ### 4.1. Señales procesadas - Reposo <a name="id41"></a>
 #### 4.1.1. Señal Cruda
 
@@ -243,12 +250,6 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | `ecg_procesada_2der_ejercicio.png` |
 | 3ra Derivada | `ecg_procesada_3der_ejercicio.png` |
 
-### 🔧 Detalles del procesamiento <a name="id45"></a>
-
-- **Filtro** aplicado: pasa banda 0.5–40 Hz, orden 4.
-- **Transformada rápida de Fourier (FFT)** con 1024 puntos.
-- **Segmento de visualización (zoom):** de 5 a 10 segundos.
-- **Software usado:** Python 3.12, NeuroKit2, Matplotlib, OpenSignalsReader.
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
