@@ -59,6 +59,14 @@ Se adquirieron señales ECG reales usando el sistema BITalino en diferentes cond
 - Inhalación prolongada
 - Respiración controlada
 
+<p align="center"><strong>Adquisición de la señal</strong></p>
+
+<p align="center">
+  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF">
+    <img src="ImagesL4/Youtube_logo.png" width="15%">
+  </a>
+</p>
+
 Para cada condición y cada derivada, se aplicó:
 - Lectura de la señal cruda
 - Procesamiento con NeuroKit2 (`ecg_process`)
@@ -237,14 +245,6 @@ Para cada condición y cada derivada, se aplicó:
 - **Transformada rápida de Fourier (FFT)** con 1024 puntos.
 - **Segmento de visualización (zoom):** de 5 a 10 segundos.
 - **Software usado:** Python 3.12, NeuroKit2, Matplotlib, OpenSignalsReader.
-
-<p align="center"><strong>Adquisición de la señal</strong></p>
-
-<p align="center">
-  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF">
-    <img src="ImagesL3/Youtube_logo.png" width="15%">
-  </a>
-</p>
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
