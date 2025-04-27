@@ -5,9 +5,9 @@
 3. [Materiales y equipos](#id3)
 4. [Metodología y resultados](#id4)<br>
    4.1. [Señales procesadas - Reposo](#id41)<br>
-   4.2. Señales procesadas - Respiración controlada
-   4.3. Señales procesadas - Inhalación larga
-   4.4. Señales procesadas - Ejercicio físico
+   4.2. [Señales procesadas - Respiración controlada](#id42)<br>
+   4.3. [Señales procesadas - Inhalación larga](#id43)<br>
+   4.4. [Señales procesadas - Ejercicio físico](#id44)<br>
 5. [Discusiones y limitaciones](#id5)
 6. [Conclusiones](#id6)
 
