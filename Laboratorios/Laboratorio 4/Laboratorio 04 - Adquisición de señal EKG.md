@@ -53,27 +53,30 @@ El propósito de este proceso consiste en comprender el funcionamiento del dispo
 <img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
 ## 3. Metodología y resultados <a name="id4"></a>
+
 Se adquirieron señales ECG reales usando el sistema BITalino en diferentes condiciones:
+
 - Ejercicio físico (movimiento)
 - Reposo (tranquilo)
 - Inhalación prolongada
 - Respiración controlada
 
-<p align="center"><strong>Adquisición de la señal</strong></p>
-
-<p align="center">
-  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HI3KjGtao96HebQhwQrK4IF">
-    <img src="ImagesL4/Youtube_logo.png" width="15%">
-  </a>
-</p>
-
 Para cada condición y cada derivada, se aplicó:
+
 - Lectura de la señal cruda
 - Procesamiento con NeuroKit2 (`ecg_process`)
 - Análisis en el dominio del tiempo (visualización)
 - Análisis en el dominio de la frecuencia (FFT)
 - Aplicación de filtro pasa banda (0.5–40 Hz)
 - Cálculo de FFT sobre la señal filtrada
+
+<p align="center"><strong>Adquisición de la señal</strong></p>
+
+<p align="center">
+  <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HJIlzI2OXYC5avDCqxtay_i">
+    <img src="ImagesL4/Youtube_logo.png" width="15%">
+  </a>
+</p>
 
 ### 4.1. Señales procesadas - Reposo <a name="id41"></a>
 #### 4.1.1. Señal Cruda
