@@ -309,16 +309,16 @@ Durante el análisis de las señales ECG obtenidas durante ejercicio físico mod
 Durante la adquisición de señales electrocardiográficas (ECG) de tres derivaciones, se identificaron algunas limitaciones técnicas relevantes:
 
 - **Ruido eléctrico ambiental:**  
-Una limitación frecuente fue la presencia de ruido inducido por la proximidad de dispositivos electrónicos como laptops, cargadores o iluminación fluorescente. Este tipo de interferencia se refleja claramente como picos o distorsiones de alta frecuencia en el espectro de la [**FFT Cruda**](#443-fft-cruda) y [**FFT Cruda Reposo**](#413-fft).  
-🔵 *Mejora sugerida:* Mantener distancia de fuentes de ruido y aplicar filtros digitales adecuados en la etapa de preprocesamiento.
+Una limitación frecuente fue la presencia de ruido inducido por la proximidad de dispositivos electrónicos como laptops, cargadores o iluminación fluorescente [7]. Este tipo de interferencia se refleja claramente como picos o distorsiones de alta frecuencia en el espectro de la [**FFT Cruda**](#443-fft-cruda) y [**FFT Cruda Reposo**](#413-fft).  
+🔵 *Mejora sugerida:* Mantener distancia de fuentes de ruido y aplicar filtros digitales adecuados en la etapa de preprocesamiento [8].
 
 - **Adherencia imperfecta de electrodos:**  
-Aunque se realizó limpieza previa de la piel con alcohol, factores como el sudor o pequeños desplazamientos afectaron la calidad del contacto, generando artefactos de movimiento visibles como oscilaciones abruptas en la [**Señal cruda de Inhalación**](#431-señal-cruda).  
-🔵 *Mejora sugerida:* Utilizar electrodos de alta adherencia y reforzar la fijación periódicamente durante la prueba.
+Aunque se realizó limpieza previa de la piel con alcohol, factores como el sudor o pequeños desplazamientos afectaron la calidad del contacto, generando artefactos de movimiento visibles [9] como oscilaciones abruptas en la [**Señal cruda de Inhalación**](#431-señal-cruda).  
+🔵 *Mejora sugerida:* Utilizar electrodos de alta adherencia y reforzar la fijación periódicamente durante la prueba [10].
 
 - **Tensión mecánica en cables:**  
-Movimientos o tensiones en los cables de conexión provocaron desplazamientos de los electrodos, incrementando el ruido. Estos artefactos se evidencian como variaciones irregulares de amplitud, especialmente durante [**Ejercicio**](#441-señal-cruda).  
-🔵 *Mejora sugerida:* Asegurar los cables al cuerpo o a superficies fijas mediante sujetadores específicos para evitar tracción directa sobre los electrodos.
+Movimientos o tensiones en los cables de conexión provocaron desplazamientos de los electrodos, incrementando el ruido. Estos artefactos se evidencian como variaciones irregulares de amplitud [7], especialmente durante [**Ejercicio**](#441-señal-cruda).  
+🔵 *Mejora sugerida:* Asegurar los cables al cuerpo o a superficies fijas mediante sujetadores específicos para evitar tracción directa sobre los electrodos [11].
 
 ---
 
@@ -369,3 +369,13 @@ Estas limitaciones, si bien comunes en estudios con adquisición ambulatoria, pu
 [5] Yasuma F, Hayano J-I. Respiratory sinus arrhythmia: why does the heartbeat synchronize with respiratory rhythm? Chest [Internet]. 2004;125(2):683–90. Disponible en: http://dx.doi.org/10.1378/chest.125.2.683
 
 [6] Sone R, Yamazaki F, Fujii N, Fukuoka Y, Ikegami H. Respiratory variability in R-R interval during sinusoidal exercise. Eur J Appl Physiol Occup Physiol [Internet]. 1997;75(1):39–46. Disponible en: http://dx.doi.org/10.1007/s004210050124
+
+[7] Lee J, Park H, Kim H. Development of a MATLAB toolbox for automated ECG signal quality assessment. Sci Rep. 2024;14(1):3752. Available from: https://www.sciencedirect.com/science/article/pii/S235271102400270X
+
+[8] Zhang Y, Liu Y, Wu Z. Sustainability and predictive accuracy of gel-based and embroidered electrodes for ECG signal acquisition. Sci Rep. 2024;14(1):4961. Available from: https://www.sciencedirect.com/science/article/pii/S1746809424006906
+
+[9] Liu S, Zhang T, Luo X. Electromechanical artifact in ECG from limb electrodes: Implications for the detection of arrhythmias. Sci Rep. 2024;14(1):5076. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC7677642/
+
+[10] Wu Y, Chen M, Li Y. Real-time ECG signal artifact elimination using open-source digital filters. Sci Rep. 2024;14(1):4885. Available from: https://www.sciencedirect.com/science/article/pii/S2772415824000130
+
+[11} Zhang X, Tang Z, Liang J. Automated algorithm for eliminating noisy beats and improving ECG signal purity. Sci Rep. 2024;14(1):4150. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC9234687/
