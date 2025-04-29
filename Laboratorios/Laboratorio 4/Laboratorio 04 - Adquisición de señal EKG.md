@@ -358,7 +358,8 @@ Estas limitaciones, si bien comunes en estudios con adquisición ambulatoria, pu
 
 ## 7. Actividad adicional
 
-Realizamos el ploteo las señales ECG obtenidas para la primera derivada usando la libreria ECG plot.
+Realizamos el ploteo las señales ECG obtenidas para la primera derivada usando la libreria ECG plot. [12]
+El código utilizado se encuentra en la misma carpeta que este documento.
 
 #### ECG Plot primera derivada
 
@@ -391,3 +392,12 @@ Realizamos el ploteo las señales ECG obtenidas para la primera derivada usando 
 [10] Wu Y, Chen M, Li Y. Real-time ECG signal artifact elimination using open-source digital filters. Sci Rep. 2024;14(1):4885. Available from: https://www.sciencedirect.com/science/article/pii/S2772415824000130
 
 [11} Zhang X, Tang Z, Liang J. Automated algorithm for eliminating noisy beats and improving ECG signal purity. Sci Rep. 2024;14(1):4150. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC9234687/
+
+[12] Ecg-plot [Internet]. PyPI. [citado el 29 de abril de 2025]. Disponible en: https://pypi.org/project/ecg-plot/
+
+
+
+
+
+
+
