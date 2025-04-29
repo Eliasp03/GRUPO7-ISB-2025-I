@@ -253,6 +253,7 @@ Para cada condición y cada derivada, se aplicó:
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
+La discusión de resultados se realizó de manera detallada para la primera derivada.
 ### Discusiones
 #### Estado en reposo: 
 - En la [**Señal cruda**](#411-señal-cruda), se observa un ECG con amplitud y periodicidad características de una condición basal. A pesar del ruido de fondo visible, la morfología principal de los complejos QRS se mantiene identificable para la primera derivada. El componente de interferencia de red a 50-60 Hz es evidente en el espectro.
@@ -263,27 +264,23 @@ Para cada condición y cada derivada, se aplicó:
 
 - El procesamiento usando `neurokit2.ecg_process()` ([**Función ecg_process()**](#415-función-ecg_process)) permitió detectar de manera automática los R-peaks y calcular la frecuencia cardíaca (HR). Se observa una frecuencia cardíaca estable en reposo (~80 bpm), con ligeras variaciones fisiológicas normales.
 
-- En el caso de las señales filtradas para la [**segunda y tercera derivada en reposo**](#412-señal-filtrada), los complejos QRS se destacan claramente como picos profundos y agudos.
-
-Estos resultados son consistentes con lo esperado para registros de sujetos sanos en estado de reposo, mostrando que el pipeline de adquisición, filtrado y análisis es funcional y adecuado para posteriores estudios comparativos en condiciones de fatiga o actividad física.
+- En el caso de las señales filtradas para la [**segunda y tercera derivada en reposo**](#412-señal-filtrada), los complejos QRS se destacan claramente como picos profundos y agudos. El análisis del espectro de frecuencia y procesamiento usando ecg_process() es similar al obtenido de la primera derivada.
 
 #### Respiración controlada:
-Durante la fase de respiración controlada, las señales ECG mostraron variaciones interesantes respecto a las observadas en reposo.
-
-- En la [**Señal cruda**](#421-señal-cruda-respiración), la señal presenta mayor oscilación de amplitud debido a los cambios en el volumen torácico durante la respiración. Se observa una modulación de la línea base superpuesta a la actividad eléctrica cardíaca, conocida como "artefacto respiratorio".
+Durante la fase de respiración controlada, las señales ECG mostraron variaciones respecto a las observadas en reposo.
 
 - Al aplicar el filtrado ([**Señal filtrada**](#422-señal-filtrada-respiración)), las ondas QRS se mantienen claras y definidas, mientras que la modulación de baja frecuencia producida por el movimiento respiratorio es atenuada, validando la eficiencia del filtro pasa banda (0.5–40 Hz).
 
 - En la [**FFT Cruda**](#423-fft-cruda-respiración), aparece un pico característico alrededor de 0.2–0.3 Hz, correspondiente a la frecuencia de la respiración (~12–18 respiraciones por minuto). Este pico desaparece o disminuye notablemente en la [**FFT Filtrada**](#424-fft-filtrada-respiración).
 
-- El análisis de [**ecg_process()**](#425-función-ecg_process-respiración) muestra que la frecuencia cardíaca mantiene estabilidad, aunque presenta mayor variabilidad rítmica (HRV) comparado al reposo, reflejando la influencia directa del control respiratorio sobre el sistema autónomo.
+- El análisis de [**ecg_process()**](#425-función-ecg_process-respiración) muestra que la frecuencia cardíaca mantiene estabilidad, aunque presenta mayor variabilidad rítmica (HRV) comparado al reposo.
 
-Este fenómeno observado es consistente con la respuesta fisiológica conocida como **sinus arrhythmia respiratoria**, donde la frecuencia cardíaca varía en sincronía con la fase de inspiración y espiración.
+Este fenómeno observado es consistente con la respuesta fisiológica conocida como **sinus arrhythmia respiratoria**, donde la frecuencia cardíaca varía en sincronía con la fase de inspiración y expiración. [5].
 
 #### Inhalación larga:
 El análisis de las señales durante la condición de inhalación larga muestra patrones fisiológicos característicos de la interacción cardiorrespiratoria.
 
-- En la [**Señal cruda**](#431-señal-cruda-inhalacion), se observa una variabilidad importante en la amplitud de la señal ECG, atribuida a los cambios de presión intratorácica durante las inhalaciones profundas y sostenidas.
+- En la [**Señal cruda**](#431-señal-cruda-inhalacion), se observa una variabilidad importante en la amplitud de la señal ECG.
 
 - Después del filtrado ([**Señal filtrada**](#432-señal-filtrada-inhalacion)), la morfología de los complejos QRS se mantiene clara, y se evidencia una mejor definición de los intervalos PR y QT. Las oscilaciones lentas inducidas por la respiración son atenuadas eficazmente.
 
@@ -293,20 +290,18 @@ El análisis de las señales durante la condición de inhalación larga muestra 
 
 - Finalmente, el procesamiento automático con [**ecg_process()**](#435-función-ecg_process-inhalacion) revela que la frecuencia cardíaca presenta una **variabilidad marcada** durante la inhalación prolongada, bajando y subiendo de forma sincronizada con el patrón respiratorio.
 
-Estos hallazgos confirman que maniobras respiratorias voluntarias de gran amplitud afectan significativamente la dinámica de la frecuencia cardíaca, fenómeno conocido como **sinus arrhythmia respiratoria**.
+Estos hallazgos confirman que maniobras respiratorias voluntarias de gran amplitud afectan significativamente la dinámica de la frecuencia cardíaca, fenómeno conocido como **sinus arrhythmia respiratoria** [5].
 
 #### Ejercicio físico:
 Durante el análisis de las señales ECG obtenidas durante ejercicio físico moderado, se observaron variaciones significativas respecto al estado de reposo.
 
 - En la [**Señal cruda**](#441-señal-cruda-ejercicio), se identifica un aumento de artefactos de movimiento y ruido muscular (EMG) superpuesto al ECG. Esto se manifiesta en un aumento de la variabilidad de la amplitud y distorsión en los ciclos cardíacos.
 
-- El filtrado ([**Señal filtrada**](#442-señal-filtrada-ejercicio)) permite atenuar considerablemente el ruido de alta frecuencia, aunque algunas deformaciones en la morfología del complejo QRS persisten, reflejando el desafío de registrar ECG de alta calidad durante actividad física.
-
-- El espectro de frecuencia cruda ([**FFT Cruda**](#443-fft-cruda-ejercicio)) evidencia un ensanchamiento de la banda espectral debido a la introducción de componentes de mayor frecuencia generadas por el movimiento muscular.
+- El filtrado ([**Señal filtrada**](#442-señal-filtrada-ejercicio)) permite atenuar considerablemente el ruido de alta frecuencia, aunque algunas deformaciones en la morfología del complejo QRS persisten.
 
 - Tras el filtrado ([**FFT Filtrada**](#444-fft-filtrada-ejercicio)), la concentración de energía vuelve a enfocarse en las frecuencias fisiológicas relevantes (<40 Hz), aunque con cierta dispersión residual.
 
-- El procesamiento automático con [**ecg_process()**](#445-función-ecg_process-ejercicio) revela un aumento de la frecuencia cardíaca promedio y mayor variabilidad en los intervalos RR, lo que es fisiológicamente consistente con la respuesta simpática al ejercicio.
+- El procesamiento automático con [**ecg_process()**](#445-función-ecg_process-ejercicio) revela un aumento de la frecuencia cardíaca promedio y mayor variabilidad en los intervalos RR, lo que es fisiológicamente consistente con la respuesta simpática al ejercicio. [6]
 
 
 ### Limitaciones y recomendaciones a futuro
