@@ -128,7 +128,7 @@ Para cada condición y cada derivada, se aplicó:
 | 3ra Derivada | <img src="./ImagesL4/ecg_procesada_3der_reposo.png" width="800" height="400"> |
 
 ### 4.2. Señales procesadas - Respiración controlada <a name="id42"></a>
-#### 4.2.1. Señal Cruda <a name="421-señal-cruda"></a>
+#### 4.2.1. Señal Cruda <a name="416-señal-cruda"></a>
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
@@ -136,7 +136,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_resp.png" width="800" height="400"> |
 | 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_resp.png" width="800" height="400"> |
 
-#### 4.2.2. Señal Filtrada <a name="422-señal-filtrada"></a>
+#### 4.2.2. Señal Filtrada <a name="417-señal-filtrada"></a>
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
@@ -269,7 +269,7 @@ La discusión de resultados se realizó de manera detallada para la primera deri
 #### Respiración controlada:
 Durante la fase de respiración controlada, las señales ECG mostraron variaciones respecto a las observadas en reposo.
 
-- Al aplicar el filtrado ([**Señal filtrada**](#422-señal-filtrada-respiración)), las ondas QRS se mantienen claras y definidas, mientras que la modulación de baja frecuencia producida por el movimiento respiratorio es atenuada, validando la eficiencia del filtro pasa banda (0.5–40 Hz).
+- Al aplicar el filtrado ([**Señal filtrada**](#417-señal-filtrada-respiración)), las ondas QRS se mantienen claras y definidas, mientras que la modulación de baja frecuencia producida por el movimiento respiratorio es atenuada, validando la eficiencia del filtro pasa banda (0.5–40 Hz).
 
 - En la [**FFT Cruda**](#423-fft-cruda-respiración), aparece un pico característico alrededor de 0.2–0.3 Hz, correspondiente a la frecuencia de la respiración (~12–18 respiraciones por minuto). Este pico desaparece o disminuye notablemente en la [**FFT Filtrada**](#424-fft-filtrada-respiración).
 
