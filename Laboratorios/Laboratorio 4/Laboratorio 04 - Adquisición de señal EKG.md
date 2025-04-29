@@ -255,13 +255,15 @@ Para cada condición y cada derivada, se aplicó:
 
 ### Discusiones
 #### Estado en reposo: 
-- En la [**Señal cruda**](#411-señal-cruda), se observa un ECG con amplitud y periodicidad características de una condición basal. A pesar del ruido de fondo visible, la morfología principal de los complejos QRS se mantiene identificable. El componente de interferencia de red a 50-60 Hz es evidente en el espectro.
+- En la [**Señal cruda**](#411-señal-cruda), se observa un ECG con amplitud y periodicidad características de una condición basal. A pesar del ruido de fondo visible, la morfología principal de los complejos QRS se mantiene identificable para la primera derivada. El componente de interferencia de red a 50-60 Hz es evidente en el espectro.
 
-- La [**Señal filtrada**](#412-señal-filtrada) mejora significativamente la relación señal-ruido. El filtro pasa banda (0.5–40 Hz) aplicado permitió eliminar ruido de alta frecuencia y artefactos de baja frecuencia. Los complejos QRS aparecen más definidos, y la línea base se estabiliza, lo cual es crítico para análisis de intervalos y amplitudes.
+- La [**Señal filtrada**](#412-señal-filtrada) mejora significativamente la relación señal-ruido. El filtro pasa banda (0.5–40 Hz) aplicado permitió eliminar ruido de alta frecuencia y artefactos de baja frecuencia. Los complejos QRS aparecen más definidos para la primera derivada, y la línea base se estabiliza, lo cual es crítico para análisis de intervalos y amplitudes.
 
 - En el [**Espectro de Frecuencia – FFT Cruda**](#413-fft-cruda), destaca un pico marcado alrededor de 50–60 Hz, típico de la interferencia de red eléctrica. Este pico decrece notablemente tras la filtración, como se muestra en la [**FFT Filtrada**](#414-fft-filtrada), validando la efectividad del preprocesamiento.
 
 - El procesamiento usando `neurokit2.ecg_process()` ([**Función ecg_process()**](#415-función-ecg_process)) permitió detectar de manera automática los R-peaks y calcular la frecuencia cardíaca (HR). Se observa una frecuencia cardíaca estable en reposo (~80 bpm), con ligeras variaciones fisiológicas normales.
+
+- En el caso de las señales filtradas para la [**segunda y tercera derivada en reposo**](#412-señal-filtrada), los complejos QRS se destacan claramente como picos profundos y agudos.
 
 Estos resultados son consistentes con lo esperado para registros de sujetos sanos en estado de reposo, mostrando que el pipeline de adquisición, filtrado y análisis es funcional y adecuado para posteriores estudios comparativos en condiciones de fatiga o actividad física.
 
