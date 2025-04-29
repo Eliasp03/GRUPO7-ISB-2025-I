@@ -365,3 +365,7 @@ Estas limitaciones, si bien comunes en estudios con adquisición ambulatoria, pu
 [3] “The Basics of ECG”. ACLS Medical Training. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.aclsmedicaltraining.com/basics-of-ecg/
 
 [4] “BITalino”. PLUX Biosignals. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.pluxbiosignals.com/collections/bitalino?srsltid=AfmBOopxPuL4rizGon-RlE3KPmQOCbfBI1UOzH1FhKijinshBj1K7VCj
+
+[5] Yasuma F, Hayano J-I. Respiratory sinus arrhythmia: why does the heartbeat synchronize with respiratory rhythm? Chest [Internet]. 2004;125(2):683–90. Disponible en: http://dx.doi.org/10.1378/chest.125.2.683
+
+[6] Sone R, Yamazaki F, Fujii N, Fukuoka Y, Ikegami H. Respiratory variability in R-R interval during sinusoidal exercise. Eur J Appl Physiol Occup Physiol [Internet]. 1997;75(1):39–46. Disponible en: http://dx.doi.org/10.1007/s004210050124
