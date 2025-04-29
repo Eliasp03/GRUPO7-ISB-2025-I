@@ -356,6 +356,18 @@ Estas limitaciones, si bien comunes en estudios con adquisición ambulatoria, pu
 
 - El análisis de ECG bajo ejercicio es crucial para evaluar la respuesta autonómica, el acondicionamiento físico y potenciales disfunciones cardíacas inducidas por estrés físico.
 
+## 7. Actividad adicional
+
+Realizamos el ploteo las señales ECG obtenidas para la primera derivada usando la libreria ECG plot.
+
+#### ECG Plot primera derivada
+
+| Estado | Gráfica generada |
+|:---------|:-----------------|
+| Reposo | <img src="./ImagesL4/ecg_plot_reposo.png" width="800" height="400"> |
+| Respiración controlada | <img src="./ImagesL4/ecg_plot_resp.png" width="800" height="400"> |
+| Inhalación larga | <img src="./ImagesL4/ecg_plot_inha.png" width="800" height="400"> |
+| Ejercicio | <img src="./ImagesL4/ecg_plot_ejercicio.png" width="800" height="400"> |
 
 ## Bibliografía
 [1] “Papel del Electrocardiograma y sus Características - Cerebromedico”. Cerebromedico. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://cerebromedico.com/electrocardiograma/papel-ekg
