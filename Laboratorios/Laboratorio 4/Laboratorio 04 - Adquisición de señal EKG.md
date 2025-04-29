@@ -271,37 +271,37 @@ Durante la fase de respiración controlada, las señales ECG mostraron variacion
 
 - Al aplicar el filtrado [**Señal filtrada**](#417-señal-filtrada-respiración), las ondas QRS se mantienen claras y definidas, mientras que la modulación de baja frecuencia producida por el movimiento respiratorio es atenuada, validando la eficiencia del filtro pasa banda (0.5–40 Hz).
 
-- En la [**FFT Cruda**](#418-fft-cruda-respiración), aparece un pico característico alrededor de 0.2–0.3 Hz, correspondiente a la frecuencia de la respiración (~12–18 respiraciones por minuto). Este pico desaparece o disminuye notablemente en la [**FFT Filtrada**](#419-fft-filtrada-respiración).
+- En la [**FFT Cruda**](#418-fft-cruda), aparece un pico característico alrededor de 0.2–0.3 Hz, correspondiente a la frecuencia de la respiración (~12–18 respiraciones por minuto). Este pico desaparece o disminuye notablemente en la [**FFT Filtrada**](#419-fft-filtrada).
 
-- El análisis de [**ecg_process()**](#420-función-ecg_process-respiración) muestra que la frecuencia cardíaca mantiene estabilidad, aunque presenta mayor variabilidad rítmica (HRV) comparado al reposo.
+- El análisis de [**ecg_process()**](#420-función-ecg_process) muestra que la frecuencia cardíaca mantiene estabilidad, aunque presenta mayor variabilidad rítmica (HRV) comparado al reposo.
 
 Este fenómeno observado es consistente con la respuesta fisiológica conocida como **sinus arrhythmia respiratoria**, donde la frecuencia cardíaca varía en sincronía con la fase de inspiración y expiración. [5].
 
 #### Inhalación larga:
 El análisis de las señales durante la condición de inhalación larga muestra patrones fisiológicos característicos de la interacción cardiorrespiratoria.
 
-- En la [**Señal cruda**](#431-señal-cruda-inhalacion), se observa una variabilidad importante en la amplitud de la señal ECG.
+- En la [**Señal cruda**](#431-señal-cruda), se observa una variabilidad importante en la amplitud de la señal ECG.
 
-- Después del filtrado ([**Señal filtrada**](#432-señal-filtrada-inhalacion)), la morfología de los complejos QRS se mantiene clara, y se evidencia una mejor definición de los intervalos PR y QT. Las oscilaciones lentas inducidas por la respiración son atenuadas eficazmente.
+- Después del filtrado ([**Señal filtrada**](#432-señal-filtrada)), la morfología de los complejos QRS se mantiene clara, y se evidencia una mejor definición de los intervalos PR y QT. Las oscilaciones lentas inducidas por la respiración son atenuadas eficazmente.
 
-- El análisis espectral ([**FFT Cruda**](#433-fft-cruda-inhalacion)) muestra un desplazamiento de la energía hacia bajas frecuencias, con un pico alrededor de 0.2 Hz, indicando el efecto de la respiración controlada sobre la señal.
+- El análisis espectral ([**FFT Cruda**](#433-fft-cruda)) muestra un desplazamiento de la energía hacia bajas frecuencias, con un pico alrededor de 0.2 Hz, indicando el efecto de la respiración controlada sobre la señal.
 
-- Con la aplicación del filtrado ([**FFT Filtrada**](#434-fft-filtrada-inhalacion)), se preservan las componentes fisiológicas importantes para el ECG mientras se reduce el ruido respiratorio residual.
+- Con la aplicación del filtrado ([**FFT Filtrada**](#434-fft-filtrada)), se preservan las componentes fisiológicas importantes para el ECG mientras se reduce el ruido respiratorio residual.
 
-- Finalmente, el procesamiento automático con [**ecg_process()**](#435-función-ecg_process-inhalacion) revela que la frecuencia cardíaca presenta una **variabilidad marcada** durante la inhalación prolongada, bajando y subiendo de forma sincronizada con el patrón respiratorio.
+- Finalmente, el procesamiento automático con [**ecg_process()**](#435-función-ecg_process) revela que la frecuencia cardíaca presenta una **variabilidad marcada** durante la inhalación prolongada, bajando y subiendo de forma sincronizada con el patrón respiratorio.
 
 Estos hallazgos confirman que maniobras respiratorias voluntarias de gran amplitud afectan significativamente la dinámica de la frecuencia cardíaca, fenómeno conocido como **sinus arrhythmia respiratoria** [5].
 
 #### Ejercicio físico:
 Durante el análisis de las señales ECG obtenidas durante ejercicio físico moderado, se observaron variaciones significativas respecto al estado de reposo.
 
-- En la [**Señal cruda**](#441-señal-cruda-ejercicio), se identifica un aumento de artefactos de movimiento y ruido muscular (EMG) superpuesto al ECG. Esto se manifiesta en un aumento de la variabilidad de la amplitud y distorsión en los ciclos cardíacos.
+- En la [**Señal cruda**](#441-señal-cruda), se identifica un aumento de artefactos de movimiento y ruido muscular (EMG) superpuesto al ECG. Esto se manifiesta en un aumento de la variabilidad de la amplitud y distorsión en los ciclos cardíacos.
 
-- El filtrado ([**Señal filtrada**](#442-señal-filtrada-ejercicio)) permite atenuar considerablemente el ruido de alta frecuencia, aunque algunas deformaciones en la morfología del complejo QRS persisten.
+- El filtrado ([**Señal filtrada**](#442-señal-filtrada)) permite atenuar considerablemente el ruido de alta frecuencia, aunque algunas deformaciones en la morfología del complejo QRS persisten.
 
-- Tras el filtrado ([**FFT Filtrada**](#444-fft-filtrada-ejercicio)), la concentración de energía vuelve a enfocarse en las frecuencias fisiológicas relevantes (<40 Hz), aunque con cierta dispersión residual.
+- Tras el filtrado ([**FFT Filtrada**](#444-fft-filtrada)), la concentración de energía vuelve a enfocarse en las frecuencias fisiológicas relevantes (<40 Hz), aunque con cierta dispersión residual.
 
-- El procesamiento automático con [**ecg_process()**](#445-función-ecg_process-ejercicio) revela un aumento de la frecuencia cardíaca promedio y mayor variabilidad en los intervalos RR, lo que es fisiológicamente consistente con la respuesta simpática al ejercicio. [6]
+- El procesamiento automático con [**ecg_process()**](#445-función-ecg_process) revela un aumento de la frecuencia cardíaca promedio y mayor variabilidad en los intervalos RR, lo que es fisiológicamente consistente con la respuesta simpática al ejercicio. [6]
 
 
 ### Limitaciones y recomendaciones a futuro
@@ -309,15 +309,15 @@ Durante el análisis de las señales ECG obtenidas durante ejercicio físico mod
 Durante la adquisición de señales electrocardiográficas (ECG) de tres derivaciones, se identificaron algunas limitaciones técnicas relevantes:
 
 - **Ruido eléctrico ambiental:**  
-Una limitación frecuente fue la presencia de ruido inducido por la proximidad de dispositivos electrónicos como laptops, cargadores o iluminación fluorescente. Este tipo de interferencia se refleja claramente como picos o distorsiones de alta frecuencia en el espectro de la [**FFT Cruda**](#443-fft-cruda-ejercicio) y [**FFT Cruda Reposo**](#413-fft-cruda).  
+Una limitación frecuente fue la presencia de ruido inducido por la proximidad de dispositivos electrónicos como laptops, cargadores o iluminación fluorescente. Este tipo de interferencia se refleja claramente como picos o distorsiones de alta frecuencia en el espectro de la [**FFT Cruda**](#443-fft-cruda) y [**FFT Cruda Reposo**](#413-fft).  
 🔵 *Mejora sugerida:* Mantener distancia de fuentes de ruido y aplicar filtros digitales adecuados en la etapa de preprocesamiento.
 
 - **Adherencia imperfecta de electrodos:**  
-Aunque se realizó limpieza previa de la piel con alcohol, factores como el sudor o pequeños desplazamientos afectaron la calidad del contacto, generando artefactos de movimiento visibles como oscilaciones abruptas en la [**Señal cruda de Inhalación**](#431-señal-cruda-inhalacion).  
+Aunque se realizó limpieza previa de la piel con alcohol, factores como el sudor o pequeños desplazamientos afectaron la calidad del contacto, generando artefactos de movimiento visibles como oscilaciones abruptas en la [**Señal cruda de Inhalación**](#431-señal-cruda).  
 🔵 *Mejora sugerida:* Utilizar electrodos de alta adherencia y reforzar la fijación periódicamente durante la prueba.
 
 - **Tensión mecánica en cables:**  
-Movimientos o tensiones en los cables de conexión provocaron desplazamientos de los electrodos, incrementando el ruido. Estos artefactos se evidencian como variaciones irregulares de amplitud, especialmente durante [**Ejercicio**](#441-señal-cruda-ejercicio).  
+Movimientos o tensiones en los cables de conexión provocaron desplazamientos de los electrodos, incrementando el ruido. Estos artefactos se evidencian como variaciones irregulares de amplitud, especialmente durante [**Ejercicio**](#441-señal-cruda).  
 🔵 *Mejora sugerida:* Asegurar los cables al cuerpo o a superficies fijas mediante sujetadores específicos para evitar tracción directa sobre los electrodos.
 
 ---
