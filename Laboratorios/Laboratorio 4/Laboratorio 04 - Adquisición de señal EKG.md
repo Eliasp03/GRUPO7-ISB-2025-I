@@ -144,7 +144,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | <img src="./ImagesL4/ecg_signal_filtered_2der_resp.png" width="800" height="400"> |
 | 3ra Derivada | <img src="./ImagesL4/ecg_signal_filtered_3der_resp.png" width="800" height="400"> |
 
-#### 4.2.3. FFT Cruda <a name="423-fft-cruda"></a>
+#### 4.2.3. FFT Cruda <a name="418-fft-cruda"></a>
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
@@ -152,7 +152,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | <img src="./ImagesL4/ecg_fft_cruda_2der_resp.png" width="800" height="400"> |
 | 3ra Derivada | <img src="./ImagesL4/ecg_fft_cruda_3der_resp.png" width="800" height="400"> |
 
-#### 4.2.4. FFT Filtrada <a name="424-fft-filtrada"></a>
+#### 4.2.4. FFT Filtrada <a name="419-fft-filtrada"></a>
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
@@ -160,7 +160,7 @@ Para cada condición y cada derivada, se aplicó:
 | 2da Derivada | <img src="./ImagesL4/ecg_fft_filtered_2der_resp.png" width="800" height="400"> |
 | 3ra Derivada | <img src="./ImagesL4/ecg_fft_filtered_3der_resp.png" width="800" height="400"> |
 
-#### 4.2.5. Función ecg_process() <a name="425-función-ecg_process"></a>
+#### 4.2.5. Función ecg_process() <a name="420-función-ecg_process"></a>
 
 | Derivada | Gráfica generada |
 |:---------|:-----------------|
@@ -271,9 +271,9 @@ Durante la fase de respiración controlada, las señales ECG mostraron variacion
 
 - Al aplicar el filtrado [**Señal filtrada**](#417-señal-filtrada-respiración), las ondas QRS se mantienen claras y definidas, mientras que la modulación de baja frecuencia producida por el movimiento respiratorio es atenuada, validando la eficiencia del filtro pasa banda (0.5–40 Hz).
 
-- En la [**FFT Cruda**](#423-fft-cruda-respiración), aparece un pico característico alrededor de 0.2–0.3 Hz, correspondiente a la frecuencia de la respiración (~12–18 respiraciones por minuto). Este pico desaparece o disminuye notablemente en la [**FFT Filtrada**](#424-fft-filtrada-respiración).
+- En la [**FFT Cruda**](#418-fft-cruda-respiración), aparece un pico característico alrededor de 0.2–0.3 Hz, correspondiente a la frecuencia de la respiración (~12–18 respiraciones por minuto). Este pico desaparece o disminuye notablemente en la [**FFT Filtrada**](#419-fft-filtrada-respiración).
 
-- El análisis de [**ecg_process()**](#425-función-ecg_process-respiración) muestra que la frecuencia cardíaca mantiene estabilidad, aunque presenta mayor variabilidad rítmica (HRV) comparado al reposo.
+- El análisis de [**ecg_process()**](#420-función-ecg_process-respiración) muestra que la frecuencia cardíaca mantiene estabilidad, aunque presenta mayor variabilidad rítmica (HRV) comparado al reposo.
 
 Este fenómeno observado es consistente con la respuesta fisiológica conocida como **sinus arrhythmia respiratoria**, donde la frecuencia cardíaca varía en sincronía con la fase de inspiración y expiración. [5].
 
