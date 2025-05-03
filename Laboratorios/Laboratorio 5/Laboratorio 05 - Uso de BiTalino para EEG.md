@@ -54,6 +54,16 @@ Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguie
 
 - Minutos 6-12 (Libre): El participante realiza actividades diseñadas por el grupo, incluyendo la lectura de un texto agradable y la escucha de un relato de terror.
 
+<div align="center">
+<img src="ImagesL5/electrodos_eeg.jpg" width="27.5%">
+<img src="ImagesL5/adquisicion_eeg.jpg" width="15%"> 
+<img src="ImagesL5/adquisicion_eeg2.jpg" width="20%">
+</div>
+
+
+<p align="center"><i>Figura 1. Procedimiento experimental</i><p>
+
+
 <p align="center"><strong>Adquisición de la señal</strong></p>
 
 <p align="center">
