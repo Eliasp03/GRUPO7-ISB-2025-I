@@ -58,7 +58,7 @@ Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguie
 
 <p align="center">
   <a href="https://www.youtube.com/playlist?list=PL0yjbUQfs0HKAbP_a7J2CxsHXO30A7l2u" target="_blank">
-    <img src="ImagesL4/Youtube_logo.png" width="15%">
+    <img src="ImagesL5/Youtube_logo.png" width="15%">
   </a>
 </p>
 
