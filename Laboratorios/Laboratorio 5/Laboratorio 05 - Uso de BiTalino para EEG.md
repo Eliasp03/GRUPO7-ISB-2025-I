@@ -1,4 +1,4 @@
-# Laboratorio 04 - Uso de BiTalino para EEG
+# Laboratorio 05 - Uso de BiTalino para EEG
 ## Contenido
 1. [Introducción](#id1)
 2. [Propósito de la práctica](#id2)
