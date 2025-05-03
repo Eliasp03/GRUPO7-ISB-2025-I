@@ -10,9 +10,11 @@
 ## 1. Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
 El electroencefalograma (EEG) es una técnica neurofisiológica clave para evaluar la actividad eléctrica cerebral, empleada en el diagnóstico de trastornos como la epilepsia, lesiones cerebrales y enfermedades neurodegenerativas como el Alzheimer [1]. Su funcionamiento se basa en la colocación meticulosa de electrodos en el cuero cabelludo, guiada por referencias anatómicas internacionales como el nasion (entre la frente y la nariz) y el inion (en la región occipital), que permiten ubicar áreas específicas del cerebro mediante códigos alfanuméricos (ejemplo: Fp para frontopolar, T3 para temporal izquierdo) [2]. Estos electrodos captan la suma de potenciales postsinápticos excitatorios (EPSP) e inhibitorios (IPSP) generados por la corteza cerebral, donde los primeros producen deflexiones negativas (ondas ascendentes en el EEG) y los segundos, positivas (ondas descendentes), reflejando así la dinámica neuronal subyacente [3].
+  
   <img src="https://socialsci.libretexts.org/@api/deki/files/94056/2-small_Electrode_Locations.png" width="500" height="300"/>  
 <p style="text-align: justify;">  
 La interpretación clínica del EEG no solo depende de identificar anomalías en las ondas básicas, como los picos rápidos en epilepsia o las lentificaciones por lesiones, sino también de técnicas de montaje (bipolar o referencial) que ayudan a localizar el origen de la actividad eléctrica mediante fenómenos como las reversiones de fase [2]. Además, el EEG tiene aplicaciones críticas en contextos como el monitoreo intraoperatorio de flujo sanguíneo cerebral o la evaluación de daño neurológico en pacientes en coma, donde su precisión se ve influenciada por factores como la colocación correcta de electrodos y la ausencia de interferencias (ejemplo: cabello graso o medicamentos sedantes) [1].
+  
   <img src="https://img.freepik.com/fotos-premium/colocacion-electrodos-eeg-paciente-registro-eeg-electroencefalograma-eeg_116317-17035.jpg" width="500" height="300"/>
 
 <p style="text-align: justify;"> 
