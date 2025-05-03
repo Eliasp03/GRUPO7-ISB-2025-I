@@ -22,7 +22,7 @@ La interdependencia entre principios técnicos, bases biológicas y aplicaciones
 
 ## 2. Propósito de la práctica <a name="id2"></a>
 <p style="text-align: justify;">   
-
+Esta práctica busca configurar el dispositivo BITalino (r)evolution Board Kit BLE/BT para registrar señales EEG, ubicando electrodos en las posiciones Fp1, Fp2 y O2 del sistema 10-20. Se registrarán segmentos de actividad cerebral en tres condiciones: estado basal (ojos abiertos/cerrados), durante una tarea cognitiva y con artefactos controlados. Los datos se procesarán con un filtro band-pass (0.8–48 Hz) para identificar los ritmos δ, θ, α y β, y posteriormente se exportarán para generar un informe breve con resultados cuantitativos.
 </p>
 
 ## 3. Materiales y equipos <a name="id3"></a>
@@ -37,8 +37,17 @@ La interdependencia entre principios técnicos, bases biológicas y aplicaciones
 <img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
 ## 3. Metodología y resultados <a name="id4"></a>
+<p style="text-align: justify;">   
+Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguiente procedimiento:
+- Minutos 0-1 (Basal 1): El participante mantiene los ojos abiertos, fijando la mirada en un punto estático frente a sí, sin realizar movimientos corporales.
 
+- Minutos 1-2 (Basal 2): El participante cierra los ojos y permanece en reposo, evitando movimientos oculares o musculares voluntarios.
 
+- Minutos 2-4 (Tarea cognitiva): Se solicita al participante realizar cálculos mentales, como restar 7 sucesivamente desde 100 en silencio.
+
+- Minutos 4-6 (Artefactos): Se inducen artefactos controlados: parpadeo cada 2 segundos y movimientos de masticación simulada.
+
+- Minutos 6-12 (Libre): El participante realiza actividades diseñadas por el grupo, incluyendo la lectura de un texto agradable y la escucha de un relato de terror.
 
 <p align="center"><strong>Adquisición de la señal</strong></p>
 
