@@ -120,7 +120,7 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 
 ### 4.3 Artefactos (Parpadeando y masticando) <a name="id43"></a>
 
-#### 4.1.1 Comparación por segmentos <a name="415-segmentos"></a>
+#### 4.3.1 Comparación por segmentos <a name="415-segmentos"></a>
 Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
 | OpenSignals| Ploteo |
 |:---------|:-----------------|
@@ -128,7 +128,7 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 | <img src="./ImagesL5/artb.png" width="400" height="200"> | <img src="./ImagesL5/art2.png" width="400" height="200"> |
 | <img src="./ImagesL5/artc.png" width="400" height="200"> | <img src="./ImagesL5/art3.png" width="400" height="200"> |
 
-#### 4.1.2 Gráficas <a name="416-basal1"></a>
+#### 4.3.2 Gráficas <a name="416-artefactos"></a>
 
 | Señal| Gráfica generada |
 |:---------|:-----------------|
@@ -136,6 +136,63 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 | Señal filtrada | <img src="./ImagesL5/art_filt.png" width="800" height="400"> |
 | FFT | <img src="./ImagesL5/art_fft.png" width="800" height="400"> |
 | FFT filtrada| <img src="./ImagesL5/art_fft_filt.png" width="800" height="400"> |
+
+### 4.4 Tarea cognitiva (Operaciones matemáticas) <a name="id44"></a>
+
+#### 4.4.1 Comparación por segmentos <a name="417-segmentos"></a>
+Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
+| OpenSignals| Ploteo |
+|:---------|:-----------------|
+| <img src="./ImagesL5/tca.png" width="400" height="200"> | <img src="./ImagesL5/tc1.png" width="400" height="200"> |
+| <img src="./ImagesL5/tcb.png" width="400" height="200"> | <img src="./ImagesL5/tc2.png" width="400" height="200"> |
+| <img src="./ImagesL5/tcc.png" width="400" height="200"> | <img src="./ImagesL5/tc3.png" width="400" height="200"> |
+
+#### 4.4.2 Gráficas <a name="418-tarea_cognitiva"></a>
+
+| Señal| Gráfica generada |
+|:---------|:-----------------|
+| Señal Raw | <img src="./ImagesL5/tc_raw.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/tc_filt.png" width="800" height="400"> |
+| FFT | <img src="./ImagesL5/tc_fft.png" width="800" height="400"> |
+| FFT filtrada| <img src="./ImagesL5/tc_fft_filt.png" width="800" height="400"> |
+
+### 4.5 Lectura <a name="id45"></a>
+
+#### 4.5.1 Comparación por segmentos <a name="418-segmentos"></a>
+Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
+| OpenSignals| Ploteo |
+|:---------|:-----------------|
+| <img src="./ImagesL5/lecta.png" width="400" height="200"> | <img src="./ImagesL5/lect1.png" width="400" height="200"> |
+| <img src="./ImagesL5/lectb.png" width="400" height="200"> | <img src="./ImagesL5/lect2.png" width="400" height="200"> |
+| <img src="./ImagesL5/lectc.png" width="400" height="200"> | <img src="./ImagesL5/lect3.png" width="400" height="200"> |
+
+#### 4.5.2 Gráficas <a name="419-lectura"></a>
+
+| Señal| Gráfica generada |
+|:---------|:-----------------|
+| Señal Raw | <img src="./ImagesL5/lect_raw.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/lect_filt.png" width="800" height="400"> |
+| FFT | <img src="./ImagesL5/lect_fft.png" width="800" height="400"> |
+| FFT filtrada| <img src="./ImagesL5/lect_fft_filt.png" width="800" height="400"> |
+
+### 4.6 Visualizacion de videos <a name="id46"></a>
+
+#### 4.6.1 Comparación por segmentos <a name="420-segmentos"></a>
+Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
+| OpenSignals| Ploteo |
+|:---------|:-----------------|
+| <img src="./ImagesL5/vida.png" width="400" height="200"> | <img src="./ImagesL5/vid1.png" width="400" height="200"> |
+| <img src="./ImagesL5/vidb.png" width="400" height="200"> | <img src="./ImagesL5/vid2.png" width="400" height="200"> |
+| <img src="./ImagesL5/vidc.png" width="400" height="200"> | <img src="./ImagesL5/vid3.png" width="400" height="200"> |
+
+#### 4.6.2 Gráficas <a name="421-lectura"></a>
+
+| Señal| Gráfica generada |
+|:---------|:-----------------|
+| Señal Raw | <img src="./ImagesL5/vid_raw.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/vid_filt.png" width="800" height="400"> |
+| FFT | <img src="./ImagesL5/vid_fft.png" width="800" height="400"> |
+| FFT filtrada| <img src="./ImagesL5/vid_fft_filt.png" width="800" height="400"> |
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
