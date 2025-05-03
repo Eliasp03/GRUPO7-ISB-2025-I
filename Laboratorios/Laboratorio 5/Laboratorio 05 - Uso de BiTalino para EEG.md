@@ -72,7 +72,7 @@ Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguie
   </a>
 </p>
 
-
+### Resultados
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
