@@ -72,7 +72,32 @@ Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguie
   </a>
 </p>
 
-### Resultados
+## 4. Resultados
+
+### Detalles del procesamiento <a name="id45"></a>
+
+- **Filtro** aplicado: pasabanda de 1–40 Hz, Butterworth de orden 5.
+- **Transformada rápida de Fourier (FFT)** con 1024 puntos por defecto en matplotlib.pyplot.magnitude_spectrum.
+- **Software usado:** Python 3.12, NeuroKit2 para filtrado, matplotlib.pyplot.magnitude_spectrum para espectro en frecuencia.
+
+### 4.1 Basal 1 (Mirada en un punto fijo) <a name="id41"></a>
+
+#### 4.1.1 Comparación por segmentos <a name="411-segmentos"></a>
+Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
+| OpenSignals| Ploteo |
+|:---------|:-----------------|
+| <img src="./ImagesL5/basal1a.png" width="400" height="200"> | <img src="./ImagesL5/basal11.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal1b.png" width="400" height="200"> | <img src="./ImagesL5/basal12.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal1c.png" width="400" height="200"> | <img src="./ImagesL5/basal13.png" width="400" height="200"> |
+
+#### 4.1.2 Gráficas <a name="412-basal1"></a>
+
+| Señal| Gráfica generada |
+|:---------|:-----------------|
+| Señal Raw | <img src="./ImagesL5/basal1_raw.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/basal1_filt.png" width="800" height="400"> |
+| FFT | <img src="./ImagesL5/basal1_fft.png" width="800" height="400"> |
+| FFT filtrada| <img src="./ImagesL5/basal1_fft_filt.png" width="800" height="400"> |
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
