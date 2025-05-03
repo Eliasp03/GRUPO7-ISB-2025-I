@@ -37,6 +37,10 @@ Esta práctica busca configurar el dispositivo BITalino (r)evolution Board Kit B
 <img src="https://www.pluxbiosignals.com/cdn/shop/products/BITalino-Board.1.jpg" width="500" height="300"/>
 
 ## 3. Metodología y resultados <a name="id4"></a>
+
+<p style="text-align: justify;">   
+  Para empezar con la lectura de señales, se limpian las zonas Fp1, Fp2 y mastoide derecha (usada de referencia), y se conectan los electrodos. También se verifica en OpenSignals que la impedancia sea inferior a 20 kΩ.
+  
 <p style="text-align: justify;">   
 Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguiente procedimiento:
   
