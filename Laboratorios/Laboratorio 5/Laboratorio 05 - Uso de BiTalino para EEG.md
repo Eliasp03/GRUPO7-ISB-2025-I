@@ -39,6 +39,7 @@ Esta práctica busca configurar el dispositivo BITalino (r)evolution Board Kit B
 ## 3. Metodología y resultados <a name="id4"></a>
 <p style="text-align: justify;">   
 Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguiente procedimiento:
+  
 - Minutos 0-1 (Basal 1): El participante mantiene los ojos abiertos, fijando la mirada en un punto estático frente a sí, sin realizar movimientos corporales.
 
 - Minutos 1-2 (Basal 2): El participante cierra los ojos y permanece en reposo, evitando movimientos oculares o musculares voluntarios.
