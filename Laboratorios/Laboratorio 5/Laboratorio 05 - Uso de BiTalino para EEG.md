@@ -99,6 +99,44 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 | FFT | <img src="./ImagesL5/basal1_fft.png" width="800" height="400"> |
 | FFT filtrada| <img src="./ImagesL5/basal1_fft_filt.png" width="800" height="400"> |
 
+### 4.2 Basal 2 (Ojos cerrados) <a name="id42"></a>
+
+#### 4.2.1 Comparación por segmentos <a name="413-segmentos"></a>
+Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
+| OpenSignals| Ploteo |
+|:---------|:-----------------|
+| <img src="./ImagesL5/basal2a.png" width="400" height="200"> | <img src="./ImagesL5/basal21.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal2b.png" width="400" height="200"> | <img src="./ImagesL5/basal22.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal2c.png" width="400" height="200"> | <img src="./ImagesL5/basal23.png" width="400" height="200"> |
+
+#### 4.2.2 Gráficas <a name="414-basal2"></a>
+
+| Señal| Gráfica generada |
+|:---------|:-----------------|
+| Señal Raw | <img src="./ImagesL5/basal2_raw.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/basal2_filt.png" width="800" height="400"> |
+| FFT | <img src="./ImagesL5/basal2_fft.png" width="800" height="400"> |
+| FFT filtrada| <img src="./ImagesL5/basal2_fft_filt.png" width="800" height="400"> |
+
+### 4.3 Artefactos (Parpadeando y masticando) <a name="id43"></a>
+
+#### 4.1.1 Comparación por segmentos <a name="415-segmentos"></a>
+Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
+| OpenSignals| Ploteo |
+|:---------|:-----------------|
+| <img src="./ImagesL5/arta.png" width="400" height="200"> | <img src="./ImagesL5/art1.png" width="400" height="200"> |
+| <img src="./ImagesL5/artb.png" width="400" height="200"> | <img src="./ImagesL5/art2.png" width="400" height="200"> |
+| <img src="./ImagesL5/artc.png" width="400" height="200"> | <img src="./ImagesL5/art3.png" width="400" height="200"> |
+
+#### 4.1.2 Gráficas <a name="416-basal1"></a>
+
+| Señal| Gráfica generada |
+|:---------|:-----------------|
+| Señal Raw | <img src="./ImagesL5/art_raw.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/art_filt.png" width="800" height="400"> |
+| FFT | <img src="./ImagesL5/art_fft.png" width="800" height="400"> |
+| FFT filtrada| <img src="./ImagesL5/art_fft_filt.png" width="800" height="400"> |
+
 ## 5. Discusiones y limitaciones <a name="id5"></a>
 
 
