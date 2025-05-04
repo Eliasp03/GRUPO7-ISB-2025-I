@@ -206,7 +206,7 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 ### Discusiones:
 1. ¿Qué banda de frecuencia predomina al cerrar los ojos?
 
-Durante el ejercicio [**Basal 2**](#id42) (ojos cerrados), se evidencia un incremento notable en la potencia de la banda alfa (8–13 Hz) en el espectro PSD por Welch. Esta actividad alfa se relaciona con un estado relajado y sin estímulos visuales, y su presencia es una respuesta fisiológica normal al cierre ocular, especialmente en regiones occipitales [5, p. 292]. La comparación con [**Basal 1**](#id42) (ojos abiertos) corrobora la disminución de alfa al mantener la mirada fija.
+Durante el ejercicio [**Basal 2**](#id42) (ojos cerrados), se evidencia un incremento notable en la potencia de la banda alfa (8–13 Hz) en el espectro PSD por Welch. Esta actividad alfa se relaciona con un estado relajado y sin estímulos visuales, y su presencia es una respuesta fisiológica normal al cierre ocular, especialmente en regiones occipitales [5, p. 292]. La comparación con [**Basal 1**](#id41) (ojos abiertos) corrobora la disminución de alfa al mantener la mirada fija.
 
 2. ¿Qué filtro es imprescindible para EEG y por qué?
 
@@ -214,7 +214,7 @@ El uso de un filtro pasabanda de 1–45 Hz es esencial, dado que permite elimina
 
 3. ¿Puedes modular conscientemente tu señal EEG? Da un ejemplo.
 
-Sí, por ejemplo, durante la tarea cognitiva (restar 7 desde 100), la potencia en la banda beta aumentó visiblemente (ver PSD Welch), lo que está vinculado a actividad mental intensa, atención sostenida y procesos de cálculo [7, p. 106]. Otro ejemplo común es la generación voluntaria de relajación mediante meditación, que puede incrementar la actividad alfa.
+Sí, por ejemplo, durante la [**tarea cognitiva**](#id44) (restar 7 desde 100), la potencia en la banda beta aumentó visiblemente (ver PSD Welch), lo que está vinculado a actividad mental intensa, atención sostenida y procesos de cálculo [7, p. 106]. Otro ejemplo común es la generación voluntaria de relajación mediante meditación, que puede incrementar la actividad alfa.
 
 4. ¿Se observan diferencias entre Fp1 y Fp2? ¿Por qué podrían ocurrir?
 
