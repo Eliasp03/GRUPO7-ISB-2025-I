@@ -50,3 +50,16 @@ plt.title("Espectro de Magnitud - Señal Filtrada")
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+# -------- Welch PSD --------
+frequencies, psd = welch(eeg_filtrada, fs=sampling_rate, nperseg=1024)
+
+plt.figure(figsize=(12, 4))
+plt.plot(frequencies, psd)
+plt.title("PSD – Método de Welch (escala lineal)")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Potencia (uV²/Hz)")
+plt.xlim(0, 50)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
