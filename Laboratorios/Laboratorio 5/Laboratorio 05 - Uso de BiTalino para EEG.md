@@ -107,7 +107,7 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
 | OpenSignals| Ploteo |
 |:---------|:-----------------|
-| <img src="./ImagesL5/basal2a.png" width="400" height="200"> | <img src="./ImagesL5/basal21.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal2a.png" width="400" height="200"> | <img src="./ImagesL5/eeg_2basal1_señal_cruda.png" width="400" height="200"> |
 | <img src="./ImagesL5/basal2b.png" width="400" height="200"> | <img src="./ImagesL5/basal22.png" width="400" height="200"> |
 | <img src="./ImagesL5/basal2c.png" width="400" height="200"> | <img src="./ImagesL5/basal23.png" width="400" height="200"> |
 
