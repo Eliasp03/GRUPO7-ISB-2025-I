@@ -203,18 +203,45 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 | FFT filtrada| <img src="./ImagesL5/vid_fft_filt.png" width="800" height="400"> |
 
 ## 5. Discusiones y limitaciones <a name="id5"></a>
+### Discusiones:
+1. ¿Qué banda de frecuencia predomina al cerrar los ojos?
 
+Durante el ejercicio Basal 2 (ojos cerrados), se evidenció un aumento claro en la potencia de la banda alfa (8–13 Hz), como puede observarse en el gráfico correspondiente a la PSD mediante Welch. Este hallazgo es consistente con literatura previa que describe la aparición de ondas alfa como una firma de relajación visual y disminución de actividad cortical occipital tras el cierre de los ojos [5, p. 292].
 
+2. ¿Qué filtro es imprescindible para EEG y por qué?
+
+El uso de un filtro pasabanda de 1–45 Hz es esencial, dado que permite eliminar componentes de muy baja frecuencia (deriva de DC, movimientos lentos) y de alta frecuencia (ruido de red o muscular). Sin este filtrado, la señal EEG cruda está contaminada por artefactos que oscurecen las bandas fisiológicamente relevantes [6, p. 1753]. Además, en contextos clínicos, los filtros ayudan a reducir interferencias de dispositivos cercanos (50/60 Hz) sin comprometer la información neuronal.
+
+3. ¿Puedes modular conscientemente tu señal EEG? Da un ejemplo.
+
+Sí, por ejemplo, durante la tarea cognitiva (restar 7 desde 100), la potencia en la banda beta aumentó visiblemente (ver PSD Welch), lo que está vinculado a actividad mental intensa, atención sostenida y procesos de cálculo [7, p. 106]. Otro ejemplo común es la generación voluntaria de relajación mediante meditación, que puede incrementar la actividad alfa.
+
+4. ¿Se observan diferencias entre Fp1 y Fp2? ¿Por qué podrían ocurrir?
+
+Aunque el presente estudio se centró principalmente en el canal Fp1, diferencias entre Fp1 y Fp2 podrían surgir por diversas causas: lateralización funcional del hemisferio cerebral, dominancia hemisférica, diferencias individuales en conductividad del cuero cabelludo, o colocación no simétrica de los electrodos [8, p. 678]. En estudios de emocionales o atención, el hemisferio derecho (Fp2) puede mostrar mayor activación.
+
+### Limitaciones:
+
+Durante la adquisición de señales EEG con BITalino, se presentaron limitaciones que podrían afectar la calidad del registro:
+
+a. Ruido ambiental y artefactos eléctricos: A pesar del uso de un filtro pasabanda, se observaron componentes de ruido en la señal cruda, especialmente en condiciones como lectura o artefactos. Esto es esperable, ya que movimientos oculares y actividad muscular son difíciles de eliminar por completo [6, p. 1755].
+
+b. Colocación y adherencia de electrodos: La calidad de la señal puede verse comprometida si los electrodos no se adhieren bien, especialmente en zonas frontales con sudoración o movimiento facial [9, p. 33].
+
+c. Duración de las sesiones: Algunas condiciones duraban varios minutos, lo que conlleva riesgo de fatiga o micro-movimientos que afectan la estabilidad de la señal. El recorte a intervalos específicos (por ejemplo, del segundo 11 al 15) fue necesario para un análisis representativo.
+
+d. Uso de un solo canal (Fp1): Limita la posibilidad de realizar comparaciones hemisféricas o localizar con mayor precisión las fuentes de actividad cerebral. Idealmente, un mapeo EEG multicanal permitiría una mejor interpretación espacial [10, p. 4].
 
 
 ## 6. Conclusiones <a name="id6"></a>
 
+- El uso del filtro pasabanda (1–45 Hz) fue esencial para eliminar interferencias no neuronales y conservar bandas relevantes como alfa y beta.
 
+- Las condiciones experimentales permitieron observar fenómenos conocidos como el aumento de alfa con ojos cerrados y de beta durante tareas cognitivas.
 
+- El método de Welch resultó útil para identificar la distribución de potencia por bandas de frecuencia.
 
-
-
-
+- Se identificaron limitaciones inherentes al montaje, duración del experimento y artefactos, que deben considerarse en futuras sesiones EEG.
 
 ## Bibliografía
 [1] “Electroencephalogram (EEG)”. Johns Hopkins Medicine. [En línea]. Disponible: https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/electroencephalogram-eeg
@@ -225,15 +252,14 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 
 [4] “BITalino”. PLUX Biosignals. Accedido el 26 de abril de 2025. [En línea]. Disponible: https://www.pluxbiosignals.com/collections/bitalino?srsltid=AfmBOopxPuL4rizGon-RlE3KPmQOCbfBI1UOzH1FhKijinshBj1K7VCj
 
-[5] 
-[6] 
+[5] Niedermeyer, E., & da Silva, F. L. (2005). Electroencephalography: Basic Principles, Clinical Applications, and Related Fields (5th ed.). Lippincott Williams & Wilkins.
 
-[7] 
+[6] Hu, L., & Zhang, Z. (2022). “A Practical Guide to Artifact Rejection in EEG Data Analysis,” Frontiers in Neuroscience, vol. 16, pp. 1752–1758. https://doi.org/10.3389/fnins.2022.888240
 
-[8] 
+[7] Harmony, T., et al. (1996). "EEG delta activity: an indicator of attention to internal processing during performance of mental tasks," International Journal of Psychophysiology, vol. 24, no. 1-2, pp. 161–171.
 
-[9] 
+[8] Davidson, R. J. (1992). "Anterior cerebral asymmetry and the nature of emotion," Brain and Cognition, vol. 20, no. 1, pp. 125–151.
 
-[10] 
-[11} 
-[12] 
+[9] Pizzagalli, D. A. (2007). "Electroencephalography and high-density electrophysiological source localization," Handbook of Psychophysiology, 3rd ed., pp. 56–81.
+
+[10] Croft, R. J., & Barry, R. J. (2000). "Removal of ocular artifact from the EEG: a review," Neurophysiologie Clinique, vol. 30, no. 1, pp. 5–19.
