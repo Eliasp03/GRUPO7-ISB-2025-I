@@ -78,7 +78,7 @@ Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguie
 
 ### Detalles del procesamiento <a name="id45"></a>
 
-- **Filtro** aplicado: pasabanda de 1–40 Hz, Butterworth de orden 5.
+- **Filtro** aplicado: pasabanda de 1–45 Hz, Butterworth de orden 5.
 - **Transformada rápida de Fourier (FFT)** con 1024 puntos por defecto en matplotlib.pyplot.magnitude_spectrum.
 - **Software usado:** Python 3.12, NeuroKit2 para filtrado, matplotlib.pyplot.magnitude_spectrum para espectro en frecuencia.
 
