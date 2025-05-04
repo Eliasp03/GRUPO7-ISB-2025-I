@@ -206,31 +206,31 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 ### Discusiones:
 1. ¿Qué banda de frecuencia predomina al cerrar los ojos?
 
-Durante el ejercicio [**Basal 2**](#id42) (ojos cerrados), se evidencia un incremento notable en la potencia de la banda alfa (8–13 Hz) en el espectro PSD por Welch. Esta actividad alfa se relaciona con un estado relajado y sin estímulos visuales, y su presencia es una respuesta fisiológica normal al cierre ocular, especialmente en regiones occipitales [5, p. 292]. La comparación con [**Basal 1**](#id41) (ojos abiertos) corrobora la disminución de alfa al mantener la mirada fija.
+Durante el ejercicio [**Basal 2**](#id42) (ojos cerrados), se evidencia un incremento notable en la potencia de la banda alfa (8–13 Hz) en el espectro PSD por Welch. Esta actividad alfa se relaciona con un estado relajado y sin estímulos visuales, y su presencia es una respuesta fisiológica normal al cierre ocular, especialmente en regiones occipitales [5]. La comparación con [**Basal 1**](#id41) (ojos abiertos) corrobora la disminución de alfa al mantener la mirada fija.
 
 2. ¿Qué filtro es imprescindible para EEG y por qué?
 
-El uso de un filtro pasabanda de 1–45 Hz es esencial, dado que permite eliminar componentes de muy baja frecuencia (deriva de DC, movimientos lentos) y de alta frecuencia (ruido de red o muscular). Sin este filtrado, la señal EEG cruda está contaminada por artefactos que oscurecen las bandas fisiológicamente relevantes [6, p. 1753]. Además, en contextos clínicos, los filtros ayudan a reducir interferencias de dispositivos cercanos (50/60 Hz) sin comprometer la información neuronal.
+El filtro pasabanda de 1–45 Hz es esencial para eliminar artefactos fisiológicos de baja frecuencia (como movimientos oculares y musculares) y el ruido eléctrico de la red (50/60 Hz), sin afectar las bandas cerebrales de interés (delta, theta, alfa, beta). El filtrado mejora la visibilidad de las señales neuronales subyacentes que en los datos crudos quedan enmascaradas por artefactos. Esto es crucial porque artefactos como parpadeos o movimientos mandibulares generan picos de baja frecuencia que distorsionan la interpretación del EEG [6]. Además, técnicas avanzadas como la corrección por componentes independientes (ICA) pueden complementar el filtrado para mejorar la calidad de la señal.
 
 3. ¿Puedes modular conscientemente tu señal EEG? Da un ejemplo.
 
-Sí, por ejemplo, durante la [**tarea cognitiva**](#id44) (restar 7 desde 100), la potencia en la banda beta aumentó visiblemente (ver PSD Welch), lo que está vinculado a actividad mental intensa, atención sostenida y procesos de cálculo [7, p. 106]. Otro ejemplo común es la generación voluntaria de relajación mediante meditación, que puede incrementar la actividad alfa.
+Sí, por ejemplo, durante la [**tarea cognitiva**](#id44) (restar 7 desde 100), la potencia en la banda beta aumentó visiblemente (ver PSD Welch), lo que está vinculado a actividad mental intensa, atención sostenida y procesos de cálculo [7]. Otro ejemplo común es la generación voluntaria de relajación mediante meditación, que puede incrementar la actividad alfa.
 
 4. ¿Se observan diferencias entre Fp1 y Fp2? ¿Por qué podrían ocurrir?
 
-Aunque el presente estudio se centró principalmente en el canal Fp1, diferencias entre Fp1 y Fp2 podrían surgir por diversas causas: lateralización funcional del hemisferio cerebral, dominancia hemisférica, diferencias individuales en conductividad del cuero cabelludo, o colocación no simétrica de los electrodos [8, p. 678]. En estudios de emocionales o atención, el hemisferio derecho (Fp2) puede mostrar mayor activación.
+Aunque el presente estudio se centró principalmente en el canal Fp1, diferencias entre Fp1 y Fp2 podrían surgir por diversas causas: lateralización funcional del hemisferio cerebral, dominancia hemisférica, diferencias individuales en conductividad del cuero cabelludo, o colocación no simétrica de los electrodos [8]. En estudios de emocionales o atención, el hemisferio derecho (Fp2) puede mostrar mayor activación.
 
 ### Limitaciones:
 
 Durante la adquisición de señales EEG con BITalino, se presentaron limitaciones que podrían afectar la calidad del registro:
 
-a. Ruido ambiental y artefactos eléctricos: A pesar del uso de un filtro pasabanda, se observaron componentes de ruido en la señal cruda, especialmente en condiciones como lectura o artefactos. Esto es esperable, ya que movimientos oculares y actividad muscular son difíciles de eliminar por completo [6, p. 1755].
+a. Ruido ambiental y artefactos eléctricos: A pesar del uso de un filtro pasabanda, se observaron componentes de ruido en la señal cruda, especialmente en condiciones como lectura o artefactos. Esto es esperable, ya que movimientos oculares y actividad muscular son difíciles de eliminar por completo [6].
 
 b. Colocación y adherencia de electrodos: La calidad de la señal puede verse comprometida si los electrodos no se adhieren bien, especialmente en zonas frontales con sudoración o movimiento facial [9, p. 33].
 
 c. Duración de las sesiones: Algunas condiciones duraban varios minutos, lo que conlleva riesgo de fatiga o micro-movimientos que afectan la estabilidad de la señal. El recorte a intervalos específicos (por ejemplo, del segundo 11 al 15) fue necesario para un análisis representativo.
 
-d. Uso de un solo canal (Fp1): Limita la posibilidad de realizar comparaciones hemisféricas o localizar con mayor precisión las fuentes de actividad cerebral. Idealmente, un mapeo EEG multicanal permitiría una mejor interpretación espacial [10, p. 4].
+d. Uso de un solo canal (Fp1): Limita la posibilidad de realizar comparaciones hemisféricas o localizar con mayor precisión las fuentes de actividad cerebral. Idealmente, un mapeo EEG multicanal permitiría una mejor interpretación espacial [10].
 
 
 ## 6. Conclusiones <a name="id6"></a>
@@ -254,7 +254,7 @@ d. Uso de un solo canal (Fp1): Limita la posibilidad de realizar comparaciones h
 
 [5] Niedermeyer, E., & da Silva, F. L. (2005). Electroencephalography: Basic Principles, Clinical Applications, and Related Fields (5th ed.). Lippincott Williams & Wilkins.
 
-[6] Hu, L., & Zhang, Z. (2022). “A Practical Guide to Artifact Rejection in EEG Data Analysis,” Frontiers in Neuroscience, vol. 16, pp. 1752–1758. https://doi.org/10.3389/fnins.2022.888240
+[6] Medintensiva (2019). Monitorización electroencefalográfica en el paciente crítico. Medicina Intensiva, 43(7), 414-423.
 
 [7] Harmony, T., et al. (1996). "EEG delta activity: an indicator of attention to internal processing during performance of mental tasks," International Journal of Psychophysiology, vol. 24, no. 1-2, pp. 161–171.
 
