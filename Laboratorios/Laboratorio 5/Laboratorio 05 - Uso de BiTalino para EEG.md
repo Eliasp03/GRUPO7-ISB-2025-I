@@ -196,8 +196,9 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 
 | Señal| Gráfica generada |
 |:---------|:-----------------|
-| Señal Raw | <img src="./ImagesL5/vid_raw.png" width="800" height="400"> |
-| Señal filtrada | <img src="./ImagesL5/vid_filt.png" width="800" height="400"> |
+| Señal Raw | <img src="./ImagesL5/eeg_videos_señal_cruda.png" width="800" height="400"> |
+| Señal filtrada | <img src="./ImagesL5/eeg_videos_señal_filtrada.png" width="800" height="400"> |
+| PSD welch | <img src="./ImagesL5/eeg_videos_welch_psd_lineal.png" width="800" height="400"> |
 | FFT | <img src="./ImagesL5/vid_fft.png" width="800" height="400"> |
 | FFT filtrada| <img src="./ImagesL5/vid_fft_filt.png" width="800" height="400"> |
 
