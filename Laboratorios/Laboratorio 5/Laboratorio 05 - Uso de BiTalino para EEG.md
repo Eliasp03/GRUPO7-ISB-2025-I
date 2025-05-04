@@ -226,7 +226,7 @@ Durante la adquisición de señales EEG con BITalino, se presentaron limitacione
 
 a. Ruido ambiental y artefactos eléctricos: A pesar del uso de un filtro pasabanda, se observaron componentes de ruido en la señal cruda, especialmente en condiciones como lectura o artefactos. Esto es esperable, ya que movimientos oculares y actividad muscular son difíciles de eliminar por completo [6].
 
-b. Colocación y adherencia de electrodos: La calidad de la señal puede verse comprometida si los electrodos no se adhieren bien, especialmente en zonas frontales con sudoración o movimiento facial [9, p. 33].
+b. Colocación y adherencia de electrodos: La calidad de la señal puede verse comprometida si los electrodos no se adhieren bien, especialmente en zonas frontales con sudoración o movimiento facial [9].
 
 c. Duración de las sesiones: Algunas condiciones duraban varios minutos, lo que conlleva riesgo de fatiga o micro-movimientos que afectan la estabilidad de la señal. El recorte a intervalos específicos (por ejemplo, del segundo 11 al 15) fue necesario para un análisis representativo.
 
