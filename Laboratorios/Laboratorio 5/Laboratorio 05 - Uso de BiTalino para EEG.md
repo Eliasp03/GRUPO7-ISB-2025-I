@@ -88,7 +88,7 @@ Se adquirieron señales EEG reales usando el sistema BITalino mediante el siguie
 Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
 | OpenSignals| Ploteo |
 |:---------|:-----------------|
-| <img src="./ImagesL5/basal1a.png" width="400" height="200"> | <img src="./ImagesL5/basal11.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal1a.png" width="400" height="200"> | <img src="./ImagesL5/eeg_2basal1_señal_cruda.png" width="400" height="200"> |
 | <img src="./ImagesL5/basal1b.png" width="400" height="200"> | <img src="./ImagesL5/basal12.png" width="400" height="200"> |
 | <img src="./ImagesL5/basal1c.png" width="400" height="200"> | <img src="./ImagesL5/basal13.png" width="400" height="200"> |
 
@@ -107,7 +107,7 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 Comparamos las señales obtenidas durante la recolección de datos con OpenSignals con el ploteo posterior.
 | OpenSignals| Ploteo |
 |:---------|:-----------------|
-| <img src="./ImagesL5/basal2a.png" width="400" height="200"> | <img src="./ImagesL5/eeg_2basal1_señal_cruda.png" width="400" height="200"> |
+| <img src="./ImagesL5/basal2a.png" width="400" height="200"> | <img src="./ImagesL5/basal21.png" width="400" height="200"> |
 | <img src="./ImagesL5/basal2b.png" width="400" height="200"> | <img src="./ImagesL5/basal22.png" width="400" height="200"> |
 | <img src="./ImagesL5/basal2c.png" width="400" height="200"> | <img src="./ImagesL5/basal23.png" width="400" height="200"> |
 
