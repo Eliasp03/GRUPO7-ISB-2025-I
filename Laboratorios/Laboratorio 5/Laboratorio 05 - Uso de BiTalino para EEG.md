@@ -206,7 +206,7 @@ Comparamos las señales obtenidas durante la recolección de datos con OpenSigna
 ### Discusiones:
 1. ¿Qué banda de frecuencia predomina al cerrar los ojos?
 
-Durante el ejercicio Basal 2 (ojos cerrados), se evidenció un aumento claro en la potencia de la banda alfa (8–13 Hz), como puede observarse en el gráfico correspondiente a la PSD mediante Welch. Este hallazgo es consistente con literatura previa que describe la aparición de ondas alfa como una firma de relajación visual y disminución de actividad cortical occipital tras el cierre de los ojos [5, p. 292].
+Durante el ejercicio Basal 2 (ojos cerrados), se evidencia un incremento notable en la potencia de la banda alfa (8–13 Hz) en el espectro PSD por Welch. Esta actividad alfa se relaciona con un estado relajado y sin estímulos visuales, y su presencia es una respuesta fisiológica normal al cierre ocular, especialmente en regiones occipitales [5, p. 292]. La comparación con Basal 1 (ojos abiertos) corrobora la disminución de alfa al mantener la mirada fija.
 
 2. ¿Qué filtro es imprescindible para EEG y por qué?
 
