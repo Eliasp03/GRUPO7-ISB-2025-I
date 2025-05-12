@@ -53,12 +53,15 @@
 
 ## 5. Señal EMG <a name="id5"></a>
 
+| Campo | Señal Cruda | Filtro IIR (1) | Filtro IIR (2) | Filtro FIR (1) | Filtro FIR(2) |
+|:---------|:-----------------|:---------|:-----------------|
+| Descanso |  |
+| Contracción leve |  |
+| Contracción fuerte |  |
+
 ## 6. Señal EEG <a name="id6"></a>
 
 
-
-
-## 6. Conclusiones <a name="id6"></a>
 
 
 
