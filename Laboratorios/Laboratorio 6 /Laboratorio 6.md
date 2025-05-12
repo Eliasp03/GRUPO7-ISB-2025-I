@@ -63,7 +63,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer3der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_butt.png) |
 
 
-| 3era derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR 2 |
+| 3era derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
 | Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_black.png)  |
 | Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_resp3der_fir_black.png)  |
@@ -78,7 +78,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
 | Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
 
-| Campo | Señal Cruda | Filtro FIR 1 | Filtro FIR 2 |
+| Campo | Señal Cruda | Filtro FIR 1 | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
 | Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_black.png)  |
 | Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_resp3der_fir_black.png)  |
