@@ -2,10 +2,10 @@
 ## Contenido
 1. [Introducción](#id1)
 2. [Materiales y equipos](#id2)
-3. [Metodología](#id3)
-  3.1. [Señal ECG](#id4)
-  3.2. [Señal EMG](#id5)
-  3.3. [Señal EEG](#id6)
+3. [Metodología](#id3)<br>
+  3.1. [Señal ECG](#id4)<br>
+  3.2. [Señal EMG](#id5)<br>
+  3.3. [Señal EEG](#id6)<br>
 4. [Discusiones](#id7)
 5. [Referencias](#id7)
 
