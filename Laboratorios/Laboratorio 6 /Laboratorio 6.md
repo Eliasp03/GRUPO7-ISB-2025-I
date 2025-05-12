@@ -41,7 +41,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Elliptic | ![](./imagesL6/filtro_iir_elliptic_emg.png) | ![](./imagesL6/filtro_iir_elliptic_emg_diagrama.png) |
 | Butterworth | ![](./imagesL6/filtro_iir_butter_emg.png) | ![](./imagesL6/filtro_iir_butter_emg_diagrama.png) |
 | Blackman | ![](./imagesL6/filtro_fir_blackman_emg.png) | ![](./imagesL6/filtro_fir_blackman_emg_diagrama.png) |
-
+| Hamming | ![](./imagesL6/filtro_fir_hamming_emg.png) | ![](./imagesL6/filtro_fir_hamming_emg_diagrama.png) |
 
 ### Configuración PYFDA para EEG:
 
