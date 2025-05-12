@@ -28,19 +28,19 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### Configuración PYFDA para ECG:
 
-| Parámetros | Diagrama polos y ceros |
-|:-------------:|:------------:|
-| ![](./imagesL6/filtro_iir_butt_ecg.png) | ![](./imagesL6/filtro_iir_butt_ecg_diagrama.png) |
-| ![](./imagesL6/filtro_iir_elliptic_ecg.png) | ![](./imagesL6/filtro_iir_elliptic_ecg_diagrama.png) |
-| ![](./imagesL6/filtro_fir_hamming_ecg.png) | ![](./imagesL6/filtro_fir_hamming_ecg_diagrama.png) |
+| Filtro | Parámetros | Diagrama polos y ceros |
+|:-------------:|:------------:|:------------:|
+| Butterworth | ![](./imagesL6/filtro_iir_butt_ecg.png) | ![](./imagesL6/filtro_iir_butt_ecg_diagrama.png) |
+| Elliptic | ![](./imagesL6/filtro_iir_elliptic_ecg.png) | ![](./imagesL6/filtro_iir_elliptic_ecg_diagrama.png) |
+| Hamming | ![](./imagesL6/filtro_fir_hamming_ecg.png) | ![](./imagesL6/filtro_fir_hamming_ecg_diagrama.png) |
 
 ### Configuración PYFDA para EMG:
 
-| Parámetros | Diagrama polos y ceros |
-|:-------------:|:------------:|
-| ![](./imagesL6/filtro_iir_elliptic_emg.png) | ![](./imagesL6/filtro_iir_elliptic_emg_diagrama.png) |
-| ![](./imagesL6/filtro_iir_butter_emg_py.png) | ![](./imagesL6/filtro_iir_elliptic_ecg_diagrama.png) |
-| ![](./imagesL6/filtro_fir_blackman_emg.png) | ![](./imagesL6/filtro_fir_blackman_emg_diagrama.png) |
+| Filtro | Parámetros | Diagrama polos y ceros |
+|:-------------:|:-------------:|:------------:|
+| Elliptic | ![](./imagesL6/filtro_iir_elliptic_emg.png) | ![](./imagesL6/filtro_iir_elliptic_emg_diagrama.png) |
+| Butterworth | ![](./imagesL6/filtro_iir_butter_emg_py.png) | ![](./imagesL6/filtro_iir_elliptic_ecg_diagrama.png) |
+| Blackman | ![](./imagesL6/filtro_fir_blackman_emg.png) | ![](./imagesL6/filtro_fir_blackman_emg_diagrama.png) |
 
 
 ### Configuración PYFDA para EEG:
