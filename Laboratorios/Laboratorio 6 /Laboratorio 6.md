@@ -13,13 +13,10 @@ En el procesamiento de señales biomédicas como ECG, EMG y EEG, es común encon
 
 
 ## 3. Materiales y equipos <a name="id3"></a>
-| Equipo/Material     |Cantidad   |
-|-----------   |:------------:
-|BITalino (r)evolution Board Kit BLE/BT[4]  |1          |
-|Laptop           |1          |
-|Electrodos ECG   |3          |
 
-<img src="" width="500" height="300"/>
+- Laptop con software Open Signals
+- Python 3.12
+- Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
 ## 3. Señal ECG <a name="id4"></a>
 
