@@ -8,28 +8,9 @@
 6. [Señal EEG](#id6)
 
 ## 1. Introducción <a name="id1"></a>
-<p style="text-align: justify;">     
 
-  
-<p style="text-align: justify;">  
+En el procesamiento de señales biomédicas como ECG, EMG y EEG, es común encontrar ruido y artefactos que pueden dificultar el análisis. Por eso, se usan filtros digitales para mejorar la calidad de estas señales. Los filtros IIR (Respuesta Infinita al Impulso) utilizan retroalimentación, lo que les permite ser eficientes y parecidos a los filtros analógicos tradicionales, aunque pueden generar distorsión de fase [1]. Por otro lado, los filtros FIR (Respuesta Finita al Impulso) no usan retroalimentación y su salida depende solo de las entradas actuales, lo que les da una respuesta de fase lineal y mayor estabilidad, aunque suelen requerir más cálculos. En este laboratorio, se diseñarán y compararán filtros IIR y FIR aplicados a señales ECG, EMG y EEG para observar cómo afectan la eliminación de ruido y la preservación de las características importantes de cada señal [2].
 
-  <img src="" width="500" height="300"/>
-
-<p style="text-align: justify;">  
-
-
-  <img src="" width="500" height="200"/>
-
-<p style="text-align: justify;"> 
-
-<img src="" width="500" height="300"/>
-
-</p>
-
-## 2. Propósito de la práctica <a name="id2"></a>
-<p style="text-align: justify;">   
-
-</p>
 
 ## 3. Materiales y equipos <a name="id3"></a>
 | Equipo/Material     |Cantidad   |
