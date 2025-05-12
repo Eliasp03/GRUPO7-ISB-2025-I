@@ -55,6 +55,8 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ## 7. Discusiones <a name="id7"></a>
 
+Dado que el filtro IIR diseñado posee una ganancia distinta de 1, la señal resultante mantiene su forma morfológica pero con una escala menor en amplitud. Este comportamiento es esperado al aplicar coeficientes exportados sin normalización automática. Para propósitos de visualización se recomienda reescalar la salida.
+
 ## 8. Referencias <a name="id8"></a>
 
 [1] J. Ochoa, D. Andres, "Diseño e implementación de filtros digitales FIR e IIR utilizando el microcontrolador XMEGA de Atmel para tratamiento de señales de audio", Universidad Politécnica Salesiana, 2016. Disponible: [https://dspace.ups.edu.ec/handle/123456789/13087](https://dspace.ups.edu.ec/handle/123456789/13087).
