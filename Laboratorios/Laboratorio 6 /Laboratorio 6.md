@@ -81,9 +81,9 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 | Campo | Señal Cruda | Filtro FIR Hamming | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Reposo Biceps        | ![](./imagesL6/emg_señal_cruda_reposobiceps.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_butt.png) |
-| Leve Biceps | ![](./imagesL6/emg_señal_cruda_levebiceps.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_butt.png) |
-| Maximo Biceps| ![](./imagesL6/emg_señal_cruda_maxbiceps.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_butt.png) |
+| Reposo Biceps        | ![](./imagesL6/emg_señal_cruda_reposobiceps.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_black.png) |
+| Leve Biceps | ![](./imagesL6/emg_señal_cruda_levebiceps.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_black.png) |
+| Maximo Biceps| ![](./imagesL6/emg_señal_cruda_maxbiceps.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_black.png) |
 
 ## 3.3. Señal EEG <a name="id6"></a>
 
