@@ -35,7 +35,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_butt.png) |
 
 
-| 1era derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR 2 |
+| 1era derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
 | Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo1der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_reposo1der_fir_black.png) |
 | Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_resp1der_fir_black.png) |
