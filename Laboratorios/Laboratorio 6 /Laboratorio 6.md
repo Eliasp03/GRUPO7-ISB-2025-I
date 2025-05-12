@@ -105,3 +105,4 @@ Fundamentos en normas:
 
 [4] Song et al., "Arrhythmia Classification for Non-Experts Using IIR Filter-Based Machine Learning and Deep Learning Models of the Electrocardiogram", PeerJ, 2020. Available in: https://peerj.com/articles/cs-1774/
 
+[5] C. Vidal, V. Gatica, "Diseño e implementación de un sistema electrocardiográfico digital", Disponible en: http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0120-62302010000500010.
