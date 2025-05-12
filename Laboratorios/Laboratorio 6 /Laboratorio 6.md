@@ -68,6 +68,33 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 Dado que el filtro IIR diseñado posee una ganancia distinta de 1, la señal resultante mantiene su forma morfológica pero con una escala menor en amplitud. Este comportamiento es esperado al aplicar coeficientes exportados sin normalización automática. Para propósitos de visualización se recomienda reescalar la salida.
 
+### ECG
+1. Rango de frecuencias en ECG:
+
+0.5 Hz a 40 Hz como banda de paso corresponde al estándar para monitoreo clínico, donde se prioriza la eliminación de artefactos por movimiento (0.2-2 Hz) y ruido muscular (5-50 Hz).
+
+Para diagnóstico detallado se recomiendan rangos más amplios (0.01-250 Hz), pero su elección es adecuada si el objetivo es monitoreo continuo.
+
+2. Frecuencia de muestreo:
+
+Los 1000 Hz seleccionados superan el mínimo de Nyquist (≥2×f_max) para 150 Hz y coinciden con requerimientos para análisis de onda P y variabilidad cardíaca.
+
+3. Bordes de rechazo:
+
+0.2 Hz elimina deriva de línea base (<0.5 Hz)
+
+50 Hz atenúa ruido de red (60 Hz en América, 50 Hz en Europa). Recomendaría ajustar a 55-70 Hz si el entorno usa 60 Hz.
+
+4. Atenuación de 60 dB:
+
+Supera los 40 dB recomendados para supresión de ruido muscular y ruido de red.
+
+Fundamentos en normas:
+
+- La AHA recomienda 0.05-150 Hz para diagnóstico, pero con frecuencias de corte ajustables.
+
+- El estándar ANSI/AAMI EC11 sugiere 0.67-40 Hz para dispositivos de monitoreo
+
 ## 8. Referencias <a name="id8"></a>
 
 [1] J. Ochoa, D. Andres, "Diseño e implementación de filtros digitales FIR e IIR utilizando el microcontrolador XMEGA de Atmel para tratamiento de señales de audio", Universidad Politécnica Salesiana, 2016. Disponible: [https://dspace.ups.edu.ec/handle/123456789/13087](https://dspace.ups.edu.ec/handle/123456789/13087).
