@@ -28,13 +28,13 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### 3.1. Señal ECG <a name="id4"></a>
 
-
+<div style="overflow-x: auto;">
 | 1era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
 |:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
 | Basal | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_butt.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 | Respiración | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_butt.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 | Post-Ejercicio | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_butt.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
-
+</div>
 
 | 2da derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
 |:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
