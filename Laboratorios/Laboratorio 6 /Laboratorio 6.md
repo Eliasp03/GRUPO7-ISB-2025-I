@@ -16,13 +16,15 @@ Las señales biomédicas, tales como el electrocardiograma (ECG), el electromiog
 Por otro lado, el diseño de filtros digitales depende en gran medida de las características espectrales de cada señal biomédica. Por ejemplo, el ECG tiene un rango útil entre 0.05 y 100 Hz, por lo que se emplean filtros pasa bajos, pasa altos y notch para eliminar ruidos específicos como el zumbido de la red eléctrica o los movimientos corporales. En cambio, el EMG presenta componentes útiles entre 20 y 500 Hz, por lo que se prefieren filtros pasa banda que supriman las frecuencias no deseadas. Asimismo, el EEG requiere especial atención, ya que sus señales de interés se sitúan por debajo de los 100 Hz y están organizadas en bandas específicas (delta, theta, alfa, beta y gamma). Por ende, se deben diseñar filtros que no alteren estas bandas. En términos técnicos, los filtros FIR suelen diseñarse mediante técnicas como el método de ventanas o el algoritmo de Parks-McClellan. Por su parte, los filtros IIR, que destacan por su eficiencia computacional, se obtienen transformando funciones analógicas como Butterworth o Chebyshev mediante la transformación bilineal [3], [4], [1].
 
 
-## 3. Materiales y equipos <a name="id3"></a>
+## 2. Materiales y equipos <a name="id2"></a>
 
 - Laptop con pyfda
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
-## 4. Señal ECG <a name="id4"></a>
+## 3. Metodología <a name="id3"></a>
+
+### 3.1. Señal ECG <a name="id4"></a>
 
 
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
@@ -33,7 +35,7 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 
 
 
-## 5. Señal EMG <a name="id5"></a>
+### 3.2. Señal EMG <a name="id5"></a>
 
 | Campo | Señal Cruda | Filtro IIR (1) | Filtro IIR (2) | Filtro FIR (1) | Filtro FIR(2) |
 |:---------|:-----------------|:---------|:-----------------|:---------|:-----------------|
@@ -41,7 +43,7 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 | Contracción leve |  |
 | Contracción fuerte |  |
 
-## 6. Señal EEG <a name="id6"></a>
+## 3.3. Señal EEG <a name="id6"></a>
 
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |:---------|:-----------------|:---------|:-----------------|
@@ -49,7 +51,9 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 | Parpadeo |  |
 | Lectura |  |
 
-## 7. Referencias <a name="id7"></a>
+## 7. Discusiones <a name="id7"></a>
+
+## 8. Referencias <a name="id8"></a>
 
 [1] J. Ochoa, D. Andres, "Diseño e implementación de filtros digitales FIR e IIR utilizando el microcontrolador XMEGA de Atmel para tratamiento de señales de audio", Universidad Politécnica Salesiana, 2016. Disponible: [https://dspace.ups.edu.ec/handle/123456789/13087](https://dspace.ups.edu.ec/handle/123456789/13087).
 
