@@ -29,13 +29,24 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 ### 3.1. Señal ECG <a name="id4"></a>
 
 
-| 1 derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
+| 1era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
 |:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
-| Basal | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |
-| Respiración | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |
-| Post-Ejercicio | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="600" height="400"> |
+| Basal | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+| Respiración | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+| Post-Ejercicio | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
 
 
+| 2da derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
+|:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
+| Basal | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+| Respiración | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+| Post-Ejercicio | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+
+| 3ra derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
+|:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
+| Basal | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+| Respiración | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
+| Post-Ejercicio | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |<img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="300" height="150"> |
 
 ### 3.2. Señal EMG <a name="id5"></a>
 
