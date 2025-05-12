@@ -70,13 +70,14 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_fir_black.png) |
 
 
+
 ### 3.2. Señal EMG <a name="id5"></a>
 
 | Campo | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Reposo Biceps        | ![](./imagesL6/emg_señal_cruda_reposobiceps.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_elliptic.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_butt.png) |
+| Leve Biceps | ![](./imagesL6/emg_señal_cruda_levebiceps.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_elliptic.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_butt.png) |
+| Maximo Biceps| ![](./imagesL6/emg_señal_cruda_maxbiceps.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_elliptic.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_butt.png) |
 
 | Campo | Señal Cruda | Filtro FIR 1 | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
