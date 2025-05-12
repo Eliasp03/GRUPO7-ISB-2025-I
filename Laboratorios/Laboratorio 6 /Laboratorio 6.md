@@ -63,9 +63,9 @@
 
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |:---------|:-----------------|:---------|:-----------------|
-| Basal | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="800" height="400"> |
-| Parpadeo | <img src="./ImagesL4/ecg_cruda_2der_reposo.png" width="800" height="400"> |
-| Lectura | <img src="./ImagesL4/ecg_cruda_3der_reposo.png" width="800" height="400"> |
+| Basal |  |
+| Parpadeo |  |
+| Lectura |  |
 
 
 
