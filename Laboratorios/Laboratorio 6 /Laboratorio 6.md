@@ -101,9 +101,9 @@ Especificaciones:
 
 | Campo | Señal Cruda | Filtro IIR Elliptic | Filtro FIR Hanning |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal | ![](./imagesL6/eeg_señal_cruda_basal.png) | ![](./imagesL6/eeg_señal_filtrada_basal_eliptic.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_black.png) |
-| Tarea cognitiva | ![](./imagesL6/eeg_señal_cruda_tarea.png) | ![](./imagesL6/eeg_señal_filtrada_tarea_eliptic.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_black.png) |
-| Lectura| ![](./imagesL6/eeg_señal_cruda_lectura.png) | ![](./imagesL6/eeg_señal_filtrada_lectura_eliptic.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_black.png) |
+| Basal | ![](./imagesL6/eeg_señal_cruda_basal.png) | ![](./imagesL6/eeg_señal_filtrada_basal_eliptic.png) | ![](./imagesL6/eeg_señal_filtrada_bart_basal.png) |
+| Tarea cognitiva | ![](./imagesL6/eeg_señal_cruda_tarea.png) | ![](./imagesL6/eeg_señal_filtrada_tarea_eliptic.png) | ![](./imagesL6/eeg_señal_filtrada_bart_tarea.png) |
+| Lectura| ![](./imagesL6/eeg_señal_cruda_lectura.png) | ![](./imagesL6/eeg_señal_filtrada_lectura_eliptic.png) | ![](./imagesL6/eeg_señal_filtrada_bart_lectura.png) |
 
 
 ## 7. Discusiones <a name="id7"></a>
