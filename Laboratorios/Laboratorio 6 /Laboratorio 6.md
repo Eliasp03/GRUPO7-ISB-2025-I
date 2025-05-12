@@ -43,11 +43,11 @@
 ## 3. Señal ECG <a name="id4"></a>
 
 
-| Campo | Gráfica generada | Campo | Gráfica generada |
+| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |:---------|:-----------------|:---------|:-----------------|
-| 1ra Derivada | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="800" height="400"> |
-| 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_reposo.png" width="800" height="400"> |
-| 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_reposo.png" width="800" height="400"> |
+| Basal | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="800" height="400"> |
+| Respiración | <img src="./ImagesL4/ecg_cruda_2der_reposo.png" width="800" height="400"> |
+| Post-Ejercicio | <img src="./ImagesL4/ecg_cruda_3der_reposo.png" width="800" height="400"> |
 
 
 
