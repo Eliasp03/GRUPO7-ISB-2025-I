@@ -28,6 +28,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### 3.1. Señal ECG <a name="id4"></a>
 
+<pre>
 
 | 1era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth | Filtro FIR 1 | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|:-------------:|:-------------:|
@@ -35,6 +36,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
 | Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
 
+</pre>
   
 | 2da derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
 |:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
