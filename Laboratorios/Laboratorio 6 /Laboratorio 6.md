@@ -6,6 +6,7 @@
 4. [Señal ECG](#id4)
 5. [Señal EMG](#id5)
 6. [Señal EEG](#id6)
+7. [Referencias](#id7)
 
 ## 1. Introducción <a name="id1"></a>
 
