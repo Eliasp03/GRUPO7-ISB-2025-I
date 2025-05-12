@@ -46,6 +46,8 @@ En el procesamiento de señales biomédicas como ECG, EMG y EEG, es común encon
 | Parpadeo |  |
 | Lectura |  |
 
+## 6. Referencias <a name="id7"></a>
 
+[1] J. Ochoa, D. Andres, "Diseño e implementación de filtros digitales FIR e IIR utilizando el microcontrolador XMEGA de Atmel para tratamiento de señales de audio", Universidad Politécnica Salesiana, 2016. Disponible: [https://dspace.ups.edu.ec/handle/123456789/13087](https://dspace.ups.edu.ec/handle/123456789/13087].
 
 
