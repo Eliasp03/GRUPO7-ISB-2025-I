@@ -28,6 +28,10 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### 3.1. Señal ECG <a name="id4"></a>
 
+Especificaciones: 
+- Filtro IIR:  Tipo Eliptico y Butterworth.
+- Filtro FIR: Tipo Hamming y Blackman
+
 | 1era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
 | Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
