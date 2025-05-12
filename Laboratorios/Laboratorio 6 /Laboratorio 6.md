@@ -73,6 +73,10 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### 3.2. Señal EMG <a name="id5"></a>
 
+Especificaciones: 
+- Filtro IIR:  Tipo Eliptico y Butterworth. Fc = 60 Hz, Wp = 188 rad/s, Ws = 300 rad/s (elimina frecuencias altas que correspondan a ruido eléctrico y artefactos de movimiento).
+- Filtro FIR: Tipo Hamming y Blackman. Fc = 40 Hz, paso banda bajo
+
 | Campo | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
 | Reposo Biceps        | ![](./imagesL6/emg_señal_cruda_reposobiceps.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_elliptic.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_butt.png) |
@@ -86,6 +90,10 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Maximo Biceps| ![](./imagesL6/emg_señal_cruda_maxbiceps.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_black.png) |
 
 ## 3.3. Señal EEG <a name="id6"></a>
+
+Especificaciones: 
+- Filtro IIR:  Tipo Eliptico. Pasabajos Fc = 30 Hz, Wp = 94 rad/s, Ws = 157 rad/s (suprimir la interferencia de frecuencia alta y artefactos).
+- Filtro FIR: Tipo Hanning. Fc = 12 Hz, paso banda para ondas alfa.
 
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |:---------|:-----------------|:---------|:-----------------|
