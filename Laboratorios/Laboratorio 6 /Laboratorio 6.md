@@ -37,9 +37,9 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 | 1era derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo1der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_reposo1der_fir_hamming.png)  |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo1der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_reposo1der_fir_black.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_resp1der_fir_black.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_ejer1der_fir_black.png) |
 
 
 | 2da derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
@@ -49,11 +49,11 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer2der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer2der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer2der_butt.png) |
 
 
-| 2da derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR 2 |
+| 2da derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal2der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo2der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp2der.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer2der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal2der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo2der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_reposo2der_fir_black.png)  |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp2der.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_resp2der_fir_black.png)  |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer2der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer2der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_ejer2der_fir_black.png) |
 
 
 | 3era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
@@ -65,9 +65,9 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 | 3era derivada | Señal Cruda | Filtro FIR Hamming | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_black.png)  |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_fir_hamming.png)  | ![](./imagesL6/ecg_señal_filtrada_resp3der_fir_black.png)  |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_fir_hamming.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_fir_black.png) |
 
 
 ### 3.2. Señal EMG <a name="id5"></a>
@@ -80,9 +80,9 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 | Campo | Señal Cruda | Filtro FIR 1 | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_reposo3der_fir_black.png)  |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_resp3der_fir_black.png)  |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_fir_black.png) |
 
 ## 3.3. Señal EEG <a name="id6"></a>
 
