@@ -89,7 +89,7 @@ Especificaciones:
 
 | Campo | Señal Cruda | Filtro FIR Hamming | Filtro FIR Blackman |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Reposo Biceps        | ![](./imagesL6/emg_señal_cruda_reposobiceps.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_black.png) |
+| Reposo Biceps | ![](./imagesL6/emg_señal_cruda_reposobiceps.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_black.png) |
 | Leve Biceps | ![](./imagesL6/emg_señal_cruda_levebiceps.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_black.png) |
 | Maximo Biceps| ![](./imagesL6/emg_señal_cruda_maxbiceps.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_black.png) |
 
@@ -99,11 +99,12 @@ Especificaciones:
 - Filtro IIR:  Tipo Eliptico. Pasabajos Fc = 30 Hz, Wp = 94 rad/s, Ws = 157 rad/s (suprimir la interferencia de frecuencia alta y artefactos).
 - Filtro FIR: Tipo Hanning. Fc = 12 Hz, paso banda para ondas alfa.
 
-| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
-|:---------|:-----------------|:---------|:-----------------|
-| Basal |  |
-| Parpadeo |  |
-| Lectura |  |
+| Campo | Señal Cruda | Filtro IIR Elliptic | Filtro FIR Hanning |
+|:-------------:|:------------:|:-------------------:|:----------------------:|
+| Basal | ![](./imagesL6/eeg_señal_cruda_basal.png) | ![](./imagesL6/eeg_señal_filtrada_basal_eliptic.png) | ![](./imagesL6/emg_señal_filtrada_reposobiceps_fir_black.png) |
+| Tarea cognitiva | ![](./imagesL6/eeg_señal_cruda_tarea.png) | ![](./imagesL6/eeg_señal_filtrada_tarea_eliptic.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_black.png) |
+| Lectura| ![](./imagesL6/eeg_señal_cruda_lectura.png) | ![](./imagesL6/eeg_señal_filtrada_lectura_eliptic.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_black.png) |
+
 
 ## 7. Discusiones <a name="id7"></a>
 
