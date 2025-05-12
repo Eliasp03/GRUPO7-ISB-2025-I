@@ -21,7 +21,7 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
-## 3. Señal ECG <a name="id4"></a>
+## 4. Señal ECG <a name="id4"></a>
 
 
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
@@ -48,7 +48,7 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 | Parpadeo |  |
 | Lectura |  |
 
-## 6. Referencias <a name="id7"></a>
+## 7. Referencias <a name="id7"></a>
 
 [1] J. Ochoa, D. Andres, "Diseño e implementación de filtros digitales FIR e IIR utilizando el microcontrolador XMEGA de Atmel para tratamiento de señales de audio", Universidad Politécnica Salesiana, 2016. Disponible: [https://dspace.ups.edu.ec/handle/123456789/13087](https://dspace.ups.edu.ec/handle/123456789/13087).
 
