@@ -14,7 +14,7 @@ En el procesamiento de señales biomédicas como ECG, EMG y EEG, es común encon
 
 ## 3. Materiales y equipos <a name="id3"></a>
 
-- Laptop con software Open Signals
+- Laptop con pyfda
 - Python 3.12
 - Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
