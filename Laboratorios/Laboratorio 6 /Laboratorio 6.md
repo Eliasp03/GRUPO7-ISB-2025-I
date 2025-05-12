@@ -3,11 +3,12 @@
 1. [Introducción](#id1)
 2. [Materiales y equipos](#id2)
 3. [Metodología](#id3)<br>
-  3.1. [Señal ECG](#id4)<br>
-  3.2. [Señal EMG](#id5)<br>
-  3.3. [Señal EEG](#id6)<br>
-4. [Discusiones](#id7)
-5. [Referencias](#id7)
+4. [Resultados](#id4)<br>
+  4.1. [Señal ECG](#id5)<br>
+  4.2. [Señal EMG](#id6)<br>
+  4.3. [Señal EEG](#id7)<br>
+5. [Discusiones](#id8)
+6. [Referencias](#id9)
 
 ## 1. Introducción <a name="id1"></a>
 
@@ -26,7 +27,7 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 
 Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tipo elíptico mediante la herramienta PyFDA, seleccionando una estructura bandpass con orden 6. Este orden fue elegido como compromiso entre una buena respuesta en frecuencia y estabilidad del filtro, ya que valores superiores (como N=8) generaban efectos de resonancia y distorsión. La frecuencia de muestreo fue fijada en 1000 Hz, lo que permitió definir las especificaciones del filtro en función de fracciones de f_S. Se establecieron los bordes de la banda de paso en 0.5 Hz (F_PB = 0.0005 kHz) y 40 Hz (F_PB2 = 0.04 kHz), frecuencias típicas para preservar el contenido fisiológico útil del ECG. Las bandas de rechazo se colocaron en 0.2 Hz y 50 Hz para eliminar componentes de muy baja frecuencia (deriva de línea base) y ruido de red. Además, se fijó una atenuación mínima de 60 dB en las bandas de rechazo (A_SB) y un rizado de 2 dB en la banda de paso (A_PB). Esta configuración garantiza una señal filtrada estable, con supresión adecuada del ruido, sin pérdida de los componentes clínicamente relevantes.
 
-#### Configuración PYFDA para ECG:
+### Configuración PYFDA para ECG:
 
 | Filtro | Parámetros | Diagrama polos y ceros |
 |:-------------:|:------------:|:------------:|
@@ -34,7 +35,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Elliptic | ![](./imagesL6/filtro_iir_elliptic_ecg.png) | ![](./imagesL6/filtro_iir_elliptic_ecg_diagrama.png) |
 | Hamming | ![](./imagesL6/filtro_fir_hamming_ecg.png) | ![](./imagesL6/filtro_fir_hamming_ecg_diagrama.png) |
 
-#### Configuración PYFDA para EMG:
+### Configuración PYFDA para EMG:
 
 | Filtro | Parámetros | Diagrama polos y ceros |
 |:-------------:|:-------------:|:------------:|
@@ -43,7 +44,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Blackman | ![](./imagesL6/filtro_fir_blackman_emg.png) | ![](./imagesL6/filtro_fir_blackman_emg_diagrama.png) |
 | Hamming | ![](./imagesL6/filtro_fir_hamming_emg.png) | ![](./imagesL6/filtro_fir_hamming_emg_diagrama.png) |
 
-#### Configuración PYFDA para EEG:
+### Configuración PYFDA para EEG:
 
 | Filtro | Parámetros | Diagrama polos y ceros |
 |:-------------:|:------------:|:------------:|
@@ -52,7 +53,9 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 
 
-### 3.1. Señal ECG <a name="id4"></a>
+## 4. Resultados <a name="id4"></a>
+
+### 4.1. Señal ECG <a name="id5"></a>
 
 Especificaciones: 
 - Filtro IIR:  Tipo Eliptico y Butterworth.
@@ -101,7 +104,7 @@ Especificaciones:
 
 
 
-### 3.2. Señal EMG <a name="id5"></a>
+### 4.2. Señal EMG <a name="id6"></a>
 
 Especificaciones: 
 - Filtro IIR:  Tipo Eliptico y Butterworth. Fc = 60 Hz, Wp = 188 rad/s, Ws = 300 rad/s (elimina frecuencias altas que correspondan a ruido eléctrico y artefactos de movimiento).
@@ -119,7 +122,7 @@ Especificaciones:
 | Leve Biceps | ![](./imagesL6/emg_señal_cruda_levebiceps.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_levebiceps_fir_black.png) |
 | Maximo Biceps| ![](./imagesL6/emg_señal_cruda_maxbiceps.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_hamming.png) | ![](./imagesL6/emg_señal_filtrada_maxbiceps_fir_black.png) |
 
-## 3.3. Señal EEG <a name="id6"></a>
+## 4.3. Señal EEG <a name="id7"></a>
 
 Especificaciones: 
 - Filtro IIR:  Tipo Eliptico. Pasabajos Fc = 30 Hz, Wp = 94 rad/s, Ws = 157 rad/s (suprimir la interferencia de frecuencia alta y artefactos).
@@ -132,7 +135,7 @@ Especificaciones:
 | Lectura| ![](./imagesL6/eeg_señal_cruda_lectura.png) | ![](./imagesL6/eeg_señal_filtrada_lectura_eliptic.png) | ![](./imagesL6/eeg_señal_filtrada_bart_lectura.png) |
 
 
-## 7. Discusiones <a name="id7"></a>
+## 5. Discusiones <a name="id8"></a>
 
 Dado que el filtro IIR diseñado posee una ganancia distinta de 1, la señal resultante mantiene su forma morfológica pero con una escala menor en amplitud. Este comportamiento es esperado al aplicar coeficientes exportados sin normalización automática. Para propósitos de visualización se recomienda reescalar la salida.
 
@@ -163,7 +166,7 @@ Fundamentos en normas:
 
 - El estándar ANSI/AAMI EC11 sugiere 0.67-40 Hz para dispositivos de monitoreo
 
-## 8. Referencias <a name="id8"></a>
+## 6. Referencias <a name="id9"></a>
 
 [1] J. Ochoa, D. Andres, "Diseño e implementación de filtros digitales FIR e IIR utilizando el microcontrolador XMEGA de Atmel para tratamiento de señales de audio", Universidad Politécnica Salesiana, 2016. Disponible: [https://dspace.ups.edu.ec/handle/123456789/13087](https://dspace.ups.edu.ec/handle/123456789/13087).
 
