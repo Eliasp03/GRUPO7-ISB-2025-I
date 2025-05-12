@@ -1,11 +1,11 @@
-# Laboratorio 04 - Adquisición de señal EKG
+# Laboratorio 07 - Filtros Digitales
 ## Contenido
 1. [Introducción](#id1)
 2. [Propósito de la práctica](#id2)
 3. [Materiales y equipos](#id3)
-4. [Metodología y resultados](#id4)
-5. [Discusiones y limitaciones](#id5)
-6. [Conclusiones](#id6)
+4. [Señal ECG](#id4)
+5. [Señal EMG](#id5)
+6. [Señal EEG](#id6)
 
 ## 1. Introducción <a name="id1"></a>
 <p style="text-align: justify;">     
@@ -40,7 +40,7 @@
 
 <img src="" width="500" height="300"/>
 
-## 3. Metodología y resultados <a name="id4"></a>
+## 3. Señal ECG <a name="id4"></a>
 
 
 
@@ -54,7 +54,9 @@
 
 
 
-## 5. Discusiones y limitaciones <a name="id5"></a>
+## 5. Señal EMG <a name="id5"></a>
+
+## 6. Señal EEG <a name="id6"></a>
 
 
 
