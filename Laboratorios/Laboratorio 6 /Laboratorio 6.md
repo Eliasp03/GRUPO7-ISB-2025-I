@@ -38,19 +38,24 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 </div>
 
-
+<div style="overflow-x: auto;">
+  
 | 2da derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
 |:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
 | Basal | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal2der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal2der_but.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 | Respiración | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal2der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal2der_but.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 | Post-Ejercicio | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal2der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal2der_but.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 
+</div>
+
+<div style="overflow-x: auto;">
+  
 | 3ra derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth| Filtro FIR 1| Filtro FIR 2|
 |:---------|:-----------------|:---------|:-----------------|:-----------------|:-----------------|
 | Basal | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal3der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal3der_butt.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 | Respiración | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal3der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal3der_butt.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
 | Post-Ejercicio | <img src="./imagesL6/ecg_señal_cruda_basal1der.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal3der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal3der_butt.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> | <img src="./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png" width="400" height="200"> |
-
+</div>
 
 ### 3.2. Señal EMG <a name="id5"></a>
 
