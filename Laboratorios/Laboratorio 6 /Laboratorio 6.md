@@ -45,6 +45,13 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### Configuración PYFDA para EEG:
 
+| Filtro | Parámetros | Diagrama polos y ceros |
+|:-------------:|:------------:|:------------:|
+| Elliptic | ![](./imagesL6/filtro_iir_elliptic_eeg.png) | ![](./imagesL6/filtro_iir_butt_ecg_diagrama.png) |
+| Bartlett | ![](./imagesL6/filtro_fir_bartlett_eeg.png) | ![](./imagesL6/filtro_fir_bartlett_eeg_diagrama.png) |
+
+
+
 ### 3.1. Señal ECG <a name="id4"></a>
 
 Especificaciones: 
