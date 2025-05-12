@@ -43,14 +43,11 @@
 ## 3. Señal ECG <a name="id4"></a>
 
 
-
-<p align="center"><strong>Adquisición de la señal</strong></p>
-
-<p align="center">
-  <a href="" target="_blank">
-    <img src="" width="15%">
-  </a>
-</p>
+| Campo | Gráfica generada | Campo | Gráfica generada |
+|:---------|:-----------------|:---------|:-----------------|
+| 1ra Derivada | <img src="./ImagesL4/ecg_cruda_1der_reposo.png" width="800" height="400"> |
+| 2da Derivada | <img src="./ImagesL4/ecg_cruda_2der_reposo.png" width="800" height="400"> |
+| 3ra Derivada | <img src="./ImagesL4/ecg_cruda_3der_reposo.png" width="800" height="400"> |
 
 
 
