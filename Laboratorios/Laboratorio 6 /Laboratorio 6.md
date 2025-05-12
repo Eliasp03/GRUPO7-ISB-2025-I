@@ -39,7 +39,7 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | Filtro | Parámetros | Diagrama polos y ceros |
 |:-------------:|:-------------:|:------------:|
 | Elliptic | ![](./imagesL6/filtro_iir_elliptic_emg.png) | ![](./imagesL6/filtro_iir_elliptic_emg_diagrama.png) |
-| Butterworth | ![](./imagesL6/filtro_iir_butter_emg.png) | ![](./imagesL6/filtro_iir_butter_emg_diagram.png) |
+| Butterworth | ![](./imagesL6/filtro_iir_butter_emg.png) | ![](./imagesL6/filtro_iir_butter_emg_diagrama.png) |
 | Blackman | ![](./imagesL6/filtro_fir_blackman_emg.png) | ![](./imagesL6/filtro_fir_blackman_emg_diagrama.png) |
 
 
