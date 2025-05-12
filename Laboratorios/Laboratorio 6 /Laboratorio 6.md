@@ -13,7 +13,7 @@
 
 Las señales biomédicas, tales como el electrocardiograma (ECG), el electromiograma (EMG) y el electroencefalograma (EEG), desempeñan un papel esencial en el diagnóstico clínico. Sin embargo, estas señales suelen estar contaminadas por ruidos y artefactos que dificultan su interpretación. Por ejemplo, el ECG es susceptible a interferencias de la red eléctrica (50/60 Hz) y al movimiento del paciente; el EMG puede afectarse por señales musculares adicionales y artefactos de movimiento; y el EEG, por su parte, presenta distorsiones generadas por parpadeos u otras señales eléctricas y musculares. Ante esta situación, resulta necesario implementar técnicas de procesamiento digital para mejorar la calidad de estas señales. En este contexto, los filtros digitales juegan un papel crucial, siendo los más utilizados los filtros FIR (Finite Impulse Response) e IIR (Infinite Impulse Response), debido a que permiten eliminar el ruido sin alterar las características fisiológicas relevantes de las señales. En consecuencia, se logra una interpretación clínica más precisa y confiable [1], [2].
 
-Por otro lado, el diseño de filtros digitales depende en gran medida de las características espectrales de cada señal biomédica. Por ejemplo, el ECG tiene un rango útil entre 0.05 y 100 Hz, por lo que se emplean filtros pasa bajos, pasa altos y notch para eliminar ruidos específicos como el zumbido de la red eléctrica o los movimientos corporales. En cambio, el EMG presenta componentes útiles entre 20 y 500 Hz, por lo que se prefieren filtros pasa banda que supriman las frecuencias no deseadas. Asimismo, el EEG requiere especial atención, ya que sus señales de interés se sitúan por debajo de los 100 Hz y están organizadas en bandas específicas (delta, theta, alfa, beta y gamma). Por ende, se deben diseñar filtros que no alteren estas bandas. En términos técnicos, los filtros FIR suelen diseñarse mediante técnicas como el método de ventanas o el algoritmo de Parks-McClellan. Por su parte, los filtros IIR, que destacan por su eficiencia computacional, se obtienen transformando funciones analógicas como Butterworth o Chebyshev mediante la transformación bilineal [3], [4], [1].
+Por otro lado, el diseño de filtros digitales depende en gran medida de las características espectrales de cada señal biomédica. Por ejemplo, el ECG tiene un rango útil entre 0.05 y 100 Hz, por lo que se emplean filtros pasa bajos, pasa altos y notch para eliminar ruidos específicos como el zumbido de la red eléctrica o los movimientos corporales. En cambio, el EMG presenta componentes útiles entre 20 y 500 Hz, por lo que se prefieren filtros pasa banda que supriman las frecuencias no deseadas. Asimismo, el EEG requiere especial atención, ya que sus señales de interés se sitúan por debajo de los 100 Hz y están organizadas en bandas específicas (delta, theta, alfa, beta y gamma). Por ende, se deben diseñar filtros que no alteren estas bandas. En términos técnicos, los filtros FIR suelen diseñarse mediante técnicas como el método de ventanas o el algoritmo de Parks-McClellan. Por su parte, los filtros IIR, que destacan por su eficiencia computacional, se obtienen transformando funciones analógicas como Butterworth o Chebyshev mediante la transformación bilineal [1] , [3], [4], .
 
 
 ## 2. Materiales y equipos <a name="id2"></a>
@@ -25,6 +25,21 @@ Por otro lado, el diseño de filtros digitales depende en gran medida de las car
 ## 3. Metodología <a name="id3"></a>
 
 Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tipo elíptico mediante la herramienta PyFDA, seleccionando una estructura bandpass con orden 6. Este orden fue elegido como compromiso entre una buena respuesta en frecuencia y estabilidad del filtro, ya que valores superiores (como N=8) generaban efectos de resonancia y distorsión. La frecuencia de muestreo fue fijada en 1000 Hz, lo que permitió definir las especificaciones del filtro en función de fracciones de f_S. Se establecieron los bordes de la banda de paso en 0.5 Hz (F_PB = 0.0005 kHz) y 40 Hz (F_PB2 = 0.04 kHz), frecuencias típicas para preservar el contenido fisiológico útil del ECG. Las bandas de rechazo se colocaron en 0.2 Hz y 50 Hz para eliminar componentes de muy baja frecuencia (deriva de línea base) y ruido de red. Además, se fijó una atenuación mínima de 60 dB en las bandas de rechazo (A_SB) y un rizado de 2 dB en la banda de paso (A_PB). Esta configuración garantiza una señal filtrada estable, con supresión adecuada del ruido, sin pérdida de los componentes clínicamente relevantes.
+
+### Configuración PYFDA para ECG:
+
+| Parámetros | Diagrama polos y ceros | Respuesta en frecuencia |
+|:-------------:|:------------:|:------------:|
+| Butterworth | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Elliptic | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Hamming | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+
+### Configuración PYFDA para EMG:
+
+| Parámetros | Diagrama polos y ceros | Respuesta en frecuencia |
+|:-------------:|:------------:|:------------:|
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+### Configuración PYFDA para EEG:
 
 ### 3.1. Señal ECG <a name="id4"></a>
 
