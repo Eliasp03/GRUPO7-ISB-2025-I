@@ -1,4 +1,4 @@
-# Laboratorio 07 - Filtros Digitales
+# Laboratorio 06 - Filtros Digitales
 ## Contenido
 1. [Introducción](#id1)
 2. [Materiales y equipos](#id2)
