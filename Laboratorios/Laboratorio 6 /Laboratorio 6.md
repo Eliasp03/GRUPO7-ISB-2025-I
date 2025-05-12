@@ -137,34 +137,32 @@ Especificaciones:
 
 ## 5. Discusiones <a name="id8"></a>
 
-Dado que el filtro IIR diseñado posee una ganancia distinta de 1, la señal resultante mantiene su forma morfológica pero con una escala menor en amplitud. Este comportamiento es esperado al aplicar coeficientes exportados sin normalización automática. Para propósitos de visualización se recomienda reescalar la salida.
+### Comportamiento del filtro IIR:
+El filtro IIR implementado presenta una ganancia diferente de 1, lo que genera una salida con la misma morfología que la señal original pero escalada en amplitud. Esta reducción es esperada al aplicar coeficientes exportados desde herramientas como PyFDA, ya que no se incluye una normalización automática por defecto. Para análisis visual o comparación directa con la señal original, es recomendable escalar la salida con respecto al máximo valor absoluto de la señal cruda. [1][6]
 
-### ECG
-1. Rango de frecuencias en ECG:
+### ECG – Justificación del diseño de filtro
+#### Banda de paso seleccionada (0.5–40 Hz):
+Corresponde al rango típico recomendado para monitoreo clínico continuo de ECG, permitiendo capturar la información relevante de las ondas P, QRS y T, mientras se atenúan: Artefactos por movimiento (<2 Hz), ruido muscular (>40–50 Hz). Esta banda es suficientemente amplia para preservar la información diagnóstica, y suficientemente estrecha para eliminar componentes no deseados. [5][6][7]
+#### Rango extendido para diagnóstico clínico:
+Si el objetivo fuera el análisis clínico detallado (por ejemplo, evaluación de ondas P o estudios de variabilidad de ritmo), se recomienda extender la banda de paso a 0.01–150/250 Hz. Este rango se ajusta a los lineamientos de la AHA (American Heart Association) y el estándar ANSI/AAMI EC11, que proponen: 
+- Diagnóstico general: 0.05–150 Hz
+- Monitoreo en tiempo real: 0.67–40 Hz. [4][5][6]
+#### Atenuación (60 dB):
+Supera los 40 dB recomendados para suprimir ruido muscular y de red, asegurando una mayor limpieza en la señal sin distorsionar la información fisiológica útil. [6]
+### EMG – Justificación del diseño de filtro
+En señales EMG (electromiográficas), el principal objetivo del filtrado es eliminar el ruido de baja frecuencia (movimiento, deriva de línea base) y atenuar componentes de alta frecuencia no asociados a la contracción muscular voluntaria.
+#### Tipo de filtro utilizado:
+Se emplearon tanto filtros IIR (Butterworth y Elíptico) como FIR (Hamming y Blackman). [1][3]
+#### Bandas de paso empleadas (10–400 Hz aprox.):
+Se eliminaron artefactos de baja frecuencia (<10 Hz), relacionados con el movimiento o interferencias mecánicas. Se filtraron componentes de alta frecuencia (>400 Hz), asociados a ruido electrónico o no fisiológico. [3][4]
+#### Orden del filtro y ventana (FIR):
+Se ajustaron manualmente en PyFDA para lograr un compromiso entre selectividad y estabilidad. Las ventanas Hamming y Blackman fueron elegidas por su capacidad de controlar los lóbulos laterales y evitar filtrado excesivo. [3]
 
-0.5 Hz a 40 Hz como banda de paso corresponde al estándar para monitoreo clínico, donde se prioriza la eliminación de artefactos por movimiento (0.2-2 Hz) y ruido muscular (5-50 Hz).
+### EEG – Justificación del diseño de filtro
+En señales EEG, el objetivo principal es aislar bandas de frecuencia específicas asociadas a distintos estados cerebrales: Delta (0.5–4 Hz), Theta (4–8 Hz), Alpha (8–13 Hz foco de este diseño), Beta (13–30 Hz), Gamma (>30 Hz). [8]
+#### Tipo de filtro FIR- Paso banda (alpha):
+Se utilizó un filtro FIR con ventana Hanning, diseñado para capturar exclusivamente la actividad de las ondas alfa, asociadas con estados de relajación y atención pasiva. [3]
 
-Para diagnóstico detallado se recomiendan rangos más amplios (0.01-250 Hz), pero su elección es adecuada si el objetivo es monitoreo continuo.
-
-2. Frecuencia de muestreo:
-
-Los 1000 Hz seleccionados superan el mínimo de Nyquist (≥2×f_max) para 150 Hz y coinciden con requerimientos para análisis de onda P y variabilidad cardíaca.
-
-3. Bordes de rechazo:
-
-0.2 Hz elimina deriva de línea base (<0.5 Hz)
-
-50 Hz atenúa ruido de red (60 Hz en América, 50 Hz en Europa). Recomendaría ajustar a 55-70 Hz si el entorno usa 60 Hz.
-
-4. Atenuación de 60 dB:
-
-Supera los 40 dB recomendados para supresión de ruido muscular y ruido de red.
-
-Fundamentos en normas:
-
-- La AHA recomienda 0.05-150 Hz para diagnóstico, pero con frecuencias de corte ajustables.
-
-- El estándar ANSI/AAMI EC11 sugiere 0.67-40 Hz para dispositivos de monitoreo
 
 ## 6. Referencias <a name="id9"></a>
 
@@ -181,3 +179,5 @@ Fundamentos en normas:
 [6] Ingeniería, Investigación y Desarrollo, "Reducción de interferencias en señales ECG mediante filtros digitales IIR", Disponible en: https://revistas.uptc.edu.co/index.php/ingenieria_sogamoso/article/view/858/857.
 
 [7] Jove, "Adquisición y análisis de una señal de ECG (electrocardiografía)", Disponible en: https://www.jove.com/v/10473/acquisition-and-analysis-of-an-ecg-electrocardiography-signal?language=Spanish.
+
+[8] J. A. Gómez et al., "Conceptos básicos de electroencefalografía," Dialnet, 2013. Disponible en: https://dialnet.unirioja.es/descarga/articulo/4788132.pdf
