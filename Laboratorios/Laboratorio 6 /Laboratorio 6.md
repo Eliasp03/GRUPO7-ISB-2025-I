@@ -67,11 +67,17 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 
 ### 3.2. Señal EMG <a name="id5"></a>
 
-| Campo | Señal Cruda | Filtro IIR (1) | Filtro IIR (2) | Filtro FIR (1) | Filtro FIR(2) |
-|:---------|:-----------------|:---------|:-----------------|:---------|:-----------------|
-| Descanso |  |
-| Contracción leve |  |
-| Contracción fuerte |  |
+| Campo | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
+|:-------------:|:------------:|:-------------------:|:----------------------:|
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+
+| Campo | Señal Cruda | Filtro FIR 1 | Filtro FIR 2 |
+|:-------------:|:------------:|:-------------------:|:----------------------:|
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
 
 ## 3.3. Señal EEG <a name="id6"></a>
 
