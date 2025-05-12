@@ -1,12 +1,13 @@
 # Laboratorio 07 - Filtros Digitales
 ## Contenido
 1. [Introducción](#id1)
-2. [Propósito de la práctica](#id2)
-3. [Materiales y equipos](#id3)
-4. [Señal ECG](#id4)
-5. [Señal EMG](#id5)
-6. [Señal EEG](#id6)
-7. [Referencias](#id7)
+2. [Materiales y equipos](#id2)
+3. [Metodología](#id3)
+  3.1. [Señal ECG](#id4)
+  3.2. [Señal EMG](#id5)
+  3.3. [Señal EEG](#id6)
+4. [Discusiones](#id7)
+5. [Referencias](#id7)
 
 ## 1. Introducción <a name="id1"></a>
 
