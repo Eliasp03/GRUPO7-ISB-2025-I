@@ -31,38 +31,43 @@ Para el procesamiento de señales ECG, se diseñó un filtro digital IIR del tip
 | 1era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
 | Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_butt.png) |
+
 
 | 1era derivada | Señal Cruda | Filtro FIR 1 | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+
 
 | 2da derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal2der.png) | ![](./imagesL6/ecg_señal_filtrada_basal2der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal2der_butt.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp2der.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_resp2der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer2der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer2der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer2der_butt.png) |
+
 
 | 2da derivada | Señal Cruda | Filtro FIR 1 | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+
 
 | 3era derivada | Señal Cruda | Filtro IIR Elliptic | Filtro IIR Butterworth |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal3der.png) | ![](./imagesL6/ecg_señal_filtrada_basal3der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal3der_butt.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp3der.png) | ![](./imagesL6/ecg_señal_filtrada_resp3der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal3der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer3der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_ejer3der_butt.png) |
+
 
 | 3era derivada | Señal Cruda | Filtro FIR 1 | Filtro FIR 2 |
 |:-------------:|:------------:|:-------------------:|:----------------------:|
-| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
-| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Basal         | ![](./imagesL6/ecg_señal_cruda_basal1der.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Respiración   | ![](./imagesL6/ecg_señal_cruda_resp1der.png) | ![](./imagesL6/ecg_señal_filtrada_resp1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
+| Post-Ejercicio| ![](./imagesL6/ecg_señal_cruda_ejer1der.png) | ![](./imagesL6/ecg_señal_filtrada_ejer1der_eliptic.png) | ![](./imagesL6/ecg_señal_filtrada_basal1der_butt.png) |
 
 
 ### 3.2. Señal EMG <a name="id5"></a>
