@@ -20,6 +20,13 @@ A diferencia de la Transformada de Fourier, que solo proporciona una visión glo
 Existen dos implementaciones principales: la Transformada Wavelet Continua (CWT), que proporciona un análisis detallado pero computacionalmente costoso debido a su carácter redundante [7], y la Transformada Wavelet Discreta (DWT), que utiliza escalas y posiciones discretas, permitiendo una representación más eficiente y adecuada para procesamiento digital [8]. La DWT emplea filtros pasaaltos y pasabajos para dividir la señal en componentes de alta y baja frecuencia, facilitando su descomposición jerárquica en distintos niveles de resolución [1]. Además, existen múltiples familias de wavelets, como Haar, Daubechies, Symlets, Coiflets o Morlet, cada una con propiedades específicas que las hacen más adecuadas para diferentes tipos de señales y objetivos de análisis [8].
 
 ## 2. Materiales y equipos <a name="id2"></a>
+<div align="center">
+
+|  **Modelo**  | **Descripción** | **Cantidad** | **Imagen** |
+|:------------:|:---------------:|:------------:|:----------:|
+|-|**Laptop o PC**: Laptop equipada con el programa Python 3.12 y las librerías neurokit2, matplotlib,scipy,numpy para poder implementar ahí el código, para realizar los respectivos filtrados|1|<image width="300" height="100" src="https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/blte12a184fec085629/6706c29adabd3cb01a7aff9c/Python-logo-1716x965_-_2024-10-09.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale">|
+
+</div>
 
 - Laptop
 - Python 3.12
