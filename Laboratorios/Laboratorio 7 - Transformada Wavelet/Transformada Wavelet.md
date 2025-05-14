@@ -24,13 +24,10 @@ Existen dos implementaciones principales: la Transformada Wavelet Continua (CWT)
 
 |  **Modelo**  | **Descripción** | **Cantidad** | **Imagen** |
 |:------------:|:---------------:|:------------:|:----------:|
-|-|**Laptop o PC**: Laptop equipada con el programa Python 3.12 y las librerías neurokit2, matplotlib,scipy,numpy para poder implementar ahí el código, para realizar los respectivos filtrados|1|<image width="300" height="100" src="https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/blte12a184fec085629/6706c29adabd3cb01a7aff9c/Python-logo-1716x965_-_2024-10-09.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale">|
+|-|**Laptop o PC**: Laptop equipada con el programa Python 3.12 y las librerías neurokit2, matplotlib,scipy,numpy para poder implementar ahí el código y realizar los respectivos filtrados|1|<image width="300" height="100" src="https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/blte12a184fec085629/6706c29adabd3cb01a7aff9c/Python-logo-1716x965_-_2024-10-09.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale">|
 
 </div>
 
-- Laptop
-- Python 3.12
-- Librerías: `neurokit2`, `matplotlib`, `scipy`, `numpy`
 
 ## 3. Propósito de la práctica <a name="id3"></a>
 Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos producidos de las señales ECG, EMG y EEG.
