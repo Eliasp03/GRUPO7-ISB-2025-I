@@ -47,7 +47,8 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 |  **Función Wavelet**  | **Nivel** | **Umbral** | **Frecuencia** | **Coeficiente de aproximación** | **Coeficientes de detalle** | 
 |:------------:|:---------------:|:------------:|:------------:|:------------:|:------------:|
 |bior2.6 (Biorthogonal 2.6)|5|16|1000 Hz|A5| D1, D2, D3, D4, D5|
-<p align="center"><i>
+</div>
+
   
 ## 5. Resultados <a name="id8"></a>
 
