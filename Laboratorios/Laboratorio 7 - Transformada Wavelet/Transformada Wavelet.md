@@ -24,7 +24,7 @@ Además, existen múltiples familias de wavelets, como Haar, Daubechies, Symlets
 ## 2. Materiales y equipos <a name="id2"></a>
 
 ## 3. Propósito de la práctica <a name="id3"></a>
-
+Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos producidos de las señales ECG, EMG y EEG.
 
 ## 4. Metodología <a name="id4"></a>
 
