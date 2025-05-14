@@ -34,7 +34,52 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 ## 4. Metodología <a name="id4"></a>
 
+
 ## 5. Resultados <a name="id5"></a>
+
+### 5.1. Señal ECG <a name="id5"></a>
+
+
+| 1era derivada | Señal Cruda | Filtro DWT |
+|:-------------:|:------------:|:-------------------:|
+| Basal         | ![](./imagesL7/ecg_señal_cruda_basal1der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp1der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer1der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+
+
+| 2da derivada | Señal Cruda | Filtro DWT |
+|:-------------:|:------------:|:-------------------:|
+| Basal         | ![](./imagesL7/ecg_señal_cruda_basal1der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp1der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer1der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+
+
+| 3era derivada | Señal Cruda | Filtro DWT |
+|:-------------:|:------------:|:-------------------:|
+| Basal         | ![](./imagesL7/ecg_señal_cruda_basal1der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp1der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer1der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+
+
+
+### 4.2. Señal EMG <a name="id6"></a>
+
+
+| Campo | Señal Cruda | Filtro DWT |
+|:-------------:|:------------:|:-------------------:|
+| Reposo Biceps        | ![](./imagesL7/emg_señal_cruda_reposobiceps.png) | ![](./imagesL7/emg_señal_filtrada_reposobiceps_elliptic.png) |
+| Leve Biceps | ![](./imagesL7/emg_señal_cruda_levebiceps.png) | ![](./imagesL7/emg_señal_filtrada_levebiceps_elliptic.png) |
+| Maximo Biceps| ![](./imagesL7/emg_señal_cruda_maxbiceps.png) | ![](./imagesL7/emg_señal_filtrada_maxbiceps_elliptic.png) |
+
+
+## 4.3. Señal EEG <a name="id7"></a>
+
+
+| Campo | Señal Cruda | Filtro DWT |
+|:-------------:|:------------:|:-------------------:|
+| Basal | ![](./imagesL7/eeg_señal_cruda_basal.png) | ![](./imagesL7/eeg_señal_filtrada_basal_eliptic.png) |
+| Tarea cognitiva | ![](./imagesL7/eeg_señal_cruda_tarea.png) | ![](./imagesL7/eeg_señal_filtrada_tarea_eliptic.png) |
+| Lectura| ![](./imagesL7/eeg_señal_cruda_lectura.png) | ![](./imagesL7/eeg_señal_filtrada_lectura_eliptic.png) |
 
 
 ## 6. Discusiones y Conclusiones <a name="id6"></a>
