@@ -41,9 +41,9 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 ### 4.1. Señal ECG <a name="id5"></a>
 ### 4.2. Señal ECG <a name="id6"></a>
 ### 4.3. Señal ECG <a name="id7"></a>
-## 5. Resultados <a name="id5"></a>
+## 5. Resultados <a name="id8"></a>
 
-### 5.1. Señal ECG <a name="id6"></a>
+### 5.1. Señal ECG <a name="id9"></a>
 
 
 | 1era derivada | Señal Cruda | Filtro DWT |
@@ -68,7 +68,7 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 
 
-### 5.2. Señal EMG <a name="id7"></a>
+### 5.2. Señal EMG <a name="id9"></a>
 
 
 | Campo | Señal Cruda | Filtro DWT |
@@ -78,7 +78,7 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 | Maximo Biceps| ![](./imagesL7/emg_señal_cruda_maxbiceps.png) | ![](./imagesL7/emg_señal_filtrada_maxbiceps_elliptic.png) |
 
 
-## 5.3. Señal EEG <a name="id8"></a>
+## 5.3. Señal EEG <a name="id10"></a>
 
 
 | Campo | Señal Cruda | Filtro DWT |
@@ -88,9 +88,9 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 | Lectura| ![](./imagesL7/eeg_señal_cruda_lectura.png) | ![](./imagesL7/eeg_señal_filtrada_lectura_eliptic.png) |
 
 
-## 6. Discusiones y Conclusiones <a name="id6"></a>
+## 6. Discusiones y Conclusiones <a name="id11"></a>
 
-## 7. Referencias <a name="id7"></a>
+## 7. Referencias <a name="id12"></a>
 
 [1] S. Kouro and R. Musalem, “Tutorial introductorio a la Teoría de Wavelet.” Disponble: http://www2.elo.utfsm.cl/~elo377/documentos/Wavelet.pdf.
 
