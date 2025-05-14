@@ -38,7 +38,9 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 ## 4. Metodología <a name="id4"></a>
 
-
+### 4.1. Señal ECG <a name="id5"></a>
+### 4.2. Señal ECG <a name="id6"></a>
+### 4.3. Señal ECG <a name="id7"></a>
 ## 5. Resultados <a name="id5"></a>
 
 ### 5.1. Señal ECG <a name="id6"></a>
