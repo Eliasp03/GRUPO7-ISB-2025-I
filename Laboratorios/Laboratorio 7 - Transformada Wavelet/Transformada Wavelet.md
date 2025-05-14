@@ -39,8 +39,16 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 ## 4. Metodología <a name="id4"></a>
 
 ### 4.1. Señal ECG <a name="id5"></a>
-### 4.2. Señal ECG <a name="id6"></a>
-### 4.3. Señal ECG <a name="id7"></a>
+### 4.2. Señal EMG <a name="id6"></a>
+### 4.3. Señal EEG <a name="id7"></a>
+El filtro utilizado, a partir de la literatura de referencia, para la eliminación de ruido en la señal es un filtro DWT tipo Biorthogonal 2.6, debido a su alta simetría, capacidad de separar eficazmente los componentes de frecuencia baja y alta y reconstrucción de la señal original y un nivel de 5. Los coeficientes de aproximación fueron A5 y de detalle D1, D2, D3, D4 y D5. 
+<div align="center">
+	
+|  **Función Wavelet**  | **Nivel** | **Umbral** | **Frecuencia** | **Coeficiente de aproximación** | **Coeficientes de detalle** | 
+|:------------:|:---------------:|:------------:|:------------:|:------------:|:------------:|
+|bior2.6 (Biorthogonal 2.6)|5|16|1000 Hz|A5| D1, D2, D3, D4, D5|
+<p align="center"><i>
+  
 ## 5. Resultados <a name="id8"></a>
 
 ### 5.1. Señal ECG <a name="id9"></a>
