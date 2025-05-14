@@ -4,12 +4,15 @@
 2. [Materiales y equipos](#id2)
 3. [Propósito de la práctica](#id3)
 4. [Metodología](#id4)<br>
-5. [Resultados](#id5)<br>
-  4.1. [Señal ECG](#id6)<br>
-  4.2. [Señal EMG](#id7)<br>
-  4.3. [Señal EEG](#id8)<br>
-6. [Discusiones](#id9)
-7. [Referencias](#id10)
+  4.1. [Señal ECG](#id5)<br>
+  4.2. [Señal EMG](#id6)<br>
+  4.3. [Señal EEG](#id7)<br>
+5. [Resultados](#id8)<br>
+  5.1. [Señal ECG](#id9)<br>
+  5.2. [Señal EMG](#id10)<br>
+  5.3. [Señal EEG](#id11)<br>
+6. [Discusiones](#id12)
+7. [Referencias](#id13)
 
 
 ## 1. Introducción <a name="id1"></a>
