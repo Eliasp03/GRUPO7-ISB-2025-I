@@ -2,13 +2,14 @@
 ## Contenido
 1. [Introducción](#id1)
 2. [Materiales y equipos](#id2)
-3. [Metodología](#id3)<br>
-4. [Resultados](#id4)<br>
-  4.1. [Señal ECG](#id5)<br>
-  4.2. [Señal EMG](#id6)<br>
-  4.3. [Señal EEG](#id7)<br>
-5. [Discusiones](#id8)
-6. [Referencias](#id9)
+3. [Propósito de la práctica](#id3)
+4. [Metodología](#id4)<br>
+5. [Resultados](#id5)<br>
+  4.1. [Señal ECG](#id6)<br>
+  4.2. [Señal EMG](#id7)<br>
+  4.3. [Señal EEG](#id8)<br>
+6. [Discusiones](#id9)
+7. [Referencias](#id10)
 
 
 ## 1. Introducción <a name="id1"></a>
@@ -37,7 +38,7 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 ## 5. Resultados <a name="id5"></a>
 
-### 5.1. Señal ECG <a name="id5"></a>
+### 5.1. Señal ECG <a name="id6"></a>
 
 
 | 1era derivada | Señal Cruda | Filtro DWT |
@@ -62,7 +63,7 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 
 
-### 4.2. Señal EMG <a name="id6"></a>
+### 5.2. Señal EMG <a name="id7"></a>
 
 
 | Campo | Señal Cruda | Filtro DWT |
@@ -72,7 +73,7 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 | Maximo Biceps| ![](./imagesL7/emg_señal_cruda_maxbiceps.png) | ![](./imagesL7/emg_señal_filtrada_maxbiceps_elliptic.png) |
 
 
-## 4.3. Señal EEG <a name="id7"></a>
+## 5.3. Señal EEG <a name="id8"></a>
 
 
 | Campo | Señal Cruda | Filtro DWT |
