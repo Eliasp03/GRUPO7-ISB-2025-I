@@ -21,15 +21,19 @@ Existen dos implementaciones principales: la Transformada Wavelet Continua (CWT)
 
 Además, existen múltiples familias de wavelets, como Haar, Daubechies, Symlets, Coiflets o Morlet, cada una con propiedades específicas que las hacen más adecuadas para diferentes tipos de señales y objetivos de análisis [8].
 
-## 2. Materiales y equipos <a name="id9"></a>
+## 2. Materiales y equipos <a name="id2"></a>
 
-## 3. Metodología <a name="id9"></a>
+## 3. Propósito de la práctica <a name="id3"></a>
 
-## 4. Resultados <a name="id9"></a>
 
-## 5. Discusiones y Conclusiones <a name="id9"></a>
+## 4. Metodología <a name="id4"></a>
 
-## 6. Referencias <a name="id9"></a>
+## 5. Resultados <a name="id5"></a>
+
+
+## 6. Discusiones y Conclusiones <a name="id6"></a>
+
+## 7. Referencias <a name="id7"></a>
 
 [1] S. Kouro and R. Musalem, “Tutorial introductorio a la Teoría de Wavelet.” Disponble: http://www2.elo.utfsm.cl/~elo377/documentos/Wavelet.pdf.
 
