@@ -53,16 +53,16 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 | 2da derivada | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
-| Basal         | ![](./imagesL7/ecg_señal_cruda_basal1der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp1der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer1der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+| Basal         | ![](./imagesL7/ecg_señal_cruda_basal2der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp2der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer2der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
 
 
 | 3era derivada | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
-| Basal         | ![](./imagesL7/ecg_señal_cruda_basal1der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp1der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer1der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+| Basal         | ![](./imagesL7/ecg_señal_cruda_basal3der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
+| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp3der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer3der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
 
 
 
