@@ -92,9 +92,9 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 
 | Campo | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
-| Basal | ![](./imagesL7/eeg_señal_cruda_basal.png) | ![](./imagesL7/eeg_filtrada_basal.png) |
-| Tarea cognitiva | ![](./imagesL7/eeg_señal_cruda_tarea.png) | ![](./imagesL7/eeg_filtrada_tareacognitiva.png) |
-| Lectura| ![](./imagesL7/eeg_señal_cruda_lectura.png) | ![](./imagesL7/eeg_filtrada_lectura.png) |
+| Basal | ![](./imagesL7/eeg_cruda_basal.png) | ![](./imagesL7/eeg_filtrada_basal.png) |
+| Tarea cognitiva | ![](./imagesL7/eeg_cruda_tarea.png) | ![](./imagesL7/eeg_filtrada_tareacognitiva.png) |
+| Lectura| ![](./imagesL7/eeg_cruda_lectura.png) | ![](./imagesL7/eeg_filtrada_lectura.png) |
 
 
 ## 6. Discusiones y Conclusiones <a name="id11"></a>
