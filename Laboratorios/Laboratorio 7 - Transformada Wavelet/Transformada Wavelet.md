@@ -36,7 +36,19 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 
 ### 4.1. Señal ECG <a name="id5"></a>
 
-Insertar texto...
+Las señales ECG utilizadas en esta práctica fueron adquiridas en sesiones previas mediante electrodos de superficie conectados al sistema BITalino, siguiendo un protocolo de adquisición estandarizado. Se seleccionaron señales correspondientes a la primera derivada (1der) bajo cuatro condiciones fisiológicas distintas: reposo, respiración pausada, respiración prolongada y post ejercicio. Cada archivo fue procesado individualmente en el entorno de desarrollo Python 3.12.
+
+En primer lugar, se realizó una visualización inicial de las señales crudas mediante scripts personalizados, utilizando la biblioteca opensignalsreader, luego, para el proceso de filtrado, se aplicaron dos configuraciones distintas de transformada wavelet discreta:
+
+- Filtro Wavelet Symlet 4 (sym4) con un nivel de descomposición 3:
+
+Seleccionado con base en su buen desempeño en señales ECG con niveles moderados de ruido, como se evidenció en estudios previos [YY]. Se aplicó una umbralización suave (soft thresholding) con un umbral fijo ajustado empíricamente (umbral = 0.2) sobre todos los coeficientes.
+
+- Filtro Wavelet Coiflet 3 (coif3) con un nivel de descomposición 7:
+
+Esta configuración fue propuesta a partir de la literatura reciente, en la cual se evaluaron múltiples combinaciones de wavelets, umbrales y niveles de descomposición optimizados mediante particle swarm optimization (PSO). Los resultados reportaron que Coiflet 3 y niveles altos (L = 7–8) ofrecen un mejor rendimiento en condiciones de alto ruido, como es el caso del ECG post ejercicio [ZZ].
+
+En ambos casos, tras la descomposición wavelet, se umbralizaron los coeficientes utilizando la función pywt.threshold con modo 'soft', y luego se reconstruyó la señal filtrada con pywt.waverec. Finalmente, se ajustó la longitud de la señal reconstruida para que coincidiera con la original, y se graficaron los resultados:
 
 | ECG Reposo | Filtro DWT |
 |:-------------:|:-------------------:|
