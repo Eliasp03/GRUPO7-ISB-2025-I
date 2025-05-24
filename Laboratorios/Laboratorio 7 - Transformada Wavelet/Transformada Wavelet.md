@@ -57,9 +57,10 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 
 | 1era derivada | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
-| Basal         | ![](./imagesL7/ecg_señal_cruda_basal1der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp1der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer1der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+| Basal         | ![](./imagesL7/ecg_reposo1der.png) | ![](./imagesL7/wavelet_ecg_ejer1der_lvl5.png) |
+| Respiración   | ![](./imagesL7/ecg_resp1der.png) | ![](./imagesL7/wavelet_ecg_resp1der.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_ejerLarga1der.png) | ![](./imagesL7/wavelet_ecg_respLarga1der.png) |
+| Post-Ejercicio| ![](./imagesL7/ecg_ejer1der.png) | ![](./imagesL7/wavelet_ecg_ejer1der.png) | 
 
 
 | 2da derivada | Señal Cruda | Filtro DWT |
