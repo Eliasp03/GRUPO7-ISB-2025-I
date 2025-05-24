@@ -131,5 +131,8 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci√
 
 [8]  E. Pinto Moreno, "Familias de Wavelets," Universidad Carlos III de Madrid, Madrid, Espa√±a. Disponible: https://e-archivo.uc3m.es/bitstream/10016/16582/1/PFC_Elena_Pinto_Moreno_Anexos.pdf. 
 
+[YY] Malik, S. A., Parah, S. A., Aljuaid, H., & Malik, B. A. (2023). An Iterative Filtering Based ECG Denoising Using Lifting Wavelet Transform Technique. Electronics, 12(2), 387. https://doi.org/10.3390/electronics12020387
+
+[ZZ] Abdallah, Azzouz & Bengherbia, Billel & Wira, Patrice & Alaoui, Nail & Souahlia, Abdelkerim & Maazouz, Mohamed & Hentabeli, Hamza. (2024). An efficient ECG signals denoising technique based on the combination of particle swarm optimisation and wavelet transform. Heliyon. 10. e26171. 10.1016/j.heliyon.2024.e26171. 
 
 [x3] A. W. Pise and P. P. Rege, "Comparative analysis of various filtering techniques for denoising EEG signals," in 2021 6th International Conference for Convergence in Technology (I2CT), Maharashtra, India, 2021, pp. 1-4, doi: 10.1109/I2CT51068.2021.9417984.
