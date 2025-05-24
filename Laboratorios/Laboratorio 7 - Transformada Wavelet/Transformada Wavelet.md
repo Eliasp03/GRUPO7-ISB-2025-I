@@ -3,16 +3,12 @@
 1. [Introducción](#id1)
 2. [Materiales y equipos](#id2)
 3. [Propósito de la práctica](#id3)
-4. [Metodología](#id4)<br>
+4. [Metodología y Resultados](#id4)<br>
   4.1. [Señal ECG](#id5)<br>
   4.2. [Señal EMG](#id6)<br>
   4.3. [Señal EEG](#id7)<br>
-5. [Resultados](#id8)<br>
-  5.1. [Señal ECG](#id9)<br>
-  5.2. [Señal EMG](#id10)<br>
-  5.3. [Señal EEG](#id11)<br>
-6. [Discusiones](#id12)
-7. [Referencias](#id13)
+5. [Discusiones](#id8)
+6. [Referencias](#id9)
 
 
 ## 1. Introducción <a name="id1"></a>
@@ -39,21 +35,8 @@ Implementar y comparar el filtrado wavelet para reducir el ruido por artefactos 
 ## 4. Metodología <a name="id4"></a>
 
 ### 4.1. Señal ECG <a name="id5"></a>
-### 4.2. Señal EMG <a name="id6"></a>
-### 4.3. Señal EEG <a name="id7"></a>
-El filtro utilizado, a partir de la literatura de referencia, para la eliminación de ruido en la señal es un filtro DWT tipo Biorthogonal 2.6, debido a su alta simetría, capacidad de separar eficazmente los componentes de frecuencia baja y alta y reconstrucción de la señal original y un nivel de 5. Los coeficientes de aproximación fueron A5 y de detalle D1, D2, D3, D4 y D5. [x3]
-<div align="center">
-	
-|  **Función Wavelet**  | **Nivel** | **Umbral** | **Frecuencia** | **Coeficiente de aproximación** | **Coeficientes de detalle** | 
-|:------------:|:---------------:|:------------:|:------------:|:------------:|:------------:|
-|bior2.6 (Biorthogonal 2.6)|5|16|1000 Hz|A5| D1, D2, D3, D4, D5|
-</div>
 
-  
-## 5. Resultados <a name="id8"></a>
-
-### 5.1. Señal ECG <a name="id9"></a>
-
+Insertar texto...
 
 | ECG Reposo | Filtro DWT |
 |:-------------:|:-------------------:|
@@ -83,8 +66,9 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 | Coif3         | ![](./imagesL7/coif3_ecg_ejer1der_lvl7.png) |
 
 
-### 5.2. Señal EMG <a name="id9"></a>
+### 4.2. Señal EMG <a name="id6"></a>
 
+Metodologia emg...
 
 | Campo | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
@@ -93,8 +77,16 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 | Maximo Biceps| ![](./imagesL7/emg_señal_cruda_maxbiceps.png) | ![](./imagesL7/emg_señal_filtrada_maxbiceps_elliptic.png) |
 
 
-## 5.3. Señal EEG <a name="id10"></a>
+### 4.3. Señal EEG <a name="id7"></a>
+El filtro utilizado, a partir de la literatura de referencia, para la eliminación de ruido en la señal es un filtro DWT tipo Biorthogonal 2.6, debido a su alta simetría, capacidad de separar eficazmente los componentes de frecuencia baja y alta y reconstrucción de la señal original y un nivel de 5. Los coeficientes de aproximación fueron A5 y de detalle D1, D2, D3, D4 y D5. [x3]
+<div align="center">
+	
+|  **Función Wavelet**  | **Nivel** | **Umbral** | **Frecuencia** | **Coeficiente de aproximación** | **Coeficientes de detalle** | 
+|:------------:|:---------------:|:------------:|:------------:|:------------:|:------------:|
+|bior2.6 (Biorthogonal 2.6)|5|16|1000 Hz|A5| D1, D2, D3, D4, D5|
+</div>
 
+#### Resultados: 
 
 | Campo | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
@@ -103,9 +95,13 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 | Lectura| ![](./imagesL7/eeg_cruda_lectura.png) | ![](./imagesL7/eeg_filtrada_lectura.png) |
 
 
-## 6. Discusiones y Conclusiones <a name="id11"></a>
+## 5. Discusiones y Conclusiones <a name="id11"></a>
 
-## 7. Referencias <a name="id12"></a>
+### ECG
+### EMG
+### EEG
+
+## 6. Referencias <a name="id12"></a>
 
 [1] S. Kouro and R. Musalem, “Tutorial introductorio a la Teoría de Wavelet.” Disponble: http://www2.elo.utfsm.cl/~elo377/documentos/Wavelet.pdf.
 
