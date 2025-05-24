@@ -63,19 +63,32 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 | Post-Ejercicio| ![](./imagesL7/ecg_ejer1der.png) | ![](./imagesL7/wavelet_ecg_ejer1der_lvl5.png) | 
 
 
-| 2da derivada | Señal Cruda | Filtro DWT |
-|:-------------:|:------------:|:-------------------:|
-| Basal         | ![](./imagesL7/ecg_señal_cruda_basal2der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp2der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer2der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+| ECG Reposo | Filtro DWT |
+|:-------------:|:-------------------:|
+| Señal Original| ![](./imagesL7/ecg_reposo1der.png) |
+| Sym3          | ![](./imagesL7/wavelet_ecg_reposo1der_lvl5.png) | 
+| Coif3         ||
+
+ 
+| ECG Respiración | Filtro DWT |
+|:-------------:|:-------------------:|
+| Señal Original| ![](./imagesL7/ecg_resp1der.png) |
+| Sym3          | ![](./imagesL7/wavelet_ecg_resp1der.png) | 
+| Coif3         | |
 
 
-| 3era derivada | Señal Cruda | Filtro DWT |
-|:-------------:|:------------:|:-------------------:|
-| Basal         | ![](./imagesL7/ecg_señal_cruda_basal3der.png) | ![](./imagesL7/ecg_señal_filtrada_basal1der_eliptic.png) |
-| Respiración   | ![](./imagesL7/ecg_señal_cruda_resp3der.png) | ![](./imagesL7/ecg_señal_filtrada_resp1der_eliptic.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_señal_cruda_ejer3der.png) | ![](./imagesL7/ecg_señal_filtrada_ejer1der_eliptic.png) | 
+| ECG Respiración prolongada | Filtro DWT |
+|:-------------:|:-------------------:|
+| Señal Original| ![](./imagesL7/ecg_respLarga1der.png) |
+| Sym3          | ![](./imagesL7/wavelet_ecg_respLarga1der.png) | 
+| Coif3         |  |
 
+
+| ECG Post-Ejercicio | Filtro DWT |
+|:-------------:|:-------------------:|
+| Señal Original| ![](./imagesL7/ecg_ejer1der.png) |
+| Sym3          | ![](./imagesL7/wavelet_ecg_ejer1der_lvl5.png) | 
+| Coif3         |  |
 
 
 ### 5.2. Señal EMG <a name="id9"></a>
