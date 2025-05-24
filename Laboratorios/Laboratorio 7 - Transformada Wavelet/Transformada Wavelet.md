@@ -55,40 +55,32 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 ### 5.1. Señal ECG <a name="id9"></a>
 
 
-| 1era derivada | Señal Cruda | Filtro DWT |
-|:-------------:|:------------:|:-------------------:|
-| Basal         | ![](./imagesL7/ecg_reposo1der.png) | ![](./imagesL7/wavelet_ecg_reposo1der_lvl5.png) |
-| Respiración   | ![](./imagesL7/ecg_resp1der.png) | ![](./imagesL7/wavelet_ecg_resp1der.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_respLarga1der.png) | ![](./imagesL7/wavelet_ecg_respLarga1der.png) |
-| Post-Ejercicio| ![](./imagesL7/ecg_ejer1der.png) | ![](./imagesL7/wavelet_ecg_ejer1der_lvl5.png) | 
-
-
 | ECG Reposo | Filtro DWT |
 |:-------------:|:-------------------:|
 | Señal Original| ![](./imagesL7/ecg_reposo1der.png) |
 | Sym3          | ![](./imagesL7/wavelet_ecg_reposo1der_lvl5.png) | 
-| Coif3         ||
+| Coif3         | ![](./imagesL7/coif3_ecg_reposo1der_lvl7.png) |
 
  
 | ECG Respiración | Filtro DWT |
 |:-------------:|:-------------------:|
 | Señal Original| ![](./imagesL7/ecg_resp1der.png) |
 | Sym3          | ![](./imagesL7/wavelet_ecg_resp1der.png) | 
-| Coif3         | |
+| Coif3         | ![](./imagesL7/coif3_ecg_resp1der_lvl7.png) |
 
 
 | ECG Respiración prolongada | Filtro DWT |
 |:-------------:|:-------------------:|
 | Señal Original| ![](./imagesL7/ecg_respLarga1der.png) |
 | Sym3          | ![](./imagesL7/wavelet_ecg_respLarga1der.png) | 
-| Coif3         |  |
+| Coif3         | ![](./imagesL7/coif3_ecg_respLarga1der_lvl7.png) |
 
 
 | ECG Post-Ejercicio | Filtro DWT |
 |:-------------:|:-------------------:|
 | Señal Original| ![](./imagesL7/ecg_ejer1der.png) |
 | Sym3          | ![](./imagesL7/wavelet_ecg_ejer1der_lvl5.png) | 
-| Coif3         |  |
+| Coif3         | ![](./imagesL7/coif3_ecg_ejer1der_lvl7.png) |
 
 
 ### 5.2. Señal EMG <a name="id9"></a>
