@@ -42,11 +42,11 @@ En primer lugar, se realizó una visualización inicial de las señales crudas m
 
 - Filtro Wavelet Symlet 4 (sym4) con un nivel de descomposición 3:
 
-Seleccionado con base en su buen desempeño en señales ECG con niveles moderados de ruido, como se evidenció en estudios previos [YY]. Se aplicó una umbralización suave (soft thresholding) con un umbral fijo ajustado empíricamente (umbral = 0.2) sobre todos los coeficientes.
+Seleccionado con base en su buen desempeño en señales ECG con niveles moderados de ruido, como se evidenció en estudios previos [9]. Se aplicó una umbralización suave (soft thresholding) con un umbral fijo ajustado empíricamente (umbral = 0.2) sobre todos los coeficientes.
 
 - Filtro Wavelet Coiflet 3 (coif3) con un nivel de descomposición 7:
 
-Esta configuración fue propuesta a partir de la literatura reciente, en la cual se evaluaron múltiples combinaciones de wavelets, umbrales y niveles de descomposición optimizados mediante particle swarm optimization (PSO). Los resultados reportaron que Coiflet 3 y niveles altos (L = 7–8) ofrecen un mejor rendimiento en condiciones de alto ruido, como es el caso del ECG post ejercicio [ZZ].
+Esta configuración fue propuesta a partir de la literatura reciente, en la cual se evaluaron múltiples combinaciones de wavelets, umbrales y niveles de descomposición optimizados mediante particle swarm optimization (PSO). Los resultados reportaron que Coiflet 3 y niveles altos (L = 7–8) ofrecen un mejor rendimiento en condiciones de alto ruido, como es el caso del ECG post ejercicio [10].
 
 En ambos casos, tras la descomposición wavelet, se umbralizaron los coeficientes utilizando la función pywt.threshold con modo 'soft', y luego se reconstruyó la señal filtrada con pywt.waverec. Finalmente, se ajustó la longitud de la señal reconstruida para que coincidiera con la original, y se graficaron los resultados:
 
@@ -89,7 +89,7 @@ La lectura de las señales crudas se realizó utilizando la biblioteca opensigna
 |Daubechies 4 (db4)|5|0.109034|1000 Hz|
 </div>
 
-Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG [E1].
+Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG [11].
 El valor de umbral fue calculado mediante la siguiente ecuación: λ=σ.&radic;(2.log(n)). Donde λ es el valor de umbral calculado, σ es la desviación estándar del ruido y n es el número de coeficientes wavelet.
 Los métodos elegidos para desarrollar esta práctica fueron el Hard y Soft Thresholding.
  	
@@ -117,7 +117,7 @@ Los métodos elegidos para desarrollar esta práctica fueron el Hard y Soft Thre
 
 
 ### 4.3. Señal EEG <a name="id7"></a>
-El filtro utilizado, a partir de la literatura de referencia, para la eliminación de ruido en la señal es un filtro DWT tipo Biorthogonal 2.6, debido a su alta simetría, capacidad de separar eficazmente los componentes de frecuencia baja y alta y reconstrucción de la señal original y un nivel de 5. Los coeficientes de aproximación fueron A5 y de detalle D1, D2, D3, D4 y D5. [x3]
+El filtro utilizado, a partir de la literatura de referencia, para la eliminación de ruido en la señal es un filtro DWT tipo Biorthogonal 2.6, debido a su alta simetría, capacidad de separar eficazmente los componentes de frecuencia baja y alta y reconstrucción de la señal original y un nivel de 5. Los coeficientes de aproximación fueron A5 y de detalle D1, D2, D3, D4 y D5. [12]
 <div align="center">
 	
 |  **Función Wavelet**  | **Nivel** | **Umbral** | **Frecuencia** | **Coeficiente de aproximación** | **Coeficientes de detalle** | 
@@ -137,15 +137,17 @@ El filtro utilizado, a partir de la literatura de referencia, para la eliminaci�
 ## 5. Discusiones y Conclusiones <a name="id11"></a>
 
 ### ECG
-Se evaluaron dos familias de wavelets comúnmente empleadas en el procesamiento de señales biomédicas: Symlet 4 y Coiflet 3 [YY][ZZ]. Durante la fase de análisis visual, se observaron diferencias significativas en el comportamiento de los filtros según la calidad de la señal original y el contexto de adquisición. En primer lugar, la señal ECG correspondiente al estado de reposo presentó un alto nivel de ruido, probablemente debido a interferencias electromagnéticas causadas por la proximidad a dispositivos eléctricos, lo cual es consistente con lo reportado por Malik et al., quienes identifican la interferencia de línea eléctrica (50/60 Hz) como uno de los artefactos más críticos en el registro electrocardiográfico [YY]. En este caso, ambos filtros aplicados (sym4 y coif3) lograron atenuar parcialmente el ruido, aunque ninguno de ellos fue capaz de eliminarlo completamente. Esta limitación puede atribuirse a la naturaleza estacionaria y de banda estrecha de la interferencia, que puede requerir métodos complementarios como el filtrado iterativo.
+Se evaluaron dos familias de wavelets comúnmente empleadas en el procesamiento de señales biomédicas: Symlet 4 y Coiflet 3 [9][10]. Durante la fase de análisis visual, se observaron diferencias significativas en el comportamiento de los filtros según la calidad de la señal original y el contexto de adquisición. En primer lugar, la señal ECG correspondiente al estado de reposo presentó un alto nivel de ruido, probablemente debido a interferencias electromagnéticas causadas por la proximidad a dispositivos eléctricos, lo cual es consistente con lo reportado por Malik et al., quienes identifican la interferencia de línea eléctrica (50/60 Hz) como uno de los artefactos más críticos en el registro electrocardiográfico [9]. En este caso, ambos filtros aplicados (sym4 y coif3) lograron atenuar parcialmente el ruido, aunque ninguno de ellos fue capaz de eliminarlo completamente. Esta limitación puede atribuirse a la naturaleza estacionaria y de banda estrecha de la interferencia, que puede requerir métodos complementarios como el filtrado iterativo.
 
-Por otro lado, la señal correspondiente a respiración pausada presentó una morfología más limpia desde el inicio. El filtrado con ambos métodos fue exitoso, aunque se detectó un ligero suavizado adicional en la señal filtrada con Coiflet 3, lo que puede interpretarse como una mayor atenuación de los componentes de alta frecuencia, acorde con sus propiedades de mayor número de momentos de anulación y mejor regularidad matemática [ZZ]. Una situación similar se evidenció en la señal ECG obtenida durante respiración prolongada, donde las diferencias entre los resultados de ambos filtros fueron mínimas, ya que se observo que el filtro coif3 ofreció una representación suavizada de la señal, aunque sin pérdida evidente de las características morfológicas relevantes del ECG. Esta capacidad para conservar las formas clínicas esenciales es esencial para garantizar la validez diagnóstica de la señal procesada [YY].
+Por otro lado, la señal correspondiente a respiración pausada presentó una morfología más limpia desde el inicio. El filtrado con ambos métodos fue exitoso, aunque se detectó un ligero suavizado adicional en la señal filtrada con Coiflet 3, lo que puede interpretarse como una mayor atenuación de los componentes de alta frecuencia, acorde con sus propiedades de mayor número de momentos de anulación y mejor regularidad matemática [10]. Una situación similar se evidenció en la señal ECG obtenida durante respiración prolongada, donde las diferencias entre los resultados de ambos filtros fueron mínimas, ya que se observo que el filtro coif3 ofreció una representación suavizada de la señal, aunque sin pérdida evidente de las características morfológicas relevantes del ECG. Esta capacidad para conservar las formas clínicas esenciales es esencial para garantizar la validez diagnóstica de la señal procesada [9].
 
-En el caso de la señal ECG capturada post ejercicio, el ruido parecía moderado, probablemente derivado de artefactos por movimiento y actividad muscular. En este caso, las diferencias entre las señales filtradas fueron casi imperceptibles, lo cual puede deberse a que el ruido presente se ubicaba fuera de las bandas de frecuencia suprimidas por las wavelets aplicadas (0.5–40 Hz). Cabe destacar que Abdallah et al. enfatizan que el desempeño del filtrado wavelet depende no solo del tipo de wavelet, sino también de la correcta selección del nivel de descomposición y del método de umbralización aplicado sobre los coeficientes [ZZ].
+En el caso de la señal ECG capturada post ejercicio, el ruido parecía moderado, probablemente derivado de artefactos por movimiento y actividad muscular. En este caso, las diferencias entre las señales filtradas fueron casi imperceptibles, lo cual puede deberse a que el ruido presente se ubicaba fuera de las bandas de frecuencia suprimidas por las wavelets aplicadas (0.5–40 Hz). Cabe destacar que Abdallah et al. enfatizan que el desempeño del filtrado wavelet depende no solo del tipo de wavelet, sino también de la correcta selección del nivel de descomposición y del método de umbralización aplicado sobre los coeficientes [10].
 
 En conclusión, la aplicación de la transformada wavelet discreta demostró ser una herramienta efectiva para la mejora de la calidad de señales ECG en distintos contextos. La wavelet sym4 ofreció un balance entre suavizado y preservación de detalles morfológicos, mientras que coif3, especialmente con niveles más altos de descomposición, mostró una capacidad superior para suavizar señales en condiciones con menor ruido. Sin embargo, en situaciones con ruido significativo de tipo eléctrico, podría ser necesario complementar el filtrado wavelet con otras técnicas como la Lifting Wavelet Transform o estrategias adaptativas basadas en filtrado iterativo [2].
 
 ### EMG
+Los métodos de umbralización analizados son el Hard y Soft Thresholding.
+
 ### EEG
 
 ## 6. Referencias <a name="id12"></a>
@@ -166,8 +168,10 @@ En conclusión, la aplicación de la transformada wavelet discreta demostró ser
 
 [8]  E. Pinto Moreno, "Familias de Wavelets," Universidad Carlos III de Madrid, Madrid, España. Disponible: https://e-archivo.uc3m.es/bitstream/10016/16582/1/PFC_Elena_Pinto_Moreno_Anexos.pdf. 
 
-[YY] Malik, S. A., Parah, S. A., Aljuaid, H., & Malik, B. A. (2023). An Iterative Filtering Based ECG Denoising Using Lifting Wavelet Transform Technique. Electronics, 12(2), 387. https://doi.org/10.3390/electronics12020387
+[9] Malik, S. A., Parah, S. A., Aljuaid, H., & Malik, B. A. (2023). An Iterative Filtering Based ECG Denoising Using Lifting Wavelet Transform Technique. Electronics, 12(2), 387. https://doi.org/10.3390/electronics12020387
 
-[ZZ] Abdallah, Azzouz & Bengherbia, Billel & Wira, Patrice & Alaoui, Nail & Souahlia, Abdelkerim & Maazouz, Mohamed & Hentabeli, Hamza. (2024). An efficient ECG signals denoising technique based on the combination of particle swarm optimisation and wavelet transform. Heliyon. 10. e26171. 10.1016/j.heliyon.2024.e26171. 
+[10] Abdallah, Azzouz & Bengherbia, Billel & Wira, Patrice & Alaoui, Nail & Souahlia, Abdelkerim & Maazouz, Mohamed & Hentabeli, Hamza. (2024). An efficient ECG signals denoising technique based on the combination of particle swarm optimisation and wavelet transform. Heliyon. 10. e26171. 10.1016/j.heliyon.2024.e26171. 
 
-[x3] A. W. Pise and P. P. Rege, "Comparative analysis of various filtering techniques for denoising EEG signals," in 2021 6th International Conference for Convergence in Technology (I2CT), Maharashtra, India, 2021, pp. 1-4, doi: 10.1109/I2CT51068.2021.9417984.
+[11] Yao L, Sun SQ, Li L. Application of Improved Wavelet Threshold Method in SEMG De-Noising Processing. Applied Mechanics and Materials [Internet]. 2012 Nov [cited 2025 May 29];220-223:2253–6. Available from: https://doi.org/10.4028/www.scientific.net/AMM.220-223.2253
+
+[12] A. W. Pise and P. P. Rege, "Comparative analysis of various filtering techniques for denoising EEG signals," in 2021 6th International Conference for Convergence in Technology (I2CT), Maharashtra, India, 2021, pp. 1-4, doi: 10.1109/I2CT51068.2021.9417984.
