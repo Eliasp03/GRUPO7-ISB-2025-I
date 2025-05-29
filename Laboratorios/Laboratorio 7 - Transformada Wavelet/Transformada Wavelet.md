@@ -89,11 +89,15 @@ La lectura de las señales crudas se realizó utilizando la biblioteca opensigna
 |Daubechies 4 (db4)|5|0.109034|1000 Hz|
 </div>
 
-| Campo | Señal Cruda | Filtro DWT |
+Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG. El valor de umbral fue calculado mediante la siguiente ecuación λ=σ⋅$\\sqrt{2⋅log(n}$
+​
+ 	
+
+| Campo | Señal  |
 |:-------------:|:------------:|:-------------------:|
-| Reposo Biceps        | ![reposoBiceps](./imagesL7/reposo_biceps.png) |
-| Leve Biceps | ![reposoBicepsSoft](./imagesL7/leve_biceps.png) | 
-| Maximo Biceps| ![reposoBicepsHard](./imagesL7/max_biceps.png) | 
+| Señal Cruda        | ![reposoBiceps](./imagesL7/reposo_biceps.png) |
+| Soft| ![reposoBicepsSoft](./imagesL7/leve_biceps.png) | 
+| Hard| ![reposoBicepsHard](./imagesL7/max_biceps.png) | 
 
 
 ### 4.3. Señal EEG <a name="id7"></a>
