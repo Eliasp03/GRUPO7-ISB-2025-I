@@ -89,16 +89,16 @@ La lectura de las señales crudas se realizó utilizando la biblioteca opensigna
 |Daubechies 4 (db4)|5|0.109034|1000 Hz|
 </div>
 
-Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG. El valor de umbral fue calculado mediante la siguiente ecuación λ=σ.&radic;(2.log(n))
-
-​
+Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG.[E1] 
+El valor de umbral fue calculado mediante la siguiente ecuación: λ=σ.&radic;(2.log(n)). Donde λ es el valor de umbral calculado, σ es la desviación estándar del ruido y n es el número de coeficientes wavelet.
+Los métodos elegidos para desarrollar esta práctica fueron el Hard y Soft Thresholding.
  	
 
-| Campo | Señal|
+| Señal| Gráfica obtenida|
 |:-------------:|:-------------------:|
 | Señal Cruda        | ![reposoBiceps](./imagesL7/reposo_biceps.png) |
-| Soft| ![reposoBicepsSoft](./imagesL7/leve_biceps.png) | 
-| Hard| ![reposoBicepsHard](./imagesL7/max_biceps.png) | 
+| Soft Thresholding| ![reposoBicepsSoft](./imagesL7/reposo_biceps_soft.png) | 
+| Hard Thresholding| ![reposoBicepsHard](./imagesL7/reposo_biceps_hard.png) | 
 
 
 ### 4.3. Señal EEG <a name="id7"></a>
