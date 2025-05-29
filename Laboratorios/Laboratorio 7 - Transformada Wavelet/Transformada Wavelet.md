@@ -80,7 +80,7 @@ En ambos casos, tras la descomposición wavelet, se umbralizaron los coeficiente
 
 ### 4.2. Señal EMG <a name="id6"></a>
 
-Las señales EMG utilizadas para el filtrado wavelet fueron adquiridas en laboratorios previos mediante electrodos de superficie conectados al sistema BITalino, siguiendo un protocolo de adquisición estandarizado. Se seleccionaron señales correspondientes al músculo biceps braquial durante tres actividades distintas: reposo, esfuerzo leve y contracción máxima. Cada archivo fue procesado individualmente en el entorno de desarrollo Python 3.12.
+Las señales EMG utilizadas para el filtrado wavelet fueron adquiridas en laboratorios previos mediante electrodos de superficie conectados al sistema BITalino, siguiendo un protocolo de adquisición estandarizado. Se seleccionaron señales correspondientes al músculo bíceps braquial durante tres actividades distintas: reposo, esfuerzo leve y contracción máxima. Cada archivo fue procesado individualmente en el entorno de desarrollo Python 3.12.
 
 La lectura de las señales crudas se realizó utilizando la biblioteca opensignalsreader y el filtrado wavelet se configuró con los siguientes parámetros:
 
@@ -89,16 +89,31 @@ La lectura de las señales crudas se realizó utilizando la biblioteca opensigna
 |Daubechies 4 (db4)|5|0.109034|1000 Hz|
 </div>
 
-Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG.[E1] 
+Los parámetros fueron escogidos en base a la literatura encontrada, donde se realizaron 3 métodos de filtrado wavelet y umbralización para señales sEMG [E1].
 El valor de umbral fue calculado mediante la siguiente ecuación: λ=σ.&radic;(2.log(n)). Donde λ es el valor de umbral calculado, σ es la desviación estándar del ruido y n es el número de coeficientes wavelet.
 Los métodos elegidos para desarrollar esta práctica fueron el Hard y Soft Thresholding.
  	
 
+#### Bíceps Braquial en reposo
 | Señal| Gráfica obtenida|
 |:-------------:|:-------------------:|
-| Señal Cruda        | ![reposoBiceps](./imagesL7/reposo_biceps.png) |
-| Soft Thresholding| ![reposoBicepsSoft](./imagesL7/reposo_biceps_soft.png) | 
-| Hard Thresholding| ![reposoBicepsHard](./imagesL7/reposo_biceps_hard.png) | 
+| Señal Cruda        | ![](./imagesL7/reposo_biceps.png) |
+| Soft Thresholding| ![](./imagesL7/reposo_biceps_soft.png) | 
+| Hard Thresholding| ![](./imagesL7/reposo_biceps_hard.png) | 
+
+#### Bíceps Braquial en esfuerzo leve
+| Señal| Gráfica obtenida|
+|:-------------:|:-------------------:|
+| Señal Cruda        | ![](./imagesL7/leve_biceps.png) |
+| Soft Thresholding| ![](./imagesL7/leve_biceps_soft.png) | 
+| Hard Thresholding| ![](./imagesL7/leve_biceps_hard.png) | 
+
+#### Bíceps Braquial en contracción máxima
+| Señal| Gráfica obtenida|
+|:-------------:|:-------------------:|
+| Señal Cruda        | ![](./imagesL7/max_biceps.png) |
+| Soft Thresholding| ![](./imagesL7/max_biceps_soft.png) | 
+| Hard Thresholding| ![](./imagesL7/max_biceps_hard.png) | 
 
 
 ### 4.3. Señal EEG <a name="id7"></a>
