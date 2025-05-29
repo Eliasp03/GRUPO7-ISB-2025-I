@@ -80,13 +80,20 @@ En ambos casos, tras la descomposición wavelet, se umbralizaron los coeficiente
 
 ### 4.2. Señal EMG <a name="id6"></a>
 
-Metodologia emg...
+Las señales EMG utilizadas para el filtrado wavelet fueron adquiridas en laboratorios previos mediante electrodos de superficie conectados al sistema BITalino, siguiendo un protocolo de adquisición estandarizado. Se seleccionaron señales correspondientes al músculo biceps braquial durante tres actividades distintas: reposo, esfuerzo leve y contracción máxima. Cada archivo fue procesado individualmente en el entorno de desarrollo Python 3.12.
+
+La lectura de las señales crudas se realizó utilizando la biblioteca opensignalsreader y el filtrado wavelet se configuró con los siguientes parámetros:
+
+|  **Función Wavelet**  | **Nivel** | **Umbral** | **Frecuencia** |
+|:------------:|:---------------:|:------------:|:------------:|
+|Daubechies 4 (db4)|5|0.109034|1000 Hz|
+</div>
 
 | Campo | Señal Cruda | Filtro DWT |
 |:-------------:|:------------:|:-------------------:|
-| Reposo Biceps        | ![](./imagesL7/emg_señal_cruda_reposobiceps.png) | ![](./imagesL7/emg_señal_filtrada_reposobiceps_elliptic.png) |
-| Leve Biceps | ![](./imagesL7/emg_señal_cruda_levebiceps.png) | ![](./imagesL7/emg_señal_filtrada_levebiceps_elliptic.png) |
-| Maximo Biceps| ![](./imagesL7/emg_señal_cruda_maxbiceps.png) | ![](./imagesL7/emg_señal_filtrada_maxbiceps_elliptic.png) |
+| Reposo Biceps        | ![reposoBiceps](./imagesL7/reposo_biceps.png) |
+| Leve Biceps | ![reposoBicepsSoft](./imagesL7/leve_biceps.png) | 
+| Maximo Biceps| ![reposoBicepsHard](./imagesL7/max_biceps.png) | 
 
 
 ### 4.3. Señal EEG <a name="id7"></a>
