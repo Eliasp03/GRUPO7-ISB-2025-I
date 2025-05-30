@@ -146,7 +146,12 @@ En el caso de la señal ECG capturada post ejercicio, el ruido parecía moderado
 En conclusión, la aplicación de la transformada wavelet discreta demostró ser una herramienta efectiva para la mejora de la calidad de señales ECG en distintos contextos. La wavelet sym4 ofreció un balance entre suavizado y preservación de detalles morfológicos, mientras que coif3, especialmente con niveles más altos de descomposición, mostró una capacidad superior para suavizar señales en condiciones con menor ruido. Sin embargo, en situaciones con ruido significativo de tipo eléctrico, podría ser necesario complementar el filtrado wavelet con otras técnicas como la Lifting Wavelet Transform o estrategias adaptativas basadas en filtrado iterativo [2].
 
 ### EMG
-Los métodos de umbralización analizados son el Hard y Soft Thresholding.
+Se realizaron técnicas de descomposición wavelet con umbralización suave (soft) y dura (hard) para señales sEMG del bíceps braquial en tres estados actividades: reposo, esfuerzo leve y contracción máxima. 
+En la actividad de reposo, se observa baja amplitud en la señal, lo que es esperable por la ausencia de contracción muscular. La señal raw muestra bastante ruido de alta frecuencia. La umbralización soft elimina de manera efectiva este ruido, lo que resulta en una señal con pocas oscilaciones. Adempas, la umbralización hard conserva algunos picos abruptos, lo que indica que el umbral escogido podría no ser adecuado para aplicar este método.
+
+Durante el esfuerzo leve, la señal raw muestra una mayor amplitud en comparación con la actividad de reposo. El filtrado soft es eficaz para eliminar el ruido en la señal, lo que permite observar mejor las activaciones musculares. Además, el filtrado hard permite observar los picos relacionados con la activación muscular, sin embargo se presentan algunos picos adicionales en comparación al filtrado soft, lo que podría indicar ruido. Esto refleja la necesidad de una calibración adecuada del umbral para evitar pérdida de información importante [11].
+
+Durante la contracción máxima, la señal presenta una amplitud mucho mayor, así como una elevada cantidad de información de actividad muscular. En esta actividad, el filtrado soft reduce eficazmente el ruido, pero podría estar suavizando algunas componentes importantes, lo que podría afectar la interpretación del sEMG y de la actividad muscular. El filtrado hard mantiene mejor los picos de la señal original, permitiendo una mejor conservación de la actividad muscular, aunque también podría incluir ruido si lo comparamos con el filtrado soft.
 
 ### EEG
 
