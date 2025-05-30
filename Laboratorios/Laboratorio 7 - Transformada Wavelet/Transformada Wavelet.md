@@ -156,6 +156,12 @@ Durante la contracción máxima, la señal presenta una amplitud mucho mayor, as
 
 ### EEG
 
+
+En el análisis de señales EEG bajo condiciones basal, tarea cognitiva y lectura, se identificó que artefactos de origen electromiográfico (actividad facial y ocular) comprometían la integridad de las señales, particularmente en segmentos de reposo. La implementación de la transformada wavelet discreta (DWT) con la wavelet *bior2.6* en nivel 5 demostró ser altamente eficaz para atenuar la señal, reduciendo ligeramente los picos de amplitud asociados sin eliminar componentes neurofisiológicos clave. Se confirma que la descomposición multinivel de los coeficientes de aproximación (A5) y detalle (D1-D5) permite una identificación más precisa de patrones.
+
+Tal que garantiza la fidelidad de las características dinámicas del EEG, facilitando interpretaciones.
+
+
 ## 6. Referencias <a name="id12"></a>
 
 [1] S. Kouro and R. Musalem, “Tutorial introductorio a la Teoría de Wavelet.” Disponble: http://www2.elo.utfsm.cl/~elo377/documentos/Wavelet.pdf.
