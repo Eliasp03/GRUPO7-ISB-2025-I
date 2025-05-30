@@ -147,7 +147,8 @@ En conclusión, la aplicación de la transformada wavelet discreta demostró ser
 
 ### EMG
 Se realizaron técnicas de descomposición wavelet con umbralización suave (soft) y dura (hard) para señales sEMG del bíceps braquial en tres estados actividades: reposo, esfuerzo leve y contracción máxima. 
-En la actividad de reposo, se observa baja amplitud en la señal, lo que es esperable por la ausencia de contracción muscular. La señal raw muestra bastante ruido de alta frecuencia. La umbralización soft elimina de manera efectiva este ruido, lo que resulta en una señal con pocas oscilaciones. Adempas, la umbralización hard conserva algunos picos abruptos, lo que indica que el umbral escogido podría no ser adecuado para aplicar este método.
+
+En la actividad de reposo, se observa baja amplitud en la señal, lo que es esperable por la ausencia de contracción muscular. La señal raw muestra bastante ruido de alta frecuencia. La umbralización soft elimina de manera efectiva este ruido, lo que resulta en una señal con pocas oscilaciones. Además, la umbralización hard conserva algunos picos abruptos, lo que indica que el umbral escogido podría no ser adecuado para aplicar este método.
 
 Durante el esfuerzo leve, la señal raw muestra una mayor amplitud en comparación con la actividad de reposo. El filtrado soft es eficaz para eliminar el ruido en la señal, lo que permite observar mejor las activaciones musculares. Además, el filtrado hard permite observar los picos relacionados con la activación muscular, sin embargo se presentan algunos picos adicionales en comparación al filtrado soft, lo que podría indicar ruido. Esto refleja la necesidad de una calibración adecuada del umbral para evitar pérdida de información importante [11].
 
