@@ -31,7 +31,15 @@
 
 ### Desarrollo:
 
-### Resultado:
+### Resultados:
+
+| Escala (%) | Symmetry Ratio |
+|------------|----------------|
+| 20         | 0.04           |
+| 40         | 0.16           |
+| 60         | 0.36           |
+| 80         | 0.64           |
+| 100        | 1.00           |
 
 ### Pregunta de reflexión 1: ¿Cuál de las dos pendientes (RMS o freq_med) resulta ser un indicador más sensible a la fatiga en este escenario sintético?
 - sdsdssds
