@@ -88,11 +88,11 @@ plt.show()
 
 #### Comparación de Señales EMG:
 
-![Señales EMG](ruta/a/tu/imagen1.png)
+![Señales EMG](./L9-images/comparacion-actividad1.png)
 
 #### Relación de Simetría vs Escala
 
-![Relación Simetría](ruta/a/tu/imagen2.png)
+![Relación Simetría](./L9-images/relacion-actividad1.png)
 
 Se confirma que el **Symmetry Ratio** es directamente proporcional a la escala de amplitud del músculo izquierdo, bajo condiciones idénticas de señal y ruido. Esto valida la métrica como indicador útil de simetría muscular. 
 
