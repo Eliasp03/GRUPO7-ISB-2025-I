@@ -14,6 +14,8 @@
 
 ### Desarrollo:
 
+### Resultado:
+
 
 ### Pregunta de reflexión: ¿A partir de qué nivel de desbalance la simetría cae por debajo de un umbral “aceptable” (p.ej. 80 %)?
 - sdsdssds
@@ -29,6 +31,7 @@
 
 ### Desarrollo:
 
+### Resultado:
 
 ### Pregunta de reflexión 1: ¿Cuál de las dos pendientes (RMS o freq_med) resulta ser un indicador más sensible a la fatiga en este escenario sintético?
 - sdsdssds
