@@ -113,6 +113,14 @@ Se confirma que el **Symmetry Ratio** es directamente proporcional a la escala d
 
 ### Resultados:
 
+| Métrica                  | Pendiente (slope) |
+|--------------------------|-------------------|
+| RMS (amplitud)           | +0.0144           |
+| Frecuencia mediana (Hz)  | -0.0113           |
+
+#### Relación de RMS vs Tiempo y Frecuencia mediana vs Tiempo
+
+![Relación Simetría](./L9-images/actividad2.png)
 
 ### Pregunta de reflexión 1: ¿Cuál de las dos pendientes (RMS o freq_med) resulta ser un indicador más sensible a la fatiga en este escenario sintético?
 - sdsdssds
