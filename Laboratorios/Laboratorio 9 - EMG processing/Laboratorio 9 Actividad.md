@@ -6,7 +6,9 @@
 
 
 ## 1. Ejercicio A: Simulación de distintos grados de asimetría <a name="id1"></a>
+
 ### Objetivo: Estudiar cómo varía el Symmetry Ratio al alterar la amplitud relativa del músculo “izquierdo”
+
 ### Implementar:
 - Simular cinco pares de señales EMG idénticas (burst_number=10, noise=0.01) y escalar el segundo canal al 20 %, 40 %, 60 %, 80 % y 100 % de la amplitud original.
 - Para cada par, limpiar con nk.emg_clean(), extraer la envolvente con nk.emg_amplitude() y calcular el Symmetry Ratio.
@@ -102,7 +104,9 @@ Se confirma que el **Symmetry Ratio** es directamente proporcional a la escala d
 
 
 ## 2. Ejercicio B: Índices de fatiga – pendiente de RMS vs. pendiente de frecuencia <a name="id2"></a>
+
 ### Objetivo: Comparar dos métricas clásicas de fatiga: la tasa de crecimiento de la amplitud (RMS) y la tasa de caída de la frecuencia mediana.
+
 ### Implementar:
 - Simular una señal EMG de 30 s dividida en 3 segmentos de 10 s, siguiendo el patrón del ejercicio de fatiga (burst_number decreciente y amplitud creciente).
 - Limpiar y extraer la envolvente con nk.emg_clean() + nk.emg_amplitude().
@@ -198,6 +202,7 @@ plt.show()
 print(f"Pendiente RMS: {rms_slope:.4f}")
 print(f"Pendiente Frecuencia Mediana: {fmed_slope:.4f}")
 ```
+
 ### Resultados:
 
 | Métrica                  | Pendiente (slope) |
@@ -205,19 +210,26 @@ print(f"Pendiente Frecuencia Mediana: {fmed_slope:.4f}")
 | RMS (amplitud)           | +0.0144           |
 | Frecuencia mediana (Hz)  | -0.0113           |
 
+
 #### Relación de RMS vs Tiempo y Frecuencia mediana vs Tiempo
 
 ![Relación Simetría](./L9-images/actividad2.png)
 
 ### Pregunta de reflexión 1: ¿Cuál de las dos pendientes (RMS o freq_med) resulta ser un indicador más sensible a la fatiga en este escenario sintético?
+
 - En el escenario simulado, la pendiente del RMS fue +0.0144, mientras que la de la frecuencia mediana fue -0.0113. Ambas métricas muestran cambios consistentes con la progresión de la fatiga muscular: un aumento en la amplitud (RMS) y una disminución en la frecuencia mediana. Sin embargo, la frecuencia mediana suele ser considerada un indicador más sensible a la fatiga, ya que refleja cambios en la conducción de las fibras musculares y la sincronización de las unidades motoras, aspectos directamente afectados por la fatiga.
 
 ### Pregunta de reflexión 2: ¿Cómo cambiarían las pendientes si aumentas el nivel de ruido en la simulación?
+
 - En cuanto a la gráfica de RMS vs Tiempo, el ruido incrementaría el valor de RMS, ya que este mide la energía total de la señal, incluyendo el ruido. Esto podría resultar en una pendiente más pronunciada, pero menos representativa de la verdadera fatiga muscular.
 - En cuanto a la gráfica de Frecuencia mediana vs Tiempo, el ruido, especialmente si se encuentra en frecuencias similares a las de interés, podría distorsionar el espectro de la señal, dificultando la identificación precisa de la frecuencia mediana. Esto podría aplanar la pendiente o introducir variabilidad no relacionada con la fatiga.
 
 ## 3. Bibliografía <a name="id3"></a>
+
 [1] P. Konrad, The ABC of EMG: A Practical Introduction to Kinesiological Electromyography, Noraxon Inc., 2005. [En línea]. Disponible en: https://hermanwallace.com/download/The_ABC_of_EMG_by_Peter_Konrad.pdf
+
 [2] N. Nazmi et al., “A Review of Classification Techniques of EMG Signals during Isotonic and Isometric Contractions,” Sensors, vol. 16, no. 8, p. 1304, 2016. [En línea]. Disponible en: https://doi.org/10.3390/s16081304
+
 [3] M. B. I. Raez, M. S. Hussain y F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications,” Biological Procedures Online, vol. 8, pp. 11–35, 2006. [En línea]. Disponible en: https://doi.org/10.1251/bpo115
+
 [4] NeuroKit2 Documentation, “EMG Signal Processing,” [En línea]. Disponible en: https://neurokit2.readthedocs.io/en/latest/functions/emg.html
