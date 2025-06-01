@@ -14,11 +14,29 @@
 
 ### Desarrollo:
 
-### Resultado:
+### Resultados:
+
+| Escala (%) | Symmetry Ratio |
+|------------|----------------|
+| 20         | 0.04           |
+| 40         | 0.16           |
+| 60         | 0.36           |
+| 80         | 0.64           |
+| 100        | 1.00           |
+
+#### Comparación de Señales EMG:
+
+![Señales EMG](ruta/a/tu/imagen1.png)
+
+#### Relación de Simetría vs Escala
+
+![Relación Simetría](ruta/a/tu/imagen2.png)
+
+Se confirma que el **Symmetry Ratio** es directamente proporcional a la escala de amplitud del músculo izquierdo, bajo condiciones idénticas de señal y ruido. Esto valida la métrica como indicador útil de simetría muscular. 
 
 
 ### Pregunta de reflexión: ¿A partir de qué nivel de desbalance la simetría cae por debajo de un umbral “aceptable” (p.ej. 80 %)?
-- sdsdssds
+- La simetría cae por debajo del umbral del 80% con cualquier desbalance en la amplitud entre músculos. Específicamente, solo una igualdad total (100%) logra un Symmetry Ratio ≥ 0.80. Por tanto, incluso una disminución leve (ej. 80% de amplitud relativa) resulta en una simetría considerada inaceptable bajo ese criterio.
 
 
 ## 2. Ejercicio B: Índices de fatiga – pendiente de RMS vs. pendiente de frecuencia <a name="id2"></a>
@@ -33,13 +51,6 @@
 
 ### Resultados:
 
-| Escala (%) | Symmetry Ratio |
-|------------|----------------|
-| 20         | 0.04           |
-| 40         | 0.16           |
-| 60         | 0.36           |
-| 80         | 0.64           |
-| 100        | 1.00           |
 
 ### Pregunta de reflexión 1: ¿Cuál de las dos pendientes (RMS o freq_med) resulta ser un indicador más sensible a la fatiga en este escenario sintético?
 - sdsdssds
