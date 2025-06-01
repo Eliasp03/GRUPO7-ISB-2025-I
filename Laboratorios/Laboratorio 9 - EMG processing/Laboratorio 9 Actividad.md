@@ -121,3 +121,7 @@ Se confirma que el **Symmetry Ratio** es directamente proporcional a la escala d
 - sdsdssds
 
 ## 3. Bibliografía <a name="id3"></a>
+[1] P. Konrad, The ABC of EMG: A Practical Introduction to Kinesiological Electromyography, Noraxon Inc., 2005. [En línea]. Disponible en: https://hermanwallace.com/download/The_ABC_of_EMG_by_Peter_Konrad.pdf
+[2] N. Nazmi et al., “A Review of Classification Techniques of EMG Signals during Isotonic and Isometric Contractions,” Sensors, vol. 16, no. 8, p. 1304, 2016. [En línea]. Disponible en: https://doi.org/10.3390/s16081304
+[3] M. B. I. Raez, M. S. Hussain y F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications,” Biological Procedures Online, vol. 8, pp. 11–35, 2006. [En línea]. Disponible en: https://doi.org/10.1251/bpo115
+[4] NeuroKit2 Documentation, “EMG Signal Processing,” [En línea]. Disponible en: https://neurokit2.readthedocs.io/en/latest/functions/emg.html
