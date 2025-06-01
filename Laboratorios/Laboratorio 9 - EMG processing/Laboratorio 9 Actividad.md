@@ -110,7 +110,94 @@ Se confirma que el **Symmetry Ratio** es directamente proporcional a la escala d
 - Ajustar una recta (regresión lineal) al RMS vs. tiempo y otra al freq_med vs. tiempo, y extraer sus pendientes (slope).
 
 ### Desarrollo:
+1. Importamos las librerías necesarias para su desarrollo:
+```bash
+import neurokit2 as nk
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.signal import welch
+from scipy.stats import linregress
+```
+2. Realizamos la configuración de los segmentos de simulación:
+```bash
+segmentos = []
+duracion_segmento = 10  # en segundos
+sampling_rate = 1000
+burst_nums = [10, 7, 4]
+amplitudes = [1.0, 1.5, 2.0]
+```
+3. Simulamos cada segmento EMG:
+```bash
+for bursts, amp in zip(burst_nums, amplitudes):
+    seg = nk.emg_simulate(duration=duracion_segmento, sampling_rate=sampling_rate,
+                          burst_number=bursts, noise=0.01)
+    seg *= amp
+    segmentos.append(seg)
+```
+4. Concatenamos los 3 segmentos en una única señal de 30 segundos:
+```bash
+emg_total = np.concatenate(segmentos)
+```
+5. Limpiamos y extraemos la envolvente de la señal para análisis:
+```bash
+emg_clean = nk.emg_clean(emg_total, sampling_rate=sampling_rate)
+emg_envelope = nk.emg_amplitude(emg_clean)
+```
+6. Inicializamos parámetros:
+```bash
+ventana = 1000
+rms_values = []
+fmed_values = []
+tiempos = []
+```
+7. Dividimos la señal en ventanas de 1s, calculamos la RMS de la envolvente por ventana y calculamos la frecuencia mediana con Welch:
+```bash
+for i in range(0, len(emg_envelope), ventana):
+    ventana_signal = emg_envelope[i:i+ventana]
+    
+    if len(ventana_signal) < ventana:
+        continue  # descartar incompleto al final
+    rms = np.sqrt(np.mean(ventana_signal**2))
+    rms_values.append(rms)
+    freqs, psd = welch(ventana_signal, fs=sampling_rate)
+    cumsum_psd = np.cumsum(psd)
+    total_power = cumsum_psd[-1]
+    fmed = freqs[np.where(cumsum_psd >= total_power / 2)[0][0]]
+    fmed_values.append(fmed)
+    tiempos.append((i + ventana/2) / sampling_rate)
+rms_slope, _, _, _, _ = linregress(tiempos, rms_values)
+fmed_slope, _, _, _, _ = linregress(tiempos, fmed_values)
+```
+8. Graficamos RMS vs Tiempo:
+```bash
+plt.figure(figsize=(12, 5))
 
+plt.subplot(1, 2, 1)
+plt.plot(tiempos, rms_values, marker='o', label=f'Slope = {rms_slope:.4f}')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("RMS")
+plt.title("RMS vs Tiempo")
+plt.legend()
+```
+9. Graficamos Frecuencia Mediana vs Tiempo:
+```bash
+plt.subplot(1, 2, 2)
+plt.plot(tiempos, fmed_values, marker='o', color='orange', label=f'Slope = {fmed_slope:.4f}')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Frecuencia mediana (Hz)")
+plt.title("Frecuencia Mediana vs Tiempo")
+plt.legend()
+
+plt.tight_layout()
+plt.savefig("actividad2.png")
+plt.show()
+```
+10. Por último, mostramos los valores finales de las pendientes numéricamente en consola.
+```bash
+print(f"Pendiente RMS: {rms_slope:.4f}")
+print(f"Pendiente Frecuencia Mediana: {fmed_slope:.4f}")
+```
 ### Resultados:
 
 | Métrica                  | Pendiente (slope) |
