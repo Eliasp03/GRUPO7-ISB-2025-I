@@ -65,7 +65,7 @@ plt.tight_layout()
 plt.suptitle("Comparación de señales EMG simuladas (Izquierda vs Derecha)", y=1.02)
 plt.show()
 ```
-7. Finalmente, se crea una gráfica de barras donde se visualiza la relación Escala (%) vs Symmetry Ratio, cumpliendo con el objetivo del experimento.
+7. Finalmente, se crea una gráfica de barras donde se visualiza la relación Escala (%) vs Symmetry Ratio, cumpliendo con el objetivo de la actividad.
 ```bash
 plt.figure(figsize=(8, 5))
 plt.bar([int(e * 100) for e in escalas], ratios, color='skyblue')
