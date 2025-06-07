@@ -118,7 +118,8 @@ print(df_features)
 ```
 
 ### Resultado:
-asdsdads
+
+![actividad2](./imagenesL10/imagen_actividad2.png)
 
 ## 3. Actividad 3 <a name="id3"></a>
 
