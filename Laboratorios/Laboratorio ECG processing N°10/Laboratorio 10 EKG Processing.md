@@ -19,16 +19,54 @@
 1. Importamos las librerías necesarias para su desarrollo:
 ```bash
 import neurokit2 as nk
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 ```
-2. Definimos las escalas de amplitud para el músculo izquierdo (20% a 100%) y una lista vacía ratios para almacenar los resultados del Symmetry Ratio.
+2. Definimos los parámetros acorde a lo solicitado:
 ```bash
-escalas = [0.2, 0.4, 0.6, 0.8, 1.0]
-ratios = []
+duration = 20  # segundos
+sampling_rate = 1000  # Hz
+heart_rate_1 = 70
+heart_rate_2 = 90
 ```
+3. Simulamos la señal ECG mediante la función ecg_simulate() de neurokit v.2:
+```bash
+# Señal 1: ECG con HR = 70 bpm
+ecg1 = nk.ecg_simulate(duration=duration, 
+                       sampling_rate=sampling_rate, 
+                       heart_rate=heart_rate_1, 
+                       method='ecgsyn')
 
+# Señal 2: ECG con HR = 90 bpm
+ecg2 = nk.ecg_simulate(duration=duration, 
+                       sampling_rate=sampling_rate, 
+                       heart_rate=heart_rate_2, 
+                       method='ecgsyn')
+```
+4. Creamos el vector tiempo para realizar la gráfica:
+```bash
+time = np.linspace(0, duration, duration * sampling_rate)
+```
+5. Finalmente, graficamos mediante el uso de la librería matplotlib:
+```bash
+# Graficar ECG 1
+plt.figure(figsize=(12, 4))
+plt.plot(time, ecg1)
+plt.title("ECG Simulado 1 - HR 70 bpm")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud")
+plt.grid(True)
+plt.show()
+
+# Graficar ECG 2
+plt.figure(figsize=(12, 4))
+plt.plot(time, ecg2, color='orange')
+plt.title("ECG Simulado 2 - HR 90 bpm")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud")
+plt.grid(True)
+plt.show()
+```
 ### Resultado:
 
 ![Señales EMG](./L9-images/comparacion-actividad1.png)
