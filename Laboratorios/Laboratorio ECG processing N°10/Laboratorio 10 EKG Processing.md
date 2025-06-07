@@ -67,9 +67,11 @@ plt.ylabel("Amplitud")
 plt.grid(True)
 plt.show()
 ```
-### Resultado:
+### Resultados:
 
-![Señales EMG](./L9-images/comparacion-actividad1.png)
+![Señales ECG1](./imagenesL10/imagen_actividad1.png)
+
+![Señales ECG2](./imagenesL10/imagen_actividad1_2.png)
 
 ## 2. Actividad 2 <a name="id2"></a>
 
