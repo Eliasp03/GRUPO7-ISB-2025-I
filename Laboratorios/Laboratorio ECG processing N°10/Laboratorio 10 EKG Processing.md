@@ -84,25 +84,37 @@ plt.show()
 import neurokit2 as nk
 import numpy as np
 import pandas as pd
+from scipy.stats import kurtosis, skew
 import matplotlib.pyplot as plt
-from scipy.signal import welch
-from scipy.stats import linregress
 ```
-2. Realizamos la configuración de los segmentos de simulación:
+2. Se mantiene todo el código de la actividad 1, pero se añade para la obtención de los valores:
 ```bash
-segmentos = []
-duracion_segmento = 10  # en segundos
-sampling_rate = 1000
-burst_nums = [10, 7, 4]
-amplitudes = [1.0, 1.5, 2.0]
+signals = [ecg1, ecg2]
+labels = ["ECG 1", "ECG 2"]
+
+# Extraer valores específicos
+def extract_features(ecg_signal):
+    return {
+        "Mean": np.mean(ecg_signal),
+        "Median": np.median(ecg_signal),
+        "STD": np.std(ecg_signal),
+        "Kurtosis": kurtosis(ecg_signal),
+        "Skewness": skew(ecg_signal),
+        "Energy": np.sum(ecg_signal**2)
+    }
+
+features = []
+for i, ecg in enumerate(signals):
+    feats = extract_features(ecg)
+    feats["Label"] = labels[i]
+    features.append(feats)
+
+df_features = pd.DataFrame(features)
 ```
-3. Simulamos cada segmento EMG:
+3. Finalmente, se imprime los valores en una tabla mediante Pandas:
 ```bash
-for bursts, amp in zip(burst_nums, amplitudes):
-    seg = nk.emg_simulate(duration=duracion_segmento, sampling_rate=sampling_rate,
-                          burst_number=bursts, noise=0.01)
-    seg *= amp
-    segmentos.append(seg)
+print("\n=== Tabla de características estadísticas ===")
+print(df_features)
 ```
 
 ### Resultado:
