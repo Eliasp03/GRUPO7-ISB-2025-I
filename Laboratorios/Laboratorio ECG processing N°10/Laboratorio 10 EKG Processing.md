@@ -137,6 +137,7 @@ from sklearn.decomposition import PCA
 from scipy.stats import skew, kurtosis
 import seaborn as sns
 ```
+
 2. Definimos los parámetros de simulación de las señales ECG:
 ```bash
 fs = 1000  # Hz → frecuencia de muestreo
@@ -150,6 +151,7 @@ signals = [ecg1, ecg2, ecg3]
 labels = ["70bpm", "90bpm", "110bpm"]
 ```
 Se crean 3 señales ECG con diferentes frecuencias cardíacas: 70, 90 y 110 bpm.
+
 3. Definimos la función de extracción de características:
 ```bash
 def extract_features(signal):
@@ -162,6 +164,7 @@ def extract_features(signal):
         "Energy": np.sum(signal**2)
     }
 ```
+
 4. Extraemos las características y mostramos en una tabla:
 ```bash
 features = [extract_features(sig) for sig in signals]
@@ -171,6 +174,7 @@ df["Label"] = labels
 print("\n=== Tabla de características ===")
 print(df)
 ```
+
 5. Realizamos la reducción de dimensionalidad con PCA:
 ```bash
 X = df.drop(columns=["Label"])
@@ -181,6 +185,7 @@ df_pca = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
 df_pca["Label"] = labels
 ```
 Se aplica PCA para reducir las características a 2 componentes principales: PC1 y PC2).
+
 6. Finalmente graficamos los resultados:
 ```bash
 plt.figure(figsize=(8, 6))
@@ -192,6 +197,7 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 ```
+
 ### Resultado:
 
 ![Señales ECG1](./imagenesL10/actividad3.png)
