@@ -259,7 +259,7 @@ X_pca = pca.fit_transform(X)
 ```
 
 11. Creamos un nuevo DataFrame con las componentes principales y las etiquetas. Finalmente, graficamos:
-12. ```bash
+```bash
 df_pca = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
 df_pca["Label"] = y.astype(str)
 
