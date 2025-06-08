@@ -335,24 +335,97 @@ import neurokit2 as nk
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import pywt
 from scipy.signal import welch
-from scipy.stats import linregress
+from scipy.stats import linregress, kurtosis, skew
+from sklearn.decomposition import PCA
 ```
-2. Realizamos la configuración de los segmentos de simulación:
+2. Realizamos la creación y simulación de señales ECG: 
 ```bash
-segmentos = []
-duracion_segmento = 10  # en segundos
-sampling_rate = 1000
-burst_nums = [10, 7, 4]
-amplitudes = [1.0, 1.5, 2.0]
+fs = 1000
+duration = 20
+np.random.seed(42)
+
+# Parámetros base para ECG normal
+ti0 = np.array([-70, -15, 0, 15, 100])
+ai0 = np.array([1.2, -5, 30, -7.5, 0.75])
+bi0 = np.array([0.25, 0.1, 0.1, 0.1, 0.4])
+
+# Clase 0: ECG normal
+ecg0 = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti0, ai=ai0, bi=bi0)
+ecg0_bis = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti0, ai=ai0, bi=bi0)
+
+# Clase 1: Parámetros modificados
+ti1 = np.random.normal(ti0, 3)
+ai1 = np.random.normal(ai0, np.abs(ai0/5))
+bi1 = np.random.normal(bi0, np.abs(bi0/5))
+ecg1 = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti1, ai=ai1, bi=bi1)
+ecg1_bis = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti1, ai=ai1, bi=bi1)
+
+# Clase 2: ECG con anomalías
+ti2 = np.random.normal(ti0, 3)
+ai2 = np.random.normal(ai0, np.abs(ai0/5))
+bi2 = np.random.normal(bi0, np.abs(bi0/5))
+ai2[4] = -0.5  # Invertir onda T
+bi2[2] *= 2    # Ensanchar QRS
+ecg2 = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti2, ai=ai2, bi=bi2)
+ecg2_bis = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti2, ai=ai2, bi=bi2)
+
+
+signals = [ecg0, ecg0_bis, ecg1, ecg1_bis, ecg2, ecg2_bis]
+labels = [0, 0, 1, 1, 2, 2]  # 0: normal, 1: parámetros modificados, 2: anormal
 ```
-3. Simulamos cada segmento EMG:
+3. Definimos una función para extraer características con DWT
 ```bash
-for bursts, amp in zip(burst_nums, amplitudes):
-    seg = nk.emg_simulate(duration=duracion_segmento, sampling_rate=sampling_rate,
-                          burst_number=bursts, noise=0.01)
-    seg *= amp
-    segmentos.append(seg)
+def extract_features_with_dwt(signal, wavelet='db4', level=4):
+    # Características estadísticas básicas
+    features = {
+        "Mean": np.mean(signal),
+        "Median": np.median(signal),
+        "STD": np.std(signal),
+        "Kurtosis": kurtosis(signal),
+        "Skewness": skew(signal),
+        "Energy": np.sum(signal**2),
+    }
+    
+    
+    return features
+```
+
+4. Extraemos las características para las señales ECG
+
+```bash
+features_list = []
+for i, signal in enumerate(signals):
+    feat = extract_features_with_dwt(signal)
+    feat["Label"] = labels[i]
+    features_list.append(feat)
+```
+
+5. Creamos el dataframe con las características
+```bash
+df_features = pd.DataFrame(features_list)
+```
+
+6. Mostramos la tabla de características con DWT
+```bash
+print("\n=== Tabla de características con coeficientes DWT ===")
+print(df_features)
+```
+7. Visualizamos el PCA
+ ```bash  
+plt.figure(figsize=(10, 6))
+for label in df_pca["Label"].unique():
+    subset = df_pca[df_pca["Label"] == label]
+    plt.scatter(subset["PC1"], subset["PC2"], label=f"Clase {label}", s=100)
+
+plt.title("PCA de Características ECG con Coeficientes DWT")
+plt.xlabel(f"Componente Principal 1 ({pca.explained_variance_ratio_[0]*100:.1f}%)")
+plt.ylabel(f"Componente Principal 2 ({pca.explained_variance_ratio_[1]*100:.1f}%)")
+plt.grid(True)
+plt.legend(title="Clase")
+plt.tight_layout()
+plt.show()
 ```
 
 ### Resultado:
