@@ -413,6 +413,7 @@ print("\n=== Tabla de características con coeficientes DWT ===")
 print(df_features)
 ```
 ### Resultado:
+
 ![Señales ECG1](./imagenesL10/actividad5_parte1.jpg)
 
 7. Visualizamos el PCA
@@ -439,6 +440,7 @@ plt.show()
 ```
 
 ### Resultado:
+
 ![Señales ECG2](./imagenesL10/actividad5_parte2.jpg)
 
 
