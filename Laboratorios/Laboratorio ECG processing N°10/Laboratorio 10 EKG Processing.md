@@ -157,7 +157,7 @@ for bursts, amp in zip(burst_nums, amplitudes):
 
 ![Señales ECG1](./imagenesL10/actividad3.png)
 
-![Señales ECG2](./imagenesL10/actividad3_1.png)
+![Señales ECG2](./imagenesL10/actividad3_1.jpg)
 
 ## 4. Actividad 4 <a name="id4"></a>
 
