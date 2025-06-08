@@ -413,7 +413,7 @@ print("\n=== Tabla de características con coeficientes DWT ===")
 print(df_features)
 ```
 ### Resultado:
-[actividad5](./imagenesL10/imagen_actividad5_parte1.jpg)
+[Actividad para casa](./imagenesL10/imagen_actividad5_parte1.jpg)
 
 7. Visualizamos el PCA
  ```bash  
@@ -439,7 +439,7 @@ plt.show()
 ```
 
 ### Resultado:
-[actividad5](./imagenesL10/imagen_actividad5_parte2.jpg)
+[Actividad para casa](./imagenesL10/imagen_actividad5_parte2.jpg)
 
 
 ## 3. Bibliografía <a name="id6"></a>
