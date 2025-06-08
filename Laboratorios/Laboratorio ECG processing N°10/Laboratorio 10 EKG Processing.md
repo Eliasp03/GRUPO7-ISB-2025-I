@@ -412,12 +412,22 @@ df_features = pd.DataFrame(features_list)
 print("\n=== Tabla de características con coeficientes DWT ===")
 print(df_features)
 ```
+### Resultado:
+[actividad5](./imagenesL10/imagen_actividad5_parte1.jpg)
+
 7. Visualizamos el PCA
  ```bash  
+pca = PCA(n_components=2)
+# Fit and transform the features
+principal_components = pca.fit_transform(features)
+# Create a new DataFrame with the principal components and labels
+df_pca = pd.DataFrame(data = principal_components, columns = ['PC1', 'PC2'])
+df_pca['Label'] = df_features['Label']
+
 plt.figure(figsize=(10, 6))
 for label in df_pca["Label"].unique():
-    subset = df_pca[df_pca["Label"] == label]
-    plt.scatter(subset["PC1"], subset["PC2"], label=f"Clase {label}", s=100)
+   subset = df_pca[df_pca["Label"] == label]
+   plt.scatter(subset["PC1"], subset["PC2"], label=f"Clase {label}", s=100)
 
 plt.title("PCA de Características ECG con Coeficientes DWT")
 plt.xlabel(f"Componente Principal 1 ({pca.explained_variance_ratio_[0]*100:.1f}%)")
@@ -429,7 +439,7 @@ plt.show()
 ```
 
 ### Resultado:
-![actividad5](./imagenesL10/imagen_actividad5.png)
+[actividad5](./imagenesL10/imagen_actividad5_parte2.jpg)
 
 
 ## 3. Bibliografía <a name="id6"></a>
