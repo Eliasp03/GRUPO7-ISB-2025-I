@@ -176,23 +176,102 @@ import matplotlib.pyplot as plt
 from scipy.signal import welch
 from scipy.stats import linregress
 ```
-2. Realizamos la configuración de los segmentos de simulación:
+2. Definimos los parámetros generales para la simulación ECG:
 ```bash
-segmentos = []
-duracion_segmento = 10  # en segundos
-sampling_rate = 1000
-burst_nums = [10, 7, 4]
-amplitudes = [1.0, 1.5, 2.0]
+fs = 1000
+duration = 20
+np.random.seed(42)
 ```
-3. Simulamos cada segmento EMG:
+3. Especificamos los parámetros de la señal y simulamos:
 ```bash
-for bursts, amp in zip(burst_nums, amplitudes):
-    seg = nk.emg_simulate(duration=duracion_segmento, sampling_rate=sampling_rate,
-                          burst_number=bursts, noise=0.01)
-    seg *= amp
-    segmentos.append(seg)
+ti0 = np.array([-70, -15, 0, 15, 100])
+ai0 = np.array([1.2, -5, 30, -7.5, 0.75])
+bi0 = np.array([0.25, 0.1, 0.1, 0.1, 0.4])
+
+ecg0 = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti0, ai=ai0, bi=bi0)
 ```
 
+4. Creamos una señal ECG de clase 1 con parámetros modificados ligeramente mediante ruido gaussiano:
+```bash
+ti1 = np.random.normal(ti0, 3)
+ai1 = np.random.normal(ai0, np.abs(ai0 / 5))
+bi1 = np.random.normal(bi0, np.abs(bi0 / 5))
+ecg1 = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti1, ai=ai1, bi=bi1)
+```
+
+5. Simulamos una señal ECG anómala (clase 2) con onda T invertida y complejo QRS más ancho:
+```bash
+ti2 = np.random.normal(ti0, 3)
+ai2 = np.random.normal(ai0, np.abs(ai0 / 5))
+bi2 = np.random.normal(bi0, np.abs(bi0 / 5))
+ai2[4] = -0.5  # T invertida
+bi2[2] *= 2    # QRS ancho
+ecg2 = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti2, ai=ai2, bi=bi2)
+```
+
+6. Generamos una segunda señal ECG para cada clase usando los mismos parámetros originales:
+```bash
+ecg0_bis = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti0, ai=ai0, bi=bi0)
+ecg1_bis = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti1, ai=ai1, bi=bi1)
+ecg2_bis = nk.ecg_simulate(duration=duration, sampling_rate=fs, method="ecgsyn", ti=ti2, ai=ai2, bi=bi2)
+```
+
+7. Agrupamos todas las señales y etiquetamos:
+```bash
+signals = [ecg0, ecg0_bis, ecg1, ecg1_bis, ecg2, ecg2_bis]
+labels = [0, 0, 1, 1, 2, 2]
+```
+
+8. Extraemos características y almacenamos:
+```bash
+def extract_features(signal):
+    return {
+        "Mean": np.mean(signal),
+        "Median": np.median(signal),
+        "STD": np.std(signal),
+        "Kurtosis": kurtosis(signal),
+        "Skewness": skew(signal),
+        "Energy": np.sum(signal**2)
+    }
+
+features = []
+for i, ecg in enumerate(signals):
+    feats = extract_features(ecg)
+    feats["Label"] = labels[i]
+    features.append(feats)
+```
+
+9. Convertimos la lista de características en un DataFrame y mostramos la tabla:
+```bash
+df = pd.DataFrame(features)
+
+print("\n=== Tabla de características ===")
+print(df)
+```
+
+10. Separamos los datos y etiquetas, a continuación, aplicamos PCA:
+```bash
+X = df.drop(columns=["Label"])
+y = df["Label"]
+
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X)
+```
+
+11. Creamos un nuevo DataFrame con las componentes principales y las etiquetas. Finalmente, graficamos:
+12. ```bash
+df_pca = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
+df_pca["Label"] = y.astype(str)
+
+plt.figure(figsize=(8, 6))
+sns.scatterplot(data=df_pca, x="PC1", y="PC2", hue="Label", palette="Set1", s=100)
+plt.title("PCA de características ECG (3 clases, 2 señales por clase)")
+plt.xlabel("Componente Principal 1")
+plt.ylabel("Componente Principal 2")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+```
 ### Resultado:
 
 ![Señales ECG1](./imagenesL10/actividad4.png)
