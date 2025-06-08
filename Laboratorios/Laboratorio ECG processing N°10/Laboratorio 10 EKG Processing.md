@@ -133,26 +133,65 @@ import neurokit2 as nk
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.signal import welch
-from scipy.stats import linregress
+from sklearn.decomposition import PCA
+from scipy.stats import skew, kurtosis
+import seaborn as sns
 ```
-2. Realizamos la configuración de los segmentos de simulación:
+2. Definimos los parámetros de simulación de las señales ECG:
 ```bash
-segmentos = []
-duracion_segmento = 10  # en segundos
-sampling_rate = 1000
-burst_nums = [10, 7, 4]
-amplitudes = [1.0, 1.5, 2.0]
-```
-3. Simulamos cada segmento EMG:
-```bash
-for bursts, amp in zip(burst_nums, amplitudes):
-    seg = nk.emg_simulate(duration=duracion_segmento, sampling_rate=sampling_rate,
-                          burst_number=bursts, noise=0.01)
-    seg *= amp
-    segmentos.append(seg)
-```
+fs = 1000  # Hz → frecuencia de muestreo
+duration = 20  # segundos → duración de la señal
 
+ecg1 = nk.ecg_simulate(duration=duration, sampling_rate=fs, heart_rate=70)
+ecg2 = nk.ecg_simulate(duration=duration, sampling_rate=fs, heart_rate=90)
+ecg3 = nk.ecg_simulate(duration=duration, sampling_rate=fs, heart_rate=110)
+
+signals = [ecg1, ecg2, ecg3]
+labels = ["70bpm", "90bpm", "110bpm"]
+```
+Se crean 3 señales ECG con diferentes frecuencias cardíacas: 70, 90 y 110 bpm.
+3. Definimos la función de extracción de características:
+```bash
+def extract_features(signal):
+    return {
+        "Mean": np.mean(signal),
+        "Median": np.median(signal),
+        "STD": np.std(signal),
+        "Kurtosis": kurtosis(signal),
+        "Skewness": skew(signal),
+        "Energy": np.sum(signal**2)
+    }
+```
+4. Extraemos las características y mostramos en una tabla:
+```bash
+features = [extract_features(sig) for sig in signals]
+df = pd.DataFrame(features)
+df["Label"] = labels
+
+print("\n=== Tabla de características ===")
+print(df)
+```
+5. Realizamos la reducción de dimensionalidad con PCA:
+```bash
+X = df.drop(columns=["Label"])
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X)
+
+df_pca = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
+df_pca["Label"] = labels
+```
+Se aplica PCA para reducir las características a 2 componentes principales: PC1 y PC2).
+6. Finalmente graficamos los resultados:
+```bash
+plt.figure(figsize=(8, 6))
+sns.scatterplot(data=df_pca, x="PC1", y="PC2", hue="Label", s=120, palette="Set1")
+plt.title("PCA de características de 3 señales ECG")
+plt.xlabel("Componente Principal 1")
+plt.ylabel("Componente Principal 2")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+```
 ### Resultado:
 
 ![Señales ECG1](./imagenesL10/actividad3.png)
