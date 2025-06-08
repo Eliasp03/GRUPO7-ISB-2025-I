@@ -414,7 +414,7 @@ print(df_features)
 ```
 ### Resultado:
 
-![Señales ECG1](./imagenesL10/actividad5_parte1.jpg)
+![Señales ECG1](./imagenesL10/actividad_5_parte1.jpg)
 
 7. Visualizamos el PCA
  ```bash  
@@ -441,7 +441,7 @@ plt.show()
 
 ### Resultado:
 
-![Señales ECG2](./imagenesL10/actividad5_parte2.jpg)
+![Señales ECG2](./imagenesL10/actividad_5_parte2.jpg)
 
 
 ## 3. Bibliografía <a name="id6"></a>
