@@ -194,7 +194,10 @@ for bursts, amp in zip(burst_nums, amplitudes):
 ```
 
 ### Resultado:
-asdasdasd
+
+![Señales ECG1](./imagenesL10/actividad4.png)
+
+![Señales ECG2](./imagenesL10/actividad4_1.png)
 
 ## 5. Actividad para casa <a name="id5"></a>
 
