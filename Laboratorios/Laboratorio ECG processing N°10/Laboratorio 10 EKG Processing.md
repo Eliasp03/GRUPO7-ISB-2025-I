@@ -429,7 +429,7 @@ plt.show()
 ```
 
 ### Resultado:
-asdas
+![actividad4](./imagenesL10/imagen_actividad4.png)
 
 
 ## 3. Bibliografía <a name="id6"></a>
