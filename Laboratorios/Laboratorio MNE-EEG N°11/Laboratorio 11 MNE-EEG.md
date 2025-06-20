@@ -97,7 +97,7 @@ Se aplicó una transformada wavelet discreta (DWT) utilizando la función pywt.w
 - **Wavelet utilizada:** Daubechies 4 ('db4')  
 - **Niveles de descomposición:** 4 niveles
 - **Señal de entrada:** canal promedio de cada archivo EEG preprocesado
-- **Feature extraída:** varianza de los coeficientes en cada nivel (cA4, cD4, cD3, cD2, cD1)
+- **Feature extraída:** varianza de los coeficientes en cada nivel (cA4, cD4, cD3, cD2, cD1), máximo (uV), mediana (uV) y desviación estándar (uV)
 - **Herramientas**: MNE-Python, PyWavelets, numpy
 
 Durante el análisis, elegí conservar los niveles `cA4`, `cD4`, `cD3`, `cD2` y `cD1`, ya que estos cubren un rango de frecuencias que se alinean bien con las bandas cerebrales clásicas del EEG. Como se trabajó con señales muestreadas a 160 Hz, los niveles wavelet pueden asociarse aproximadamente con los siguientes rangos de frecuencia:
@@ -114,9 +114,9 @@ Estos valores se calculan considerando que en cada nivel la frecuencia se reduce
 
 Esta forma de análisis resulta útil para extraer características más localizadas en tiempo-frecuencia, complementando el enfoque clásico basado en PSD.
 
-Todo el procedimiento se encuentra en el archivo adjunto [`caracteristica2.py`](caracteristica2.py).
+->Todo el procedimiento para extraer la varianzas de los coeficientes obtenidos se encuentra en el archivo adjunto [`caracteristica2.py`](caracteristica2.py).
 
-#### Tabla de características extraídas mediante DWT:
+#### Tabla de características varianzas de los coeficientes mediante DWT:
 Se muestran a continuación las varianzas de los coeficientes obtenidos mediante la Transformada Wavelet Discreta (DWT) usando la wavelet Daubechies 4 (db4) con 4 niveles de descomposición, aplicada al canal promedio de cada archivo EEG.
 
 | Archivo      | cA4 (µV²) | cD4 (µV²)| cD3 (µV²)| cD2 (µV²)| cD1 (µV²)|
@@ -131,6 +131,10 @@ Se muestran a continuación las varianzas de los coeficientes obtenidos mediante
 | S001R08.edf  | 11417.22  | 2280.13  | 912.21  | 189.31  | 13.89   |
 | S001R09.edf  | 14461.91  | 2429.34  | 952.61  | 260.91  | 21.89   |
 | S001R10.edf  | 13901.02  | 2685.98  | 960.97  | 219.74  | 18.65   |
+
+#### Tabla de características máximo (uV), mediana (uV) y desviación estándar (uV) de los coeficientes mediante DWT:
+Todo el procedimiento para extraer estas características se encuentra en el archivo adjunto [`caracteristica2_v2.py`](caracteristica2_v2.py).
+
 
 ## 4. Optimización y selección <a name="id4"></a>
 
