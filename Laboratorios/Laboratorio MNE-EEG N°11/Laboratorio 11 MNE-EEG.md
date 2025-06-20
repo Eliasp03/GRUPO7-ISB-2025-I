@@ -212,7 +212,7 @@ En resumen, se aplicaron dos enfoques complementarios para la extracción de car
 - Integrar y analizar los datos a través de observaciones temporales, frecuenciales y espaciales empleando MNE-Python (Epochs, Evoked, montage, interpolate_bads).
 
 ### Desarrollo: 
-En esta última etapa se realizaron análisis e integraciones adicionales sobre las señales EEG preprocesadas, utilizando herramientas de MNE-Python que permiten explorar los datos desde diferentes dimensiones: espacial, temporal y frecuencial.
+En esta última etapa se realizaron análisis e integraciones adicionales sobre las señales EEG preprocesadas, utilizando herramientas de MNE-Python que permiten explorar los datos desde diferentes dimensiones: espacial, temporal y frecuencial. Se utilizó como ejemplo el archivo "S001R04.edf". El código completo utilizado se encuentra adjuntado como [`post_proceso.py`](post_proceso.py).
 
 #### a. Filtrado y eliminación de artefactos
 Se aplicaron filtros pasa banda (1–40 Hz) y notch (60 Hz), seguidos de una descomposición con ICA (mne.preprocessing.ICA) para eliminar artefactos oculares.
@@ -228,8 +228,69 @@ ica.apply(raw)
 #### b. Visualización de la distribución espacial de los electrodos
 Se utilizó el sistema de electrodos standard_1020, permitiendo visualizar la disposición espacial de los sensores. Se generaron topomapas para observar la distribución de la actividad por regiones cerebrales. Se usó raw.plot_sensors() para mostrar la disposición topográfica de los 64 electrodos en el cuero cabelludo.
 
-#### c. Segmentación en épocas (Epochs)
+```bash
+fig_sensor = raw_ica.plot_sensors(show_names=True, show=False)
+fig_sensor.savefig("L11_images/post_sensor_posiciones.png")
+```
+
+![](L11_images/post_sensor_posiciones.png)
+
+#### c. Segmentación en épocas (Epochs) y cálculo del promedio (Evoked)
 Se crearon eventos artificiales cada 2 segundos (make_fixed_length_events) y se generaron épocas de -0.2s a 0.8s. Se visualizó la actividad por época en múltiples canales.
 
-#### d. Promedio de señales (Evoked response)
-Se obtuvo la señal promedio de las épocas con epochs.average() para observar la respuesta evocada.
+```bash
+events = mne.make_fixed_length_events(raw_ica, id=1, duration=2.)
+epochs = mne.Epochs(raw_ica, events, event_id=1, tmin=-0.2, tmax=0.8, baseline=(None, 0), preload=True)
+fig_epochs = epochs.plot(show=False)
+fig_epochs.savefig("L11_images/post_epochs_simulados.png")
+
+evoked = epochs.average()
+fig_evoked = evoked.plot(show=False)
+fig_evoked.savefig("L11_images/post_evoked_promediado.png")
+```
+
+![](L11_images/post_epochs_simulados.png)
+![](L11_images/post_evoked_promediado.png)
+
+#### d. Mapa topográfico del EEG
+Se graficó la topografía de la actividad cerebral a distintos momentos (0.1 s, 0.2 s, 0.3 s) del evento promedio:
+
+```bash
+montage = make_standard_montage("standard_1020")
+raw.set_montage(montage, on_missing='ignore')
+# excluir los canales conflictivos
+canales_conflictivos = ['FCZ', 'CZ', 'CPZ', 'FP1', 'FPZ', 'FP2', 'AFZ', 'FZ', 'PZ', 'POZ', 'OZ', 'IZ']
+# Filtrar evoked sin esos canales
+evoked_clean = evoked.copy().drop_channels(canales_conflictivos)
+fig_topomap = evoked_clean.plot_topomap(times=[0.1, 0.2, 0.3], ch_type='eeg', show=False)
+fig_topomap.savefig("L11_images/post_evoked_topomap.png")
+```
+
+![](L11_images/post_evoked_topomap.png)
+
+#### e. Reducción de dimensionalidad con PCA
+Finalmente, se generó un conjunto simulado de características para ilustrar la reducción de dimensionalidad mediante PCA. Esto permite observar la variabilidad explicada por los primeros componentes principales:
+
+```bash
+# Simulación de un DataFrame de features
+np.random.seed(0)
+X = np.random.rand(10, 6)
+# Normalización
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+# Reducción de dimensionalidad
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_scaled)
+
+# Visualización de PCA
+plt.figure()
+plt.scatter(X_pca[:, 0], X_pca[:, 1], c='blue')
+plt.title("Proyección PCA de características")
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.grid(True)
+plt.savefig("L11_images/post_pca_features.png")
+plt.close()
+```
+
+![](L11_images/post_pca_features.png)
