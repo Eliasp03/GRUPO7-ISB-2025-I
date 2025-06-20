@@ -37,7 +37,7 @@ for nombre, (fmin, fmax) in bandas.items():
         energia_bandas[nombre] = np.zeros(psds.shape[0])
     else:
         energia = simpson(y=psds[:, idx], x=freqs[idx])
-        energia_bandas[nombre] = energia
+        energia_bandas[nombre] = energia * 1e12 #convert to uV^2
 
 
 # Resultado
