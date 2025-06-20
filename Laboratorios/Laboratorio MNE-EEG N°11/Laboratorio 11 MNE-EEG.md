@@ -117,6 +117,8 @@ Esta forma de análisis resulta útil para extraer características más localiz
 Todo el procedimiento se encuentra en el archivo adjunto [`caracteristica2.py`](caracteristica2.py).
 
 #### Tabla de características extraídas mediante DWT:
+Se muestran a continuación las varianzas de los coeficientes obtenidos mediante la Transformada Wavelet Discreta (DWT) usando la wavelet Daubechies 4 (db4) con 4 niveles de descomposición, aplicada al canal promedio de cada archivo EEG.
+
 | Archivo      | cA4 (µV²) | cD4 (µV²)| cD3 (µV²)| cD2 (µV²)| cD1 (µV²)|
 |--------------|-----------|----------|---------|---------|---------|
 | S001R01.edf  | 13528.06  | 2389.20  | 941.28  | 197.59  | 15.02   |
