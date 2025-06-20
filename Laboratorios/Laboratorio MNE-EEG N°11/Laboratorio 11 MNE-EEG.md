@@ -6,10 +6,10 @@
    - [Características basadas en energía de bandas](#id4)
    - [Características basadas en Wavelet](#id5) 
 5. [Optimización y selección](#id6)
-   - [Características basadas en Wavelet](#id7)
-   - [Características basadas en Wavelet](#id8)
-   - [Características basadas en Wavelet](#id9)
-   - [Características basadas en Wavelet](#id10) 
+   - [Reducción de artefactos y canales malos](#id7)
+   - [Asociación espacial: montaje estándar](#id8)
+   - [Análisis de eventos y respuestas evocadas](#id9)
+   - [Estadísticas globales y reducción de dimensionalidad](#id10) 
 
 
 ## 1. Origen de los datos <a name="id1"></a>
