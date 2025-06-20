@@ -62,6 +62,20 @@ Se utilizó el código python adjuntado 'señal_cruda.py' para graficar cada uno
 
 ### Objetivo: 
 - Aplicar técnicas de feature engineering sobre las componentes extraídas (estadísticas, bandas, transformaciones) para mejorar la calidad de los datos antes de alimentar modelos de clasificación.
+- 
+### Desarrollo:
+Se utilizó el método de densidad espectral de potencia (PSD) mediante Welch (`raw.compute_psd`) aplicado sobre las señales preprocesadas. Posteriormente, se integró la PSD dentro de los rangos de frecuencia definidos para cada banda, y se calculó el promedio de energía por banda y archivo.
+
+Las bandas utilizadas fueron:
+
+- **Delta:** 0.5 – 4 Hz  
+- **Theta:** 4 – 8 Hz  
+- **Alpha:** 8 – 13 Hz  
+- **Beta:** 13 – 30 Hz
+
+Los valores obtenidos se expresan en **nanovoltios al cuadrado (nV²)**.
+
+### Resultados:
 
 | Archivo      | Delta (nV²) | Theta (nV²) | Alpha (nV²) | Beta (nV²) |
 |--------------|-------------|-------------|-------------|------------|
@@ -76,6 +90,10 @@ Se utilizó el código python adjuntado 'señal_cruda.py' para graficar cada uno
 | S001R09.edf  | 1.345       | 0.233       | 0.154       | 0.187      |
 | S001R10.edf  | 1.193       | 0.226       | 0.164       | 0.175      |
 
+### Visualización:
+La siguiente figura muestra una comparación visual de la energía promedio por banda EEG a lo largo de las diferentes sesiones:
+
+![Gráfico de barras de energía por banda EEG](L11_images/bar_char.jpg)
 
 ## 4. Optimización y selección <a name="id4"></a>
 
