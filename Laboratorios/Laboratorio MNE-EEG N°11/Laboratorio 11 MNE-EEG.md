@@ -45,16 +45,16 @@ El preprocesamiento se realizó utilizando **MNE-Python** y consistió en los si
 
 | Archivo       | Descripción                                                  | Señal cruda                          | PSD                                  |
 |---------------|--------------------------------------------------------------|---------------------------------------|---------------------------------------|
-| S001R01.edf   | Baseline – ojos abiertos                                     | ![](L11-images/eeg_crudo01.png)     | ![](L11-images/psd_crudo01.png)     |
-| S001R02.edf   | Baseline – ojos cerrados                                     | ![](L11-images/eeg_crudo02.png)     | ![](L11-images/psd_crudo02.png)     |
-| S001R03.edf   | Tarea 1 – Movimiento real, mano izquierda o derecha          | ![](L11-images/eeg_crudo03.png)     | ![](L11-images/psd_crudo03.png)     |
-| S001R04.edf   | Tarea 2 – Movimiento imaginado, mano izquierda o derecha     | ![](L11-images/eeg_crudo04.png)     | ![](L11-images/psd_crudo04.png)     |
-| S001R05.edf   | Tarea 3 – Movimiento real, ambas manos o ambos pies          | ![](L11-images/eeg_crudo05.png)     | ![](L11-images/psd_crudo05.png)     |
-| S001R06.edf   | Tarea 4 – Movimiento imaginado, ambas manos o ambos pies     | ![](L11-images/eeg_crudo06.png)     | ![](L11-images/psd_crudo06.png)     |
-| S001R07.edf   | Repetición de Tarea 1 (real – manos)                         | ![](L11-images/eeg_crudo07.png)     | ![](L11-images/psd_crudo07.png)     |
-| S001R08.edf   | Repetición de Tarea 2 (imaginada – manos)                    | ![](L11-images/eeg_crudo08.png)     | ![](L11-images/psd_crudo08.png)     |
-| S001R09.edf   | Repetición de Tarea 3 (real – manos/pies)                    | ![](L11-images/eeg_crudo09.png)     | ![](L11-images/psd_crudo09.png)     |
-| S001R10.edf   | Repetición de Tarea 4 (imaginada – manos/pies)              | ![](L11-images/eeg_crudo10.png)     | ![](L11-images/psd_crudo10.png)     |
+| S001R01.edf   | Baseline – ojos abiertos                                     | ![](L11_images/eeg_crudo01.png)     | ![](L11_images/psd_crudo01.png)     |
+| S001R02.edf   | Baseline – ojos cerrados                                     | ![](L11_images/eeg_crudo02.png)     | ![](L11_images/psd_crudo02.png)     |
+| S001R03.edf   | Tarea 1 – Movimiento real, mano izquierda o derecha          | ![](L11_images/eeg_crudo03.png)     | ![](L11_images/psd_crudo03.png)     |
+| S001R04.edf   | Tarea 2 – Movimiento imaginado, mano izquierda o derecha     | ![](L11_images/eeg_crudo04.png)     | ![](L11_images/psd_crudo04.png)     |
+| S001R05.edf   | Tarea 3 – Movimiento real, ambas manos o ambos pies          | ![](L11_images/eeg_crudo05.png)     | ![](L11_images/psd_crudo05.png)     |
+| S001R06.edf   | Tarea 4 – Movimiento imaginado, ambas manos o ambos pies     | ![](L11_images/eeg_crudo06.png)     | ![](L11_images/psd_crudo06.png)     |
+| S001R07.edf   | Repetición de Tarea 1 (real – manos)                         | ![](L11_images/eeg_crudo07.png)     | ![](L11_images/psd_crudo07.png)     |
+| S001R08.edf   | Repetición de Tarea 2 (imaginada – manos)                    | ![](L11_images/eeg_crudo08.png)     | ![](L11_images/psd_crudo08.png)     |
+| S001R09.edf   | Repetición de Tarea 3 (real – manos/pies)                    | ![](L11_images/eeg_crudo09.png)     | ![](L11_images/psd_crudo09.png)     |
+| S001R10.edf   | Repetición de Tarea 4 (imaginada – manos/pies)              | ![](L11_images/eeg_crudo10.png)     | ![](L11_images/psd_crudo10.png)     |
 
 
 ## 3. Extracción de características <a name="id3"></a>
