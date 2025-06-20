@@ -3,7 +3,13 @@
 1. [Origen de los datos](#id1)
 2. [Procedimiento de preprocesamiento](#id2)
 3. [Extracción de características](#id3)
-4. [Optimización y selección](#id4)
+   - [Características basadas en energía de bandas](#id4)
+   - [Características basadas en Wavelet](#id5) 
+5. [Optimización y selección](#id6)
+   - [Características basadas en Wavelet](#id7)
+   - [Características basadas en Wavelet](#id8)
+   - [Características basadas en Wavelet](#id9)
+   - [Características basadas en Wavelet](#id10) 
 
 
 ## 1. Origen de los datos <a name="id1"></a>
@@ -63,7 +69,7 @@ Se utilizó el código python adjuntado [`señal_cruda.py`](señal_cruda.py) par
 ### Objetivo: 
 - Aplicar técnicas de feature engineering sobre las componentes extraídas (estadísticas, bandas, transformaciones) para mejorar la calidad de los datos antes de alimentar modelos de clasificación.
 
-### Características basadas en energía de bandas:
+### Características basadas en energía de bandas: <a name="id4"></a>
 Se utilizó el método de densidad espectral de potencia (PSD) mediante Welch (`raw.compute_psd`) aplicado sobre las señales preprocesadas. Posteriormente, se integró la PSD dentro de los rangos de frecuencia definidos para cada banda, y se calculó el promedio de energía por banda y archivo, todo el procedimiento realizado se encuentra en el archivo [`caracteristica1.py`](caracteristica1.py).
 
 Las bandas utilizadas fueron:
@@ -92,7 +98,7 @@ Las bandas utilizadas fueron:
 La siguiente figura muestra una comparación visual de la energía promedio por banda EEG a lo largo de las diferentes sesiones:
 ![Gráfico de barras de energía por banda EEG](L11_images/bar_char2.jpg)
 
-### Características basadas en Wavelet:
+### Características basadas en Wavelet: <a name="id5"></a>
 Se aplicó una transformada wavelet discreta (DWT) utilizando la función pywt.wavedec() de la librería PyWavelets, con los siguientes parámetros:
 - **Wavelet utilizada:** Daubechies 4 ('db4')  
 - **Niveles de descomposición:** 4 niveles
@@ -134,6 +140,7 @@ Se muestran a continuación las varianzas de los coeficientes obtenidos mediante
 
 #### Tabla de características máximo (uV), mediana (uV) y desviación estándar (uV) de los coeficientes mediante DWT:
 Todo el procedimiento para extraer estas características se encuentra en el archivo adjunto [`caracteristica2_v2.py`](caracteristica2_v2.py).
+
 | Archivo        | Nivel | Máximo (µV) | Mediana (µV) | Desv. Estándar (µV) |
 |----------------|-------|-------------|---------------|----------------------|
 | **S001R01.edf** |
@@ -203,7 +210,22 @@ En resumen, se aplicaron dos enfoques complementarios para la extracción de car
 
 - DWT (Wavelet): aporta una representación más localizada en tiempo-frecuencia, ideal para capturar detalles transitorios y multiescalares en las señales EEG.
 
-## 4. Optimización y selección <a name="id4"></a>
+## 4. Optimización y selección <a name="id6"></a>
 
 ### Objetivo: 
 - Integrar y analizar los datos a través de observaciones temporales, frecuenciales y espaciales empleando MNE-Python (Epochs, Evoked, montage, interpolate_bads).
+
+### Desarrollo: 
+En esta última etapa se realizaron análisis e integraciones adicionales sobre las señales EEG preprocesadas, utilizando herramientas de MNE-Python que permiten explorar los datos desde diferentes dimensiones: espacial, temporal y frecuencial.
+
+#### a. Reducción de artefactos y canales malos <a name="id7"></a>
+Se aplicó ICA (Independent Component Analysis) para identificar y eliminar componentes asociados a artefactos comunes como parpadeos o actividad ocular. Posteriormente, se realizó una interpolación de canales malos con interpolate_bads().
+
+#### b. Asociación espacial: montaje estándar <a name="id8"></a>
+Se utilizó el sistema de electrodos standard_1020, permitiendo visualizar la disposición espacial de los sensores. Se generaron topomapas para observar la distribución de la actividad por regiones cerebrales.
+
+#### c. Análisis de eventos y respuestas evocadas <a name="id9"></a>
+Aunque los eventos no estaban etiquetados explícitamente en esta base, se simularon eventos para ejemplificar el proceso de segmentación en Epochs, y el posterior cálculo de la respuesta promediada (Evoked).
+
+#### d. Estadísticas globales y reducción de dimensionalidad <a name="id10"></a>
+Se exploró la posibilidad de aplicar transformaciones como normalización (StandardScaler) y reducción de dimensionalidad mediante PCA, principalmente sobre las características extraídas previamente (Wavelet y PSD), para facilitar su visualización y posterior clasificación.
