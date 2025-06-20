@@ -42,7 +42,7 @@ El preprocesamiento se realizó utilizando **MNE-Python** y consistió en los si
 - **Herramientas**: MNE-Python, matplotlib, numpy
 
 #### Archivos EDF descargados – Sujeto S001
-Se utilizó el código python adjuntado [`señal_cruda.py`](Laboratorio MNE-EEG N°11/señal_cruda.py) para graficar cada uno de los archivos detallados a continuación:
+Se utilizó el código python adjuntado [`señal_cruda.py`](señal_cruda.py) para graficar cada uno de los archivos detallados a continuación:
 
 | Archivo       | Descripción                                                  | Señal cruda                          | PSD                                  |
 |---------------|--------------------------------------------------------------|---------------------------------------|---------------------------------------|
