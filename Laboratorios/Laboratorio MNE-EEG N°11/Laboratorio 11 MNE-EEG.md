@@ -219,6 +219,7 @@ Se aplicaron filtros pasa banda (1–40 Hz) y notch (60 Hz), seguidos de una des
 Los componentes ICA [0, 1] fueron eliminados (seleccionados manualmente tras visualización).
 
 '''
+bash
 ica = mne.preprocessing.ICA(n_components=15, random_state=97, max_iter='auto')
 ica.fit(raw)
 ica.exclude = [0, 1]
