@@ -116,7 +116,7 @@ Esta forma de análisis resulta útil para extraer características más localiz
 
 Todo el procedimiento se encuentra en el archivo adjunto [`caracteristica2.py`](caracteristica2.py).
 
-#### Tabla:
+#### Tabla de características extraídas mediante DWT:
 | Archivo      | cA4 (µV²) | cD4 (µV²)| cD3 (µV²)| cD2 (µV²)| cD1 (µV²)|
 |--------------|-----------|----------|---------|---------|---------|
 | S001R01.edf  | 13528.06  | 2389.20  | 941.28  | 197.59  | 15.02   |
