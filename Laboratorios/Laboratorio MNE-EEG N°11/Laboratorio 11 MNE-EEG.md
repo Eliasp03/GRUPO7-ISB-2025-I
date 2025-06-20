@@ -197,7 +197,11 @@ Todo el procedimiento para extraer estas características se encuentra en el arc
 |                | cD2   | 95.30       | -0.0005       | 14.82               |
 |                | cD1   | 26.71       | -0.0001       | 4.32                 |
 
+En resumen, se aplicaron dos enfoques complementarios para la extracción de características:
 
+- PSD con bandas EEG: orientado a obtener una medida global de la energía en rangos de frecuencia estandarizados, útil para análisis de estado mental o cognitivo.
+
+- DWT (Wavelet): aporta una representación más localizada en tiempo-frecuencia, ideal para capturar detalles transitorios y multiescalares en las señales EEG.
 
 ## 4. Optimización y selección <a name="id4"></a>
 
