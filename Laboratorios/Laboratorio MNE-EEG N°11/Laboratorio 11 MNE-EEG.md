@@ -218,13 +218,12 @@ En esta última etapa se realizaron análisis e integraciones adicionales sobre 
 Se aplicaron filtros pasa banda (1–40 Hz) y notch (60 Hz), seguidos de una descomposición con ICA (mne.preprocessing.ICA) para eliminar artefactos oculares.
 Los componentes ICA [0, 1] fueron eliminados (seleccionados manualmente tras visualización).
 
-'''
-bash
+```bash
 ica = mne.preprocessing.ICA(n_components=15, random_state=97, max_iter='auto')
 ica.fit(raw)
 ica.exclude = [0, 1]
 ica.apply(raw)
-'''
+```
 
 #### b. Visualización de la distribución espacial de los electrodos
 Se utilizó el sistema de electrodos standard_1020, permitiendo visualizar la disposición espacial de los sensores. Se generaron topomapas para observar la distribución de la actividad por regiones cerebrales. Se usó raw.plot_sensors() para mostrar la disposición topográfica de los 64 electrodos en el cuero cabelludo.
