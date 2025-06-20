@@ -63,6 +63,20 @@ Se utilizó el código python adjuntado 'señal_cruda.py' para graficar cada uno
 ### Objetivo: 
 - Aplicar técnicas de feature engineering sobre las componentes extraídas (estadísticas, bandas, transformaciones) para mejorar la calidad de los datos antes de alimentar modelos de clasificación.
 
+| Archivo      | Delta (nV²) | Theta (nV²) | Alpha (nV²) | Beta (nV²) |
+|--------------|-------------|-------------|-------------|------------|
+| S001R01.edf  | 0.882       | 0.211       | 0.147       | 0.159      |
+| S001R02.edf  | 0.763       | 0.211       | 0.754       | 0.241      |
+| S001R03.edf  | 1.273       | 0.254       | 0.147       | 0.193      |
+| S001R04.edf  | 1.367       | 0.271       | 0.137       | 0.175      |
+| S001R05.edf  | 1.397       | 0.261       | 0.128       | 0.184      |
+| S001R06.edf  | 0.885       | 0.198       | 0.177       | 0.156      |
+| S001R07.edf  | 1.467       | 0.226       | 0.164       | 0.186      |
+| S001R08.edf  | 0.764       | 0.170       | 0.149       | 0.165      |
+| S001R09.edf  | 1.345       | 0.233       | 0.154       | 0.187      |
+| S001R10.edf  | 1.193       | 0.226       | 0.164       | 0.175      |
+
+
 ## 4. Optimización y selección <a name="id4"></a>
 
 ### Objetivo: 
