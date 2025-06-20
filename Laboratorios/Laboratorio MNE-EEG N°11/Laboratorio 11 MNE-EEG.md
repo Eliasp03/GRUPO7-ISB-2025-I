@@ -43,27 +43,18 @@ El preprocesamiento se realizó utilizando MNE-Python y consistió en los siguie
 
 #### Archivos EDF descargados – Sujeto S001
 
-| Archivo           | Descripción                                                  |
-|-------------------|--------------------------------------------------------------|
-| S001R01.edf       | Baseline – ojos abiertos                                     |
-| S001R01.edf.event | Eventos correspondientes a R01                               |
-| S001R02.edf       | Baseline – ojos cerrados                                     |
-| S001R02.edf.event | Eventos correspondientes a R02                               |
-| S001R03.edf       | Tarea 1 – Movimiento real, mano izquierda o derecha          |
-| S001R03.edf.event | Eventos correspondientes a R03                               |
-| S001R04.edf       | Tarea 2 – Movimiento imaginado, mano izquierda o derecha     |
-| S001R04.edf.event | Eventos correspondientes a R04                               |
-| S001R05.edf       | Tarea 3 – Movimiento real, ambas manos o ambos pies          |
-| S001R05.edf.event | Eventos correspondientes a R05                               |
-| S001R06.edf       | Tarea 4 – Movimiento imaginado, ambas manos o ambos pies     |
-| S001R06.edf.event | Eventos correspondientes a R06                               |
-| S001R07.edf       | Repetición de Tarea 1 (real – manos)                         |
-| S001R07.edf.event | Eventos correspondientes a R07                               |
-| S001R08.edf       | Repetición de Tarea 2 (imaginada – manos)                    |
-| S001R08.edf.event | Eventos correspondientes a R08                               |
-| S001R09.edf       | Repetición de Tarea 3 (real – manos/pies)                    |
-| S001R09.edf.event | Eventos correspondientes a R09                               |
-| S001R10.edf       | Repetición de Tarea 4 (imaginada – manos/pies)               |
+| Archivo       | Descripción                                                  |
+|---------------|--------------------------------------------------------------|
+| S001R01.edf   | Baseline – ojos abiertos                                     |
+| S001R02.edf   | Baseline – ojos cerrados                                     |
+| S001R03.edf   | Tarea 1 – Movimiento real, mano izquierda o derecha          |
+| S001R04.edf   | Tarea 2 – Movimiento imaginado, mano izquierda o derecha     |
+| S001R05.edf   | Tarea 3 – Movimiento real, ambas manos o ambos pies          |
+| S001R06.edf   | Tarea 4 – Movimiento imaginado, ambas manos o ambos pies     |
+| S001R07.edf   | Repetición de Tarea 1 (real – manos)                         |
+| S001R08.edf   | Repetición de Tarea 2 (imaginada – manos)                    |
+| S001R09.edf   | Repetición de Tarea 3 (real – manos/pies)                    |
+| S001R10.edf   | Repetición de Tarea 4 (imaginada – manos/pies)              |
 
 
 ## 3. Extracción de características <a name="id3"></a>
