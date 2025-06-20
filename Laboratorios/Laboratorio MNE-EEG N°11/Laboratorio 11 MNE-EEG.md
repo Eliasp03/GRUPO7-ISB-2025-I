@@ -30,7 +30,7 @@ Los datos utilizados provienen de la base de datos **EEG Motor Movement/Imagery 
 ### Objetivo: 
 - Limpiar las señales de EEG mediante técnicas de filtrado (por ejemplo, filtros pasa-banda, notch y wavelet), eliminar artefactos (blink, EMG, ECG) y normalizar/alinear las señales para hacerlas comparables entre sesiones y sujetos.
 
-### Desarrollo:
+### Desarrollo de característica 1:
 El preprocesamiento se realizó utilizando **MNE-Python** y consistió en los siguientes pasos:
 
 - **Lectura del archivo**: Se utilizaron los archivos `S001R01.edf` a `S001R10.edf`, correspondientes a tareas motoras reales e imaginadas del sujeto S001 de la base de datos PhysioNet EEG Motor Movement/Imagery Dataset.
