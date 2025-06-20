@@ -63,7 +63,7 @@ Se utilizó el código python adjuntado [`señal_cruda.py`](señal_cruda.py) par
 ### Objetivo: 
 - Aplicar técnicas de feature engineering sobre las componentes extraídas (estadísticas, bandas, transformaciones) para mejorar la calidad de los datos antes de alimentar modelos de clasificación.
 
-### Desarrollo de característica 1:
+### Características basadas en energía de bandas:
 Se utilizó el método de densidad espectral de potencia (PSD) mediante Welch (`raw.compute_psd`) aplicado sobre las señales preprocesadas. Posteriormente, se integró la PSD dentro de los rangos de frecuencia definidos para cada banda, y se calculó el promedio de energía por banda y archivo, todo el procedimiento realizado se encuentra en el archivo [`caracteristica1.py`](caracteristica1.py).
 
 Las bandas utilizadas fueron:
@@ -73,7 +73,7 @@ Las bandas utilizadas fueron:
 - **Alpha:** 8 – 13 Hz  
 - **Beta:** 13 – 30 Hz
 
-### Tabla de energía promedio por banda (en µV²)
+#### Tabla de energía promedio por banda (en µV²)
 
 | Archivo     | Delta (µV²) | Theta (µV²) | Alpha (µV²) | Beta (µV²) |
 |-------------|-------------|-------------|-------------|------------|
@@ -88,10 +88,35 @@ Las bandas utilizadas fueron:
 | S001R09.edf | 1345.150    | 233.474     | 154.005     | 187.111    |
 | S001R10.edf | 1192.647    | 225.719     | 164.085     | 175.411    |
 
-### Visualización:
+#### Visualización:
 La siguiente figura muestra una comparación visual de la energía promedio por banda EEG a lo largo de las diferentes sesiones:
-
 ![Gráfico de barras de energía por banda EEG](L11_images/bar_char2.jpg)
+
+### Características basadas en Wavelet:
+Se aplicó una transformada wavelet discreta (DWT) utilizando la función pywt.wavedec() de la librería PyWavelets, con los siguientes parámetros:
+- **Wavelet utilizada:** Daubechies 4 ('db4')  
+- **Niveles de descomposición:** 4 niveles
+- **Señal de entrada:** canal promedio de cada archivo EEG preprocesado
+- **Feature extraída:** varianza de los coeficientes en cada nivel (cA4, cD4, cD3, cD2, cD1)
+
+Durante el análisis, elegí conservar los niveles `cA4`, `cD4`, `cD3`, `cD2` y `cD1`, ya que estos cubren un rango de frecuencias que se alinean bien con las bandas cerebrales clásicas del EEG. Como se trabajó con señales muestreadas a 160 Hz, los niveles wavelet pueden asociarse aproximadamente con los siguientes rangos de frecuencia:
+
+| Nivel | Rango aprox. (Hz) | Asociado a banda |
+|-------|-------------------|------------------|
+| `A4`  | 0 – 5             | Delta            |
+| `D4`  | 5 – 10            | Theta            |
+| `D3`  | 10 – 20           | Alpha            |
+| `D2`  | 20 – 40           | Beta             |
+| `D1`  | 40 – 80           | Gamma            |
+
+Estos valores se calculan considerando que en cada nivel la frecuencia se reduce a la mitad (principio del muestreo y la descomposición wavelet). Por esta razón, y dado que el interés principal está en las bandas delta, theta, alpha y beta, se extrajo la **varianza de los coeficientes** de cada uno de estos niveles, ya que la varianza representa una medida de la energía contenida en cada banda correspondiente.
+
+Esta forma de análisis resulta útil para extraer características más localizadas en tiempo-frecuencia, complementando el enfoque clásico basado en PSD.
+
+Todo el procedimiento se encuentra en el archivo adjunto [`caracteristica2.py`](caracteristica2.py).
+
+#### Tabla:
+
 
 ## 4. Optimización y selección <a name="id4"></a>
 
