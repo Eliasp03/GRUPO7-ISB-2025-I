@@ -91,7 +91,7 @@ Las bandas utilizadas fueron:
 ### Visualización:
 La siguiente figura muestra una comparación visual de la energía promedio por banda EEG a lo largo de las diferentes sesiones:
 
-![Gráfico de barras de energía por banda EEG](L11_images/bar_char.jpg)
+![Gráfico de barras de energía por banda EEG](L11_images/bar_char2.jpg)
 
 ## 4. Optimización y selección <a name="id4"></a>
 
