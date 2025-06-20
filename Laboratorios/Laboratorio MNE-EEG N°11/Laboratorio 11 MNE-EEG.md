@@ -6,10 +6,6 @@
    - [Características basadas en energía de bandas](#id4)
    - [Características basadas en Wavelet](#id5) 
 5. [Optimización y selección](#id6)
-   - [Reducción de artefactos y canales malos](#id7)
-   - [Asociación espacial: montaje estándar](#id8)
-   - [Análisis de eventos y respuestas evocadas](#id9)
-   - [Estadísticas globales y reducción de dimensionalidad](#id10) 
 
 
 ## 1. Origen de los datos <a name="id1"></a>
@@ -218,14 +214,22 @@ En resumen, se aplicaron dos enfoques complementarios para la extracción de car
 ### Desarrollo: 
 En esta última etapa se realizaron análisis e integraciones adicionales sobre las señales EEG preprocesadas, utilizando herramientas de MNE-Python que permiten explorar los datos desde diferentes dimensiones: espacial, temporal y frecuencial.
 
-#### a. Reducción de artefactos y canales malos <a name="id7"></a>
-Se aplicó ICA (Independent Component Analysis) para identificar y eliminar componentes asociados a artefactos comunes como parpadeos o actividad ocular. Posteriormente, se realizó una interpolación de canales malos con interpolate_bads().
+#### a. Filtrado y eliminación de artefactos
+Se aplicaron filtros pasa banda (1–40 Hz) y notch (60 Hz), seguidos de una descomposición con ICA (mne.preprocessing.ICA) para eliminar artefactos oculares.
+Los componentes ICA [0, 1] fueron eliminados (seleccionados manualmente tras visualización).
 
-#### b. Asociación espacial: montaje estándar <a name="id8"></a>
-Se utilizó el sistema de electrodos standard_1020, permitiendo visualizar la disposición espacial de los sensores. Se generaron topomapas para observar la distribución de la actividad por regiones cerebrales.
+'''
+ica = mne.preprocessing.ICA(n_components=15, random_state=97, max_iter='auto')
+ica.fit(raw)
+ica.exclude = [0, 1]
+ica.apply(raw)
+'''
 
-#### c. Análisis de eventos y respuestas evocadas <a name="id9"></a>
-Aunque los eventos no estaban etiquetados explícitamente en esta base, se simularon eventos para ejemplificar el proceso de segmentación en Epochs, y el posterior cálculo de la respuesta promediada (Evoked).
+#### b. Visualización de la distribución espacial de los electrodos
+Se utilizó el sistema de electrodos standard_1020, permitiendo visualizar la disposición espacial de los sensores. Se generaron topomapas para observar la distribución de la actividad por regiones cerebrales. Se usó raw.plot_sensors() para mostrar la disposición topográfica de los 64 electrodos en el cuero cabelludo.
 
-#### d. Estadísticas globales y reducción de dimensionalidad <a name="id10"></a>
-Se exploró la posibilidad de aplicar transformaciones como normalización (StandardScaler) y reducción de dimensionalidad mediante PCA, principalmente sobre las características extraídas previamente (Wavelet y PSD), para facilitar su visualización y posterior clasificación.
+#### c. Segmentación en épocas (Epochs)
+Se crearon eventos artificiales cada 2 segundos (make_fixed_length_events) y se generaron épocas de -0.2s a 0.8s. Se visualizó la actividad por época en múltiples canales.
+
+#### d. Promedio de señales (Evoked response)
+Se obtuvo la señal promedio de las épocas con epochs.average() para observar la respuesta evocada.
