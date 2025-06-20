@@ -2,10 +2,8 @@
 ## Contenido
 1. [Origen de los datos](#id1)
 2. [Procedimiento de preprocesamiento](#id2)
-3. [Actividad 3](#id3)
-4. [Actividad 4](#id4)
-5. [Actividad para casa](#id5)
-6. [Referencias](#id6)
+3. [Extracción de características](#id3)
+4. [Optimización y selección](#id4)
 
 
 ## 1. Origen de los datos <a name="id1"></a>
@@ -27,12 +25,18 @@ Los datos utilizados provienen de la base de datos **EEG Motor Movement/Imagery 
   - Las anotaciones T0, T1 y T2 indican respectivamente: reposo, movimiento de mano izquierda/brazos, o pie derecho/piernas (dependiendo de la tarea).
 - Fuente: Schalk, G., McFarland, D.J., Hinterberger, T., Birbaumer, N., Wolpaw, J.R. BCI2000: A General-Purpose Brain-Computer Interface (BCI) System. IEEE Transactions on Biomedical Engineering 51(6):1034-1043, 2004. https://www.physionet.org/content/eegmmidb/1.0.0/
 
-## 2. Origen de los datos <a name="id1"></a>
+## 2. Procedimiento de preprocesamiento <a name="id2"></a>
 
 ### Objetivo: 
-- Detallar recolección con Ultracortex (frecuencia de muestreo, nro. de electrodos) o la base de datos usada (nombre, URL).
+- Limpiar las señales de EEG mediante técnicas de filtrado (por ejemplo, filtros pasa-banda, notch y wavelet), eliminar artefactos (blink, EMG, ECG) y normalizar/alinear las señales para hacerlas comparables entre sesiones y sujetos.
 
-## 3. Origen de los datos <a name="id1"></a>
+
+## 3. Extracción de características <a name="id3"></a>
 
 ### Objetivo: 
-- Detallar recolección con Ultracortex (frecuencia de muestreo, nro. de electrodos) o la base de datos usada (nombre, URL).
+- Aplicar técnicas de feature engineering sobre las componentes extraídas (estadísticas, bandas, transformaciones) para mejorar la calidad de los datos antes de alimentar modelos de clasificación.
+
+## 4. Optimización y selección <a name="id4"></a>
+
+### Objetivo: 
+- Integrar y analizar los datos a través de observaciones temporales, frecuenciales y espaciales empleando MNE-Python (Epochs, Evoked, montage, interpolate_bads).
