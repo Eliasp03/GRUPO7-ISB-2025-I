@@ -30,6 +30,16 @@ Los datos utilizados provienen de la base de datos **EEG Motor Movement/Imagery 
 ### Objetivo: 
 - Limpiar las señales de EEG mediante técnicas de filtrado (por ejemplo, filtros pasa-banda, notch y wavelet), eliminar artefactos (blink, EMG, ECG) y normalizar/alinear las señales para hacerlas comparables entre sesiones y sujetos.
 
+### Desarrollo:
+El preprocesamiento se realizó utilizando MNE-Python y consistió en los siguientes pasos:
+
+- **Lectura del archivo**: S001R04.edf (ejemplo de la base de datos PhysioNet)
+- **Montaje**: Se aplicó el sistema estándar 10-20
+- **Filtro pasa banda**: entre 1 y 40 Hz para eliminar componentes de baja y alta frecuencia irrelevantes
+- **Filtro notch**: a 60 Hz para eliminar interferencias de la red eléctrica
+- **Interpolación de canales**: no se identificaron canales malos en esta muestra (o se interpolaron Fp1 y Fp2, etc.)
+- **Eliminación de artefactos**: se utilizó Independent Component Analysis (ICA) con 20 componentes. Se eliminaron los componentes relacionados con parpadeo (ej. componente 0).
+- **Herramientas**: MNE-Python (versión x.x), matplotlib, numpy
 
 ## 3. Extracción de características <a name="id3"></a>
 
