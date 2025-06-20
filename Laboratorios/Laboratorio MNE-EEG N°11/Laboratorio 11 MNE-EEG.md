@@ -98,7 +98,7 @@ Se aplicó una transformada wavelet discreta (DWT) utilizando la función pywt.w
 - **Niveles de descomposición:** 4 niveles
 - **Señal de entrada:** canal promedio de cada archivo EEG preprocesado
 - **Feature extraída:** varianza de los coeficientes en cada nivel (cA4, cD4, cD3, cD2, cD1)
-- **Herramientas**: MNE-Python, pywt, numpy
+- **Herramientas**: MNE-Python, PyWavelets, numpy
 
 Durante el análisis, elegí conservar los niveles `cA4`, `cD4`, `cD3`, `cD2` y `cD1`, ya que estos cubren un rango de frecuencias que se alinean bien con las bandas cerebrales clásicas del EEG. Como se trabajó con señales muestreadas a 160 Hz, los niveles wavelet pueden asociarse aproximadamente con los siguientes rangos de frecuencia:
 
