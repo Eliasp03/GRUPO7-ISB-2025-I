@@ -45,7 +45,7 @@ Se utilizará la base de datos pública:
 - Resolución: **12 bits**  
 - Alta fidelidad (CMRR > 126 dB, ruido < 1 µV rms)
 
-** Justificación de uso:**  
+**Justificación de uso:**  
 
 Aunque no se indujo fatiga muscular intencionadamente, la duración de la caminata permite explorar la **variabilidad intra-sujeto** a lo largo del tiempo. Esto hace posible identificar **patrones progresivos relacionados con fatiga local o ajustes neuromusculares**.
 
