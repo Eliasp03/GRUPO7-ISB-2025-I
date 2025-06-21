@@ -26,7 +26,7 @@ Se utilizará la base de datos pública:
 **🔗 Enlace:**  
 [PhysioNet - semg/1.0.1](https://physionet.org/content/semg/1.0.1/)
 
-** Descripción resumida:**
+**Descripción:**
 
 - Señales **sEMG** obtenidas de **10 músculos del miembro inferior** (5 por pierna):  
   - Gastrocnemius lateralis (GL)  
