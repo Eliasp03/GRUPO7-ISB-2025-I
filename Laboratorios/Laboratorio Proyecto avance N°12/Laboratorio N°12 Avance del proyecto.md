@@ -1,4 +1,11 @@
 # Laboratorio 12 - Avance del proyecto
+
+## Proyecto: Análisis de señales EMG para detección de patrones de fatiga muscular en miembro inferior
+
+## 🎯 Objetivo
+
+Desarrollar un pipeline en Python que permita analizar señales electromiográficas (EMG) de miembros inferiores para identificar posibles patrones de fatiga muscular, basándose en características extraídas del dominio temporal y su evolución durante caminatas prolongadas.
+
 ## Contenido
 1. [Origen de los datos](#id1)
 2. [Procedimiento de preprocesamiento](#id2)
@@ -7,76 +14,82 @@
    - [Características basadas en Wavelet](#id5) 
 5. [Optimización y selección](#id6)
 
+---
 
 ## 1. Origen de los datos <a name="id1"></a>
 
-### Objetivo: 
-- Detallar la base de datos usada de Physionet(nombre, URL).
+Se utilizará la base de datos pública:
 
-### Desarrollo:
-Los datos utilizados provienen de la base de datos **EMG t**, disponible públicamente en PhysioNet, con las siguientes características:
-- **Frecuencia de muestreo**: [X] Hz
-- **Número de canales/electrodos**: X
-- **Montaje**: 
-- **Formato**: 
-- **Descripción**:
-  - Poner resumen:
-  - Cada sujeto completó 14 sesiones experimentales, que incluyeron:
-    - Tareas en reposo con ojos abiertos/cerrados
-    - Movimientos reales pies.
-- Fuente: Incluir fuente
+**📚 Nombre:**  
+*Surface electromyographic signals collected during long-lasting ground walking of young able-bodied subjects*
 
-## 2. Procedimiento de preprocesamiento <a name="id2"></a>
+**🔗 Enlace:**  
+[PhysioNet - semg/1.0.1](https://physionet.org/content/semg/1.0.1/)
 
-### Objetivo: 
-- Limpiar las señales de EMG mediante técnicas de filtrado (por ejemplo, filtros pasa-banda, notch y wavelet), eliminar artefactos (blink, EMG, ECG) y normalizar/alinear las señales para hacerlas comparables entre sesiones y sujetos.
+** Descripción resumida:**
 
-### Desarrollo de característica 1:
-El preprocesamiento se realizó utilizando **MNE-Python** y consistió en los siguientes pasos:
+- Señales **sEMG** obtenidas de **10 músculos del miembro inferior** (5 por pierna):  
+  - Gastrocnemius lateralis (GL)  
+  - Tibialis anterior (TA)  
+  - Rectus femoris (RF)  
+  - Vastus lateralis (VL)  
+  - Hamstrings (Ham)
+  
+- Datos de **31 sujetos sanos** (20–30 años), caminando durante **~5 minutos** por una ruta en forma de “8” (curvas + tramos rectos).
+- Registro simultáneo de:  
+  - sEMG (μV)  
+  - Footswitch (V)  
+  - Electrogoniometría (°)
+- Formato de archivo: `.dat` y `.hea` (compatible con `wfdb` en Python)
+- Frecuencia de muestreo: **2000 Hz**  
+- Resolución: **12 bits**  
+- Alta fidelidad (CMRR > 126 dB, ruido < 1 µV rms)
 
-- **Lectura del archivo**: Se utilizaron los archivos `S001R01.edf` a `S001R10.edf`, correspondientes a tareas motoras reales e imaginadas del sujeto S001 de la base de datos PhysioNet EEG Motor Movement/Imagery Dataset.
-- **Montaje**: Se aplicó el sistema estándar **10-20** con la función `set_montage('standard_1020')` para ubicar correctamente los electrodos.
-- **Filtro pasa banda**: Se aplicó un filtro entre **1 y 40 Hz** para eliminar componentes de baja frecuencia (artefactos de movimiento y deriva DC) y alta frecuencia (ruido muscular o eléctrico).
-- **Filtro notch**: Se utilizó un filtro a **60 Hz** para suprimir la interferencia de la red eléctrica.
-- **Interpolación de canales**: No se detectaron canales ruidosos en esta muestra específica, por lo que `raw.info['bads'] = []`. En caso de detección visual, se podrían interpolar automáticamente con `interpolate_bads()`.
-- **Eliminación de artefactos**: Se utilizó **Análisis de Componentes Independientes (ICA)** con 20 componentes (`n_components=20`). Se eliminaron manualmente los componentes relacionados con artefactos de parpadeo (ej. componente 0), identificados con `ica.plot_components()`.
-- **Herramientas**: MNE-Python, matplotlib, numpy
+** Justificación de uso:**  
+
+Aunque no se indujo fatiga muscular intencionadamente, la duración de la caminata permite explorar la **variabilidad intra-sujeto** a lo largo del tiempo. Esto hace posible identificar **patrones progresivos relacionados con fatiga local o ajustes neuromusculares**.
+
+---
+
+## 2. ⚙️ Procedimiento de preprocesamiento <a name="id2"></a>
+
+1. **Lectura y visualización inicial**:  
+   Carga de los archivos con la librería `wfdb`.
+
+2. **Filtrado de señales EMG**:  
+   - Pasa banda Butterworth (20–450 Hz)  
+   - Filtro notch (50/60 Hz) si es necesario  
+
+3. **Rectificación**:  
+   Conversión a valores absolutos.
+
+4. **Segmentación temporal**:  
+   División de la señal en bloques (ej. 10 ventanas de 30 segundos) para observar evolución de características.
+
+5. **Normalización**:  
+   - Z-score u otra estrategia si se requiere para comparación intersujeto.
+
+---
+
+## 3. 📐 Extracción de características <a name="id3"></a>
+
+Por cada ventana de tiempo, se calcularán las siguientes métricas EMG en el dominio temporal:
+
+| Característica | Interpretación |
+|----------------|----------------|
+| **RMS** (Root Mean Square) | Medida de la energía muscular |
+| **MAV** (Mean Absolute Value) | Actividad promedio |
+| **ZC** (Zero Crossings) | Complejidad / frecuencia del contenido |
+| **SSC** (Slope Sign Changes) | Variabilidad / oscilaciones |
+| **WL** (Waveform Length) | Longitud del contorno de señal |
+
+Estas métricas serán analizadas en función del tiempo para identificar **tendencias relacionadas con la aparición de fatiga**.
+
+---
+
+## 4. 🗺️ Organización del proyecto
 
 
-## 3. Extracción de características <a name="id3"></a>
-
-### Objetivo: 
-- Aplicar técnicas de feature engineering sobre las componentes extraídas (estadísticas, bandas, transformaciones) para mejorar la calidad de los datos antes de alimentar modelos de clasificación. (CAMBIAR A DETECCIÓN DE PATRONES DE FATIGA)
-
-### Características basadas en energía de bandas: <a name="id4"></a>
-Se utilizó el método de densidad espectral de potencia (PSD) mediante Welch (`raw.compute_psd`) aplicado sobre las señales preprocesadas. Posteriormente, se integró la PSD dentro de los rangos de frecuencia definidos para cada banda, y se calculó el promedio de energía por banda y archivo, todo el procedimiento realizado se encuentra en el archivo
-
-Las bandas utilizadas fueron:
-
-- **Delta:** 0.5 – 4 Hz  
-- **Theta:** 4 – 8 Hz  
-- **Alpha:** 8 – 13 Hz  
-- **Beta:** 13 – 30 Hz
-
-#### Tabla de energía promedio por banda (en µV²)
-
-
-#### Visualización:
-
-
-### Características basadas en Wavelet: <a name="id5"></a>
-Se aplicó una transformada wavelet discreta (DWT) utilizando la función pywt.wavedec() de la librería PyWavelets, con los siguientes parámetros:
-- **Wavelet utilizada:** Daubechies 4 ('db4')  
-- **Niveles de descomposición:** 4 niveles
-- **Señal de entrada:** canal promedio de cada archivo EEG preprocesado
-- **Feature extraída:** varianza de los coeficientes en cada nivel (cA4, cD4, cD3, cD2, cD1), máximo (uV), mediana (uV) y desviación estándar (uV)
-- **Herramientas**: MNE-Python, PyWavelets, numpy
-
-
-#### Tabla de características varianzas de los coeficientes mediante DWT:
-
-
-#### Tabla de características máximo (uV), mediana (uV) y desviación estándar (uV) de los coeficientes mediante DWT:
 
 ## 4. Optimización y selección <a name="id6"></a>
 
