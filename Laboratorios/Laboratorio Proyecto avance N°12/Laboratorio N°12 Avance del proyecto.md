@@ -51,7 +51,7 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
 
 ---
 
-## 2. ⚙️ Procedimiento de preprocesamiento <a name="id2"></a>
+## 2. Procedimiento de preprocesamiento <a name="id2"></a>
 
 1. **Lectura y visualización inicial**:  
    Carga de los archivos con la librería `wfdb`.
@@ -71,7 +71,7 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
 
 ---
 
-## 3. 📐 Extracción de características <a name="id3"></a>
+## 3. Extracción de características <a name="id3"></a>
 
 Por cada ventana de tiempo, se calcularán las siguientes métricas EMG en el dominio temporal:
 
