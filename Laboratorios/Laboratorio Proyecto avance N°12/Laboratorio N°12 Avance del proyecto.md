@@ -12,8 +12,7 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 3. [Extracción de características](#id3)
    - [Características basadas en energía de bandas](#id4)
    - [Características basadas en Wavelet](#id5) 
-4. [Optimización y selección](#id6)
-5. [Desarrollo del Aplicativo](#id7)
+4. [Organización del proyecto](#id6)
 
 ---
 
@@ -88,22 +87,17 @@ Estas métricas serán analizadas en función del tiempo para identificar **tend
 
 ---
 
-## 4. 🗺️ Organización del proyecto
+## 4. 🗺️ Organización del proyecto <a name="id6"></a>
 ⚙️ Tecnologías utilizadas
 
 |Tecnología	| Descripción |
 |----------------|----------------|
 |PyQt5	| Diseño de la interfaz gráfica (ventanas, botones, formularios)| 
-|WFDB	 | Lectura de archivos .hea de PhysioNet|
+|WFDB	 | Lectura de archivos .dat y .hea de PhysioNet|
 |Matplotlib	|Visualización de señales y exportación a PDF|
-|Scipy	|Filtros digitales para procesamiento de la señal|
+|Scipy.signal		|Filtros digitales para procesamiento de la señal|
 |NumPy	|Cálculos matemáticos eficientes|
-
-
-## 4. Optimización y selección <a name="id6"></a>
-
-### Objetivo: 
-- 
+|PyPDF	|Exportación de análisis a PDF|
 
 ### Desarrollo: 
 
