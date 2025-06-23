@@ -12,7 +12,8 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 3. [Extracción de características](#id3)
    - [Características basadas en energía de bandas](#id4)
    - [Características basadas en Wavelet](#id5) 
-5. [Optimización y selección](#id6)
+4. [Optimización y selección](#id6)
+5. [Desarrollo del Aplicativo](#id7)
 
 ---
 
