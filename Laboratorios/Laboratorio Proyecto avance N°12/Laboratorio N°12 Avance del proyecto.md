@@ -64,7 +64,7 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
    Conversión a valores absolutos.
 
 4. **Segmentación temporal**:  
-   División de la señal en bloques (ej. 10 ventanas de 30 segundos) para observar evolución de características.
+   División de la señal en bloques para observar evolución de características.
 
 5. **Normalización**:  
    - Z-score u otra estrategia si se requiere para comparación intersujeto.
