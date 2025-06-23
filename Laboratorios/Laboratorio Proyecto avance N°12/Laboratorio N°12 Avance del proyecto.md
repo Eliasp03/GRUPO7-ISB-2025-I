@@ -88,13 +88,21 @@ Estas métricas serán analizadas en función del tiempo para identificar **tend
 ---
 
 ## 4. 🗺️ Organización del proyecto
+⚙️ Tecnologías utilizadas
 
+|Tecnología	| Descripción |
+|----------------|----------------|
+|PyQt5	| Diseño de la interfaz gráfica (ventanas, botones, formularios)| 
+|WFDB	 | Lectura de archivos .hea de PhysioNet|
+|Matplotlib	|Visualización de señales y exportación a PDF|
+|Scipy	|Filtros digitales para procesamiento de la señal|
+|NumPy	|Cálculos matemáticos eficientes|
 
 
 ## 4. Optimización y selección <a name="id6"></a>
 
 ### Objetivo: 
-- Integrar y analizar los datos a través de observaciones temporales, frecuenciales y espaciales empleando MNE-Python (Epochs, Evoked, montage, interpolate_bads).
+- 
 
 ### Desarrollo: 
 
@@ -102,38 +110,29 @@ Estas métricas serán analizadas en función del tiempo para identificar **tend
 #### a. Filtrado y eliminación de artefactos
 
 ```bash
-ica = mne.preprocessing.ICA(n_components=15, random_state=97, max_iter='auto')
+
 ```
 
 #### b. Visualización de la distribución espacial de los electrodos
 ```bash
-fig_sensor = raw_ica.plot_sensors(show_names=True, show=False)
-fig_sensor.savefig("L11_images/post_sensor_posiciones.png")
+
 ```
 
 #### c. Segmentación en épocas (Epochs) y cálculo del promedio (Evoked)
 
 ```bash
-events = mne.make_fixed_length_events(raw_ica, id=1, duration=2.)
+
 ```
 
 #### d. Mapa topográfico del EEG
 
 ```bash
-montage = make_standard_montage("standard_1020")
+
 ```
 
 #### e. Reducción de dimensionalidad con PCA
 
 ```bash
-# Visualización de PCA
-plt.figure()
-plt.scatter(X_pca[:, 0], X_pca[:, 1], c='blue')
-plt.title("Proyección PCA de características")
-plt.xlabel("PC1")
-plt.ylabel("PC2")
-plt.grid(True)
-plt.savefig("L11_images/post_pca_features.png")
-plt.close()
+
 ```
 
