@@ -28,12 +28,20 @@ Se utilizará la base de datos pública:
 
 **Descripción:**
 
-- Señales **sEMG** obtenidas de **10 músculos del miembro inferior** (5 por pierna):  
-  - Gastrocnemius lateralis (GL)  
-  - Tibialis anterior (TA)  
-  - Rectus femoris (RF)  
-  - Vastus lateralis (VL)  
-  - Hamstrings (Ham)
+- Señales **sEMG** obtenidas de **10 músculos del miembro inferior** (5 por pierna) y separados por canales dentro del archivo .hea:
+- 
+| Canal | Etiqueta del canal | Músculo                 | Lado      |
+| :---: | ------------------ | ----------------------- | --------- |
+|   2   | `semg LT TIB.A`    | Tibialis anterior       | Izquierdo |
+|   3   | `semg LT LAT.G`    | Gastrocnemius lateralis | Izquierdo |
+|   4   | `semg LT REC.F`    | Rectus femoris          | Izquierdo |
+|   5   | `semg LT HAM`      | Hamstrings              | Izquierdo |
+|   6   | `semg LT LAT.V`    | Vastus lateralis        | Izquierdo |
+|   9   | `semg RT TIB.A`    | Tibialis anterior       | Derecho   |
+|   10  | `semg RT LAT.G`    | Gastrocnemius lateralis | Derecho   |
+|   11  | `semg RT REC.F`    | Rectus femoris          | Derecho   |
+|   12  | `semg RT HAM`      | Hamstrings              | Derecho   |
+|   13  | `semg RT LAT.V`    | Vastus lateralis        | Derecho   |
   
 - Datos de **31 sujetos sanos** (20–30 años), caminando durante **~5 minutos** por una ruta en forma de “8” (curvas + tramos rectos).
 - Registro simultáneo de:  
@@ -135,28 +143,45 @@ form.addRow("<b>Correo electrónico:</b>", self.email_input)
 ```
 Validaciones: Edad numérica, DNI con 8 dígitos, formato de email válido.
 Se obtiene lo siguiente en la aplicación:
+![](L12_images/output1.png)
 
-
-#### b. Visualización de la distribución espacial de los electrodos
+🔹 Paso 3: Carga del archivo .hea:
+Al presionar el botón "Seleccionar archivo", el usuario elige el archivo .hea correspondiente a un sujeto del estudio. Aquí se usan funciones de la librería wfdb para importar la señal y obtener metadatos.
 ```bash
-
+path, _ = QFileDialog.getOpenFileName(self, "Cargar .hea", "", "*.hea")
+record = wfdb.rdrecord(path.replace(".hea", ""))
 ```
+Se obtiene lo siguiente en la aplicación:
+![](L12_images/output2.png)
 
-#### c. Segmentación en épocas (Epochs) y cálculo del promedio (Evoked)
-
+🔹 Paso 4: Filtrado y rectificación de la señal EMG:
+Una vez cargada, se selecciona un canal EMG y se aplica un filtro Butterworth pasa banda (20–450 Hz) seguido de rectificación. Este paso elimina ruido y transforma la señal en forma positiva para análisis.
 ```bash
-
+b, a = signal.butter(4, [20/(fs/2), 450/(fs/2)], btype='band')
+filtered = signal.filtfilt(b, a, emg_signal)
+rectified = np.abs(filtered)
 ```
+Se obtiene lo siguiente en la aplicación:
+![](L12_images/output3.png)
 
-#### d. Mapa topográfico del EEG
-
+🔹 Paso 5: Cálculo de características del dominio temporal:
+Se implementan las métricas estándar de análisis EMG sobre la señal rectificada. Estas características permiten cuantificar actividad, complejidad y fatiga muscular.
 ```bash
-
+rms = np.sqrt(np.mean(rectified**2))
+mav = np.mean(rectified)
+zc = np.sum(np.diff(np.sign(rectified)) != 0)
+ssc = np.sum(np.diff(np.sign(np.diff(rectified))) != 0)
+wl = np.sum(np.abs(np.diff(rectified)))
 ```
+Se obtiene lo siguiente en la aplicación:
+![](L12_images/output4.png)
 
-#### e. Reducción de dimensionalidad con PCA
-
+🔹 Paso 6: Exportación a PDF del análisis:
+Los resultados y gráficos se integran en un documento PDF personalizado para cada paciente. Esto nos permite generar informes clínicos o reportes de laboratorio de forma automática.
 ```bash
-
+with PdfPages(file_path) as pdf:
+    self.figure.suptitle(f"Paciente: {self.user_info['name']}, DNI: {self.user_info['dni']}", fontsize=12)
+    pdf.savefig(self.figure, bbox_inches='tight')
 ```
-
+Se obtiene lo siguiente en la aplicación:
+![](L12_images/output5.png)
