@@ -101,12 +101,41 @@ Estas métricas serán analizadas en función del tiempo para identificar **tend
 
 ### Desarrollo: 
 
+🔹 Paso 1: Se importa las librerías necesarias a utilizar para el proyecto y fines del mismo:
+```bash
+import sys
+import re
+import wfdb
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.signal as signal
+import pywt
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QPushButton, QLabel, QLineEdit, QFileDialog, QStackedWidget,
+    QFormLayout, QMessageBox, QTextEdit
+)
+from PyQt5.QtGui import QFont
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from PyQt5.QtPrintSupport import QPrinter
+from PyQt5.QtGui import QTextDocument
+```
 
-#### a. Filtrado y eliminación de artefactos
+🔹 Paso 2: Interfaz de ingreso de datos del paciente:
+
+Se implementó un formulario para ingresar y validar la información del paciente antes del análisis.
 
 ```bash
-
+# Fragmento
+form.addRow("<b>Nombre:</b>", self.name_input)
+form.addRow("<b>Edad:</b>", self.age_input)
+form.addRow("<b>DNI:</b>", self.dni_input)
+form.addRow("<b>Correo electrónico:</b>", self.email_input)
 ```
+Validaciones: Edad numérica, DNI con 8 dígitos, formato de email válido.
+Se obtiene lo siguiente en la aplicación:
+
 
 #### b. Visualización de la distribución espacial de los electrodos
 ```bash
