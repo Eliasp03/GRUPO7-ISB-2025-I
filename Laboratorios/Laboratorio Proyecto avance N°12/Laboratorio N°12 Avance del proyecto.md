@@ -153,6 +153,8 @@ record = wfdb.rdrecord(path.replace(".hea", ""))
 ```
 Se obtiene lo siguiente en la aplicación:
 ![](L12_images/output2.png)
+![](L12_images/output2_2.png)
+![](L12_images/output2_3.png)
 
 🔹 Paso 4: Filtrado y rectificación de la señal EMG:
 Una vez cargada, se selecciona un canal EMG y se aplica un filtro Butterworth pasa banda (20–450 Hz) seguido de rectificación. Este paso elimina ruido y transforma la señal en forma positiva para análisis.
@@ -185,3 +187,5 @@ with PdfPages(file_path) as pdf:
 ```
 Se obtiene lo siguiente en la aplicación:
 ![](L12_images/output5.png)
+![](L12_images/output5_2.png)
+![](L12_images/output5_3.png)
