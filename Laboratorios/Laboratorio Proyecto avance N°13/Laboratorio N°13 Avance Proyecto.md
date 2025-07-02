@@ -133,7 +133,7 @@ Cada extracción se guarda en un archivo CSV con: paciente, músculo, ventana, f
 ![](L13_images/pdf2.png)
 ![](L13_images/pdf3.png)
 
-## 4. Resultados de Machine Learning <a name="id6"></a>
+## 4. Resultados de Machine Learning <a name="id4"></a>
 - Entrenamiento con los 31 sujetos.
 - CSV adjuntado en la carpeta
 - Precisión: ~82%
