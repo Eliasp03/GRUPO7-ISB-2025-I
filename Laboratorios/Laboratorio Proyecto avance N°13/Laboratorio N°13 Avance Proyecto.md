@@ -1,4 +1,4 @@
-# Laboratorio 13 - Avance del proyecto
+# Laboratorio 13 - Avance del proyecto 2
 
 ## Proyecto: Análisis de señales EMG para detección de patrones de fatiga muscular en miembro inferior
 
@@ -8,7 +8,7 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 
 ## Contenido
 1. [Origen de los datos](#id1)
-2. [Procedimiento de preprocesamiento](#id2)
+2. [Pipeline y tecnologías utilizadaso](#id2)
 3. [Extracción de características](#id3)
    - [Características basadas en energía de bandas](#id4)
    - [Características basadas en Wavelet](#id5) 
@@ -17,11 +17,13 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 ---
 
 ## Evolución del enfoque
-En el primer avance se analizó la señal completa de cada canal EMG como un único bloque. Sin embargo, la fatiga es un proceso progresivo, que requiere un análisis temporal segmentado.
 
-A Review of Muscle Fatigue Assessment by Surface EMG Analysis (Sensors, 2022):
+### Avance previo:
+- El análisis se realizaba sobre la señal completa de cada canal EMG (una sola ventana).
 
-“Sliding windows of 1–5 s are commonly used for calculation of MNF, MDF, and RMS in dynamic protocols. For fatigue detection in walking or running, 5 s windows provide a good balance between smoothness and temporal resolution. MDF and MNF are calculated in windows of 2–5 s for both static and dynamic contractions, being 5 s preferable in long duration or noisy recordings.” DOI:10.3390/s22155799
+### Avance actual:
+- Se implementó un análisis por ventanas deslizantes de 5 segundos (con paso de 2 s), permitiendo identificar cómo evoluciona la fatiga muscular a lo largo del tiempo y de la marcha.
+- Se siguieron recomendaciones de la literatura: A Review of Muscle Fatigue Assessment by Surface EMG Analysis (Sensors, 2022): “Sliding windows of 1–5 s are commonly used for calculation of MNF, MDF, and RMS in dynamic protocols. For fatigue detection in walking or running, 5 s windows provide a good balance between smoothness and temporal resolution. MDF and MNF are calculated in windows of 2–5 s for both static and dynamic contractions, being 5 s preferable in long duration or noisy recordings.” DOI:10.3390/s22155799
 
 Este segundo avance implementa un análisis por ventanas de 5 segundos (con paso de 2 segundos), que permite observar cómo evolucionan las métricas clave durante la caminata.
 
@@ -36,9 +38,9 @@ Se utilizará la base de datos pública:
 [PhysioNet - semg/1.0.1](https://physionet.org/content/semg/1.0.1/)
 
 **Descripción:**
-
+- 31 sujetos sanos (20–30 años), caminando durante **~5 minutos** por una ruta en forma de “8” (curvas + tramos rectos).
 - Señales **sEMG** obtenidas de **10 músculos del miembro inferior** (5 por pierna) y separados por canales dentro del archivo .hea:
-- 
+
 | Canal | Etiqueta del canal | Músculo                 | Lado      |
 | :---: | ------------------ | ----------------------- | --------- |
 |   2   | `semg LT TIB.A`    | Tibialis anterior       | Izquierdo |
@@ -52,10 +54,9 @@ Se utilizará la base de datos pública:
 |   12  | `semg RT HAM`      | Hamstrings              | Derecho   |
 |   13  | `semg RT LAT.V`    | Vastus lateralis        | Derecho   |
   
-- Datos de **31 sujetos sanos** (20–30 años), caminando durante **~5 minutos** por una ruta en forma de “8” (curvas + tramos rectos).
 - Registro simultáneo de:  
   - sEMG (μV)  
-  - Footswitch (V)  
+  - Footswitch (V)
   - Electrogoniometría (°)
 - Formato de archivo: `.dat` y `.hea` (compatible con `wfdb` en Python)
 - Frecuencia de muestreo: **2000 Hz**  
@@ -68,25 +69,19 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
 
 ---
 
-## 2. Procedimiento de preprocesamiento <a name="id2"></a>
+## 2. Pipeline y tecnologías utilizadas <a name="id2"></a>
 
-1. **Lectura y visualización inicial**:  
-   Carga de los archivos con la librería `wfdb`.
-
-2. **Filtrado de señales EMG**:  
-   - Pasa banda Butterworth (20–450 Hz)  
-   - Filtro notch (50/60 Hz) si es necesario  
-
-3. **Rectificación**:  
-   Conversión a valores absolutos.
-
-4. **Segmentación temporal**:  
-   División de la señal en bloques para observar evolución de características.
-
-5. **Normalización**:  
-   - Z-score u otra estrategia si se requiere para comparación intersujeto.
-
----
+|Tecnología	| Descripción |
+|----------------|----------------|
+|PyQt5	| Diseño de la interfaz gráfica (ventanas, botones, formularios, scroll)| 
+|WFDB	 | Lectura de archivos .dat y .hea de PhysioNet|
+|Matplotlib	|Visualización de señales y exportación a PDF|
+|Scipy.signal		|Filtros digitales para preprocesamiento de la señal|
+|NumPy	|Cálculos matemáticos eficientes|
+|PyPDF	|Exportación de análisis a PDF|
+|scikit-learn	|Entrenamiento y validación de modelo ML (RandomForest)|
+|pandas	|Manejo de CSV para dataset de entrenamiento ML|
+|joblib	|Serialización del modelo entrenado|
 
 ## 3. Extracción de características <a name="id3"></a>
 
@@ -106,14 +101,7 @@ Estas métricas serán analizadas en función del tiempo para identificar **tend
 ## 4. 🗺️ Organización del proyecto <a name="id6"></a>
 ⚙️ Tecnologías utilizadas
 
-|Tecnología	| Descripción |
-|----------------|----------------|
-|PyQt5	| Diseño de la interfaz gráfica (ventanas, botones, formularios)| 
-|WFDB	 | Lectura de archivos .dat y .hea de PhysioNet|
-|Matplotlib	|Visualización de señales y exportación a PDF|
-|Scipy.signal		|Filtros digitales para procesamiento de la señal|
-|NumPy	|Cálculos matemáticos eficientes|
-|PyPDF	|Exportación de análisis a PDF|
+
 
 ### Desarrollo: 
 
