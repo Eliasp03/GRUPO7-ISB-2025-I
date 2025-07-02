@@ -16,6 +16,11 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 
 ---
 
+## Evolución del enfoque
+En el primer avance se analizó la señal completa de cada canal EMG como un único bloque. Sin embargo, la fatiga es un proceso progresivo, que requiere un análisis temporal segmentado.
+
+Este segundo avance implementa un análisis por ventanas de 5 segundos (con paso de 2 segundos), que permite observar cómo evolucionan las métricas clave durante la caminata.
+
 ## 1. Origen de los datos <a name="id1"></a>
 
 Se utilizará la base de datos pública:
