@@ -21,8 +21,7 @@ En el primer avance se analizó la señal completa de cada canal EMG como un ún
 
 A Review of Muscle Fatigue Assessment by Surface EMG Analysis (Sensors, 2022):
 
-“Sliding windows of 1–5 s are commonly used for calculation of MNF, MDF, and RMS in dynamic protocols. For fatigue detection in walking or running, 5 s windows provide a good balance between smoothness and temporal resolution.”
-DOI:10.3390/s22155799
+“Sliding windows of 1–5 s are commonly used for calculation of MNF, MDF, and RMS in dynamic protocols. For fatigue detection in walking or running, 5 s windows provide a good balance between smoothness and temporal resolution. MDF and MNF are calculated in windows of 2–5 s for both static and dynamic contractions, being 5 s preferable in long duration or noisy recordings.” DOI:10.3390/s22155799
 
 Este segundo avance implementa un análisis por ventanas de 5 segundos (con paso de 2 segundos), que permite observar cómo evolucionan las métricas clave durante la caminata.
 
@@ -91,15 +90,14 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
 
 ## 3. Extracción de características <a name="id3"></a>
 
-Por cada ventana de tiempo, se calcularán las siguientes métricas EMG en el dominio temporal:
+Por cada ventana de tiempo, se calcularán las siguientes métricas EMG en el dominio temporal que son las más importantes para detectar fatiga según la literatura dada:
 
 | Característica | Interpretación |
 |----------------|----------------|
 | **RMS** (Root Mean Square) | Medida de la energía muscular |
-| **MAV** (Mean Absolute Value) | Actividad promedio |
-| **ZC** (Zero Crossings) | Complejidad / frecuencia del contenido |
-| **SSC** (Slope Sign Changes) | Variabilidad / oscilaciones |
-| **WL** (Waveform Length) | Longitud del contorno de señal |
+| **MNF** () | gg |
+| **MDF** () | gg |
+| **ZC** (Slope Sign Changes) | Variabilidad / oscilaciones |
 
 Estas métricas serán analizadas en función del tiempo para identificar **tendencias relacionadas con la aparición de fatiga**.
 
