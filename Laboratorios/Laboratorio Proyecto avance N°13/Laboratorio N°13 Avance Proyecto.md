@@ -8,11 +8,9 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 
 ## Contenido
 1. [Origen de los datos](#id1)
-2. [Pipeline y tecnologías utilizadaso](#id2)
-3. [Extracción de características](#id3)
-   - [Características basadas en energía de bandas](#id4)
-   - [Características basadas en Wavelet](#id5) 
-4. [Organización del proyecto](#id6)
+2. [Pipeline y tecnologías utilizadas](#id2)
+3. [Flujo de la aplicación y métodos implementados](#id3)
+4. [Resultados de Machine Learning](#id4)
 
 ---
 
@@ -24,8 +22,10 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 ### Avance actual:
 - Se implementó un análisis por ventanas deslizantes de 5 segundos (con paso de 2 s), permitiendo identificar cómo evoluciona la fatiga muscular a lo largo del tiempo y de la marcha.
 - Se siguieron recomendaciones de la literatura: A Review of Muscle Fatigue Assessment by Surface EMG Analysis (Sensors, 2022): “Sliding windows of 1–5 s are commonly used for calculation of MNF, MDF, and RMS in dynamic protocols. For fatigue detection in walking or running, 5 s windows provide a good balance between smoothness and temporal resolution. MDF and MNF are calculated in windows of 2–5 s for both static and dynamic contractions, being 5 s preferable in long duration or noisy recordings.” DOI:10.3390/s22155799
-
-Este segundo avance implementa un análisis por ventanas de 5 segundos (con paso de 2 segundos), que permite observar cómo evolucionan las métricas clave durante la caminata.
+- Exportación automática de dataset para entrenamiento ML.
+- Entrenamiento y validación de un modelo RandomForest específico para la detección de fatiga.
+- Integración del modelo ML en la app, permitiendo comparación directa con el método tradicional.
+- Nuevas funciones de interfaz: anonimato, scroll.
 
 ## 1. Origen de los datos <a name="id1"></a>
 
@@ -83,22 +83,34 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
 |pandas	|Manejo de CSV para dataset de entrenamiento ML|
 |joblib	|Serialización del modelo entrenado|
 
-## 3. Extracción de características <a name="id3"></a>
+### Mejoras en la interfaz:
+- Opción de modo anónimo (no exige datos personales con la finalidad de protección de data sensible).
+- Botón adicional para diagnóstico con Machine Learning.
+- Exportación automática de features y etiquetas a CSV para entrenamiento ML.
 
-Por cada ventana de tiempo, se calcularán las siguientes métricas EMG en el dominio temporal que son las más importantes para detectar fatiga según la literatura dada:
+## 3. Flujo de la aplicación y métodos implementados <a name="id3"></a>
+Debido a temas de autoría, no se coloca el código python del aplicativo, únicamente los resultados de la interfaz.
 
-| Característica | Interpretación |
-|----------------|----------------|
-| **RMS** (Root Mean Square) | Medida de la energía muscular |
-| **MNF** () | gg |
-| **MDF** () | gg |
-| **ZC** (Slope Sign Changes) | Variabilidad / oscilaciones |
+### a. Carga y visualización de datos crudos:
+- Selección de archivo .hea por usuario.
+  
+- Visualización multi-canal (10 músculos) de la señal cruda EMG.
+
+
+### c. Extracción de características:
+
+| Característica | Interpretación                                      |
+|----------------|-----------------------------------------------------|
+| **RMS** (Root Mean Square)        | Medida de la energía muscular (cuantifica la intensidad de activación del músculo)         |
+| **MNF** (Mean Frequency)          | Frecuencia media del espectro de la señal; disminuye típicamente con la fatiga              |
+| **MDF** (Median Frequency)        | Frecuencia mediana del espectro de la señal; se usa para detectar desplazamiento espectral por fatiga |
+| **ZC** (Zero Crossings)           | Número de cruces por cero; refleja cambios en la frecuencia de la señal y variabilidad       |
 
 Estas métricas serán analizadas en función del tiempo para identificar **tendencias relacionadas con la aparición de fatiga**.
 
 ---
 
-## 4. 🗺️ Organización del proyecto <a name="id6"></a>
+## 4. Resultados de Machine Learning <a name="id6"></a>
 ⚙️ Tecnologías utilizadas
 
 
