@@ -19,6 +19,11 @@ Desarrollar un pipeline en Python que permita analizar señales electromiográfi
 ## Evolución del enfoque
 En el primer avance se analizó la señal completa de cada canal EMG como un único bloque. Sin embargo, la fatiga es un proceso progresivo, que requiere un análisis temporal segmentado.
 
+A Review of Muscle Fatigue Assessment by Surface EMG Analysis (Sensors, 2022):
+
+“Sliding windows of 1–5 s are commonly used for calculation of MNF, MDF, and RMS in dynamic protocols. For fatigue detection in walking or running, 5 s windows provide a good balance between smoothness and temporal resolution.”
+DOI:10.3390/s22155799
+
 Este segundo avance implementa un análisis por ventanas de 5 segundos (con paso de 2 segundos), que permite observar cómo evolucionan las métricas clave durante la caminata.
 
 ## 1. Origen de los datos <a name="id1"></a>
