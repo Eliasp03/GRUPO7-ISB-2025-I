@@ -90,12 +90,19 @@ Aunque no se indujo fatiga muscular intencionadamente, la duración de la camina
 
 ## 3. Flujo de la aplicación y métodos implementados <a name="id3"></a>
 Debido a temas de autoría, no se coloca el código python del aplicativo, únicamente los resultados de la interfaz.
+![](L13_images/interfaz.png)
 
 ### a. Carga y visualización de datos crudos:
 - Selección de archivo .hea por usuario.
-  
-- Visualización multi-canal (10 músculos) de la señal cruda EMG.
+![](L13_images/carga_archivo.png)
 
+- Visualización multi-canal (10 músculos) de la señal cruda EMG.
+![](L13_images/señalcruda.png)
+
+### b. Preprocesamiento:
+- Filtro Butterworth (20–450 Hz).
+- Rectificación.
+- Segmentación en ventanas de 5s (paso 2s).
 
 ### c. Extracción de características:
 
@@ -106,95 +113,37 @@ Debido a temas de autoría, no se coloca el código python del aplicativo, únic
 | **MDF** (Median Frequency)        | Frecuencia mediana del espectro de la señal; se usa para detectar desplazamiento espectral por fatiga |
 | **ZC** (Zero Crossings)           | Número de cruces por cero; refleja cambios en la frecuencia de la señal y variabilidad       |
 
-Estas métricas serán analizadas en función del tiempo para identificar **tendencias relacionadas con la aparición de fatiga**.
+Cada extracción se guarda en un archivo CSV con: paciente, músculo, ventana, features, y etiqueta automática de fatiga para el archivo necesario en Machine Learning.
+![](L13_images/caracteristicas.png)
 
----
+### d. Diagnóstico de fatiga:
+#### Método clásico (por umbrales): Clasificación por ventana: leve, moderada o grave según variación relativa de RMS y MNF/MDF respecto al inicio, según literatura (Sensors, 2022).
+![](L13_images/patrones.png)
+
+#### Método Machine Learning:
+- Entrenamiento de un modelo RandomForestClassifier con los datos de las 31 personas (más de 15,000 ventanas), se guarda con pandas la extracción de características relevantes para la detección de fatiga como RMS, ZC, MNF, MDF.
+- El modelo predice el nivel de fatiga por ventana y músculo.
+- Resultados presentados en tabla coloreada e intervalos temporales (5 seg) por músculo.
+![](L13_images/machine1.png)
+![](L13_images/machine2.png)
+
+### e. Resultados y exportación:
+- Visualización de gráficos: Señal cruda, features extraídas y evolución de fatiga.
+![](L13_images/pdf1.png)
+![](L13_images/pdf2.png)
+![](L13_images/pdf3.png)
 
 ## 4. Resultados de Machine Learning <a name="id6"></a>
-⚙️ Tecnologías utilizadas
+- Entrenamiento con los 31 sujetos.
+- CSV adjuntado en la carpeta
+- Precisión: ~82%
+- F1-score para fatiga grave: 0.88
+- Matriz de confusión muestra buen desempeño para casos clínicamente importantes.
+![](L13_images/clasificacion.png)
+![](L13_images/matriz.png)
+![](L13_images/importancia.png)
 
-
-
-### Desarrollo: 
-
-🔹 Paso 1: Se importa las librerías necesarias a utilizar para el proyecto y fines del mismo:
-```bash
-import sys
-import re
-import wfdb
-import numpy as np
-import matplotlib.pyplot as plt
-import scipy.signal as signal
-import pywt
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QPushButton, QLabel, QLineEdit, QFileDialog, QStackedWidget,
-    QFormLayout, QMessageBox, QTextEdit
-)
-from PyQt5.QtGui import QFont
-from PyQt5.QtCore import Qt
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from PyQt5.QtPrintSupport import QPrinter
-from PyQt5.QtGui import QTextDocument
-```
-
-🔹 Paso 2: Interfaz de ingreso de datos del paciente:
-
-Se implementó un formulario para ingresar y validar la información del paciente antes del análisis.
-
-```bash
-# Fragmento
-form.addRow("<b>Nombre:</b>", self.name_input)
-form.addRow("<b>Edad:</b>", self.age_input)
-form.addRow("<b>DNI:</b>", self.dni_input)
-form.addRow("<b>Correo electrónico:</b>", self.email_input)
-```
-Validaciones: Edad numérica, DNI con 8 dígitos, formato de email válido.
-Se obtiene lo siguiente en la aplicación:
-![](L12_images/output1.png)
-
-🔹 Paso 3: Carga del archivo .hea:
-Al presionar el botón "Seleccionar archivo", el usuario elige el archivo .hea correspondiente a un sujeto del estudio. Aquí se usan funciones de la librería wfdb para importar la señal y obtener metadatos.
-```bash
-path, _ = QFileDialog.getOpenFileName(self, "Cargar .hea", "", "*.hea")
-record = wfdb.rdrecord(path.replace(".hea", ""))
-```
-Se obtiene lo siguiente en la aplicación:
-![](L12_images/output2.png)
-![](L12_images/output2_2.png)
-![](L12_images/output2_3.png)
-
-🔹 Paso 4: Filtrado y rectificación de la señal EMG:
-Una vez cargada, se selecciona un canal EMG y se aplica un filtro Butterworth pasa banda (20–450 Hz) seguido de rectificación. Este paso elimina ruido y transforma la señal en forma positiva para análisis.
-```bash
-b, a = signal.butter(4, [20/(fs/2), 450/(fs/2)], btype='band')
-filtered = signal.filtfilt(b, a, emg_signal)
-rectified = np.abs(filtered)
-```
-Se obtiene lo siguiente en la aplicación:
-![](L12_images/output3.png)
-
-🔹 Paso 5: Cálculo de características del dominio temporal:
-Se implementan las métricas estándar de análisis EMG sobre la señal rectificada. Estas características permiten cuantificar actividad, complejidad y fatiga muscular.
-```bash
-rms = np.sqrt(np.mean(rectified**2))
-mav = np.mean(rectified)
-zc = np.sum(np.diff(np.sign(rectified)) != 0)
-ssc = np.sum(np.diff(np.sign(np.diff(rectified))) != 0)
-wl = np.sum(np.abs(np.diff(rectified)))
-```
-Se obtiene lo siguiente en la aplicación:
-![](L12_images/output4.png)
-
-🔹 Paso 6: Exportación a PDF del análisis:
-Los resultados y gráficos se integran en un documento PDF personalizado para cada paciente. Esto nos permite generar informes clínicos o reportes de laboratorio de forma automática.
-```bash
-with PdfPages(file_path) as pdf:
-    self.figure.suptitle(f"Paciente: {self.user_info['name']}, DNI: {self.user_info['dni']}", fontsize=12)
-    pdf.savefig(self.figure, bbox_inches='tight')
-```
-Se obtiene lo siguiente en la aplicación:
-![](L12_images/output5.png)
-![](L12_images/output5_2.png)
-![](L12_images/output5_3.png)
-
+## 5. Bibliografía <a name="id6"></a>
+1. Sensors 2022, “A Review of Muscle Fatigue Assessment by Surface EMG Analysis” DOI:10.3390/s22155799
+2. Sensors 2023, “Assessment of Muscle Fatigue by Means of Surface EMG Signal Analysis: A Systematic Review” DOI:10.3390/s23187873
+3. Código python adjuntado y dataset de PhysioNet
